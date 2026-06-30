@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blit | Premium Electrical Hardware & Wiring Components</title>
+  <meta name="description" content="Blit offers state-of-the-art electrical hardware, high-end switches, conduit pipes, fittings, plugs, sockets, and power distribution equipment.">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Top Utilities & Navigation Header -->
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo-area">
+        <a href="#" class="logo flex-logo">
+          <svg class="logo-bolt" viewBox="0 0 24 24" fill="var(--primary-red)">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+          <div class="logo-text-group">
+            <span class="logo-title">Blit</span>
+            <span class="logo-subtitle">ELECTRICAL SOLUTIONS</span>
+          </div>
+        </a>
+      </div>
+      <nav class="nav-links">
+        <a href="#" class="nav-link active">Home</a>
+        <span class="nav-divider">|</span>
+        <a href="#" class="nav-link">Company</a>
+        <span class="nav-divider">|</span>
+        <a href="#" class="nav-link">Blog</a>
+        <span class="nav-divider">|</span>
+        <a href="#" class="nav-link">Contact us</a>
+      </nav>
+      <div class="contact-actions">
+        <div class="contact-item">
+          <!-- Phone Icon SVG -->
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <a href="tel:+97142690699" class="contact-text">+971 4 269 0699</a>
+        </div>
+        <div class="contact-item">
+          <!-- Email Icon SVG -->
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          <a href="mailto:info@blit.com" class="contact-text">info@blit.com</a>
+        </div>
+        <a href="#quote" class="quote-btn">Get a Quote <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Categories Sub-Header Bar (Sticky) -->
+  <nav class="categories-bar">
+    <div class="categories-container">
+      <button class="category-item active" data-category="switches">
+        <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="5" y="3" width="14" height="18" rx="2" ry="2"/>
+          <line x1="12" y1="8" x2="12" y2="16"/>
+        </svg>
+        <span>Switches</span>
+      </button>
+      <button class="category-item" data-category="fans">
+        <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+        </svg>
+        <span>Fans</span>
+      </button>
+      <button class="category-item" data-category="pipes">
+        <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="18" cy="6" r="3"/>
+          <circle cx="6" cy="18" r="3"/>
+          <path d="M6 15V9a4 4 0 0 1 4-4h5"/>
+        </svg>
+        <span>Pipes & Fittings</span>
+      </button>
+      <button class="category-item" data-category="plugs">
+        <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+          <line x1="9" y1="7" x2="9" y2="10"/>
+          <line x1="15" y1="7" x2="15" y2="10"/>
+        </svg>
+        <span>Plugs & Sockets</span>
+      </button>
+      <button class="category-item" data-category="plugs">
+        <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+        <span>Cables & Accessories</span>
+      </button>
+      <button class="category-item" data-category="plugs">
+        <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+        <span>Solar Solutions</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Slider -->
+  <section class="hero-section">
+    <div class="hero-slider">
+      <!-- Slide 1 -->
+      <div class="hero-slide active">
+        <div class="hero-content">
+          <h1 class="hero-title animate-title">Switches touched<br>by brilliance</h1>
+          <a href="#products" class="hero-btn animate-btn">Explore</a>
+        </div>
+        <div class="hero-image-container">
+          <video class="hero-video" autoplay muted loop playsinline>
+            <source src="./assets/power_distribution.mov" type="video/quicktime">
+            <source src="./assets/power_distribution.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="hero-slide">
+        <div class="hero-content">
+          <h1 class="hero-title">Intelligent Power<br>Distribution</h1>
+          <a href="#products" class="hero-btn">Explore</a>
+        </div>
+        <div class="hero-image-container">
+          <img src="./assets/intelligent_breaker.png" alt="Power distribution components" class="hero-img">
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="hero-slide">
+        <div class="hero-content">
+          <h1 class="hero-title">Premium Electrical<br>Hardware</h1>
+          <a href="#products" class="hero-btn">Explore</a>
+        </div>
+        <div class="hero-image-container">
+          <video class="hero-video" autoplay muted loop playsinline>
+            <source src="./assets/electrical_hardware.mov" type="video/quicktime">
+            <source src="./assets/electrical_hardware.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <!-- Slide 4 -->
+      <div class="hero-slide">
+        <div class="hero-content">
+          <h1 class="hero-title">Engineered For<br>Unmatched Safety</h1>
+          <a href="#products" class="hero-btn">Explore</a>
+        </div>
+        <div class="hero-image-container">
+          <img src="./assets/product_pipes.png" alt="Safety cabling conduits" class="hero-img">
+        </div>
+      </div>
+      <!-- Slide 5 -->
+      <div class="hero-slide">
+        <div class="hero-content">
+          <h1 class="hero-title">BLIT. POWER,<br>DEFINED.</h1>
+          <a href="#products" class="hero-btn">Explore</a>
+        </div>
+        <div class="hero-image-container">
+          <img src="./assets/power_defined.png" alt="Power Defined" class="hero-img">
+        </div>
+      </div>
+    </div>
+    <!-- Slider Pagination Dots -->
+    <div class="hero-dots">
+      <span class="dot active" data-slide="0"></span>
+      <span class="dot" data-slide="1"></span>
+      <span class="dot" data-slide="2"></span>
+      <span class="dot" data-slide="3"></span>
+      <span class="dot" data-slide="4"></span>
+    </div>
+  </section>
+
+  <!-- Animated Contour Lines Divider -->
+  <div class="contour-divider">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none" class="contour-svg">
+      <!-- Line 1 -->
+      <path class="contour-path p1" d="M0,40 C360,90 720,10 1080,70 C1260,100 1380,80 1440,60" />
+      <!-- Line 2 -->
+      <path class="contour-path p2" d="M0,60 C240,20 480,100 840,40 C1140,-10 1320,80 1440,90" />
+      <!-- Line 3 -->
+      <path class="contour-path p3" d="M0,20 C420,100 680,-20 980,80 C1200,120 1380,30 1440,40" />
+      <!-- Line 4 -->
+      <path class="contour-path p4" d="M0,80 C300,120 600,40 900,100 C1180,130 1350,50 1440,70" />
+    </svg>
+  </div>
+
+
+
+  <!-- Exact Solutions Landing Section matching 0DF34284 layout -->
+  <section id="solutions" class="exact-solutions-section">
+    <!-- Left vertical red line decorator -->
+    <div class="left-line-decorator">
+      <span class="line-dot top"></span>
+      <span class="line-dot ring"></span>
+      <span class="vertical-line"></span>
+    </div>
+
+    <div class="exact-solutions-container">
+      <div class="exact-main-grid">
+        
+        <!-- Column 1: Left Welcome, Title, Description, Button & 4 Pillars -->
+        <div class="exact-left-col">
+          <span class="exact-accent-label">WELCOME TO BLIT</span>
+          <h2 class="exact-main-heading">
+            Powering the Future <br>
+            <span class="serif-italic-red">Safely & Efficiently</span>
+          </h2>
+          <p class="exact-desc">
+            At Blit, we specialize in high-grade electrical hardware, ceiling architecture, and high-performance wiring solutions. Serving residential developments and complex industrial zones alike, our products represent the gold standard of durability, conductivity, and safety.
+          </p>
+
+          <div class="exact-cta-row">
+            <a href="#quote" class="exact-circle-btn">
+              <span class="red-circle-btn">↗</span>
+              <span class="btn-text-label">Explore Our Solutions</span>
+            </a>
+          </div>
+
+          <!-- Bottom 4 Pillars Horizontal Row -->
+          <div class="exact-pillars-row">
+            <div class="pillar-box">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <span class="pillar-label">Premium Quality Hardware</span>
+            </div>
+
+            <div class="pillar-box">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <circle cx="12" cy="12" r="3"/>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                </svg>
+              </div>
+              <span class="pillar-label">Engineered for Performance</span>
+            </div>
+
+            <div class="pillar-box">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <path d="M12 8v4M12 16h.01"/>
+                </svg>
+              </div>
+              <span class="pillar-label">Safety at Every Step</span>
+            </div>
+
+            <div class="pillar-box">
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <circle cx="12" cy="8" r="6"/>
+                  <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+                </svg>
+              </div>
+              <span class="pillar-label">Trusted by Professionals</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Middle Stacked Cards (Residential & Commercial) -->
+        <div class="exact-mid-col">
+          <!-- Top Card: Residential -->
+          <div class="exact-card residential">
+            <div class="exact-card-bg" style="background-image: url('./assets/solution_residential_latest.jpeg');"></div>
+            <div class="exact-card-overlay dark">
+              <div class="exact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                </svg>
+              </div>
+              <h3 class="exact-card-title">Residential Solutions</h3>
+              <span class="exact-red-line"></span>
+              <p class="exact-card-sub">Comfort. Safety. Elegance.</p>
+              <a href="#quote" class="exact-arrow-circle">↗</a>
+            </div>
+          </div>
+
+          <!-- Bottom Card: Commercial -->
+          <div class="exact-card commercial">
+            <div class="exact-card-bg" style="background-image: url('./assets/solution_commercial_latest.jpeg');"></div>
+            <div class="exact-card-overlay dark">
+              <div class="exact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <rect x="4" y="2" width="16" height="20" rx="2" ry="2"/>
+                </svg>
+              </div>
+              <h3 class="exact-card-title">Commercial Solutions</h3>
+              <span class="exact-red-line"></span>
+              <p class="exact-card-sub">Reliable. Scalable. Future-ready.</p>
+              <a href="#quote" class="exact-arrow-circle">↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 3: Right Arch Showcase -->
+        <div class="exact-right-col">
+          <div class="arch-frame-container">
+            <img src="./assets/solution_commercial_user.jpeg" alt="Industrial electrical architecture" class="arch-img">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Dark Statistics Ribbon Container -->
+      <div class="exact-bottom-ribbon">
+        <div class="ribbon-box">
+          <div class="ribbon-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="8" r="6"/>
+              <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+            </svg>
+          </div>
+          <div class="ribbon-txt">
+            <span class="num-red">15+</span>
+            <span class="lbl-white">Years of Excellence</span>
+          </div>
+        </div>
+        <span class="ribbon-sep"></span>
+
+        <div class="ribbon-box">
+          <div class="ribbon-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+            </svg>
+          </div>
+          <div class="ribbon-txt">
+            <span class="num-red">5000+</span>
+            <span class="lbl-white">Projects Completed</span>
+          </div>
+        </div>
+        <span class="ribbon-sep"></span>
+
+        <div class="ribbon-box">
+          <div class="ribbon-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <div class="ribbon-txt">
+            <span class="num-red">100%</span>
+            <span class="lbl-white">Genuine Products</span>
+          </div>
+        </div>
+        <span class="ribbon-sep"></span>
+
+        <div class="ribbon-box">
+          <div class="ribbon-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+            </svg>
+          </div>
+          <div class="ribbon-txt">
+            <span class="num-red">ISO</span>
+            <span class="lbl-white">Certified Company</span>
+          </div>
+        </div>
+        <span class="ribbon-sep"></span>
+
+        <div class="ribbon-box">
+          <div class="ribbon-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M3 18v-6a9 9 0 0 1 18 0v6M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3"/>
+            </svg>
+          </div>
+          <div class="ribbon-txt">
+            <span class="num-red">24/7</span>
+            <span class="lbl-white">Expert Support</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Our Products Section (Inspired by Voltix Premium layout) -->
+  <section id="products" class="products-section">
+    <!-- Lightning bolt outline background decoration -->
+    <div class="lightning-bolt-bg">
+      <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="lightning-bolt-svg">
+        <polygon points="40,0 70,0 45,45 65,45 30,100 45,55 30,55" fill="none" stroke="rgba(193, 9, 20, 0.05)" stroke-width="0.5" />
+      </svg>
+    </div>
+
+    <!-- Glowing Background Blobs -->
+    <div class="products-glow-blob pgb1"></div>
+    <div class="products-glow-blob pgb2"></div>
+
+    <div class="container relative">
+      <!-- Upper Section: Split Hero Header -->
+      <div class="products-split-hero">
+        <!-- Left Side: Title & Description -->
+        <div class="products-hero-info">
+          <span class="products-badge-label">OUR PRODUCTS</span>
+          <h2 class="products-main-title">Powering Every Connection</h2>
+          <p class="products-main-desc">
+            Discover a wide range of premium electrical products designed for safety, reliability and long-lasting performance.
+          </p>
+
+          <!-- Stat Row -->
+          <div class="products-metric-grid">
+            <div class="metric-item">
+              <div class="metric-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/>
+                  <path d="M9 3v18M15 3v18M3 9h18M3 15h18"/>
+                </svg>
+              </div>
+              <div class="metric-text-box">
+                <span class="metric-number">500+</span>
+                <span class="metric-label">Products</span>
+              </div>
+            </div>
+
+            <div class="metric-item">
+              <div class="metric-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="8" r="7"/>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+                </svg>
+              </div>
+              <div class="metric-text-box">
+                <span class="metric-number">15+</span>
+                <span class="metric-label">Brands</span>
+              </div>
+            </div>
+
+            <div class="metric-item">
+              <div class="metric-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <div class="metric-text-box">
+                <span class="metric-number">100%</span>
+                <span class="metric-label">Genuine</span>
+              </div>
+            </div>
+
+            <div class="metric-item">
+              <div class="metric-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="1" y="3" width="15" height="13"/>
+                  <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                  <circle cx="5.5" cy="18.5" r="2.5"/>
+                  <circle cx="18.5" cy="18.5" r="2.5"/>
+                </svg>
+              </div>
+              <div class="metric-text-box">
+                <span class="metric-number">Fast</span>
+                <span class="metric-label">Delivery</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Featured Card with Interactive Side Slider -->
+        <div class="featured-product-card">
+          <div class="featured-card-content">
+            <span class="featured-badge">☆ FEATURED</span>
+            <h3 class="featured-title">Premium Switches</h3>
+            <p class="featured-subtitle">Elegant designs. Superior quality. Engineered for your safety.</p>
+            <a href="#quote" class="featured-btn">Explore Switches <span class="arrow">→</span></a>
+
+            <div class="featured-dots">
+              <span class="dot active" data-slide="0"></span>
+              <span class="dot" data-slide="1"></span>
+              <span class="dot" data-slide="2"></span>
+              <span class="dot" data-slide="3"></span>
+            </div>
+          </div>
+          <div class="featured-card-image-box">
+            <button class="featured-slide-nav prev" aria-label="Previous Slide">‹</button>
+            <button class="featured-slide-nav next" aria-label="Next Slide">›</button>
+            <div class="featured-slides-viewport">
+              <div class="featured-slides-track">
+                <div class="featured-slide">
+                  <img src="./assets/bento_featured_slide2.png" alt="Side view bronze switches" class="featured-card-img">
+                </div>
+                <div class="featured-slide">
+                  <img src="./assets/bento_featured_slide1.png" alt="Front view bronze switches" class="featured-card-img">
+                </div>
+                <div class="featured-slide">
+                  <img src="./assets/bento_featured_slide3.png" alt="Obsidian black touch switch" class="featured-card-img">
+                </div>
+                <div class="featured-slide">
+                  <img src="./assets/bento_featured_slide4.png" alt="Brushed aluminium switch plate" class="featured-card-img">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lower Section: 6-Column Grid -->
+      <div class="products-categories-grid">
+        <!-- Card 1: Switches -->
+        <div class="category-card" data-category="switches">
+          <div class="card-image-container">
+            <img src="./assets/product_switches_new.png" alt="Switches" class="category-card-img">
+          </div>
+          <div class="card-info-box">
+            <div class="card-icon-round">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                <line x1="12" y1="8" x2="12" y2="16"/>
+              </svg>
+            </div>
+            <h4 class="category-title">Switches</h4>
+            <p class="category-desc">Stylish. Safe. Smart.</p>
+            <a href="#quote" class="category-view-link">View Collection <span class="arrow">→</span></a>
+          </div>
+        </div>
+
+        <!-- Card 2: Fans -->
+        <div class="category-card" data-category="fans">
+          <div class="card-image-container">
+            <img src="./assets/product_fan_new.png" alt="Fans" class="category-card-img">
+          </div>
+          <div class="card-info-box">
+            <div class="card-icon-round">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <h4 class="category-title">Fans</h4>
+            <p class="category-desc">Powerful performance. Elegant design.</p>
+            <a href="#quote" class="category-view-link">View Collection <span class="arrow">→</span></a>
+          </div>
+        </div>
+
+        <!-- Card 3: Pipes & Fittings -->
+        <div class="category-card" data-category="pipes">
+          <div class="card-image-container">
+            <img src="./assets/product_pipes_new.png" alt="Pipes & Fittings" class="category-card-img">
+          </div>
+          <div class="card-info-box">
+            <div class="card-icon-round">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="18" cy="6" r="3"/>
+                <circle cx="6" cy="18" r="3"/>
+                <path d="M6 15V9a4 4 0 0 1 4-4h5"/>
+              </svg>
+            </div>
+            <h4 class="category-title">Pipes & Fittings</h4>
+            <p class="category-desc">Durable. Reliable. Leak-proof.</p>
+            <a href="#quote" class="category-view-link">View Collection <span class="arrow">→</span></a>
+          </div>
+        </div>
+
+        <!-- Card 4: Plugs & Sockets -->
+        <div class="category-card" data-category="plugs">
+          <div class="card-image-container">
+            <img src="./assets/product_sockets_new.png" alt="Plugs & Sockets" class="category-card-img">
+          </div>
+          <div class="card-info-box">
+            <div class="card-icon-round">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                <line x1="9" y1="7" x2="9" y2="10"/>
+                <line x1="15" y1="7" x2="15" y2="10"/>
+              </svg>
+            </div>
+            <h4 class="category-title">Plugs & Sockets</h4>
+            <p class="category-desc">Universal. Safe. High quality.</p>
+            <a href="#quote" class="category-view-link">View Collection <span class="arrow">→</span></a>
+          </div>
+        </div>
+
+        <!-- Card 5: Cables & Accessories -->
+        <div class="category-card" data-category="plugs">
+          <div class="card-image-container">
+            <img src="./assets/product_cables_new.png" alt="Cables & Accessories" class="category-card-img">
+          </div>
+          <div class="card-info-box">
+            <div class="card-icon-round">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h4 class="category-title">Cables & Accessories</h4>
+            <p class="category-desc">High conductivity. Maximum safety.</p>
+            <a href="#quote" class="category-view-link">View Collection <span class="arrow">→</span></a>
+          </div>
+        </div>
+
+        <!-- Card 6: Solar Solutions -->
+        <div class="category-card" data-category="plugs">
+          <div class="card-image-container">
+            <img src="./assets/product_solar_new.png" alt="Solar Solutions" class="category-card-img">
+          </div>
+          <div class="card-info-box">
+            <div class="card-icon-round">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"/>
+                <line x1="12" y1="1" x2="12" y2="3"/>
+                <line x1="12" y1="21" x2="12" y2="23"/>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                <line x1="1" y1="12" x2="3" y2="12"/>
+                <line x1="21" y1="12" x2="23" y2="12"/>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+              </svg>
+            </div>
+            <h4 class="category-title">Solar Solutions</h4>
+            <p class="category-desc">Clean energy. Bright future.</p>
+            <a href="#quote" class="category-view-link">View Collection <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust Ribbon (Footer element) -->
+      <div class="products-trust-ribbon">
+        <div class="ribbon-item">
+          <div class="ribbon-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <div class="ribbon-info">
+            <h5>Certified Quality</h5>
+            <p>ISO certified & BIS approved products only</p>
+          </div>
+        </div>
+
+        <div class="ribbon-item">
+          <div class="ribbon-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 18v-6a9 9 0 0 1 18 0v6M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3"/>
+            </svg>
+          </div>
+          <div class="ribbon-info">
+            <h5>Expert Support</h5>
+            <p>Get expert guidance for the right solutions</p>
+          </div>
+        </div>
+
+        <div class="ribbon-item">
+          <div class="ribbon-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+            </svg>
+          </div>
+          <div class="ribbon-info">
+            <h5>Assured Warranty</h5>
+            <p>Official brand warranty on all products</p>
+          </div>
+        </div>
+
+        <div class="ribbon-item">
+          <div class="ribbon-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="1" y="3" width="15" height="13"/>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+              <circle cx="5.5" cy="18.5" r="2.5"/>
+              <circle cx="18.5" cy="18.5" r="2.5"/>
+            </svg>
+          </div>
+          <div class="ribbon-info">
+            <h5>Pan India Delivery</h5>
+            <p>Fast and reliable delivery across India</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Guarantee Section -->
+  <section class="guarantee-section">
+    <!-- Animated background: Circuit Grid & Glowing dots -->
+    <div class="circuit-grid-overlay">
+      <svg viewBox="0 0 1440 600" preserveAspectRatio="none" class="circuit-svg-bg">
+        <path d="M50,100 H250 L300,150 H550 L600,200 V400" stroke="rgba(255,255,255,0.04)" stroke-width="2" fill="none" class="pulse-line" />
+        <path d="M1390,500 H1190 L1140,450 H890 L840,400 V200" stroke="rgba(255,255,255,0.04)" stroke-width="2" fill="none" class="pulse-line" />
+        <circle cx="300" cy="150" r="4" fill="#C10914" class="glow-dot d1" />
+        <circle cx="840" cy="200" r="4" fill="#C10914" class="glow-dot d2" />
+      </svg>
+    </div>
+
+    <div class="container">
+      <!-- Section Header -->
+      <div class="section-header centered">
+        <span class="welcome-label">Why Customers Trust Us</span>
+        <h2 class="section-title white-text">Engineered for Safety. Built to Last.</h2>
+        <p class="section-subtitle white-text-muted">Every installation is performed by certified professionals using genuine products that meet the highest safety standards.</p>
+      </div>
+
+      <!-- Trust Ribbon -->
+      <div class="trust-ribbon">
+        <div class="trust-item">
+          <div class="stars">★★★★★</div>
+          <span class="trust-text">4.9 Rating</span>
+        </div>
+        <div class="trust-divider-v"></div>
+        <div class="trust-item">
+          <span class="stat-number">5,000+</span>
+          <span class="trust-text">Satisfied Customers</span>
+        </div>
+        <div class="trust-divider-v"></div>
+        <div class="trust-item">
+          <span class="stat-number">15+</span>
+          <span class="trust-text">Years Experience</span>
+        </div>
+        <div class="trust-divider-v"></div>
+        <div class="trust-item">
+          <span class="stat-number">ISO</span>
+          <span class="trust-text">Certified Standards</span>
+        </div>
+        <div class="trust-divider-v"></div>
+        <div class="trust-item">
+          <span class="stat-number">24/7</span>
+          <span class="trust-text">Expert Support</span>
+        </div>
+      </div>
+
+      <!-- Asymmetrical Layout -->
+      <div class="guarantee-asymmetric-grid">
+        <!-- Left Side: Large Photo Card -->
+        <div class="guarantee-photo-card">
+          <img src="./assets/news_2.png" alt="Blit Certified Electrician at work" class="photo-card-img">
+          <div class="photo-card-overlay">
+            <div class="overlay-badge">Certified Services</div>
+            <h3>Reliability is our signature.</h3>
+            <p>Certified Blit installation engineers at work on custom power distribution board configurations.</p>
+          </div>
+        </div>
+
+        <!-- Right Side: 2x2 Interactive Cards Grid -->
+        <div class="guarantee-cards-grid">
+          <!-- Card 1: Expert Installation -->
+          <div class="guarantee-interactive-card">
+            <div class="card-icon-wrapper-3d">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Expert Installation</h3>
+            <p class="card-text">Professional on-site guidance and standard setup services by certified Blit electricians.</p>
+            <a href="#quote" class="learn-more-link">Learn More <span class="arrow">→</span></a>
+          </div>
+
+          <!-- Card 2: Extreme Protection (Premium Highlight Accent) -->
+          <div class="guarantee-interactive-card highlighted">
+            <div class="card-icon-wrapper-3d gold-stroke">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="M12 8l-2 5h4l-2 5"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Extreme Protection</h3>
+            <p class="card-text">All products meet fire-safety standard rating codes, minimizing voltage hazard risks.</p>
+            <a href="#quote" class="learn-more-link">Learn More <span class="arrow">→</span></a>
+          </div>
+
+          <!-- Card 3: Certified Standards -->
+          <div class="guarantee-interactive-card">
+            <div class="card-icon-wrapper-3d">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="7"/>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Certified Standards</h3>
+            <p class="card-text">Rigorous QA checks and certified ISO compliance for every electrical component.</p>
+            <a href="#quote" class="learn-more-link">Learn More <span class="arrow">→</span></a>
+          </div>
+
+          <!-- Card 4: Best Value -->
+          <div class="guarantee-interactive-card">
+            <div class="card-icon-wrapper-3d">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Best Value</h3>
+            <p class="card-text">Top-tier durability and competitive commercial price structures without middleman markups.</p>
+            <a href="#quote" class="learn-more-link">Learn More <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote Request / Contact Section -->
+  <section id="quote" class="quote-section">
+    <div class="container">
+      <div class="quote-box">
+        <div class="quote-info">
+          <h2>Request a Quick Quote</h2>
+          <p>Provide details of your custom wiring, conduit, or power distribution needs. Our technical experts will get back to you with custom estimates within 24 hours.</p>
+          <div class="quote-contact-details">
+            <p><strong>Hotline:</strong> +971 4 269 0699</p>
+            <p><strong>Corporate Email:</strong> info@blit.com</p>
+            <p><strong>Address:</strong> Electrical Industrial Zone, Dubai, UAE</p>
+          </div>
+        </div>
+        <form class="quote-form">
+          <div class="form-group">
+            <label for="client-name">Your Name</label>
+            <input type="text" id="client-name" required placeholder="E.g., John Doe">
+          </div>
+          <div class="form-group">
+            <label for="client-email">Email Address</label>
+            <input type="email" id="client-email" required placeholder="E.g., john@example.com">
+          </div>
+          <div class="form-group">
+            <label for="client-needs">Product Category</label>
+            <select id="client-needs">
+              <option value="switches">Switches & Sockets</option>
+              <option value="fans">Energy Efficient Fans</option>
+              <option value="pipes">Conduit Pipes & Fittings</option>
+              <option value="plugs">Plugs & Sockets</option>
+              <option value="glands">Cable Gland Accessories</option>
+              <option value="solderless">Solderless Connectors</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="client-message">Requirement Details</label>
+            <textarea id="client-message" rows="4" placeholder="Mention quantities, electrical load specifications, etc."></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Quote Request</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h2 class="footer-logo">Blit</h2>
+        <p class="footer-desc">Engineering excellence in wiring modules, electrical switchgear, conduit joints, and distribution safety components.</p>
+        <p class="copyright">&copy; 2026 Blit Electrical Hardware. All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+        <h4 class="footer-title">Products</h4>
+        <a href="#products">Switches & Sockets</a>
+        <a href="#products">Aerodynamic Fans</a>
+        <a href="#products">PVC & Brass Fittings</a>
+        <a href="#products">Cable Management</a>
+      </div>
+      <div class="footer-links">
+        <h4 class="footer-title">Company</h4>
+        <a href="#">About Us</a>
+        <a href="#">Technical Catalogs</a>
+        <a href="#">Quality Policy</a>
+        <a href="#">Contact Location</a>
+      </div>
+      <div class="footer-newsletter">
+        <h4 class="footer-title">Stay Updated</h4>
+        <p>Subscribe to receive our latest product release alerts and standard catalogues.</p>
+        <div class="newsletter-box">
+          <input type="email" placeholder="Your email address" aria-label="Newsletter email">
+          <button type="button">Join</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./main.js" type="module"></script>
+</body>
+</html>
