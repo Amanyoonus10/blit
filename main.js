@@ -435,6 +435,7 @@ function initProductExplorer() {
     categoryData.items.forEach(item => {
       const card = document.createElement('div');
       card.className = 'modal-product-card';
+      card.style.cursor = 'pointer';
 
       const specsList = item.specs.map(spec => `<li>${spec}</li>`).join('');
 
@@ -450,7 +451,7 @@ function initProductExplorer() {
             ${specsList}
           </ul>
           <button class="modal-inquiry-btn" data-category="${categoryId}" data-product="${item.name}">
-            Quick Inquiry
+            Inquire via WhatsApp
           </button>
         </div>
       `;
@@ -472,13 +473,15 @@ function initProductExplorer() {
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
 
-    // Wire up quick inquiry button inside modal
-    modalGrid.querySelectorAll('.modal-inquiry-btn').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        const cat = e.currentTarget.getAttribute('data-category');
-        const prod = e.currentTarget.getAttribute('data-product');
+    // Make the entire card click open WhatsApp
+    modalGrid.querySelectorAll('.modal-product-card').forEach((cardEl, idx) => {
+      cardEl.addEventListener('click', () => {
+        const item = categoryData.items[idx];
+        const productLink = window.location.origin + "?category=" + categoryId + "&product=" + encodeURIComponent(item.name);
+        const text = encodeURIComponent(`Hello, I'm interested in the following product from Blit:\n*Product*: ${item.name}\n*Range*: ${item.range}\n*Link*: ${productLink}`);
+        const whatsappUrl = `https://wa.me/971501995589?text=${text}`;
+        window.open(whatsappUrl, '_blank');
         closeModal();
-        triggerInquiry(cat, prod);
       });
     });
   };
