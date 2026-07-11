@@ -1,10 +1,9 @@
-// Blit Landing Page Interactions
+// Voltix Landing Page Interactions
 
 const PRODUCTS_DATA = [
   {
     id: "switches",
-    name: "Switch & Socket",
-    icon: `<svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="3" width="14" height="18" rx="2" ry="2"/><line x1="12" y1="8" x2="12" y2="16"/></svg>`,
+    name: "Switches",
     items: [
       {
         name: "White Range 1-Gang Switch",
@@ -84,13 +83,6 @@ const PRODUCTS_DATA = [
         range: "V Range"
       },
       {
-        name: "V Range Switch Detailed Views",
-        img: "./assets/products/switches/v_range_brushed_switch_views.jpg",
-        desc: "Detailed profile and rear configuration design views of the premium V Range brushed metallic switch plates.",
-        specs: ["Multi-angle Design Views", "Visual installation guide", "Rear component details"],
-        range: "V Range"
-      },
-      {
         name: "CW Range Gold Switch (1-Gang)",
         img: "./assets/products/switches/cw_range_gold_switch_1g.jpg",
         desc: "Exquisite champagne gold single switch, offering ultimate prestige and high conductivity contacts.",
@@ -114,184 +106,8 @@ const PRODUCTS_DATA = [
     ]
   },
   {
-    id: "weatherproof",
-    name: "Weatherproof Solutions",
-    icon: `<svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`,
-    items: [
-      {
-        name: "Isolator",
-        img: "./assets/products/weatherproof/isolator.jpg",
-        desc: "Outdoor rotary isolator switches with IP66 lockable handle, ensuring safe disconnection of air conditioning or heavy machinery.",
-        specs: ["IP66 Weatherproof", "Lockable Handle", "35A - 63A Ratings"],
-        range: "Isolator"
-      },
-      {
-        name: "IP55",
-        img: "./assets/products/weatherproof/ip55_cover.jpg",
-        desc: "Semi-weatherproof socket covers and enclosures with rubber gasket seals, ideal for balconies, lawns, and utility zones.",
-        specs: ["IP55 Rated", "Transparent Lid", "Dust Protection"],
-        range: "IP55"
-      },
-      {
-        name: "IP66",
-        img: "./assets/products/weatherproof/ip66_switch_2g.jpg",
-        desc: "Full weatherproof switches and socket boxes designed to withstand heavy rainfall, jet spray, and harsh climates.",
-        specs: ["IP66 Certified", "Corrosion Resistant", "Impact Proof"],
-        range: "IP66"
-      },
-      {
-        name: "Enclosure Box",
-        img: "./assets/products/weatherproof/enclosure_box.jpg",
-        desc: "Durable terminal enclosure boxes with knockouts, perfect for outdoor connection joints and junction housings.",
-        specs: ["UV Stabilized", "Impact Resistant", "Gasket Sealed"],
-        range: "Enclosure Box"
-      }
-    ]
-  },
-  {
-    id: "wiring_accessories",
-    name: "Wiring Accessories",
-    icon: `<svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="9" y1="7" x2="9" y2="10"/><line x1="15" y1="7" x2="15" y2="10"/></svg>`,
-    items: [
-      {
-        name: "Plug Top",
-        img: "./assets/products/wiring_accessories/plug_top.jpg",
-        desc: "High-grade 13A plug tops fitted with standard safety fuses, ideal for safe household appliance cabling.",
-        specs: ["13A Fused", "BS1363 Compliant", "Ergonomic Grip"],
-        range: "Plug Top"
-      },
-      {
-        name: "Multi Adaptor",
-        img: "./assets/products/wiring_accessories/multi_adaptor.jpg",
-        desc: "Universal multi-plug adaptors allowing multiple appliances to run from a single outlet safely.",
-        specs: ["Shatterproof Casing", "Safety Shutters", "Compact Design"],
-        range: "Multi Adaptor"
-      },
-      {
-        name: "Ceiling Rose",
-        img: "./assets/products/wiring_accessories/ceiling_rose.png",
-        desc: "Elegant round white ceiling mount base plate for standard pendant lights and electrical wiring cover.",
-        specs: ["High Polycarbonate", "3-Terminal Standard", "Clean Finish"],
-        range: "Ceiling Rose"
-      },
-      {
-        name: "Lamp Holder",
-        img: "./assets/products/wiring_accessories/lamp_holder.png",
-        desc: "Durable brass-lined plastic batten lamp holders, providing perfect electrical contact and thermal insulation.",
-        specs: ["Brass Contacts", "B22/E27 Base compatibility", "High Temperature Rating"],
-        range: "Lamp Holder"
-      },
-      {
-        name: "Extension Socket",
-        img: "./assets/products/wiring_accessories/extension_socket.jpg",
-        desc: "Premium extension cord reels and boards with surge protectors and illuminated power indicators.",
-        specs: ["Surge Protection", "Individually Switched", "Overload Protection"],
-        range: "Extension Socket"
-      },
-      {
-        name: "Cable Reel",
-        img: "./assets/products/wiring_accessories/cable_reel.jpg",
-        desc: "Heavy-duty outdoor extension cable reels on a metal stand with integrated thermal cut-out switch.",
-        specs: ["Heavy Duty Cable", "Metal Frame stand", "Thermal Trip Switch"],
-        range: "Cable Reel"
-      },
-      {
-        name: "Cassette Reel",
-        img: "./assets/products/wiring_accessories/cassette_reel.jpg",
-        desc: "Compact cassette-style extension cords, perfect for residential use and easy cord management.",
-        specs: ["Compact cassette", "Tangle-free storage", "Safety shutters"],
-        range: "Cassette Reel"
-      }
-    ]
-  },
-  {
-    id: "cable_management",
-    name: "Cable Management",
-    icon: `<svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 15V9a4 4 0 0 1 4-4h5"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/></svg>`,
-    items: [
-      {
-        name: "Trunking",
-        img: "./assets/products/cable_management/trunking.jpg",
-        desc: "Clean white PVC self-adhesive trunking channels, hiding surface-run cables with a tidy aesthetic.",
-        specs: ["Self-Adhesive option", "Strong Snap Lid", "Fire Resistant PVC"],
-        range: "Trunking"
-      },
-      {
-        name: "GI Conduits",
-        img: "./assets/products/cable_management/gi_conduits.png",
-        desc: "Galvanized Iron conduit pipes providing heavy-duty mechanical shielding for high-risk industrial environments.",
-        specs: ["Heavy Zinc Coating", "Class 4 Corrosion protection", "Threaded Joints"],
-        range: "GI Conduits"
-      },
-      {
-        name: "PVC Conduits",
-        img: "./assets/products/cable_management/pvc_conduits.png",
-        desc: "High-impact rigid PVC conduit pipes for safe electrical cabling routing inside concrete walls.",
-        specs: ["High Impact Strength", "Easy Cold Bending", "Self-Extinguishing"],
-        range: "PVC Conduits"
-      },
-      {
-        name: "Flexible Conduits",
-        img: "./assets/products/cable_management/flexible_conduits.png",
-        desc: "Corrugated flexible plastic shielding, perfect for routing cables through tight bends and joints.",
-        specs: ["High Flex Life", "Crush Resistant", "IP54 Compatible"],
-        range: "Flexible Conduits"
-      }
-    ]
-  },
-  {
-    id: "cable_termination",
-    name: "Cable Termination",
-    icon: `<svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>`,
-    items: [
-      {
-        name: "Lugs",
-        img: "./assets/products/cable_termination/lug.jpg",
-        desc: "Heavy-duty pure copper crimping cable lugs, guaranteeing solid electrical conductivity for power cables.",
-        specs: ["99.9% Pure Copper", "Tin-Plated Finish", "Heavy Duty Barrel"],
-        range: "Lugs"
-      },
-      {
-        name: "Gland",
-        img: "./assets/products/cable_termination/gland.png",
-        desc: "Nylon and brass cable glands providing mechanical strain relief and IP68 dust-waterproof seals for panels.",
-        specs: ["IP68 Waterproof", "Strain Relief", "Brass/Nylon Options"],
-        range: "Gland"
-      },
-      {
-        name: "Ferrule",
-        img: "./assets/products/cable_termination/ferrule.jpg",
-        desc: "Tubular copper ferrule sleeves for reliable electrical splicing and crimping connections.",
-        specs: ["Tinned Copper", "Solid Crimping joints", "BS Standard"],
-        range: "Ferrule"
-      },
-      {
-        name: "Insulated Terminals",
-        img: "./assets/products/cable_termination/insulated_terminals.jpg",
-        desc: "Color-coded insulated pin, ring, and spade terminal connectors, preventing short circuits and flashovers.",
-        specs: ["Color Coded Sizes", "PVC Insulated sleeves", "High Conductivity Brass"],
-        range: "Insulated Terminals"
-      }
-    ]
-  },
-  {
-    id: "industrial_plug_socket",
-    name: "Industrial Plug & Socket",
-    icon: `<svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>`,
-    items: [
-      {
-        name: "Industrial Plug & Socket",
-        img: "./assets/products/industrial_plug_socket/industrial_plug_socket.png",
-        desc: "Heavy-duty 3-pin and 5-pin industrial plug and connector sets, featuring secure lock-ring seals and splashproof shells.",
-        specs: ["IP67 Rated", "High Load 16A-63A", "Impact Protected Case"],
-        range: "Industrial Plug & Socket"
-      }
-    ]
-  },
-  {
-    id: "ventilation",
-    name: "Air & Ventilation",
-    icon: `<svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>`,
+    id: "fans",
+    name: "Fans",
     items: [
       {
         name: "24\" Industrial Stand Fan",
@@ -338,23 +154,208 @@ const PRODUCTS_DATA = [
     ]
   },
   {
-    id: "insect_killer",
-    name: "Insect Killer",
-    icon: `<svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/></svg>`,
+    id: "pipes",
+    name: "Pipes & Fittings",
     items: [
       {
-        name: "Elite Series",
+        name: "PVC Self-Adhesive Trunking",
+        img: "./assets/products/cable_management/trunking.jpg",
+        desc: "Clean white PVC self-adhesive trunking channels, hiding surface-run cables with a tidy aesthetic.",
+        specs: ["Self-Adhesive option", "Strong Snap Lid", "Fire Resistant PVC"],
+        range: "Trunking"
+      },
+      {
+        name: "GI Conduits (Galvanized Iron)",
+        img: "./assets/product_pipes_new.png",
+        desc: "Galvanized Iron conduit pipes providing heavy-duty mechanical shielding for high-risk industrial environments.",
+        specs: ["Heavy Zinc Coating", "Class 4 Corrosion protection", "Threaded Joints"],
+        range: "GI Conduits"
+      },
+      {
+        name: "PVC Conduits (Rigid)",
+        img: "./assets/product_pipes_new.png",
+        desc: "High-impact rigid PVC conduit pipes for safe electrical cabling routing inside concrete walls.",
+        specs: ["High Impact Strength", "Easy Cold Bending", "Self-Extinguishing"],
+        range: "PVC Conduits"
+      },
+      {
+        name: "Flexible Corrugated Conduits",
+        img: "./assets/product_pipes_new.png",
+        desc: "Corrugated flexible plastic shielding, perfect for routing cables through tight bends and joints.",
+        specs: ["High Flex Life", "Crush Resistant", "IP54 Compatible"],
+        range: "Flexible Conduits"
+      }
+    ]
+  },
+  {
+    id: "plugs",
+    name: "Plugs & Sockets",
+    items: [
+      {
+        name: "Heavy-Duty Industrial Plug & Socket Set",
+        img: "./assets/products/industrial_plug_socket/industrial_plug_socket.png",
+        desc: "Heavy-duty 3-pin and 5-pin industrial plug and connector sets, featuring secure lock-ring seals and splashproof shells.",
+        specs: ["IP67 Rated", "High Load 16A-63A", "Impact Protected Case"],
+        range: "Industrial Plug & Socket"
+      },
+      {
+        name: "IP66 Weatherproof Socket Enclosure",
+        img: "./assets/products/weatherproof/ip66_switch_2g.jpg",
+        desc: "Full weatherproof switches and socket boxes designed to withstand heavy rainfall, jet spray, and harsh climates.",
+        specs: ["IP66 Certified", "Corrosion Resistant", "Impact Proof"],
+        range: "IP66"
+      },
+      {
+        name: "Outdoor Rotary Isolator",
+        img: "./assets/products/weatherproof/isolator.jpg",
+        desc: "Outdoor rotary isolator switches with IP66 lockable handle, ensuring safe disconnection of air conditioning or heavy machinery.",
+        specs: ["IP66 Weatherproof", "Lockable Handle", "35A - 63A Ratings"],
+        range: "Isolator"
+      },
+      {
+        name: "IP55 Semi-Weatherproof Socket Cover",
+        img: "./assets/products/weatherproof/ip55_cover.jpg",
+        desc: "Semi-weatherproof socket covers and enclosures with rubber gasket seals, ideal for balconies, lawns, and utility zones.",
+        specs: ["IP55 Rated", "Transparent Lid", "Dust Protection"],
+        range: "IP55"
+      },
+      {
+        name: "UV Stabilized Terminal Enclosure Box",
+        img: "./assets/products/weatherproof/enclosure_box.jpg",
+        desc: "Durable terminal enclosure boxes with knockouts, perfect for outdoor connection joints and junction housings.",
+        specs: ["UV Stabilized", "Impact Resistant", "Gasket Sealed"],
+        range: "Enclosure Box"
+      }
+    ]
+  },
+  {
+    id: "cables",
+    name: "Cables & Accessories",
+    items: [
+      {
+        name: "Premium Multicore Copper Cable",
+        img: "./assets/product_cables_new.png",
+        desc: "High conductivity copper wire core with heat resistant flame-retardant PVC outer sleeve.",
+        specs: ["99.9% Pure Copper Core", "Flame Retardant PVC", "Low Smoke Halogen Free Option"],
+        range: "Copper Cables"
+      },
+      {
+        name: "Pure Copper Crimping Cable Lugs",
+        img: "./assets/products/cable_termination/lug.jpg",
+        desc: "Heavy-duty pure copper crimping cable lugs, guaranteeing solid electrical conductivity for power cables.",
+        specs: ["99.9% Pure Copper", "Tin-Plated Finish", "Heavy Duty Barrel"],
+        range: "Lugs"
+      },
+      {
+        name: "Nylon and Brass Cable Glands",
+        img: "./assets/products/cable_termination/gland.png",
+        desc: "Nylon and brass cable glands providing mechanical strain relief and IP68 dust-waterproof seals for panels.",
+        specs: ["IP68 Waterproof", "Strain Relief", "Brass/Nylon Options"],
+        range: "Gland"
+      },
+      {
+        name: "Tubular Copper Ferrules",
+        img: "./assets/products/cable_termination/ferrule.jpg",
+        desc: "Tubular copper ferrule sleeves for reliable electrical splicing and crimping connections.",
+        specs: ["Tinned Copper", "Solid Crimping joints", "BS Standard"],
+        range: "Ferrule"
+      },
+      {
+        name: "Insulated Terminal Pin & Ring Connectors",
+        img: "./assets/products/cable_termination/insulated_terminals.jpg",
+        desc: "Color-coded insulated pin, ring, and spade terminal connectors, preventing short circuits and flashovers.",
+        specs: ["Color Coded Sizes", "PVC Insulated sleeves", "High Conductivity Brass"],
+        range: "Insulated Terminals"
+      },
+      {
+        name: "High-Grade 13A Plug Top",
+        img: "./assets/products/wiring_accessories/plug_top.jpg",
+        desc: "High-grade 13A plug tops fitted with standard safety fuses, ideal for safe household appliance cabling.",
+        specs: ["13A Fused", "BS1363 Compliant", "Ergonomic Grip"],
+        range: "Plug Top"
+      },
+      {
+        name: "Universal Multi Adaptor",
+        img: "./assets/products/wiring_accessories/multi_adaptor.jpg",
+        desc: "Universal multi-plug adaptors allowing multiple appliances to run from a single outlet safely.",
+        specs: ["Shatterproof Casing", "Safety Shutters", "Compact Design"],
+        range: "Multi Adaptor"
+      },
+      {
+        name: "Ceiling Rose Mount Base",
+        img: "./assets/products/wiring_accessories/ceiling_rose.png",
+        desc: "Elegant round white ceiling mount base plate for standard pendant lights and electrical wiring cover.",
+        specs: ["High Polycarbonate", "3-Terminal Standard", "Clean Finish"],
+        range: "Ceiling Rose"
+      },
+      {
+        name: "Batten Lamp Holder",
+        img: "./assets/products/wiring_accessories/lamp_holder.png",
+        desc: "Durable brass-lined plastic batten lamp holders, providing perfect electrical contact and thermal insulation.",
+        specs: ["Brass Contacts", "B22/E27 Base compatibility", "High Temperature Rating"],
+        range: "Lamp Holder"
+      },
+      {
+        name: "Surge Protected Extension Socket",
+        img: "./assets/products/wiring_accessories/extension_socket.jpg",
+        desc: "Premium extension cord reels and boards with surge protectors and illuminated power indicators.",
+        specs: ["Surge Protection", "Individually Switched", "Overload Protection"],
+        range: "Extension Socket"
+      },
+      {
+        name: "Heavy Duty Cable Reel",
+        img: "./assets/products/wiring_accessories/cable_reel.jpg",
+        desc: "Heavy-duty outdoor extension cable reels on a metal stand with integrated thermal cut-out switch.",
+        specs: ["Heavy Duty Cable", "Metal Frame stand", "Thermal Trip Switch"],
+        range: "Cable Reel"
+      },
+      {
+        name: "Compact Cassette Reel",
+        img: "./assets/products/wiring_accessories/cassette_reel.jpg",
+        desc: "Compact cassette-style extension cords, perfect for residential use and easy cord management.",
+        specs: ["Compact cassette", "Tangle-free storage", "Safety shutters"],
+        range: "Cassette Reel"
+      },
+      {
+        name: "Elite UV Insect Killer",
         img: "./assets/products/insect_killer/elite_series.jpg",
         desc: "Premium anodized aluminium insect exterminator featuring twin high-output UV lamps and a slide-out waste tray.",
         specs: ["Anodized Aluminium shell", "High Voltage killing grid", "Sleek Slim Design"],
         range: "Elite Series"
       },
       {
-        name: "Prime Series",
+        name: "Prime Mesh Insect Killer",
         img: "./assets/products/insect_killer/prime_series.jpg",
         desc: "Heavy-duty steel mesh insect killer designed for continuous operation in shops, bakeries, and residences.",
         specs: ["Powder-coated steel mesh", "Energy Efficient UV Lamps", "Wall Mount or Hanging"],
         range: "Prime Series"
+      }
+    ]
+  },
+  {
+    id: "solar",
+    name: "Solar Solutions",
+    items: [
+      {
+        name: "Monocrystalline Solar Panel",
+        img: "./assets/product_solar_new.png",
+        desc: "High-efficiency monocrystalline solar panels with tempered glass coating and anodized aluminium frames.",
+        specs: ["22.4% Cell Efficiency", "Anti-Reflective Coating", "IP68 Junction Box"],
+        range: "Solar Panels"
+      },
+      {
+        name: "Smart Solar Grid Inverter",
+        img: "./assets/product_solar_new.png",
+        desc: "Smart on-grid solar inverter with dual MPPT tracking and real-time WiFi cloud monitoring systems.",
+        specs: ["Dual MPPT Trackers", "98.6% Peak Efficiency", "Smart App Monitoring"],
+        range: "Inverters"
+      },
+      {
+        name: "Solar LiFePO4 Battery Storage",
+        img: "./assets/product_solar_new.png",
+        desc: "Lithium Iron Phosphate energy storage battery pack for reliable residential and commercial backup storage.",
+        specs: ["LiFePO4 Chemistry", "5.12kWh Unit Capacity", "6000+ Long Cycle Life"],
+        range: "Battery Storage"
       }
     ]
   }
@@ -376,6 +377,8 @@ function initHeroSlider() {
   let currentSlide = 0;
   let slideInterval;
 
+  if (slides.length === 0) return;
+
   const showSlide = (index) => {
     if (index >= slides.length) index = 0;
     if (index < 0) index = slides.length - 1;
@@ -384,7 +387,7 @@ function initHeroSlider() {
     dots.forEach(dot => dot.classList.remove('active'));
 
     slides[index].classList.add('active');
-    dots[index].classList.add('active');
+    if (dots[index]) dots[index].classList.add('active');
     currentSlide = index;
   };
 
@@ -409,57 +412,53 @@ function initHeroSlider() {
 }
 
 /**
- * Interactive Product Catalog Explorer Logic
+ * Interactive Product Catalog Modal Logic
  */
 function initProductExplorer() {
-  const categoryListContainer = document.getElementById('catalog-category-list');
-  const productsGrid = document.getElementById('catalog-products-grid');
-  const searchInput = document.getElementById('catalog-search-input');
-  const rangeFiltersContainer = document.getElementById('catalog-range-filters-container');
-  const emptyState = document.getElementById('catalog-empty-state');
-  const headerCategories = document.querySelectorAll('.categories-bar .category-item');
+  const modal = document.getElementById('product-modal');
+  const modalCloseBtn = document.getElementById('modal-close-btn');
+  const modalTitle = document.getElementById('modal-category-title');
+  const modalGrid = document.getElementById('modal-products-grid');
+  const viewCollectionLinks = document.querySelectorAll('.view-collection-link');
+  const headerCategories = document.querySelectorAll('.nav-links .category-item');
 
-  if (!categoryListContainer || !productsGrid) return;
+  if (!modal || !modalGrid) return;
 
-  let activeCategoryId = PRODUCTS_DATA[0].id;
-  let activeRangeFilter = 'all';
-  let searchQuery = '';
+  // Open modal and show products for selected category
+  const openCategoryModal = (categoryId) => {
+    const categoryData = PRODUCTS_DATA.find(cat => cat.id === categoryId);
+    if (!categoryData) return;
 
-  // Render categories in sidebar
-  const renderCategories = () => {
-    categoryListContainer.innerHTML = '';
-    PRODUCTS_DATA.forEach(cat => {
-      const button = document.createElement('button');
-      button.className = `category-btn ${cat.id === activeCategoryId ? 'active' : ''}`;
-      button.setAttribute('data-id', cat.id);
-      button.innerHTML = `
-        ${cat.icon}
-        <span>${cat.name}</span>
+    modalTitle.textContent = categoryData.name;
+    modalGrid.innerHTML = '';
+
+    categoryData.items.forEach(item => {
+      const card = document.createElement('div');
+      card.className = 'modal-product-card';
+
+      const specsList = item.specs.map(spec => `<li>${spec}</li>`).join('');
+
+      card.innerHTML = `
+        <div class="modal-card-img-box">
+          <img src="${item.img}" alt="${item.name}" loading="lazy">
+          <span class="range-badge">${item.range}</span>
+        </div>
+        <div class="modal-card-body">
+          <h4 class="modal-card-title">${item.name}</h4>
+          <p class="modal-card-desc">${item.desc}</p>
+          <ul class="modal-card-specs">
+            ${specsList}
+          </ul>
+          <button class="modal-inquiry-btn" data-category="${categoryId}" data-product="${item.name}">
+            Quick Inquiry
+          </button>
+        </div>
       `;
-      button.addEventListener('click', () => {
-        searchQuery = '';
-        searchInput.value = '';
-        setActiveCategory(cat.id);
-      });
-      categoryListContainer.appendChild(button);
-    });
-  };
 
-  // Set active category and sync header navigation
-  const setActiveCategory = (categoryId) => {
-    activeCategoryId = categoryId;
-    activeRangeFilter = 'all';
-    
-    // Update sidebar buttons active state
-    document.querySelectorAll('.category-btn').forEach(btn => {
-      if (btn.getAttribute('data-id') === categoryId) {
-        btn.classList.add('active');
-      } else {
-        btn.classList.remove('active');
-      }
+      modalGrid.appendChild(card);
     });
 
-    // Update header navigation active state
+    // Sync header active link
     headerCategories.forEach(item => {
       const itemCat = item.getAttribute('data-category');
       if (itemCat === categoryId) {
@@ -469,147 +468,97 @@ function initProductExplorer() {
       }
     });
 
-    renderRangeFilters();
-    renderProducts();
-  };
+    // Show modal
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
 
-  // Render range filters based on active category
-  const renderRangeFilters = () => {
-    rangeFiltersContainer.innerHTML = '';
-    
-    const activeCategory = PRODUCTS_DATA.find(cat => cat.id === activeCategoryId);
-    if (!activeCategory) return;
-
-    // Get unique ranges
-    const ranges = ['all', ...new Set(activeCategory.items.map(item => item.range))];
-
-    ranges.forEach(range => {
-      const chip = document.createElement('button');
-      chip.className = `filter-chip ${range === activeRangeFilter ? 'active' : ''}`;
-      chip.textContent = range === 'all' ? 'All Ranges' : range;
-      chip.addEventListener('click', () => {
-        activeRangeFilter = range;
-        document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
-        chip.classList.add('active');
-        renderProducts();
+    // Wire up quick inquiry button inside modal
+    modalGrid.querySelectorAll('.modal-inquiry-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const cat = e.currentTarget.getAttribute('data-category');
+        const prod = e.currentTarget.getAttribute('data-product');
+        closeModal();
+        triggerInquiry(cat, prod);
       });
-      rangeFiltersContainer.appendChild(chip);
     });
   };
 
-  // Render product cards based on active category, range filter, and search query
-  const renderProducts = () => {
-    productsGrid.innerHTML = '';
-    
-    const titleEl = document.getElementById('catalog-active-category-title');
-    if (titleEl) {
-      if (searchQuery.trim() !== '') {
-        titleEl.textContent = `Search Results for "${searchQuery}"`;
-      } else {
-        const activeCategory = PRODUCTS_DATA.find(cat => cat.id === activeCategoryId);
-        titleEl.textContent = activeCategory ? activeCategory.name : 'Products';
-      }
-    }
-    
-    let itemsToRender = [];
-
-    if (searchQuery.trim() !== '') {
-      // Search across ALL categories
-      PRODUCTS_DATA.forEach(cat => {
-        cat.items.forEach(item => {
-          const nameMatch = item.name.toLowerCase().includes(searchQuery.toLowerCase());
-          const descMatch = item.desc.toLowerCase().includes(searchQuery.toLowerCase());
-          const rangeMatch = item.range.toLowerCase().includes(searchQuery.toLowerCase());
-          const catMatch = cat.name.toLowerCase().includes(searchQuery.toLowerCase());
-          if (nameMatch || descMatch || rangeMatch || catMatch) {
-            itemsToRender.push({
-              ...item,
-              categoryId: cat.id,
-              categoryName: cat.name
-            });
-          }
-        });
-      });
-      
-      // Hide range filters in search mode
-      rangeFiltersContainer.style.opacity = '0.3';
-      rangeFiltersContainer.style.pointerEvents = 'none';
-    } else {
-      // Normal category display
-      rangeFiltersContainer.style.opacity = '1';
-      rangeFiltersContainer.style.pointerEvents = 'all';
-
-      const activeCategory = PRODUCTS_DATA.find(cat => cat.id === activeCategoryId);
-      if (activeCategory) {
-        itemsToRender = activeCategory.items.filter(item => {
-          return activeRangeFilter === 'all' || item.range === activeRangeFilter;
-        }).map(item => ({
-          ...item,
-          categoryId: activeCategory.id,
-          categoryName: activeCategory.name
-        }));
-      }
-    }
-
-    if (itemsToRender.length === 0) {
-      emptyState.style.display = 'flex';
-      productsGrid.style.display = 'none';
-    } else {
-      emptyState.style.display = 'none';
-      productsGrid.style.display = 'flex';
-
-      itemsToRender.forEach((item, index) => {
-        const card = document.createElement('div');
-        card.className = 'catalog-card animate-card';
-        card.style.animationDelay = `${index * 40}ms`;
-        
-        const specsList = item.specs.map(spec => `<li><span class="bullet">•</span> ${spec}</li>`).join('');
-
-        card.innerHTML = `
-          <div class="card-image-box">
-            <img src="${item.img}" alt="${item.name}" loading="lazy" class="card-img">
-            <span class="range-badge">${item.range}</span>
-          </div>
-          <div class="card-body">
-            <span class="card-cat-label">${item.categoryName}</span>
-            <h4 class="card-title">${item.name}</h4>
-            <p class="card-desc">${item.desc}</p>
-            <ul class="card-specs">
-              ${specsList}
-            </ul>
-            <button class="card-inquiry-btn" data-category="${item.categoryId}" data-product="${item.name}">
-              Quick Inquiry <span class="arrow">→</span>
-            </button>
-          </div>
-        `;
-
-        // Inquiry button click listener
-        card.querySelector('.card-inquiry-btn').addEventListener('click', (e) => {
-          const cat = e.currentTarget.getAttribute('data-category');
-          const prod = e.currentTarget.getAttribute('data-product');
-          triggerInquiry(cat, prod);
-        });
-
-        productsGrid.appendChild(card);
-      });
-    }
+  // Close modal
+  const closeModal = () => {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
   };
 
+  if (modalCloseBtn) {
+    modalCloseBtn.addEventListener('click', closeModal);
+  }
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
+    }
+  });
+
+  // Category cards view collection click
+  viewCollectionLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const categoryId = link.getAttribute('data-category');
+      openCategoryModal(categoryId);
+    });
+  });
+
+  // Also support clicking anywhere on the category card itself
+  document.querySelectorAll('.category-card').forEach(card => {
+    card.addEventListener('click', (e) => {
+      // Don't trigger if they clicked directly on the anchor, since that handles it
+      if (e.target.tagName !== 'A' && !e.target.closest('a')) {
+        const categoryId = card.getAttribute('data-category');
+        openCategoryModal(categoryId);
+      }
+    });
+  });
+
+  // Sync header links
+  headerCategories.forEach(item => {
+    item.addEventListener('click', (e) => {
+      e.preventDefault();
+      const categoryId = item.getAttribute('data-category');
+      
+      // Update header indicators
+      headerCategories.forEach(el => el.classList.remove('active'));
+      item.classList.add('active');
+
+      // Scroll to products and open modal
+      const prodSec = document.getElementById('products');
+      if (prodSec) {
+        prodSec.scrollIntoView({ behavior: 'smooth' });
+      }
+      setTimeout(() => {
+        openCategoryModal(categoryId);
+      }, 500);
+    });
+  });
+
+  // Pre-fill Quote Form logic
   const triggerInquiry = (categoryVal, productVal) => {
     const quoteFormSelect = document.getElementById('client-needs');
     const quoteFormTextarea = document.getElementById('client-message');
     const quoteSection = document.getElementById('quote');
 
     if (quoteFormSelect) {
-      // Map catalog category to form select value
-      // Option values: switches, fans, pipes, plugs, glands, solderless
       let selectVal = 'switches';
-      if (categoryVal === 'ventilation') selectVal = 'fans';
-      else if (categoryVal === 'cable_management') selectVal = 'pipes';
-      else if (categoryVal === 'weatherproof') selectVal = 'plugs';
-      else if (categoryVal === 'wiring_accessories') selectVal = 'plugs';
-      else if (categoryVal === 'cable_termination') selectVal = 'glands';
-      else if (categoryVal === 'industrial_plug_socket') selectVal = 'plugs';
+      if (categoryVal === 'fans') selectVal = 'fans';
+      else if (categoryVal === 'pipes') selectVal = 'pipes';
+      else if (categoryVal === 'plugs') selectVal = 'plugs';
+      else if (categoryVal === 'cables') selectVal = 'glands';
+      else if (categoryVal === 'solar') selectVal = 'switches'; // Fallback to switches or we can prefill text
 
       quoteFormSelect.value = selectVal;
     }
@@ -620,7 +569,6 @@ function initProductExplorer() {
 
     if (quoteSection) {
       quoteSection.scrollIntoView({ behavior: 'smooth' });
-      // Pulse animation on the form
       const quoteBox = quoteSection.querySelector('.quote-box');
       if (quoteBox) {
         quoteBox.classList.add('pulse-highlight');
@@ -628,45 +576,6 @@ function initProductExplorer() {
       }
     }
   };
-
-  // Connect Top Header navigation categories click
-  headerCategories.forEach(item => {
-    item.addEventListener('click', (e) => {
-      e.preventDefault();
-      const cat = item.getAttribute('data-category');
-      searchQuery = '';
-      searchInput.value = '';
-      setActiveCategory(cat);
-      
-      const prodSec = document.getElementById('products');
-      if (prodSec) {
-        prodSec.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  });
-
-  // Search input change handler
-  searchInput.addEventListener('input', (e) => {
-    searchQuery = e.target.value;
-    renderProducts();
-  });
-
-  // Wire up horizontal scrolling navigation buttons
-  const scrollPrevBtn = document.getElementById('catalog-scroll-prev');
-  const scrollNextBtn = document.getElementById('catalog-scroll-next');
-  if (scrollPrevBtn && scrollNextBtn) {
-    scrollPrevBtn.addEventListener('click', () => {
-      productsGrid.scrollBy({ left: -344, behavior: 'smooth' }); // card width 320 + gap 24
-    });
-    scrollNextBtn.addEventListener('click', () => {
-      productsGrid.scrollBy({ left: 344, behavior: 'smooth' });
-    });
-  }
-
-  // Initialize
-  renderCategories();
-  renderRangeFilters();
-  renderProducts();
 }
 
 /**
@@ -694,8 +603,6 @@ function initFeaturedSlider() {
   const track = document.querySelector('.featured-slides-track');
   const slides = document.querySelectorAll('.featured-slide');
   const dots = document.querySelectorAll('.featured-dots .dot');
-  const prevBtn = document.querySelector('.featured-slide-nav.prev');
-  const nextBtn = document.querySelector('.featured-slide-nav.next');
 
   if (!track || slides.length === 0) return;
 
@@ -724,20 +631,6 @@ function initFeaturedSlider() {
       goToSlide(currentSlide + 1);
     }, 4000);
   };
-
-  if (prevBtn) {
-    prevBtn.addEventListener('click', () => {
-      goToSlide(currentSlide - 1);
-      startAutoSlide();
-    });
-  }
-
-  if (nextBtn) {
-    nextBtn.addEventListener('click', () => {
-      goToSlide(currentSlide + 1);
-      startAutoSlide();
-    });
-  }
 
   dots.forEach((dot, idx) => {
     dot.addEventListener('click', () => {

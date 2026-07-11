@@ -13,12 +13,13 @@
 </head>
 <body>
 
-  <!-- Top Utilities & Navigation Header -->
+  <!-- Top Navigation Header -->
   <header class="main-header">
     <div class="header-container">
       <div class="logo-area">
         <a href="#" class="logo flex-logo">
-          <svg class="logo-bolt" viewBox="0 0 24 24" fill="var(--primary-red)">
+          <!-- Red Lightning Bolt SVG -->
+          <svg class="logo-bolt" viewBox="0 0 24 24" fill="#FF1A1A">
             <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
           </svg>
           <div class="logo-text-group">
@@ -28,94 +29,62 @@
         </a>
       </div>
       <nav class="nav-links">
-        <a href="#" class="nav-link active">Home</a>
-        <span class="nav-divider">|</span>
-        <a href="#" class="nav-link">Company</a>
-        <span class="nav-divider">|</span>
-        <a href="#" class="nav-link">Blog</a>
-        <span class="nav-divider">|</span>
-        <a href="#" class="nav-link">Contact us</a>
+        <a href="#" class="category-item active" data-category="switches">
+          <!-- switches circle toggle/knob-like icon -->
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="6"></circle>
+            <path d="M12 2v4M12 18v4"></path>
+          </svg>
+          <span>Switches</span>
+        </a>
+        <a href="#" class="category-item" data-category="fans">
+          <!-- fan-like icon -->
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+            <path d="M12 9c0-3.5 2.5-6 2.5-6S17 5.5 17 9"></path>
+            <path d="M12 15c0 3.5-2.5 6-2.5 6S7 18.5 7 15"></path>
+            <path d="M15 12c3.5 0 6 2.5 6 2.5S18.5 17 15 12"></path>
+            <path d="M9 12c-3.5 0-6-2.5-6-2.5S5.5 7 9 12"></path>
+          </svg>
+          <span>Fans</span>
+        </a>
+        <a href="#" class="category-item" data-category="pipes">
+          <!-- pipe-like icon -->
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="4" width="6" height="16" rx="1"></rect>
+            <path d="M10 12h8M10 8h8M10 16h8"></path>
+          </svg>
+          <span>Pipes & Fittings</span>
+        </a>
+        <a href="#" class="category-item" data-category="plugs">
+          <!-- plug socket icon -->
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="8" width="18" height="12" rx="2"></rect>
+            <path d="M12 5v3M8 12v3M16 12v3"></path>
+          </svg>
+          <span>Plugs & Sockets</span>
+        </a>
+        <a href="#" class="category-item" data-category="cables">
+          <!-- coiled cable icon -->
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 18H18A3 3 0 0 0 18 12H6A3 3 0 0 1 6 6H18"></path>
+          </svg>
+          <span>Cables & Accessories</span>
+        </a>
+        <a href="#" class="category-item" data-category="solar">
+          <!-- sun/solar panel icon -->
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M8 12h8M12 8v8M9 9l6 6M15 9l-6 6"></path>
+          </svg>
+          <span>Solar Solutions</span>
+        </a>
       </nav>
       <div class="contact-actions">
-        <div class="contact-item">
-          <!-- Phone Icon SVG -->
-          <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-          </svg>
-          <a href="tel:+97142690699" class="contact-text">+971 4 269 0699</a>
-        </div>
-        <div class="contact-item">
-          <!-- Email Icon SVG -->
-          <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-            <polyline points="22,6 12,13 2,6"/>
-          </svg>
-          <a href="mailto:info@blit.com" class="contact-text">info@blit.com</a>
-        </div>
         <a href="#quote" class="quote-btn">Get a Quote <span class="arrow">→</span></a>
       </div>
     </div>
   </header>
-
-  <!-- Categories Sub-Header Bar (Sticky) -->
-  <nav class="categories-bar">
-    <div class="categories-container">
-      <button class="category-item active" data-category="switches">
-        <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <rect x="5" y="3" width="14" height="18" rx="2" ry="2"/>
-          <line x1="12" y1="8" x2="12" y2="16"/>
-        </svg>
-        <span>Switches & Sockets</span>
-      </button>
-      <button class="category-item" data-category="weatherproof">
-        <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-        </svg>
-        <span>Weatherproof</span>
-      </button>
-      <button class="category-item" data-category="wiring_accessories">
-        <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
-          <line x1="9" y1="7" x2="9" y2="10"/>
-          <line x1="15" y1="7" x2="15" y2="10"/>
-        </svg>
-        <span>Wiring Accessories</span>
-      </button>
-      <button class="category-item" data-category="cable_management">
-        <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M6 15V9a4 4 0 0 1 4-4h5"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/>
-        </svg>
-        <span>Cable Management</span>
-      </button>
-      <button class="category-item" data-category="cable_termination">
-        <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-        </svg>
-        <span>Cable Termination</span>
-      </button>
-      <button class="category-item" data-category="industrial_plug_socket">
-        <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-        </svg>
-        <span>Industrial Plug</span>
-      </button>
-      <button class="category-item" data-category="ventilation">
-        <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="10"/>
-          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-        </svg>
-        <span>Ventilation</span>
-      </button>
-      <button class="category-item" data-category="insect_killer">
-        <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="12" cy="12" r="5"/>
-          <line x1="12" y1="1" x2="12" y2="3"/>
-          <line x1="12" y1="21" x2="12" y2="23"/>
-        </svg>
-        <span>Insect Killer</span>
-      </button>
-    </div>
-  </nav>
 
   <!-- Hero Section with Slider -->
   <section class="hero-section">
@@ -514,65 +483,114 @@
         </div>
       </div>
 
-      <!-- Lower Section: Interactive Product Catalog Explorer -->
-      <div class="catalog-explorer-container">
-        <!-- Top Search and Filter Bar -->
-        <div class="catalog-search-bar-row">
-          <div class="catalog-search-wrapper">
-            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="11" cy="11" r="8"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-            <input type="text" id="catalog-search-input" placeholder="Search premium electrical hardware (e.g. wall fan, CW range)..." aria-label="Search products">
-          </div>
-          <div class="catalog-range-filters" id="catalog-range-filters-container">
-            <!-- Dynamically populated range filter buttons -->
+      <!-- Lower Section: 6 Product Categories Grid matching Voltix mockup -->
+      <div class="category-cards-grid">
+        <!-- Card 1: Switches -->
+        <div class="category-card" data-category="switches">
+          <div class="card-bg-img" style="background-image: url('./assets/product_switches_new.png');"></div>
+          <div class="card-gradient-overlay"></div>
+          <div class="card-content">
+            <div class="card-icon-container">
+              <svg class="card-category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="6"></circle>
+                <path d="M12 2v4M12 18v4"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">Switches</h3>
+            <p class="card-subtitle">Stylish. Safe. Smart.</p>
+            <a href="#" class="view-collection-link" data-category="switches">View Collection <span class="arrow">→</span></a>
           </div>
         </div>
 
-        <div class="catalog-main-layout">
-          <!-- Left Navigation Sidebar for Categories -->
-          <aside class="catalog-sidebar">
-            <h3 class="sidebar-title">Categories</h3>
-            <div class="catalog-category-list" id="catalog-category-list">
-              <!-- Dynamically populated category buttons -->
-            </div>
-          </aside>
-
-          <!-- Right Content Grid for Subcategories -->
-          <main class="catalog-content-area">
-            <div class="catalog-header-row">
-              <h4 id="catalog-active-category-title" class="catalog-active-category-title">Switches & Sockets</h4>
-              <div class="catalog-scroll-nav" id="catalog-scroll-nav">
-                <button class="catalog-scroll-btn prev" id="catalog-scroll-prev" aria-label="Scroll left">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="15 18 9 12 15 6"></polyline>
-                  </svg>
-                </button>
-                <button class="catalog-scroll-btn next" id="catalog-scroll-next" aria-label="Scroll right">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="9 18 15 12 9 6"></polyline>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div class="catalog-products-grid" id="catalog-products-grid">
-              <!-- Dynamically populated cards -->
-            </div>
-            <!-- Empty state illustration if search returns nothing -->
-            <div class="catalog-empty-state" id="catalog-empty-state" style="display: none;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="empty-icon">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="8" y1="12" x2="16" y2="12"></line>
+        <!-- Card 2: Fans -->
+        <div class="category-card" data-category="fans">
+          <div class="card-bg-img" style="background-image: url('./assets/product_fan_new.png');"></div>
+          <div class="card-gradient-overlay"></div>
+          <div class="card-content">
+            <div class="card-icon-container">
+              <svg class="card-category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                <path d="M12 9c0-3.5 2.5-6 2.5-6S17 5.5 17 9"></path>
+                <path d="M12 15c0 3.5-2.5 6-2.5 6S7 18.5 7 15"></path>
+                <path d="M15 12c3.5 0 6 2.5 6 2.5S18.5 17 15 12"></path>
+                <path d="M9 12c-3.5 0-6-2.5-6-2.5S5.5 7 9 12"></path>
               </svg>
-              <h4>No electrical hardware matches your search</h4>
-              <p>Try searching for a different keyword or browse through our categories.</p>
             </div>
-          </main>
+            <h3 class="card-title">Fans</h3>
+            <p class="card-subtitle">Powerful performance. Elegant design.</p>
+            <a href="#" class="view-collection-link" data-category="fans">View Collection <span class="arrow">→</span></a>
+          </div>
+        </div>
+
+        <!-- Card 3: Pipes & Fittings -->
+        <div class="category-card" data-category="pipes">
+          <div class="card-bg-img" style="background-image: url('./assets/product_pipes_new.png');"></div>
+          <div class="card-gradient-overlay"></div>
+          <div class="card-content">
+            <div class="card-icon-container">
+              <svg class="card-category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="4" y="4" width="6" height="16" rx="1"></rect>
+                <path d="M10 12h8M10 8h8M10 16h8"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">Pipes & Fittings</h3>
+            <p class="card-subtitle">Durable. Reliable. Leak-proof.</p>
+            <a href="#" class="view-collection-link" data-category="pipes">View Collection <span class="arrow">→</span></a>
+          </div>
+        </div>
+
+        <!-- Card 4: Plugs & Sockets -->
+        <div class="category-card" data-category="plugs">
+          <div class="card-bg-img" style="background-image: url('./assets/product_sockets_new.png');"></div>
+          <div class="card-gradient-overlay"></div>
+          <div class="card-content">
+            <div class="card-icon-container">
+              <svg class="card-category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="8" width="18" height="12" rx="2"></rect>
+                <path d="M12 5v3M8 12v3M16 12v3"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">Plugs & Sockets</h3>
+            <p class="card-subtitle">Universal. Safe. High quality.</p>
+            <a href="#" class="view-collection-link" data-category="plugs">View Collection <span class="arrow">→</span></a>
+          </div>
+        </div>
+
+        <!-- Card 5: Cables & Accessories -->
+        <div class="category-card" data-category="cables">
+          <div class="card-bg-img" style="background-image: url('./assets/product_cables_new.png');"></div>
+          <div class="card-gradient-overlay"></div>
+          <div class="card-content">
+            <div class="card-icon-container">
+              <svg class="card-category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 18H18A3 3 0 0 0 18 12H6A3 3 0 0 1 6 6H18"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">Cables & Accessories</h3>
+            <p class="card-subtitle">High conductivity. Maximum safety.</p>
+            <a href="#" class="view-collection-link" data-category="cables">View Collection <span class="arrow">→</span></a>
+          </div>
+        </div>
+
+        <!-- Card 6: Solar Solutions -->
+        <div class="category-card" data-category="solar">
+          <div class="card-bg-img" style="background-image: url('./assets/product_solar_new.png');"></div>
+          <div class="card-gradient-overlay"></div>
+          <div class="card-content">
+            <div class="card-icon-container">
+              <svg class="card-category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 12h8M12 8v8M9 9l6 6M15 9l-6 6"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">Solar Solutions</h3>
+            <p class="card-subtitle">Clean energy. Bright future.</p>
+            <a href="#" class="view-collection-link" data-category="solar">View Collection <span class="arrow">→</span></a>
+          </div>
         </div>
       </div>
 
-      <!-- Trust Ribbon (Footer element) -->
+      <!-- Trust Ribbon (Footer element matching Voltix layout) -->
       <div class="products-trust-ribbon">
         <div class="ribbon-item">
           <div class="ribbon-icon">
@@ -623,6 +641,20 @@
           <div class="ribbon-info">
             <h5>Pan India Delivery</h5>
             <p>Fast and reliable delivery across India</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Premium Product Collection Modal Overlay -->
+      <div id="product-modal" class="product-modal-overlay">
+        <div class="product-modal-container">
+          <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
+          <div class="modal-header">
+            <h3 id="modal-category-title">Switches</h3>
+            <p class="modal-subtitle">Premium Electrical Hardware Collection</p>
+          </div>
+          <div class="modal-products-grid" id="modal-products-grid">
+            <!-- Dynamically populated product cards -->
           </div>
         </div>
       </div>
