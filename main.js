@@ -362,11 +362,62 @@ const PRODUCTS_DATA = [
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
+  initMobileMenu();
   initHeroSlider();
   initProductExplorer();
   initQuoteForm();
   initFeaturedSlider();
 });
+
+/**
+ * Mobile Menu Toggle Logic
+ */
+function initMobileMenu() {
+  const header = document.querySelector('.main-header');
+  const toggleBtn = document.querySelector('.mobile-menu-toggle');
+  
+  if (!toggleBtn || !header) return;
+  
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    header.classList.toggle('menu-open');
+    if (header.classList.contains('menu-open')) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  });
+
+  // Close menu when a navigation category link is clicked
+  const categoryItems = document.querySelectorAll('.nav-menu-wrapper .category-item');
+  categoryItems.forEach(item => {
+    item.addEventListener('click', () => {
+      header.classList.remove('menu-open');
+      document.body.style.overflow = '';
+    });
+  });
+
+  // Close menu when quote button is clicked
+  const quoteBtn = document.querySelector('.nav-menu-wrapper .quote-btn');
+  if (quoteBtn) {
+    quoteBtn.addEventListener('click', () => {
+      header.classList.remove('menu-open');
+      document.body.style.overflow = '';
+    });
+  }
+
+  // Close menu when clicking outside the menu wrapper
+  document.addEventListener('click', (e) => {
+    if (header.classList.contains('menu-open')) {
+      const menuWrapper = document.querySelector('.nav-menu-wrapper');
+      if (menuWrapper && !menuWrapper.contains(e.target) && !toggleBtn.contains(e.target)) {
+        header.classList.remove('menu-open');
+        document.body.style.overflow = '';
+      }
+    }
+  });
+}
+
 
 /**
  * Hero Slider Logic
