@@ -363,6 +363,7 @@ const PRODUCTS_DATA = [
 
 document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
+  initScrollReveal();
   initHeroSlider();
   initProductExplorer();
   initQuoteForm();
@@ -694,4 +695,26 @@ function initFeaturedSlider() {
   });
 
   startAutoSlide();
+}
+
+/**
+ * Scroll Reveal Animations using Intersection Observer
+ */
+function initScrollReveal() {
+  const revealElements = document.querySelectorAll('.reveal');
+  if (revealElements.length === 0) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        observer.unobserve(entry.target); // Animate once
+      }
+    });
+  }, {
+    threshold: 0.05,
+    rootMargin: '0px 0px -40px 0px' // triggers slightly before section enters the fold
+  });
+
+  revealElements.forEach(el => observer.observe(el));
 }
