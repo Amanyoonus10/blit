@@ -2415,6 +2415,29 @@ button {
   }
 }
 
+@media (max-width: 1100px) {
+  .exact-main-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .exact-solutions-section {
+    padding: 50px 0;
+  }
+  .exact-main-heading {
+    font-size: 32px;
+  }
+  .exact-right-col {
+    display: none; /* Hide decorative commercial arch image on mobile to save space */
+  }
+  .exact-pillars-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
 @media (max-width: 480px) {
   .guarantee-grid {
     grid-template-columns: 1fr;
@@ -2427,6 +2450,20 @@ button {
   }
   .hero-title {
     font-size: 28px;
+  }
+  .exact-main-heading {
+    font-size: 26px;
+  }
+  .exact-pillars-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .exact-card {
+    height: 210px;
+    border-radius: 24px;
+  }
+  .exact-card-overlay {
+    padding: 20px;
   }
 }
 

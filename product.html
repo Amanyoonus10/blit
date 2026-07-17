@@ -356,6 +356,24 @@
         grid-template-columns: 1fr;
       }
     }
+
+    @media (max-width: 480px) {
+      .product-title {
+        font-size: 26px;
+      }
+      .detail-main {
+        padding: 30px 0;
+      }
+      .image-container {
+        padding: 20px;
+      }
+      .action-btn {
+        padding: 14px 28px;
+        font-size: 15px;
+        width: 100%;
+        max-width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -442,7 +460,7 @@
         <div class="product-image-section">
           <div class="image-container" style="background-color: ${imgBg};">
             <span class="badge-range">${product.range}</span>
-            <img class="product-img" src="${product.img}" alt="${product.name}">
+            <img class="product-img" src="${product.img}" alt="${product.name}" decoding="async">
           </div>
         </div>
 

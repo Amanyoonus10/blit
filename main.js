@@ -77,9 +77,28 @@ function initHeroSlider() {
     slides.forEach(slide => slide.classList.remove('active'));
     dots.forEach(dot => dot.classList.remove('active'));
 
-    slides[index].classList.add('active');
+    const activeSlide = slides[index];
+    activeSlide.classList.add('active');
     if (dots[index]) dots[index].classList.add('active');
     currentSlide = index;
+
+    // Performance Optimization: Lazy load video if it hasn't been loaded yet
+    const video = activeSlide.querySelector('video');
+    if (video) {
+      const sources = video.querySelectorAll('source');
+      let needsLoad = false;
+      sources.forEach(source => {
+        const dataSrc = source.getAttribute('data-src');
+        if (dataSrc) {
+          source.setAttribute('src', dataSrc);
+          source.removeAttribute('data-src');
+          needsLoad = true;
+        }
+      });
+      if (needsLoad) {
+        video.load();
+      }
+    }
   };
 
   const nextSlide = () => {
