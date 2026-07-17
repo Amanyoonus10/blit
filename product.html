@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details | Blit Premium Electrical</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary-red: #FF1A1A;
+      --bg-dark: #050508;
+      --card-bg: #0C0C12;
+      --text-white: #FFFFFF;
+      --text-muted: rgba(255, 255, 255, 0.6);
+      --border-color: rgba(255, 255, 255, 0.08);
+      --font-family: 'Outfit', sans-serif;
+      --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-white);
+      font-family: var(--font-family);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+
+    /* Header Styling */
+    .detail-header {
+      border-bottom: 1px solid var(--border-color);
+      padding: 20px 0;
+      background: rgba(5, 5, 8, 0.8);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .header-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .back-btn {
+      color: var(--text-white);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: var(--transition-smooth);
+      border: 1px solid var(--border-color);
+      padding: 8px 16px;
+      border-radius: 30px;
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .back-btn:hover {
+      border-color: var(--primary-red);
+      background: rgba(255, 26, 26, 0.05);
+      color: var(--primary-red);
+      transform: translateX(-3px);
+    }
+
+    .brand-logo {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: var(--text-white);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .logo-bolt {
+      width: 18px;
+      height: 18px;
+      fill: var(--primary-red);
+      filter: drop-shadow(0 0 5px rgba(255, 26, 26, 0.8));
+    }
+
+    /* Content Layout */
+    .detail-main {
+      flex-grow: 1;
+      padding: 60px 0;
+    }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    /* Left side: Image display */
+    .product-image-section {
+      position: relative;
+    }
+
+    .image-container {
+      border-radius: 24px;
+      overflow: hidden;
+      aspect-ratio: 1 / 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 80px rgba(255, 26, 26, 0.05);
+      border: 1px solid var(--border-color);
+      position: relative;
+    }
+
+    .product-img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
+      transition: transform 0.5s ease;
+    }
+
+    .image-container:hover .product-img {
+      transform: scale(1.03);
+    }
+
+    .badge-range {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: var(--primary-red);
+      color: var(--text-white);
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 6px;
+      letter-spacing: 0.1em;
+      box-shadow: 0 5px 15px rgba(255, 26, 26, 0.3);
+    }
+
+    /* Right side: Info display */
+    .product-info-section {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .category-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--primary-red);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .product-title {
+      font-size: 42px;
+      font-weight: 800;
+      line-height: 1.2;
+      color: var(--text-white);
+    }
+
+    .product-desc {
+      font-size: 16px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .specs-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      border-left: 3px solid var(--primary-red);
+      padding-left: 10px;
+    }
+
+    .specs-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    .specs-list li {
+      font-size: 14px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .specs-list li::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background-color: var(--primary-red);
+      border-radius: 50%;
+      flex-shrink: 0;
+      box-shadow: 0 0 5px var(--primary-red);
+    }
+
+    .action-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--primary-red);
+      color: var(--text-white);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      padding: 16px 32px;
+      border-radius: 30px;
+      transition: var(--transition-smooth);
+      border: none;
+      cursor: pointer;
+      margin-top: 15px;
+      box-shadow: 0 10px 20px rgba(255, 26, 26, 0.2);
+      max-width: 250px;
+    }
+
+    .action-btn:hover {
+      background-color: #e00f0f;
+      transform: translateY(-2px);
+      box-shadow: 0 15px 25px rgba(255, 26, 26, 0.35);
+    }
+
+    /* Tabs & Specifications styling */
+    .product-details-tabs {
+      margin-top: 60px;
+      border-top: 1px solid var(--border-color);
+      padding-top: 50px;
+    }
+
+    .tabs-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 50px;
+    }
+
+    .section-subtitle {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--text-white);
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 10px;
+    }
+
+    .overview-text {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin-bottom: 25px;
+    }
+
+    .features-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .features-list li {
+      font-size: 14px;
+      color: var(--text-white);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .features-list li::before {
+      content: '✓';
+      color: var(--primary-red);
+      font-weight: 800;
+      font-size: 16px;
+    }
+
+    .tech-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .tech-table tr {
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .tech-table tr:last-child {
+      border-bottom: none;
+    }
+
+    .tech-table td {
+      padding: 14px 18px;
+    }
+
+    .tech-table td.label-cell {
+      font-weight: 600;
+      color: var(--text-white);
+      width: 40%;
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .tech-table td.value-cell {
+      color: var(--text-muted);
+    }
+
+    /* Footer styling */
+    .detail-footer {
+      border-top: 1px solid var(--border-color);
+      padding: 30px 0;
+      text-align: center;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.3);
+      margin-top: 50px;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+      .detail-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .product-title {
+        font-size: 32px;
+      }
+      .tabs-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .features-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="detail-header">
+    <div class="container header-nav">
+      <a href="./index.html" class="back-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        Back to Home
+      </a>
+      <a href="./index.html" class="brand-logo">
+        <svg class="logo-bolt" viewBox="0 0 24 24">
+          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+        </svg>
+        Blit
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Detail View -->
+  <main class="detail-main">
+    <div class="container">
+      <div class="detail-grid" id="detail-grid-container">
+        <!-- Will be dynamically populated via JS -->
+        <p style="text-align: center; color: var(--text-muted); grid-column: span 2;">Loading product information...</p>
+      </div>
+
+      <!-- Bottom Tab Layout: Overview & Tech Specs -->
+      <div class="product-details-tabs" id="product-details-tabs-container">
+        <!-- Will be dynamically populated via JS -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="detail-footer">
+    <div class="container">
+      <p>&copy; 2026 Blit Electrical Hardware. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Application Logic -->
+  <script type="module">
+    import { PRODUCTS_DATA, IMAGE_BG_MAP } from './products-data.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('detail-grid-container');
+      const tabsContainer = document.getElementById('product-details-tabs-container');
+      
+      // Parse Query String
+      const params = new URLSearchParams(window.location.search);
+      const categoryId = params.get('category');
+      const productName = params.get('product');
+
+      if (!categoryId || !productName) {
+        renderError("Missing product parameters.");
+        return;
+      }
+
+      // Lookup Category
+      const category = PRODUCTS_DATA.find(cat => cat.id === categoryId);
+      if (!category) {
+        renderError("Category not found.");
+        return;
+      }
+
+      // Lookup Product
+      const product = category.items.find(item => item.name === productName);
+      if (!product) {
+        renderError("Product not found.");
+        return;
+      }
+
+      // Render product top section
+      const imgBg = IMAGE_BG_MAP[product.img] || '#FFFFFF';
+      const specsHtml = product.specs.map(spec => `<li>${spec}</li>`).join('');
+
+      container.innerHTML = `
+        <!-- Left Display -->
+        <div class="product-image-section">
+          <div class="image-container" style="background-color: ${imgBg};">
+            <span class="badge-range">${product.range}</span>
+            <img class="product-img" src="${product.img}" alt="${product.name}">
+          </div>
+        </div>
+
+        <!-- Right Info -->
+        <div class="product-info-section">
+          <div>
+            <span class="category-label">${category.name}</span>
+            <h1 class="product-title">${product.name}</h1>
+          </div>
+          <p class="product-desc">${product.desc}</p>
+          <div>
+            <h3 class="specs-title">Key Specifications</h3>
+            <ul class="specs-list">
+              ${specsHtml}
+            </ul>
+          </div>
+          <button class="action-btn" id="inquire-btn">
+            Inquire via Email
+          </button>
+        </div>
+      `;
+
+      // Dynamic Spec Mapping Generation
+      let inferredMaterial = "High-Grade Polycarbonate (Flame Retardant)";
+      let inferredVoltage = "220V - 250V AC";
+      let inferredIP = "IP20 (Indoor Use Only)";
+      let inferredCompliance = "BS 1363 / IEC 60669 / CE";
+      let inferredApp = "Premium Residential, Commercial Offices & Luxury Hotels";
+
+      if (categoryId === 'cable_management') {
+        inferredMaterial = product.name.includes("GI") ? "Galvanized Iron (Heavy Duty)" : "Impact Resistant rigid PVC";
+        inferredVoltage = "Not Applicable (Conduit Containment)";
+        inferredIP = "IP54 (Compatible Conduits)";
+        inferredCompliance = "BS EN 61386 / BS 4607";
+        inferredApp = "Industrial Cable Containment, Surface Run Cables & Concrete Slab Routing";
+      } else if (categoryId === 'cable_termination') {
+        inferredMaterial = product.name.includes("Brass") ? "Solid Electrical Brass" : "99.9% Pure Electrolytic Tinned Copper";
+        inferredVoltage = "Up to 1000V (Insulated variants)";
+        inferredIP = "IP68 (For gland seals) / IP00 (For bare lugs)";
+        inferredCompliance = "BS 4579 / BS 6121 / CE";
+        inferredApp = "High Load Electrical Termination, Panel Board Splicing & Cable Entry Routing";
+      } else if (categoryId === 'weatherproof') {
+        inferredMaterial = "Impact Resistant Polycarbonate (UV Stabilized)";
+        inferredVoltage = product.name.includes("Isolator") ? "415V AC (Three Phase)" : "250V AC";
+        inferredIP = product.name.includes("IP66") ? "IP66 Waterproof & Dustproof" : "IP55 Splashproof";
+        inferredCompliance = "IEC 60669 / EN 60529 / BS EN 60947-3";
+        inferredApp = "Outdoor Power Outlets, Balconies, Industrial Wet Areas & Gardens";
+      } else if (categoryId === 'industrial_plug_socket') {
+        inferredMaterial = "High Impact Nylon 66 & Nickel-Plated Solid Brass Pins";
+        inferredVoltage = "380V - 415V AC (Three-Phase) / 220V AC (Single-Phase)";
+        inferredIP = "IP67 Rated (Waterproof Hook Seal)";
+        inferredCompliance = "IEC 60309-1 / IEC 60309-2 / CE";
+        inferredApp = "Industrial Workshops, Factories, Outdoor Generator Connectors & Event Power Panels";
+      } else if (categoryId === 'installation_boxes') {
+        inferredMaterial = product.name.includes("Metal") ? "Galvanized Steel Sheets" : "UV Stabilized Polycarbonate Enclosure";
+        inferredVoltage = "Not Applicable (Junction Containment)";
+        inferredIP = product.name.includes("Terminal") ? "IP66 Dust & Water Sealed" : "IP20 (Indoor Junction)";
+        inferredCompliance = "BS 4662 / EN 60670";
+        inferredApp = "Junction Box Routing, Flush Wall Concealed Outlets & Panel Connections";
+      }
+
+      const techSpecs = product.techSpecs || {
+        "Collection / Range": product.range || "Standard Series",
+        "Material": inferredMaterial,
+        "Ingress Protection Rating": inferredIP,
+        "Rated Voltage": inferredVoltage,
+        "Current / Load Rating": product.specs[2] || product.specs[0] || "13A Max Load",
+        "Standards / Compliances": inferredCompliance,
+        "Primary Application": inferredApp
+      };
+
+      const techTableRows = Object.entries(techSpecs).map(([label, val]) => `
+        <tr>
+          <td class="label-cell">${label}</td>
+          <td class="value-cell">${val}</td>
+        </tr>
+      `).join('');
+
+      // Render bottom section
+      tabsContainer.innerHTML = `
+        <div class="tabs-grid">
+          <!-- Left: Detailed Overview -->
+          <div>
+            <h2 class="section-subtitle">Product Overview</h2>
+            <p class="overview-text">
+              The <strong>${product.name}</strong> represents the premium standard in ${category.name.toLowerCase()} offered by BLIT. Engineered to combine architectural aesthetics with structural durability, this module is built to withstand rigorous residential, commercial, or heavy-duty industrial operations.
+            </p>
+            <p class="overview-text">
+              Featuring advanced contact conductivity surfaces and flame-retardant enclosures, it ensures smooth and reliable electrical throughput while minimizing thermal dissipation. The materials are specifically chosen for long-term corrosion prevention, UV protection, and absolute installation safety.
+            </p>
+            <h3 style="font-size: 16px; font-weight: 600; margin-bottom: 15px; color: var(--text-white);">Primary Product Benefits</h3>
+            <ul class="features-list">
+              <li>Flame Retardant & Fire Resistant</li>
+              <li>High-Conductivity Copper Alloys</li>
+              <li>UV Stabilized Outer Casing</li>
+              <li>Sleek, Clean Profile Aesthetics</li>
+              <li>International Standard Safety Shuttering</li>
+              <li>Heavy Duty Mechanical Lifecycle</li>
+            </ul>
+          </div>
+
+          <!-- Right: Technical Details Table -->
+          <div>
+            <h2 class="section-subtitle">Technical Details</h2>
+            <table class="tech-table">
+              <tbody>
+                ${techTableRows}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      `;
+
+      // Set up click handler for email inquiry
+      const inquireBtn = document.getElementById('inquire-btn');
+      if (inquireBtn) {
+        inquireBtn.addEventListener('click', () => {
+          const productLink = window.location.href;
+          const subject = encodeURIComponent(`Product Inquiry: ${product.name}`);
+          const body = encodeURIComponent(`Hello, I'm interested in the following product from Blit:\n\nProduct: ${product.name}\nRange: ${product.range}\nLink: ${productLink}`);
+          const mailtoUrl = `mailto:info@blit.com?subject=${subject}&body=${body}`;
+          window.open(mailtoUrl, '_self');
+        });
+      }
+    });
+
+    function renderError(message) {
+      const container = document.getElementById('detail-grid-container');
+      container.innerHTML = `
+        <div style="text-align: center; grid-column: span 2; padding: 40px 0;">
+          <h2 style="color: var(--primary-red); margin-bottom: 15px;">Product Not Found</h2>
+          <p style="color: var(--text-muted); margin-bottom: 25px;">${message}</p>
+          <a href="./index.html" class="back-btn" style="display: inline-flex; width: fit-content; margin: 0 auto;">Go to Homepage</a>
+        </div>
+      `;
+    }
+  </script>
+
+</body>
+</html>
