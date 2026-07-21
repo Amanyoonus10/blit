@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="./assets/power_distribution.mp4" as="video" type="video/mp4">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -111,9 +112,8 @@
           <a href="#products" class="hero-btn animate-btn">Explore</a>
         </div>
         <div class="hero-image-container">
-          <video class="hero-video" autoplay muted loop playsinline>
-            <source src="./assets/power_distribution.mov" type="video/quicktime">
-            <source src="./assets/power_distribution.mov" type="video/mp4">
+          <video class="hero-video" autoplay muted loop playsinline fetchpriority="high">
+            <source src="./assets/power_distribution.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
@@ -136,8 +136,7 @@
         </div>
         <div class="hero-image-container">
           <video class="hero-video" autoplay muted loop playsinline preload="none">
-            <source data-src="./assets/electrical_hardware.mov" type="video/quicktime">
-            <source data-src="./assets/electrical_hardware.mov" type="video/mp4">
+            <source data-src="./assets/electrical_hardware.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
