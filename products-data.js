@@ -124,21 +124,21 @@ export const PRODUCTS_DATA = [
         img: "./assets/products/switches/cw_range_gold_switch_1g.jpg",
         desc: "Exquisite champagne gold single switch, offering ultimate prestige and high conductivity contacts.",
         specs: ["Champagne Gold coating", "Polished Bezel Edges", "Silver Alloy Switches"],
-        range: "CW Range"
+        range: "CW Range Gold"
       },
       {
         name: "CW Range Gold Switch (3-Gang)",
         img: "./assets/products/switches/cw_range_gold_switch_3g_alt.jpg",
         desc: "Polished champagne gold 3-gang switch plate with gold toggle buttons, high-gloss premium look.",
         specs: ["3-Gang Gold Toggles", "Polished Metallic Bezel", "Luxury Residence Spec"],
-        range: "CW Range"
+        range: "CW Range Gold"
       },
       {
         name: "CW Range Gold Twin Switched Socket",
         img: "./assets/products/switches/cw_range_gold_twin_socket.jpg",
         desc: "Luxurious double switched socket board in a champagne gold finish, combining absolute style and child safety.",
         specs: ["Champagne Gold Dual Sockets", "Premium Insulation Barrier", "13A Switched Standard"],
-        range: "CW Range"
+        range: "CW Range Gold"
       }
     ]
   },

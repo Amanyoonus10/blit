@@ -1598,6 +1598,40 @@ button {
   letter-spacing: 1.5px;
 }
 
+.modal-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.modal-tab {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.6);
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.modal-tab:hover {
+  background: rgba(193, 9, 20, 0.08);
+  border-color: rgba(193, 9, 20, 0.3);
+  color: #FFFFFF;
+}
+
+.modal-tab.active {
+  background: var(--primary-red);
+  border-color: var(--primary-red);
+  color: #FFFFFF;
+  box-shadow: 0 0 20px rgba(193, 9, 20, 0.4);
+}
+
 .modal-products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));

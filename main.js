@@ -134,15 +134,15 @@ function initProductExplorer() {
 
   if (!modal || !modalGrid) return;
 
-  // Open modal and show products for selected category
-  const openCategoryModal = (categoryId) => {
-    const categoryData = PRODUCTS_DATA.find(cat => cat.id === categoryId);
-    if (!categoryData) return;
-
-    modalTitle.textContent = categoryData.name;
+  // Render grid of products for a category, optionally filtered by range
+  const renderProductGrid = (items, selectedRange, categoryId) => {
     modalGrid.innerHTML = '';
+    
+    const filteredItems = selectedRange === 'All' 
+      ? items 
+      : items.filter(item => item.range === selectedRange);
 
-    categoryData.items.forEach((item, idx) => {
+    filteredItems.forEach((item) => {
       const card = document.createElement('div');
       card.className = 'modal-product-card';
       card.style.cursor = 'pointer';
@@ -169,7 +169,6 @@ function initProductExplorer() {
 
       // Set up click on card itself (briefing page)
       card.addEventListener('click', (e) => {
-        // If they click the button, don't trigger the card click
         if (e.target.classList.contains('modal-inquiry-btn') || e.target.closest('.modal-inquiry-btn')) {
           return;
         }
@@ -193,6 +192,47 @@ function initProductExplorer() {
 
       modalGrid.appendChild(card);
     });
+  };
+
+  // Open modal and show products for selected category
+  const openCategoryModal = (categoryId) => {
+    const categoryData = PRODUCTS_DATA.find(cat => cat.id === categoryId);
+    if (!categoryData) return;
+
+    modalTitle.textContent = categoryData.name;
+
+    // Render subcategory tabs for Switches
+    const modalTabs = document.getElementById('modal-tabs');
+    if (modalTabs) {
+      if (categoryId === 'switches') {
+        modalTabs.style.display = 'flex';
+        // Get unique ranges from items, ensuring correct order:
+        const ranges = ['All', ...new Set(categoryData.items.map(item => item.range).filter(Boolean))];
+        
+        modalTabs.innerHTML = ranges.map((range, index) => `
+          <button class="modal-tab ${index === 0 ? 'active' : ''}" data-range="${range}">
+            ${range}
+          </button>
+        `).join('');
+
+        // Add event listeners to tabs
+        const tabs = modalTabs.querySelectorAll('.modal-tab');
+        tabs.forEach(tab => {
+          tab.addEventListener('click', () => {
+            tabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            const selectedRange = tab.getAttribute('data-range');
+            renderProductGrid(categoryData.items, selectedRange, categoryId);
+          });
+        });
+      } else {
+        modalTabs.style.display = 'none';
+        modalTabs.innerHTML = '';
+      }
+    }
+
+    // Initial render with 'All' switches
+    renderProductGrid(categoryData.items, 'All', categoryId);
 
     // Sync header active link
     headerCategories.forEach(item => {
