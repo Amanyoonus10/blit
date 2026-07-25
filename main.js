@@ -28,23 +28,14 @@ function initMobileMenu() {
     }
   });
 
-  // Close menu when a navigation category link is clicked
-  const categoryItems = document.querySelectorAll('.nav-menu-wrapper .category-item');
-  categoryItems.forEach(item => {
-    item.addEventListener('click', () => {
+  // Close menu when any link inside nav-menu-wrapper is clicked
+  const menuLinks = document.querySelectorAll('.nav-menu-wrapper a');
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
       header.classList.remove('menu-open');
       document.body.style.overflow = '';
     });
   });
-
-  // Close menu when quote button is clicked
-  const quoteBtn = document.querySelector('.nav-menu-wrapper .quote-btn');
-  if (quoteBtn) {
-    quoteBtn.addEventListener('click', () => {
-      header.classList.remove('menu-open');
-      document.body.style.overflow = '';
-    });
-  }
 
   // Close menu when clicking outside the menu wrapper
   document.addEventListener('click', (e) => {

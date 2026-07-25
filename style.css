@@ -123,6 +123,10 @@ button {
   margin-left: 40px;
 }
 
+.mobile-nav-links {
+  display: none;
+}
+
 /* Mobile Hamburger Menu Toggle Button */
 .mobile-menu-toggle {
   display: none;
@@ -2329,6 +2333,19 @@ button {
 
   .mobile-menu-toggle {
     display: flex;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+
+  .mobile-menu-toggle:focus,
+  .mobile-menu-toggle:active {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
   }
 
   .nav-menu-wrapper {
@@ -2344,13 +2361,38 @@ button {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     padding: 40px 24px;
     transform: translateX(100%);
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     z-index: 99;
     overflow-y: auto;
     margin-left: 0;
+  }
+
+  .mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .mobile-nav-link {
+    font-family: var(--font-heading);
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease;
+  }
+
+  .mobile-nav-link:hover {
+    color: #C10914;
   }
 
   .main-header.menu-open .nav-menu-wrapper {
@@ -2459,6 +2501,12 @@ button {
 @media (max-width: 768px) {
   .exact-solutions-section {
     padding: 50px 0;
+  }
+  .exact-solutions-container {
+    padding: 0 24px !important;
+  }
+  .left-line-decorator {
+    display: none !important;
   }
   .exact-main-heading {
     font-size: 32px;
