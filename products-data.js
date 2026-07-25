@@ -38,6 +38,7 @@ export const IMAGE_BG_MAP = {
   "./assets/products/wiring_accessories/lamp_holder.png": "#f2f3f2",
   "./assets/products/wiring_accessories/multi_adaptor.jpg": "#f7f7f7",
   "./assets/products/wiring_accessories/plug_top.jpg": "#f7f7f7",
+  "./assets/products/wiring_accessories/plug_top_alt.jpg": "#FFFFFF",
   "./assets/products/ventilation/industrial_stand_fan.jpg": "#ffffff",
   "./assets/products/ventilation/industrial_wall_fan.jpg": "#ffffff",
   "./assets/products/insect_killer/elite_series.jpg": "#ffffff",
@@ -213,6 +214,13 @@ export const PRODUCTS_DATA = [
         img: "./assets/products/wiring_accessories/plug_top.jpg",
         desc: "High-grade 13A plug tops fitted with standard safety fuses, ideal for safe household appliance cabling.",
         specs: ["13A Fused", "BS1363 Compliant", "Ergonomic Grip"],
+        range: "Plug Top"
+      },
+      {
+        name: "Standard 13A UK Plug Top",
+        img: "./assets/products/wiring_accessories/plug_top_alt.jpg",
+        desc: "Premium white 13A UK plug top with solid brass pins, compliant with BS1363/A standards, perfect for appliance and industrial power replacement connections.",
+        specs: ["13A Fused", "BS1363/A Compliant", "Solid Brass Pins"],
         range: "Plug Top"
       },
       {
