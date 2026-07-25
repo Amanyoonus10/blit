@@ -34,7 +34,12 @@ export const IMAGE_BG_MAP = {
   "./assets/products/wiring_accessories/extension_socket.jpg": "#f7f7f7",
   "./assets/products/wiring_accessories/lamp_holder.png": "#f2f3f2",
   "./assets/products/wiring_accessories/multi_adaptor.jpg": "#f7f7f7",
-  "./assets/products/wiring_accessories/plug_top.jpg": "#f7f7f7"
+  "./assets/products/wiring_accessories/plug_top.jpg": "#f7f7f7",
+  "./assets/products/industrial_plug_socket/industrial_plug_socket.png": "#f7f7f7",
+  "./assets/products/ventilation/industrial_stand_fan.jpg": "#ffffff",
+  "./assets/products/ventilation/industrial_wall_fan.jpg": "#ffffff",
+  "./assets/products/insect_killer/elite_series.jpg": "#ffffff",
+  "./assets/products/insect_killer/prime_series.jpg": "#ffffff"
 };
 
 export const PRODUCTS_DATA = [
@@ -124,27 +129,27 @@ export const PRODUCTS_DATA = [
         img: "./assets/products/switches/cw_range_gold_switch_1g.jpg",
         desc: "Exquisite champagne gold single switch, offering ultimate prestige and high conductivity contacts.",
         specs: ["Champagne Gold coating", "Polished Bezel Edges", "Silver Alloy Switches"],
-        range: "CW Range Gold"
+        range: "CW Range"
       },
       {
         name: "CW Range Gold Switch (3-Gang)",
         img: "./assets/products/switches/cw_range_gold_switch_3g_alt.jpg",
         desc: "Polished champagne gold 3-gang switch plate with gold toggle buttons, high-gloss premium look.",
         specs: ["3-Gang Gold Toggles", "Polished Metallic Bezel", "Luxury Residence Spec"],
-        range: "CW Range Gold"
+        range: "CW Range"
       },
       {
         name: "CW Range Gold Twin Switched Socket",
         img: "./assets/products/switches/cw_range_gold_twin_socket.jpg",
         desc: "Luxurious double switched socket board in a champagne gold finish, combining absolute style and child safety.",
         specs: ["Champagne Gold Dual Sockets", "Premium Insulation Barrier", "13A Switched Standard"],
-        range: "CW Range Gold"
+        range: "CW Range"
       }
     ]
   },
   {
     id: "weatherproof",
-    name: "Weatherproof Products",
+    name: "Weatherproof Solutions",
     items: [
       {
         name: "IP66 Weatherproof Socket Enclosure",
@@ -180,6 +185,20 @@ export const PRODUCTS_DATA = [
         desc: "Semi-weatherproof socket covers and enclosures with rubber gasket seals, ideal for balconies, lawns, and utility zones.",
         specs: ["IP55 Rated", "Transparent Lid", "Dust Protection"],
         range: "IP55"
+      },
+      {
+        name: "UV Stabilized Terminal Enclosure Box",
+        img: "./assets/products/weatherproof/enclosure_box.jpg",
+        desc: "Durable terminal enclosure boxes with knockouts, perfect for outdoor connection joints and junction housings.",
+        specs: ["UV Stabilized", "Impact Resistant", "Gasket Sealed"],
+        range: "Enclosure Box"
+      },
+      {
+        name: "Metal Knockout Junction Box",
+        img: "./assets/products/weatherproof/enclosure_box.jpg",
+        desc: "Galvanized steel junction box with multiple knockouts for standard electrical conduits and cabling.",
+        specs: ["Galvanized Steel", "20mm/25mm Knockouts", "Earth Terminal Included"],
+        range: "Enclosure Box"
       }
     ]
   },
@@ -281,7 +300,7 @@ export const PRODUCTS_DATA = [
         img: "./assets/product_cables_new.png",
         desc: "High conductivity copper wire core with heat resistant flame-retardant PVC outer sleeve.",
         specs: ["99.9% Pure Copper Core", "Flame Retardant PVC", "Low Smoke Halogen Free Option"],
-        range: "Copper Cables"
+        range: "Lugs"
       },
       {
         name: "Pure Copper Crimping Cable Lugs",
@@ -313,24 +332,91 @@ export const PRODUCTS_DATA = [
       }
     ]
   },
-
   {
-    id: "installation_boxes",
-    name: "Installation Boxes & Accessories",
+    id: "industrial_plug_socket",
+    name: "Industrial Plug & Socket",
     items: [
       {
-        name: "UV Stabilized Terminal Enclosure Box",
-        img: "./assets/products/weatherproof/enclosure_box.jpg",
-        desc: "Durable terminal enclosure boxes with knockouts, perfect for outdoor connection joints and junction housings.",
-        specs: ["UV Stabilized", "Impact Resistant", "Gasket Sealed"],
-        range: "Enclosure Box"
+        name: "Heavy-Duty Industrial Plug & Socket Set",
+        img: "./assets/products/industrial_plug_socket/industrial_plug_socket.png",
+        desc: "Heavy-duty industrial plug and socket connectors, IP44/IP67 rated, delivering high performance and durability under tough environments.",
+        specs: ["3-Pin/4-Pin/5-Pin options", "16A / 32A / 63A Ratings", "Splashproof IP44 / Waterproof IP67"],
+        range: "Ind Plug & Socket"
       },
       {
-        name: "Metal Knockout Junction Box",
-        img: "./assets/products/weatherproof/enclosure_box.jpg",
-        desc: "Galvanized steel junction box with multiple knockouts for standard electrical conduits and cabling.",
-        specs: ["Galvanized Steel", "20mm/25mm Knockouts", "Earth Terminal Included"],
-        range: "Metal Boxes"
+        name: "Industrial Wall Socket Outlet",
+        img: "./assets/products/industrial_plug_socket/industrial_plug_socket.png",
+        desc: "Industrial surface-mounted wall socket outlet with mechanical interlock system for ultimate operator safety.",
+        specs: ["Mechanical Interlock Switch", "High Impact Thermoplastic", "Red/Blue Voltage Coding"],
+        range: "Ind Plug & Socket"
+      }
+    ]
+  },
+  {
+    id: "ventilation",
+    name: "Air & Ventilation",
+    items: [
+      {
+        name: "BLIT 24 Industrial Stand Fan",
+        img: "./assets/products/ventilation/industrial_stand_fan.jpg",
+        desc: "High velocity 24-inch industrial stand fan with heavy duty cross iron base, adjustable height, and 3-speed control.",
+        specs: ["24-Inch Fan Blade", "100% Copper Wire Motor", "Heavy Duty Cross Iron Base"],
+        range: "Industrial Stand Fan"
+      },
+      {
+        name: "BLIT 26 Industrial Stand Fan",
+        img: "./assets/products/ventilation/industrial_stand_fan.jpg",
+        desc: "Professional grade 26-inch industrial pedestal fan with premium chrome finish grills and high throughput aerodynamically balanced blades.",
+        specs: ["26-Inch Blade Diameter", "Balanced Aluminum Blades", "Height Adjustable Pedestal"],
+        range: "Industrial Stand Fan"
+      },
+      {
+        name: "BLIT 39 Industrial Stand Fan",
+        img: "./assets/products/ventilation/industrial_stand_fan.jpg",
+        desc: "Large scale 39-inch industrial stand fan designed for high volume air circulation in warehouses, factories, and outdoor venues.",
+        specs: ["Super-sized 39-Inch Blade", "Cast Iron Pedestal Base", "Thermo-Protected Motor"],
+        range: "Industrial Stand Fan"
+      },
+      {
+        name: "BLIT 24 Industrial Wall Fan",
+        img: "./assets/products/ventilation/industrial_wall_fan.jpg",
+        desc: "Space-saving 24-inch wall-mounted industrial bracket fan with smooth 90-degree oscillation and heavy-duty steel wall arm.",
+        specs: ["24-Inch Wall Mount", "Pull Cord Speed Control", "90-Degree Oscillation Sweep"],
+        range: "Industrial Wall Fan"
+      },
+      {
+        name: "BLIT 26 Industrial Wall Fan",
+        img: "./assets/products/ventilation/industrial_wall_fan.jpg",
+        desc: "High efficiency 26-inch industrial wall-mount fan, featuring whisper-quiet high efficiency blades and solid concrete mounting bracket.",
+        specs: ["26-Inch Steel Bracket Fan", "Reinforced Mesh Cage Safety", "Maintenance-Free Bearings"],
+        range: "Industrial Wall Fan"
+      },
+      {
+        name: "BLIT 39 Industrial Wall Fan",
+        img: "./assets/products/ventilation/industrial_wall_fan.jpg",
+        desc: "Ultra-heavy-duty 39-inch industrial wall fan for cooling large commercial workshops and agricultural environments.",
+        specs: ["39-Inch Large Bracket Fan", "Double Reinforced Wall Mount", "Multi-Speed Pull Switch Control"],
+        range: "Industrial Wall Fan"
+      }
+    ]
+  },
+  {
+    id: "insect_killer",
+    name: "Insect Killer",
+    items: [
+      {
+        name: "Elite Series Insect Killer",
+        img: "./assets/products/insect_killer/elite_series.jpg",
+        desc: "Premium electric insect killer with professional high-voltage transformer grid and UV attraction light tubes.",
+        specs: ["High Voltage Kill Grid", "Dual UV Attraction Tubes", "Wall, Ceiling or Free-stand Mount"],
+        range: "Elite Series"
+      },
+      {
+        name: "Prime Series Insect Killer",
+        img: "./assets/products/insect_killer/prime_series.jpg",
+        desc: "Efficient commercial-grade electric insect killer with protective safety mesh outer frame and slide-out cleaning tray.",
+        specs: ["Outer Protective Mesh Cage", "Energy-saving UV Lamps", "Easy Clean Removable Tray"],
+        range: "Prime Series"
       }
     ]
   }

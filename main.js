@@ -319,13 +319,8 @@ function initProductExplorer() {
     const quoteSection = document.getElementById('quote');
 
     if (quoteFormSelect) {
-      let selectVal = 'switches';
-      if (categoryVal === 'weatherproof') selectVal = 'weatherproof';
-      else if (categoryVal === 'wiring_accessories') selectVal = 'wiring_accessories';
-      else if (categoryVal === 'cable_management') selectVal = 'cable_management';
-      else if (categoryVal === 'cable_termination') selectVal = 'cable_termination';
-      else if (categoryVal === 'installation_boxes') selectVal = 'installation_boxes';
-
+      const validCategories = ['switches', 'weatherproof', 'wiring_accessories', 'cable_management', 'cable_termination', 'industrial_plug_socket', 'ventilation', 'insect_killer'];
+      let selectVal = validCategories.includes(categoryVal) ? categoryVal : 'switches';
       quoteFormSelect.value = selectVal;
     }
 
