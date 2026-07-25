@@ -574,6 +574,18 @@
           inferredIP = product.name.includes("Terminal") ? "IP66 Dust & Water Sealed" : "IP20 (Indoor Junction)";
           inferredCompliance = "BS 4662 / EN 60670";
           inferredApp = "Junction Box Routing, Flush Wall Concealed Outlets & Panel Connections";
+        } else if (categoryId === 'ventilation') {
+          inferredMaterial = "Reinforced Heavy-Gauge Carbon Steel & Cast Iron";
+          inferredVoltage = "220V - 240V AC";
+          inferredIP = "IP20 (Indoor / Commercial Use)";
+          inferredCompliance = "IEC 60335 / CE / RoHS";
+          inferredApp = "Warehouses, Industrial Workshops, Commercial Kitchens & Outdoor Venues";
+        } else if (categoryId === 'insect_killer') {
+          inferredMaterial = "Rust-Resistant Aluminum & Flame-Retardant ABS";
+          inferredVoltage = "220V - 240V AC";
+          inferredIP = "IP20 (Indoor Use Only)";
+          inferredCompliance = "IEC 60335-2-59 / CE / RoHS";
+          inferredApp = "Commercial Kitchens, Food Processing Plants, Supermarkets & Restaurants";
         }
 
         const techSpecs = product.techSpecs || {
