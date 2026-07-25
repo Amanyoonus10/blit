@@ -16,6 +16,7 @@ export const IMAGE_BG_MAP = {
   "./assets/products/switches/en_range_switch_3g.jpg": "#ffffff",
   "./assets/products/switches/en_range_twin_socket.jpg": "#000000",
   "./assets/products/switches/metal_clad_switch_2g.jpg": "#f7f7f7",
+  "./assets/products/switches/metal_clad_twin_socket.jpg": "#f7f7f7",
   "./assets/products/switches/v_range_brushed_switch_2g_alt.jpg": "#fefefe",
   "./assets/products/switches/v_range_single_socket.jpg": "#000000",
   "./assets/products/switches/v_range_usb_socket.jpg": "#000000",
@@ -27,6 +28,7 @@ export const IMAGE_BG_MAP = {
   "./assets/products/weatherproof/ip55_double_socket.jpg": "#fefefe",
   "./assets/products/weatherproof/ip66_switch_1g.jpg": "#fffeff",
   "./assets/products/weatherproof/ip66_switch_2g.jpg": "#fffeff",
+  "./assets/products/weatherproof/ip66_socket_cover.jpg": "#fffeff",
   "./assets/products/weatherproof/isolator.jpg": "#f7f7f7",
   "./assets/products/wiring_accessories/cable_reel.jpg": "#f7f7f7",
   "./assets/products/wiring_accessories/cassette_reel.jpg": "#f7f7f7",
@@ -103,6 +105,13 @@ export const PRODUCTS_DATA = [
         range: "Metal Clad"
       },
       {
+        name: "Metal Clad 2-Gang Switched Socket",
+        img: "./assets/products/switches/metal_clad_twin_socket.jpg",
+        desc: "Rugged double switched 13A socket outlet enclosed in an impact-resistant metal clad housing, designed for heavy industrial use.",
+        specs: ["Double 13A Switched Sockets", "Heavy Duty Steel Enclosure", "Earth Terminal Included"],
+        range: "Metal Clad"
+      },
+      {
         name: "V Range Brushed Switch (2-Gang)",
         img: "./assets/products/switches/v_range_brushed_switch_2g_alt.jpg",
         desc: "Premium V Range 2-gang switch plate finished in brushed silver metal with modern dark borders.",
@@ -151,10 +160,10 @@ export const PRODUCTS_DATA = [
     name: "Weatherproof Solutions",
     items: [
       {
-        name: "IP66 Weatherproof Socket Enclosure",
-        img: "./assets/products/weatherproof/ip66_switch_2g.jpg",
-        desc: "Full weatherproof switches and socket boxes designed to withstand heavy rainfall, jet spray, and harsh climates.",
-        specs: ["IP66 Certified", "Corrosion Resistant", "Impact Proof"],
+        name: "IP66 Weatherproof Switched Socket Enclosure",
+        img: "./assets/products/weatherproof/ip66_socket_cover.jpg",
+        desc: "Full weatherproof double socket box designed to withstand heavy rainfall, jet spray, and harsh outdoor climates.",
+        specs: ["IP66 Certified Waterproof", "Impact Resistant Cover", "Spring-loaded Lid Lock"],
         range: "IP66"
       },
       {
@@ -162,6 +171,13 @@ export const PRODUCTS_DATA = [
         img: "./assets/products/weatherproof/ip66_switch_1g.jpg",
         desc: "Single gang outdoor switch enclosure with waterproof seal, ideal for gardens, balconies, and wet areas.",
         specs: ["IP66 Rated", "UV Resistant Casing", "10A Switch Control"],
+        range: "IP66"
+      },
+      {
+        name: "IP66 Weatherproof Switch (2-Gang)",
+        img: "./assets/products/weatherproof/ip66_switch_2g.jpg",
+        desc: "Two gang outdoor switch enclosure with waterproof seal, designed for convenient dual lighting control.",
+        specs: ["IP66 Rated Waterproof", "UV Stabilized Case", "Dual 10A Controls"],
         range: "IP66"
       },
       {
