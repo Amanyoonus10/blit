@@ -16,7 +16,7 @@ export const IMAGE_BG_MAP = {
   "./assets/products/switches/en_range_switch_3g.jpg": "#ffffff",
   "./assets/products/switches/en_range_twin_socket.jpg": "#000000",
   "./assets/products/switches/metal_clad_switch_2g.jpg": "#f7f7f7",
-  "./assets/products/switches/metal_clad_twin_socket.jpg": "#f7f7f7",
+  "./assets/products/switches/metal_clad_socket_double.jpg": "#f7f7f7",
   "./assets/products/switches/v_range_brushed_switch_2g_alt.jpg": "#fefefe",
   "./assets/products/switches/v_range_single_socket.jpg": "#000000",
   "./assets/products/switches/v_range_usb_socket.jpg": "#000000",
@@ -106,7 +106,7 @@ export const PRODUCTS_DATA = [
       },
       {
         name: "Metal Clad 2-Gang Switched Socket",
-        img: "./assets/products/switches/metal_clad_twin_socket.jpg",
+        img: "./assets/products/switches/metal_clad_socket_double.jpg",
         desc: "Rugged double switched 13A socket outlet enclosed in an impact-resistant metal clad housing, designed for heavy industrial use.",
         specs: ["Double 13A Switched Sockets", "Heavy Duty Steel Enclosure", "Earth Terminal Included"],
         range: "Metal Clad"
