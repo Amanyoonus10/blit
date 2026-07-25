@@ -557,23 +557,23 @@
           inferredCompliance = "BS 4579 / BS 6121 / CE";
           inferredApp = "High Load Electrical Termination, Panel Board Splicing & Cable Entry Routing";
         } else if (categoryId === 'weatherproof') {
-          inferredMaterial = (product.name.includes("Metal") || product.name.includes("Junction")) ? "Galvanized Steel Sheets" : "Impact Resistant Polycarbonate (UV Stabilized)";
-          inferredVoltage = product.name.includes("Isolator") ? "415V AC (Three Phase)" : (product.name.includes("Box") || product.name.includes("Cover") ? "Not Applicable" : "250V AC");
-          inferredIP = (product.name.includes("IP66") || product.name.includes("Terminal")) ? "IP66 Waterproof & Dustproof" : "IP55 Splashproof";
-          inferredCompliance = "IEC 60669 / EN 60529 / BS EN 60947-3 / BS 4662";
-          inferredApp = (product.name.includes("Box") || product.name.includes("Junction")) ? "Junction Box Routing, Flush Wall Concealed Outlets & Panel Connections" : "Outdoor Power Outlets, Balconies, Industrial Wet Areas & Gardens";
-        } else if (categoryId === 'ventilation') {
-          inferredMaterial = "Reinforced Heavy-Gauge Carbon Steel & Cast Iron";
-          inferredVoltage = "220V - 240V AC";
-          inferredIP = "IP20 (Indoor / Commercial Use)";
-          inferredCompliance = "IEC 60335 / CE / RoHS";
-          inferredApp = "Warehouses, Industrial Workshops, Commercial Kitchens & Outdoor Venues";
-        } else if (categoryId === 'insect_killer') {
-          inferredMaterial = "Rust-Resistant Aluminum & Flame-Retardant ABS";
-          inferredVoltage = "220V - 240V AC";
-          inferredIP = "IP20 (Indoor Use Only)";
-          inferredCompliance = "IEC 60335-2-59 / CE / RoHS";
-          inferredApp = "Commercial Kitchens, Food Processing Plants, Supermarkets & Restaurants";
+          inferredMaterial = "Impact Resistant Polycarbonate (UV Stabilized)";
+          inferredVoltage = product.name.includes("Isolator") ? "415V AC (Three Phase)" : "250V AC";
+          inferredIP = product.name.includes("IP66") ? "IP66 Waterproof & Dustproof" : "IP55 Splashproof";
+          inferredCompliance = "IEC 60669 / EN 60529 / BS EN 60947-3";
+          inferredApp = "Outdoor Power Outlets, Balconies, Industrial Wet Areas & Gardens";
+        } else if (categoryId === 'industrial_plug_socket') {
+          inferredMaterial = "High-Impact Heavy-Duty Thermoplastic";
+          inferredVoltage = "220V - 415V AC (Multi-phase options)";
+          inferredIP = "IP44 (Splashproof) / IP67 (Waterproof)";
+          inferredCompliance = "EN 60309 / CE / IEC";
+          inferredApp = "Industrial Workshops, Generators, Construction Sites & Heavy Machinery";
+        } else if (categoryId === 'installation_boxes') {
+          inferredMaterial = product.name.includes("Metal") ? "Galvanized Steel Sheets" : "UV Stabilized Polycarbonate Enclosure";
+          inferredVoltage = "Not Applicable (Junction Containment)";
+          inferredIP = product.name.includes("Terminal") ? "IP66 Dust & Water Sealed" : "IP20 (Indoor Junction)";
+          inferredCompliance = "BS 4662 / EN 60670";
+          inferredApp = "Junction Box Routing, Flush Wall Concealed Outlets & Panel Connections";
         }
 
         const techSpecs = product.techSpecs || {

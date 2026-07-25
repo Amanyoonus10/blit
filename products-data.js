@@ -30,6 +30,7 @@ export const IMAGE_BG_MAP = {
   "./assets/products/weatherproof/ip66_switch_2g.jpg": "#fffeff",
   "./assets/products/weatherproof/ip66_socket_cover.jpg": "#fffeff",
   "./assets/products/weatherproof/isolator.jpg": "#f7f7f7",
+  "./assets/products/industrial_plug_socket/industrial_plug_socket.png": "#f7f7f7",
   "./assets/products/wiring_accessories/cable_reel.jpg": "#f7f7f7",
   "./assets/products/wiring_accessories/cassette_reel.jpg": "#f7f7f7",
   "./assets/products/wiring_accessories/ceiling_rose.png": "#eaebea",
@@ -200,20 +201,6 @@ export const PRODUCTS_DATA = [
         desc: "Semi-weatherproof socket covers and enclosures with rubber gasket seals, ideal for balconies, lawns, and utility zones.",
         specs: ["IP55 Rated", "Transparent Lid", "Dust Protection"],
         range: "IP55"
-      },
-      {
-        name: "UV Stabilized Terminal Enclosure Box",
-        img: "./assets/products/weatherproof/enclosure_box.jpg",
-        desc: "Durable terminal enclosure boxes with knockouts, perfect for outdoor connection joints and junction housings.",
-        specs: ["UV Stabilized", "Impact Resistant", "Gasket Sealed"],
-        range: "Enclosure Box"
-      },
-      {
-        name: "Metal Knockout Junction Box",
-        img: "./assets/products/weatherproof/enclosure_box.jpg",
-        desc: "Galvanized steel junction box with multiple knockouts for standard electrical conduits and cabling.",
-        specs: ["Galvanized Steel", "20mm/25mm Knockouts", "Earth Terminal Included"],
-        range: "Enclosure Box"
       }
     ]
   },
@@ -412,6 +399,46 @@ export const PRODUCTS_DATA = [
         desc: "Efficient commercial-grade electric insect killer with protective safety mesh outer frame and slide-out cleaning tray.",
         specs: ["Outer Protective Mesh Cage", "Energy-saving UV Lamps", "Easy Clean Removable Tray"],
         range: "Prime Series"
+      }
+    ]
+  },
+  {
+    id: "industrial_plug_socket",
+    name: "Industrial Plugs",
+    items: [
+      {
+        name: "Heavy-Duty Industrial Plug & Socket Set",
+        img: "./assets/products/industrial_plug_socket/industrial_plug_socket.png",
+        desc: "Heavy-duty industrial plug and socket connectors, IP44/IP67 rated, delivering high performance and durability under tough environments.",
+        specs: ["3-Pin/4-Pin/5-Pin options", "16A / 32A / 63A Ratings", "Splashproof IP44 / Waterproof IP67"],
+        range: "Ind Plug & Socket"
+      },
+      {
+        name: "Industrial Wall Socket Outlet",
+        img: "./assets/products/industrial_plug_socket/industrial_plug_socket.png",
+        desc: "Industrial surface-mounted wall socket outlet with mechanical interlock system for ultimate operator safety.",
+        specs: ["Mechanical Interlock Switch", "High Impact Thermoplastic", "Red/Blue Voltage Coding"],
+        range: "Ind Plug & Socket"
+      }
+    ]
+  },
+  {
+    id: "installation_boxes",
+    name: "Installation Boxes",
+    items: [
+      {
+        name: "UV Stabilized Terminal Enclosure Box",
+        img: "./assets/products/weatherproof/enclosure_box.jpg",
+        desc: "Durable terminal enclosure boxes with knockouts, perfect for outdoor connection joints and junction housings.",
+        specs: ["UV Stabilized", "Impact Resistant", "Gasket Sealed"],
+        range: "Enclosure Box"
+      },
+      {
+        name: "Metal Knockout Junction Box",
+        img: "./assets/products/weatherproof/enclosure_box.jpg",
+        desc: "Galvanized steel junction box with multiple knockouts for standard electrical conduits and cabling.",
+        specs: ["Galvanized Steel", "20mm/25mm Knockouts", "Earth Terminal Included"],
+        range: "Metal Boxes"
       }
     ]
   }
