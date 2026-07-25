@@ -103,7 +103,7 @@ button {
   font-family: var(--font-heading);
   font-size: 24px;
   font-weight: 800;
-  color: #FFFFFF;
+  color: var(--primary-red);
   letter-spacing: -0.5px;
 }
 
