@@ -109,9 +109,9 @@
 
     .detail-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
-      align-items: center;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 60px;
+      align-items: start;
     }
 
     /* Left side: Image display */
@@ -122,7 +122,7 @@
     .image-container {
       border-radius: 24px;
       overflow: hidden;
-      aspect-ratio: 1 / 1;
+      aspect-ratio: 1.1 / 1;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -159,11 +159,58 @@
       box-shadow: 0 5px 15px rgba(255, 26, 26, 0.3);
     }
 
+    /* Product Thumbnails */
+    .product-thumbnails-container {
+      margin-top: 25px;
+    }
+
+    .product-thumbnails {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .thumbnail-item {
+      width: 75px;
+      height: 75px;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 2px solid rgba(255, 255, 255, 0.06);
+      background: rgba(255, 255, 255, 0.01);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px;
+      transition: var(--transition-smooth);
+    }
+
+    .thumbnail-item:hover {
+      border-color: rgba(193, 9, 20, 0.4);
+      background: rgba(193, 9, 20, 0.02);
+      transform: translateY(-2px);
+    }
+
+    .thumbnail-item.active {
+      border-color: var(--primary-red);
+      background: rgba(193, 9, 20, 0.05);
+      box-shadow: 0 0 15px rgba(193, 9, 20, 0.2);
+    }
+
+    .thumbnail-item img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
     /* Right side: Info display */
     .product-info-section {
       display: flex;
       flex-direction: column;
-      gap: 24px;
+      gap: 20px;
     }
 
     .category-label {
@@ -175,74 +222,122 @@
     }
 
     .product-title {
-      font-size: 42px;
+      font-size: 40px;
       font-weight: 800;
       line-height: 1.2;
       color: var(--text-white);
     }
 
+    /* Specs Summary Table */
+    .specs-summary-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+
+    .specs-summary-table tr {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .specs-summary-table tr:last-child {
+      border-bottom: none;
+    }
+
+    .specs-summary-table td {
+      padding: 10px 0;
+      vertical-align: middle;
+    }
+
+    .specs-summary-table .spec-label {
+      color: rgba(255, 255, 255, 0.4);
+      font-weight: 500;
+      width: 40%;
+    }
+
+    .specs-summary-table .spec-value {
+      color: var(--text-white);
+      font-weight: 600;
+    }
+
+    /* Description Section */
+    .description-section {
+      margin-top: 5px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 20px;
+    }
+
+    .description-title {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--text-white);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+
     .product-desc {
-      font-size: 16px;
+      font-size: 15px;
       color: var(--text-muted);
       line-height: 1.7;
     }
 
-    .specs-title {
-      font-size: 18px;
-      font-weight: 600;
-      margin-bottom: 12px;
-      border-left: 3px solid var(--primary-red);
-      padding-left: 10px;
-    }
-
-    .specs-list {
-      list-style: none;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 10px;
-    }
-
-    .specs-list li {
-      font-size: 14px;
-      color: var(--text-muted);
+    /* Action Buttons Group */
+    .action-buttons-group {
       display: flex;
-      align-items: center;
-      gap: 10px;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
     }
 
-    .specs-list li::before {
-      content: '';
-      width: 6px;
-      height: 6px;
-      background-color: var(--primary-red);
-      border-radius: 50%;
-      flex-shrink: 0;
-      box-shadow: 0 0 5px var(--primary-red);
-    }
-
-    .action-btn {
+    .action-btn-primary {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       background-color: var(--primary-red);
       color: var(--text-white);
       text-decoration: none;
-      font-weight: 600;
-      font-size: 16px;
-      padding: 16px 32px;
-      border-radius: 30px;
+      font-weight: 700;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 15px 32px;
+      border-radius: 4px;
       transition: var(--transition-smooth);
       border: none;
       cursor: pointer;
-      margin-top: 15px;
-      box-shadow: 0 10px 20px rgba(255, 26, 26, 0.2);
-      max-width: 250px;
+      box-shadow: 0 10px 20px rgba(193, 9, 20, 0.15);
     }
 
-    .action-btn:hover {
+    .action-btn-primary:hover {
       background-color: #e00f0f;
       transform: translateY(-2px);
-      box-shadow: 0 15px 25px rgba(255, 26, 26, 0.35);
+      box-shadow: 0 15px 25px rgba(193, 9, 20, 0.3);
+    }
+
+    .action-btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      color: var(--text-white);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 15px 32px;
+      border-radius: 4px;
+      transition: var(--transition-smooth);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      cursor: pointer;
+    }
+
+    .action-btn-secondary:hover {
+      border-color: var(--text-white);
+      background: rgba(255, 255, 255, 0.05);
+      transform: translateY(-2px);
     }
 
     /* Tabs & Specifications styling */
@@ -421,9 +516,225 @@
     import { PRODUCTS_DATA, IMAGE_BG_MAP } from './products-data.js';
 
     document.addEventListener('DOMContentLoaded', () => {
-      const container = document.getElementById('detail-grid-container');
-      const tabsContainer = document.getElementById('product-details-tabs-container');
-      
+      // Main render function
+      const renderProductDetails = (categoryId, productName) => {
+        const container = document.getElementById('detail-grid-container');
+        const tabsContainer = document.getElementById('product-details-tabs-container');
+        
+        if (!container || !tabsContainer) return;
+
+        // Lookup Category
+        const category = PRODUCTS_DATA.find(cat => cat.id === categoryId);
+        if (!category) {
+          renderError("Category not found.");
+          return;
+        }
+
+        // Lookup Product
+        const product = category.items.find(item => item.name === productName);
+        if (!product) {
+          renderError("Product not found.");
+          return;
+        }
+
+        // Dynamic Spec Mapping Generation
+        let inferredMaterial = "High-Grade Polycarbonate (Flame Retardant)";
+        let inferredVoltage = "220V - 250V AC";
+        let inferredIP = "IP20 (Indoor Use Only)";
+        let inferredCompliance = "BS 1363 / IEC 60669 / CE";
+        let inferredApp = "Premium Residential, Commercial Offices & Luxury Hotels";
+
+        if (categoryId === 'cable_management') {
+          inferredMaterial = product.name.includes("GI") ? "Galvanized Iron (Heavy Duty)" : "Impact Resistant rigid PVC";
+          inferredVoltage = "Not Applicable (Conduit Containment)";
+          inferredIP = "IP54 (Compatible Conduits)";
+          inferredCompliance = "BS EN 61386 / BS 4607";
+          inferredApp = "Industrial Cable Containment, Surface Run Cables & Concrete Slab Routing";
+        } else if (categoryId === 'cable_termination') {
+          inferredMaterial = product.name.includes("Brass") ? "Solid Electrical Brass" : "99.9% Pure Electrolytic Tinned Copper";
+          inferredVoltage = "Up to 1000V (Insulated variants)";
+          inferredIP = "IP68 (For gland seals) / IP00 (For bare lugs)";
+          inferredCompliance = "BS 4579 / BS 6121 / CE";
+          inferredApp = "High Load Electrical Termination, Panel Board Splicing & Cable Entry Routing";
+        } else if (categoryId === 'weatherproof') {
+          inferredMaterial = "Impact Resistant Polycarbonate (UV Stabilized)";
+          inferredVoltage = product.name.includes("Isolator") ? "415V AC (Three Phase)" : "250V AC";
+          inferredIP = product.name.includes("IP66") ? "IP66 Waterproof & Dustproof" : "IP55 Splashproof";
+          inferredCompliance = "IEC 60669 / EN 60529 / BS EN 60947-3";
+          inferredApp = "Outdoor Power Outlets, Balconies, Industrial Wet Areas & Gardens";
+        } else if (categoryId === 'installation_boxes') {
+          inferredMaterial = product.name.includes("Metal") ? "Galvanized Steel Sheets" : "UV Stabilized Polycarbonate Enclosure";
+          inferredVoltage = "Not Applicable (Junction Containment)";
+          inferredIP = product.name.includes("Terminal") ? "IP66 Dust & Water Sealed" : "IP20 (Indoor Junction)";
+          inferredCompliance = "BS 4662 / EN 60670";
+          inferredApp = "Junction Box Routing, Flush Wall Concealed Outlets & Panel Connections";
+        }
+
+        const techSpecs = product.techSpecs || {
+          "Collection / Range": product.range || "Standard Series",
+          "Material": inferredMaterial,
+          "Ingress Protection Rating": inferredIP,
+          "Rated Voltage": inferredVoltage,
+          "Current / Load Rating": product.specs[2] || product.specs[0] || "13A Max Load",
+          "Standards / Compliances": inferredCompliance,
+          "Primary Application": inferredApp
+        };
+
+        // Render product top section (Left image + Thumbnails, Right info specs & description)
+        const imgBg = IMAGE_BG_MAP[product.img] || '#FFFFFF';
+
+        // Related variations (items in same category + same range)
+        const relatedItems = category.items.filter(item => item.range === product.range);
+        
+        let thumbnailsHtml = '';
+        if (relatedItems.length > 1) {
+          thumbnailsHtml = `
+            <div class="product-thumbnails-container">
+              <ul class="product-thumbnails">
+                ${relatedItems.map(item => {
+                  const isActive = item.name === product.name ? 'active' : '';
+                  const thumbBg = IMAGE_BG_MAP[item.img] || '#FFFFFF';
+                  return `
+                    <li class="thumbnail-item ${isActive}" data-product="${encodeURIComponent(item.name)}" style="background-color: ${thumbBg};" title="${item.name}">
+                      <img src="${item.img}" alt="${item.name}">
+                    </li>
+                  `;
+                }).join('')}
+              </ul>
+            </div>
+          `;
+        }
+
+        container.innerHTML = `
+          <!-- Left Display -->
+          <div class="product-image-section">
+            <div class="image-container" style="background-color: ${imgBg};">
+              <span class="badge-range">${product.range}</span>
+              <img class="product-img" src="${product.img}" alt="${product.name}" decoding="async">
+            </div>
+            ${thumbnailsHtml}
+          </div>
+
+          <!-- Right Info -->
+          <div class="product-info-section">
+            <div>
+              <span class="category-label">${category.name}</span>
+              <h1 class="product-title">${product.name}</h1>
+            </div>
+
+            <!-- Summary Specs Grid -->
+            <table class="specs-summary-table">
+              <tbody>
+                <tr>
+                  <td class="spec-label">Product Range:</td>
+                  <td class="spec-value">${product.range || 'Standard'}</td>
+                </tr>
+                <tr>
+                  <td class="spec-label">Voltage:</td>
+                  <td class="spec-value">${inferredVoltage}</td>
+                </tr>
+                <tr>
+                  <td class="spec-label">Ingress Protection (IP):</td>
+                  <td class="spec-value">${inferredIP.split(' ')[0]}</td>
+                </tr>
+                <tr>
+                  <td class="spec-label">Material:</td>
+                  <td class="spec-value">${inferredMaterial.split(' (')[0]}</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- Description Section -->
+            <div class="description-section">
+              <h3 class="description-title">Description</h3>
+              <p class="product-desc">${product.desc}</p>
+            </div>
+
+            <!-- Action Buttons Group -->
+            <div class="action-buttons-group">
+              <button class="action-btn-primary" id="inquire-btn">Enquire Now</button>
+              <button class="action-btn-secondary" id="scroll-specs-btn">Get Technical Specs</button>
+            </div>
+          </div>
+        `;
+
+        // Render bottom details section
+        const techTableRows = Object.entries(techSpecs).map(([label, val]) => `
+          <tr>
+            <td class="label-cell">${label}</td>
+            <td class="value-cell">${val}</td>
+          </tr>
+        `).join('');
+
+        tabsContainer.innerHTML = `
+          <div class="tabs-grid">
+            <!-- Left: Detailed Overview -->
+            <div>
+              <h2 class="section-subtitle">Product Overview</h2>
+              <p class="overview-text">
+                The <strong>${product.name}</strong> represents the premium standard in ${category.name.toLowerCase()} offered by BLIT. Engineered to combine architectural aesthetics with structural durability, this module is built to withstand rigorous residential, commercial, or heavy-duty industrial operations.
+              </p>
+              <p class="overview-text">
+                Featuring advanced contact conductivity surfaces and flame-retardant enclosures, it ensures smooth and reliable electrical throughput while minimizing thermal dissipation. The materials are specifically chosen for long-term corrosion prevention, UV protection, and absolute installation safety.
+              </p>
+              <h3 style="font-size: 16px; font-weight: 600; margin-bottom: 15px; color: var(--text-white);">Primary Product Benefits</h3>
+              <ul class="features-list">
+                <li>Flame Retardant & Fire Resistant</li>
+                <li>High-Conductivity Copper Alloys</li>
+                <li>UV Stabilized Outer Casing</li>
+                <li>Sleek, Clean Profile Aesthetics</li>
+                <li>International Standard Safety Shuttering</li>
+                <li>Heavy Duty Mechanical Lifecycle</li>
+              </ul>
+            </div>
+
+            <!-- Right: Technical Details Table -->
+            <div>
+              <h2 class="section-subtitle">Technical Details</h2>
+              <table class="tech-table">
+                <tbody>
+                  ${techTableRows}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+
+        // Set up click handler for email inquiry
+        const inquireBtn = document.getElementById('inquire-btn');
+        if (inquireBtn) {
+          inquireBtn.addEventListener('click', () => {
+            const productLink = window.location.href;
+            const subject = encodeURIComponent(`Product Inquiry: ${product.name}`);
+            const body = encodeURIComponent(`Hello, I'm interested in the following product from Blit:\n\nProduct: ${product.name}\nRange: ${product.range}\nLink: ${productLink}`);
+            const mailtoUrl = `mailto:info@blit.com?subject=${subject}&body=${body}`;
+            window.open(mailtoUrl, '_self');
+          });
+        }
+
+        // Set up click handler for scroll button
+        const scrollSpecsBtn = document.getElementById('scroll-specs-btn');
+        if (scrollSpecsBtn) {
+          scrollSpecsBtn.addEventListener('click', () => {
+            tabsContainer.scrollIntoView({ behavior: 'smooth' });
+          });
+        }
+
+        // Set up click handlers for thumbnails (in-place dynamic page update)
+        const thumbItems = container.querySelectorAll('.thumbnail-item');
+        thumbItems.forEach(item => {
+          item.addEventListener('click', () => {
+            const targetProd = decodeURIComponent(item.getAttribute('data-product'));
+            // Update URL search parameters
+            const url = new URL(window.location.href);
+            url.searchParams.set('product', targetProd);
+            window.history.pushState(null, '', url.search);
+            // Render new product in-place
+            renderProductDetails(categoryId, targetProd);
+          });
+        });
+      };
+
       // Parse Query String
       const params = new URLSearchParams(window.location.search);
       const categoryId = params.get('category');
@@ -434,148 +745,8 @@
         return;
       }
 
-      // Lookup Category
-      const category = PRODUCTS_DATA.find(cat => cat.id === categoryId);
-      if (!category) {
-        renderError("Category not found.");
-        return;
-      }
-
-      // Lookup Product
-      const product = category.items.find(item => item.name === productName);
-      if (!product) {
-        renderError("Product not found.");
-        return;
-      }
-
-      // Render product top section
-      const imgBg = IMAGE_BG_MAP[product.img] || '#FFFFFF';
-      const specsHtml = product.specs.map(spec => `<li>${spec}</li>`).join('');
-
-      container.innerHTML = `
-        <!-- Left Display -->
-        <div class="product-image-section">
-          <div class="image-container" style="background-color: ${imgBg};">
-            <span class="badge-range">${product.range}</span>
-            <img class="product-img" src="${product.img}" alt="${product.name}" decoding="async">
-          </div>
-        </div>
-
-        <!-- Right Info -->
-        <div class="product-info-section">
-          <div>
-            <span class="category-label">${category.name}</span>
-            <h1 class="product-title">${product.name}</h1>
-          </div>
-          <p class="product-desc">${product.desc}</p>
-          <div>
-            <h3 class="specs-title">Key Specifications</h3>
-            <ul class="specs-list">
-              ${specsHtml}
-            </ul>
-          </div>
-          <button class="action-btn" id="inquire-btn">
-            Inquire via Email
-          </button>
-        </div>
-      `;
-
-      // Dynamic Spec Mapping Generation
-      let inferredMaterial = "High-Grade Polycarbonate (Flame Retardant)";
-      let inferredVoltage = "220V - 250V AC";
-      let inferredIP = "IP20 (Indoor Use Only)";
-      let inferredCompliance = "BS 1363 / IEC 60669 / CE";
-      let inferredApp = "Premium Residential, Commercial Offices & Luxury Hotels";
-
-      if (categoryId === 'cable_management') {
-        inferredMaterial = product.name.includes("GI") ? "Galvanized Iron (Heavy Duty)" : "Impact Resistant rigid PVC";
-        inferredVoltage = "Not Applicable (Conduit Containment)";
-        inferredIP = "IP54 (Compatible Conduits)";
-        inferredCompliance = "BS EN 61386 / BS 4607";
-        inferredApp = "Industrial Cable Containment, Surface Run Cables & Concrete Slab Routing";
-      } else if (categoryId === 'cable_termination') {
-        inferredMaterial = product.name.includes("Brass") ? "Solid Electrical Brass" : "99.9% Pure Electrolytic Tinned Copper";
-        inferredVoltage = "Up to 1000V (Insulated variants)";
-        inferredIP = "IP68 (For gland seals) / IP00 (For bare lugs)";
-        inferredCompliance = "BS 4579 / BS 6121 / CE";
-        inferredApp = "High Load Electrical Termination, Panel Board Splicing & Cable Entry Routing";
-      } else if (categoryId === 'weatherproof') {
-        inferredMaterial = "Impact Resistant Polycarbonate (UV Stabilized)";
-        inferredVoltage = product.name.includes("Isolator") ? "415V AC (Three Phase)" : "250V AC";
-        inferredIP = product.name.includes("IP66") ? "IP66 Waterproof & Dustproof" : "IP55 Splashproof";
-        inferredCompliance = "IEC 60669 / EN 60529 / BS EN 60947-3";
-        inferredApp = "Outdoor Power Outlets, Balconies, Industrial Wet Areas & Gardens";
-      } else if (categoryId === 'installation_boxes') {
-        inferredMaterial = product.name.includes("Metal") ? "Galvanized Steel Sheets" : "UV Stabilized Polycarbonate Enclosure";
-        inferredVoltage = "Not Applicable (Junction Containment)";
-        inferredIP = product.name.includes("Terminal") ? "IP66 Dust & Water Sealed" : "IP20 (Indoor Junction)";
-        inferredCompliance = "BS 4662 / EN 60670";
-        inferredApp = "Junction Box Routing, Flush Wall Concealed Outlets & Panel Connections";
-      }
-
-      const techSpecs = product.techSpecs || {
-        "Collection / Range": product.range || "Standard Series",
-        "Material": inferredMaterial,
-        "Ingress Protection Rating": inferredIP,
-        "Rated Voltage": inferredVoltage,
-        "Current / Load Rating": product.specs[2] || product.specs[0] || "13A Max Load",
-        "Standards / Compliances": inferredCompliance,
-        "Primary Application": inferredApp
-      };
-
-      const techTableRows = Object.entries(techSpecs).map(([label, val]) => `
-        <tr>
-          <td class="label-cell">${label}</td>
-          <td class="value-cell">${val}</td>
-        </tr>
-      `).join('');
-
-      // Render bottom section
-      tabsContainer.innerHTML = `
-        <div class="tabs-grid">
-          <!-- Left: Detailed Overview -->
-          <div>
-            <h2 class="section-subtitle">Product Overview</h2>
-            <p class="overview-text">
-              The <strong>${product.name}</strong> represents the premium standard in ${category.name.toLowerCase()} offered by BLIT. Engineered to combine architectural aesthetics with structural durability, this module is built to withstand rigorous residential, commercial, or heavy-duty industrial operations.
-            </p>
-            <p class="overview-text">
-              Featuring advanced contact conductivity surfaces and flame-retardant enclosures, it ensures smooth and reliable electrical throughput while minimizing thermal dissipation. The materials are specifically chosen for long-term corrosion prevention, UV protection, and absolute installation safety.
-            </p>
-            <h3 style="font-size: 16px; font-weight: 600; margin-bottom: 15px; color: var(--text-white);">Primary Product Benefits</h3>
-            <ul class="features-list">
-              <li>Flame Retardant & Fire Resistant</li>
-              <li>High-Conductivity Copper Alloys</li>
-              <li>UV Stabilized Outer Casing</li>
-              <li>Sleek, Clean Profile Aesthetics</li>
-              <li>International Standard Safety Shuttering</li>
-              <li>Heavy Duty Mechanical Lifecycle</li>
-            </ul>
-          </div>
-
-          <!-- Right: Technical Details Table -->
-          <div>
-            <h2 class="section-subtitle">Technical Details</h2>
-            <table class="tech-table">
-              <tbody>
-                ${techTableRows}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      `;
-
-      // Set up click handler for email inquiry
-      const inquireBtn = document.getElementById('inquire-btn');
-      if (inquireBtn) {
-        inquireBtn.addEventListener('click', () => {
-          const productLink = window.location.href;
-          const subject = encodeURIComponent(`Product Inquiry: ${product.name}`);
-          const body = encodeURIComponent(`Hello, I'm interested in the following product from Blit:\n\nProduct: ${product.name}\nRange: ${product.range}\nLink: ${productLink}`);
-          const mailtoUrl = `mailto:info@blit.com?subject=${subject}&body=${body}`;
-          window.open(mailtoUrl, '_self');
-        });
-      }
+      // Initial Render
+      renderProductDetails(categoryId, productName);
     });
 
     function renderError(message) {
