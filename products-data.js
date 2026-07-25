@@ -35,7 +35,6 @@ export const IMAGE_BG_MAP = {
   "./assets/products/wiring_accessories/lamp_holder.png": "#f2f3f2",
   "./assets/products/wiring_accessories/multi_adaptor.jpg": "#f7f7f7",
   "./assets/products/wiring_accessories/plug_top.jpg": "#f7f7f7",
-  "./assets/products/industrial_plug_socket/industrial_plug_socket.png": "#f7f7f7",
   "./assets/products/ventilation/industrial_stand_fan.jpg": "#ffffff",
   "./assets/products/ventilation/industrial_wall_fan.jpg": "#ffffff",
   "./assets/products/insect_killer/elite_series.jpg": "#ffffff",
@@ -329,26 +328,6 @@ export const PRODUCTS_DATA = [
         desc: "Color-coded insulated pin, ring, and spade terminal connectors, preventing short circuits and flashovers.",
         specs: ["Color Coded Sizes", "PVC Insulated sleeves", "High Conductivity Brass"],
         range: "Insulated Terminals"
-      }
-    ]
-  },
-  {
-    id: "industrial_plug_socket",
-    name: "Industrial Plug & Socket",
-    items: [
-      {
-        name: "Heavy-Duty Industrial Plug & Socket Set",
-        img: "./assets/products/industrial_plug_socket/industrial_plug_socket.png",
-        desc: "Heavy-duty industrial plug and socket connectors, IP44/IP67 rated, delivering high performance and durability under tough environments.",
-        specs: ["3-Pin/4-Pin/5-Pin options", "16A / 32A / 63A Ratings", "Splashproof IP44 / Waterproof IP67"],
-        range: "Ind Plug & Socket"
-      },
-      {
-        name: "Industrial Wall Socket Outlet",
-        img: "./assets/products/industrial_plug_socket/industrial_plug_socket.png",
-        desc: "Industrial surface-mounted wall socket outlet with mechanical interlock system for ultimate operator safety.",
-        specs: ["Mechanical Interlock Switch", "High Impact Thermoplastic", "Red/Blue Voltage Coding"],
-        range: "Ind Plug & Socket"
       }
     ]
   },

@@ -201,15 +201,16 @@ function initProductExplorer() {
 
     modalTitle.textContent = categoryData.name;
 
-    // Render subcategory tabs for Switches
+    // Render subcategory tabs dynamically for any category with multiple ranges
     const modalTabs = document.getElementById('modal-tabs');
     if (modalTabs) {
-      if (categoryId === 'switches') {
+      const ranges = [...new Set(categoryData.items.map(item => item.range).filter(Boolean))];
+      
+      if (ranges.length > 1) {
         modalTabs.style.display = 'flex';
-        // Get unique ranges from items, ensuring correct order:
-        const ranges = ['All', ...new Set(categoryData.items.map(item => item.range).filter(Boolean))];
+        const allRanges = ['All', ...ranges];
         
-        modalTabs.innerHTML = ranges.map((range, index) => `
+        modalTabs.innerHTML = allRanges.map((range, index) => `
           <button class="modal-tab ${index === 0 ? 'active' : ''}" data-range="${range}">
             ${range}
           </button>
@@ -231,7 +232,7 @@ function initProductExplorer() {
       }
     }
 
-    // Initial render with 'All' switches
+    // Initial render with 'All' products
     renderProductGrid(categoryData.items, 'All', categoryId);
 
     // Sync header active link
@@ -319,7 +320,7 @@ function initProductExplorer() {
     const quoteSection = document.getElementById('quote');
 
     if (quoteFormSelect) {
-      const validCategories = ['switches', 'weatherproof', 'wiring_accessories', 'cable_management', 'cable_termination', 'industrial_plug_socket', 'ventilation', 'insect_killer'];
+      const validCategories = ['switches', 'weatherproof', 'wiring_accessories', 'cable_management', 'cable_termination', 'ventilation', 'insect_killer'];
       let selectVal = validCategories.includes(categoryVal) ? categoryVal : 'switches';
       quoteFormSelect.value = selectVal;
     }
