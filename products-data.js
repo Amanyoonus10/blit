@@ -8,7 +8,6 @@ export const IMAGE_BG_MAP = {
   "./assets/products/cable_termination/gland.png": "#fdfdfd",
   "./assets/products/cable_termination/insulated_terminals.jpg": "#ffffff",
   "./assets/products/cable_termination/lug.jpg": "#f7f7f7",
-  "./assets/products/industrial_plug_socket/industrial_plug_socket.png": "#dededd",
   "./assets/products/switches/cw_range_gold_switch_1g.jpg": "#2f2d2f",
   "./assets/products/switches/cw_range_gold_switch_3g_alt.jpg": "#313131",
   "./assets/products/switches/cw_range_gold_twin_socket.jpg": "#ffffff",
@@ -314,26 +313,7 @@ export const PRODUCTS_DATA = [
       }
     ]
   },
-  {
-    id: "industrial_plug_socket",
-    name: "Industrial Plugs & Sockets",
-    items: [
-      {
-        name: "Heavy-Duty Industrial Plug & Socket Set",
-        img: "./assets/products/industrial_plug_socket/industrial_plug_socket.png",
-        desc: "Heavy-duty 3-pin and 5-pin industrial plug and connector sets, featuring secure lock-ring seals and splashproof shells.",
-        specs: ["IP67 Rated", "High Load 16A-63A", "Impact Protected Case"],
-        range: "Industrial Plug & Socket"
-      },
-      {
-        name: "Industrial Wall Socket Outlet",
-        img: "./assets/products/industrial_plug_socket/industrial_plug_socket.png",
-        desc: "Wall-mounted industrial socket with mechanical interlock for extra safety, ideal for factory settings.",
-        specs: ["IP44/IP67 Splashproof", "Mechanical Interlock", "3-Pin 16A/32A"],
-        range: "Interlocked Sockets"
-      }
-    ]
-  },
+
   {
     id: "installation_boxes",
     name: "Installation Boxes & Accessories",

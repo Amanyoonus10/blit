@@ -284,7 +284,6 @@ function initProductExplorer() {
       else if (categoryVal === 'wiring_accessories') selectVal = 'wiring_accessories';
       else if (categoryVal === 'cable_management') selectVal = 'cable_management';
       else if (categoryVal === 'cable_termination') selectVal = 'cable_termination';
-      else if (categoryVal === 'industrial_plug_socket') selectVal = 'industrial_plug_socket';
       else if (categoryVal === 'installation_boxes') selectVal = 'installation_boxes';
 
       quoteFormSelect.value = selectVal;
