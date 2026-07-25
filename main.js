@@ -320,7 +320,7 @@ function initProductExplorer() {
     const quoteSection = document.getElementById('quote');
 
     if (quoteFormSelect) {
-      const validCategories = ['switches', 'weatherproof', 'wiring_accessories', 'cable_management', 'cable_termination', 'installation_boxes', 'ventilation', 'insect_killer'];
+      const validCategories = ['switches', 'weatherproof', 'wiring_accessories', 'cable_management', 'cable_termination', 'industrial_plug_socket', 'installation_boxes'];
       let selectVal = validCategories.includes(categoryVal) ? categoryVal : 'switches';
       quoteFormSelect.value = selectVal;
     }
