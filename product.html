@@ -12,11 +12,11 @@
   <style>
     :root {
       --primary-red: #FF1A1A;
-      --bg-dark: #050508;
-      --card-bg: #0C0C12;
-      --text-white: #FFFFFF;
-      --text-muted: rgba(255, 255, 255, 0.6);
-      --border-color: rgba(255, 255, 255, 0.08);
+      --bg-dark: #FFFFFF;
+      --card-bg: #FAFAFA;
+      --text-white: #111111;
+      --text-muted: #555555;
+      --border-color: rgba(0, 0, 0, 0.08);
       --font-family: 'Outfit', sans-serif;
       --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     }
@@ -42,7 +42,7 @@
     .detail-header {
       border-bottom: 1px solid var(--border-color);
       padding: 20px 0;
-      background: rgba(5, 5, 8, 0.8);
+      background: rgba(255, 255, 255, 0.85);
       backdrop-filter: blur(10px);
       position: sticky;
       top: 0;
@@ -127,7 +127,7 @@
       align-items: center;
       justify-content: center;
       padding: 40px;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 80px rgba(255, 26, 26, 0.05);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04), 0 0 80px rgba(255, 26, 26, 0.02);
       border: 1px solid var(--border-color);
       position: relative;
     }
@@ -136,7 +136,7 @@
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
-      filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
+      filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.05));
       transition: transform 0.5s ease;
     }
 
@@ -149,14 +149,14 @@
       top: 20px;
       right: 20px;
       background: var(--primary-red);
-      color: var(--text-white);
+      color: #FFFFFF;
       font-size: 10px;
       font-weight: 700;
       text-transform: uppercase;
       padding: 5px 12px;
       border-radius: 6px;
       letter-spacing: 0.1em;
-      box-shadow: 0 5px 15px rgba(255, 26, 26, 0.3);
+      box-shadow: 0 5px 15px rgba(255, 26, 26, 0.15);
     }
 
     /* Product Thumbnails */
@@ -178,8 +178,8 @@
       height: 75px;
       border-radius: 8px;
       overflow: hidden;
-      border: 2px solid rgba(255, 255, 255, 0.06);
-      background: rgba(255, 255, 255, 0.01);
+      border: 2px solid rgba(0, 0, 0, 0.06);
+      background: rgba(0, 0, 0, 0.01);
       cursor: pointer;
       display: flex;
       align-items: center;
