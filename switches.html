@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
-  <link rel="preload" href="./assets/products/switches/switches_sockets_hero.jpg" as="image" type="image/jpeg">
+  <link rel="preload" href="/assets/products/switches/switches_sockets_hero.jpg" as="image" type="image/jpeg">
   <link rel="stylesheet" href="./style.css">
   
   <style>
@@ -34,28 +34,15 @@
     }
 
     .switches-hero {
-      background-color: #FAFAFA;
-      padding: 80px 0;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
+      background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.45) 60%, rgba(0, 0, 0, 0.15) 100%), url('/assets/products/switches/switches_sockets_hero.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 120px 0;
+      min-height: 520px;
+      display: flex;
       align-items: center;
-    }
-
-    @media (max-width: 991px) {
-      .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        text-align: center;
-      }
-      .hero-grid img {
-        max-width: 100%;
-        margin: 0 auto;
-      }
+      position: relative;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     }
 
     /* Range selector cards */
@@ -234,19 +221,14 @@
 
   <!-- Hero Section -->
   <section class="switches-hero">
-    <div class="container">
-      <div class="hero-grid">
-        <div>
-          <span style="font-size: 13px; font-weight: 700; color: #FF1A1A; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 16px;">Collection Showcase</span>
-          <h1 style="font-family: var(--font-heading); font-size: 48px; font-weight: 800; color: #111111; line-height: 1.1; margin-bottom: 24px; letter-spacing: -1px;">Switches & Sockets</h1>
-          <p style="font-size: 16px; color: #555555; line-height: 1.6; margin-bottom: 40px;">
-            Artistry in connectivity. Discover our wide range of premium switches, switched sockets, industrial metal-clad panels, and gold bezels. Engineered to meet safety regulations while offering state-of-the-art designs.
-          </p>
-          <a href="#ranges" class="hero-btn" style="background-color: #FF1A1A; color: #FFFFFF; padding: 15px 30px; border-radius: 30px; font-weight: 600; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: var(--transition-smooth);">Explore Ranges <span class="arrow">↓</span></a>
-        </div>
-        <div style="border-radius: 24px; overflow: hidden; box-shadow: 0 25px 50px rgba(0,0,0,0.08); border: 1px solid rgba(0,0,0,0.06);">
-          <img src="./assets/products/switches/switches_sockets_hero.jpg" alt="Switches & Sockets Collage" style="width: 100%; height: auto; display: block;">
-        </div>
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 24px; width: 100%;">
+      <div style="max-width: 580px;">
+        <span style="font-size: 13px; font-weight: 700; color: #FF1A1A; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 16px;">Collection Showcase</span>
+        <h1 style="font-family: var(--font-heading); font-size: 48px; font-weight: 800; color: #FFFFFF; line-height: 1.1; margin-bottom: 24px; letter-spacing: -1px;">Switches & Sockets</h1>
+        <p style="font-size: 16px; color: rgba(255, 255, 255, 0.85); line-height: 1.6; margin-bottom: 40px;">
+          Artistry in connectivity. Discover our wide range of premium switches, switched sockets, industrial metal-clad panels, and gold bezels. Engineered to meet safety regulations while offering state-of-the-art designs.
+        </p>
+        <a href="#ranges" class="hero-btn" style="background-color: #FF1A1A; color: #FFFFFF; padding: 15px 30px; border-radius: 30px; font-weight: 600; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: var(--transition-smooth);">Explore Ranges <span class="arrow">↓</span></a>
       </div>
     </div>
   </section>
