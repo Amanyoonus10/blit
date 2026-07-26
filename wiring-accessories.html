@@ -73,24 +73,18 @@
 
     .ranges-overview-grid {
       display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      gap: 16px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
       margin-bottom: 60px;
     }
 
-    @media (max-width: 1199px) {
-      .ranges-overview-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       .ranges-overview-grid {
         grid-template-columns: repeat(2, 1fr);
       }
     }
 
-    @media (max-width: 479px) {
+    @media (max-width: 575px) {
       .ranges-overview-grid {
         grid-template-columns: 1fr;
       }
@@ -100,7 +94,7 @@
       background: #FFFFFF;
       border: 2px solid rgba(0, 0, 0, 0.06);
       border-radius: 20px;
-      padding: 20px 15px;
+      padding: 30px;
       text-align: center;
       cursor: pointer;
       box-shadow: 0 10px 25px rgba(0,0,0,0.02);
@@ -141,7 +135,7 @@
     }
 
     .range-img-box {
-      height: 120px;
+      height: 200px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -161,14 +155,14 @@
 
     .range-title {
       font-family: var(--font-heading);
-      font-size: 15px;
+      font-size: 20px;
       font-weight: 800;
       color: #111111;
       margin-bottom: 5px;
     }
 
     .range-description {
-      font-size: 11px;
+      font-size: 13px;
       color: #777777;
       line-height: 1.4;
     }
@@ -247,19 +241,7 @@
     </div>
   </section>
 
-  <!-- Product list display -->
-  <section class="products-display-section" id="products-display">
-    <div class="container">
-      <div class="section-header" style="margin-bottom: 40px; text-align: left;">
-        <h3 id="active-range-title" style="font-family: var(--font-heading); font-size: 26px; font-weight: 800; color: #111111; border-left: 4px solid var(--primary-red); padding-left: 15px;">Plug Top Collection</h3>
-        <p id="active-range-desc" style="margin: 8px 0 0 0; text-align: left; max-width: 100%;">Explore the premium switches and switched sockets in this collection.</p>
-      </div>
 
-      <div class="products-display-grid" id="products-grid-container">
-        <!-- Dyn. populated by JS -->
-      </div>
-    </div>
-  </section>
 
   <!-- Contact Section -->
   <section class="quote-form-section" id="quote">
@@ -317,12 +299,9 @@
 
     document.addEventListener('DOMContentLoaded', () => {
       const selectorContainer = document.getElementById('ranges-selector-container');
-      const productsContainer = document.getElementById('products-grid-container');
-      const rangeTitle = document.getElementById('active-range-title');
-      const rangeDesc = document.getElementById('active-range-desc');
       const selectElement = document.getElementById('category');
 
-      if (!selectorContainer || !productsContainer) return;
+      if (!selectorContainer) return;
 
       // Extract Wiring Accessories data
       const wiringCat = PRODUCTS_DATA.find(cat => cat.id === 'wiring_accessories');
@@ -357,7 +336,7 @@
           if (!repItem) return;
 
           const card = document.createElement('div');
-          card.className = `range-selector-card ${rangeName === activeRangeName ? 'active' : ''}`;
+          card.className = 'range-selector-card';
           
           card.innerHTML = `
             <div class="range-img-box">
@@ -368,59 +347,10 @@
           `;
 
           card.addEventListener('click', () => {
-            activeRangeName = rangeName;
-            renderRangeCards();
-            renderActiveProducts();
-            
-            // Sync form dropdown
-            if (selectElement) {
-              selectElement.value = rangeName;
-            }
-
-            // Scroll down to products grid smoothly
-            const gridSec = document.getElementById('products-display');
-            if (gridSec) {
-              gridSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
+            window.location.href = `./product.html?category=wiring_accessories&product=${encodeURIComponent(repItem.name)}`;
           });
 
           selectorContainer.appendChild(card);
-        });
-      };
-
-      // Render active range products in detailed grid
-      const renderActiveProducts = () => {
-        productsContainer.innerHTML = '';
-        const items = ranges[activeRangeName] || [];
-
-        // Set titles
-        rangeTitle.innerText = `${activeRangeName} Collection`;
-        rangeDesc.innerText = rangeDescriptions[activeRangeName] || "Explore the premium products in this collection.";
-
-        items.forEach(item => {
-          const card = document.createElement('div');
-          card.className = 'modal-product-card';
-
-          const bg = IMAGE_BG_MAP[item.img] || '#FFFFFF';
-
-          card.innerHTML = `
-            <div class="modal-card-img-box" style="background-color: ${bg};">
-              <img src="${item.img}" alt="${item.name}" loading="lazy">
-            </div>
-            <div class="modal-card-body">
-              <h4 class="modal-card-title">${item.name}</h4>
-              <p class="modal-card-desc">${item.desc}</p>
-              <ul class="modal-card-specs">
-                ${item.specs.map(spec => `<li>${spec}</li>`).join('')}
-              </ul>
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: auto;">
-                <a href="./product.html?category=wiring_accessories&product=${encodeURIComponent(item.name)}" class="modal-inquiry-btn" style="text-decoration: none;">View Details</a>
-                <a href="#quote" class="modal-inquiry-btn" style="text-decoration: none; background: var(--primary-red); color: #FFFFFF; border-color: var(--primary-red);">Inquire</a>
-              </div>
-            </div>
-          `;
-
-          productsContainer.appendChild(card);
         });
       };
 
@@ -436,7 +366,6 @@
 
       // Init UI
       renderRangeCards();
-      renderActiveProducts();
     });
   </script>
 
