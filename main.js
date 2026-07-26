@@ -170,6 +170,10 @@ function initProductExplorer() {
           window.location.href = './air-ventilation.html';
           return;
         }
+        if (categoryId === 'insect_killer') {
+          window.location.href = './insect-killer.html';
+          return;
+        }
         setActiveCategory(categoryId);
       });
     });
@@ -370,6 +374,10 @@ function initProductExplorer() {
     }
     if (categoryId === 'ventilation') {
       window.location.href = './air-ventilation.html';
+      return;
+    }
+    if (categoryId === 'insect_killer') {
+      window.location.href = './insect-killer.html';
       return;
     }
     // Show modal

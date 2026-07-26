@@ -14,6 +14,7 @@ export default defineConfig({
         'cable-termination': resolve(__dirname, 'cable-termination.html'),
         'installation-boxes': resolve(__dirname, 'installation-boxes.html'),
         'air-ventilation': resolve(__dirname, 'air-ventilation.html'),
+        'insect-killer': resolve(__dirname, 'insect-killer.html'),
       },
     },
   },
