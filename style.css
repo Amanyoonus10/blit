@@ -105,6 +105,7 @@ button {
   font-weight: 800;
   color: var(--primary-red);
   letter-spacing: -0.5px;
+  padding-right: 4px;
 }
 
 .logo-subtitle {
