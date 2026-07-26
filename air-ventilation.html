@@ -312,7 +312,7 @@
       if (!selectorContainer || !productsContainer) return;
 
       // Extract Air & Ventilation data
-      const airCat = PRODUCTS_DATA.find(cat => cat.id === 'air_ventilation');
+      const airCat = PRODUCTS_DATA.find(cat => cat.id === 'ventilation');
       if (!airCat) return;
 
       // Group items by range
@@ -397,7 +397,7 @@
                 ${item.specs.map(spec => `<li>${spec}</li>`).join('')}
               </ul>
               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: auto;">
-                <a href="./product.html?category=air_ventilation&product=${encodeURIComponent(item.name)}" class="modal-inquiry-btn" style="text-decoration: none;">View Details</a>
+                <a href="./product.html?category=ventilation&product=${encodeURIComponent(item.name)}" class="modal-inquiry-btn" style="text-decoration: none;">View Details</a>
                 <a href="#quote" class="modal-inquiry-btn" style="text-decoration: none; background: var(--primary-red); color: #FFFFFF; border-color: var(--primary-red);">Inquire</a>
               </div>
             </div>
