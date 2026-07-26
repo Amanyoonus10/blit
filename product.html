@@ -94,6 +94,29 @@
       gap: 6px;
     }
 
+    .logo-text-group {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+      text-align: left;
+    }
+
+    .logo-title {
+      font-family: var(--font-family);
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--primary-red);
+      letter-spacing: -0.5px;
+    }
+
+    .logo-subtitle {
+      font-size: 8px;
+      font-weight: 700;
+      color: var(--primary-red);
+      letter-spacing: 2.2px;
+      text-transform: uppercase;
+    }
+
     .logo-bolt {
       width: 18px;
       height: 18px;
@@ -483,8 +506,11 @@
         </svg>
         Back to Products
       </a>
-      <a href="./index.html" class="brand-logo">
-        Blit
+      <a href="./index.html" class="logo flex-logo" style="text-decoration: none;">
+        <div class="logo-text-group">
+          <span class="logo-title">Blit</span>
+          <span class="logo-subtitle">Electric</span>
+        </div>
       </a>
     </div>
   </header>
