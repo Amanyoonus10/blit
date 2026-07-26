@@ -125,15 +125,93 @@ function initProductExplorer() {
 
   if (!modal || !modalGrid) return;
 
-  // Render grid of products for a category, optionally filtered by range
-  const renderProductGrid = (items, selectedRange, categoryId) => {
-    modalGrid.innerHTML = '';
-    
-    const filteredItems = selectedRange === 'All' 
-      ? items 
-      : items.filter(item => item.range === selectedRange);
+  // Render the category tabs
+  const renderCategoryTabs = (activeCategoryId) => {
+    const modalTabs = document.getElementById('modal-tabs');
+    if (!modalTabs) return;
 
-    filteredItems.forEach((item) => {
+    modalTabs.style.display = 'flex';
+    modalTabs.innerHTML = PRODUCTS_DATA.map(cat => `
+      <button class="modal-tab ${cat.id === activeCategoryId ? 'active' : ''}" data-category-id="${cat.id}">
+        ${cat.name}
+      </button>
+    `).join('');
+
+    // Add event listeners to category tabs
+    const tabs = modalTabs.querySelectorAll('.modal-tab');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const categoryId = tab.getAttribute('data-category-id');
+        setActiveCategory(categoryId);
+      });
+    });
+  };
+
+  // Render ranges list for a category containing multiple ranges
+  const renderCategoryRanges = (categoryId, ranges) => {
+    modalGrid.innerHTML = '';
+
+    const rangesContainer = document.createElement('div');
+    rangesContainer.className = 'modal-ranges-selection-grid';
+
+    Object.entries(ranges).forEach(([rangeName, items]) => {
+      const repItem = items[0];
+      if (!repItem) return;
+
+      const card = document.createElement('div');
+      card.className = 'modal-range-selection-card';
+      card.style.cursor = 'pointer';
+
+      const bg = IMAGE_BG_MAP[repItem.img] || '#FFFFFF';
+
+      card.innerHTML = `
+        <div class="modal-card-img-box" style="background-color: ${bg};">
+          <img src="${repItem.img}" alt="${rangeName}" loading="lazy">
+          <span class="range-badge">Collection</span>
+        </div>
+        <div class="modal-card-body">
+          <h4 class="modal-card-title">${rangeName}</h4>
+          <p class="modal-card-desc">Explore the premium products in our ${rangeName} collection.</p>
+          <span class="modal-explore-link">Explore Collection <span class="arrow">→</span></span>
+        </div>
+      `;
+
+      card.addEventListener('click', () => {
+        renderRangeProducts(categoryId, rangeName, items, true);
+      });
+
+      rangesContainer.appendChild(card);
+    });
+
+    modalGrid.appendChild(rangesContainer);
+  };
+
+  // Render products for a specific range inside the active category
+  const renderRangeProducts = (categoryId, rangeName, items, showBackButton) => {
+    modalGrid.innerHTML = '';
+
+    if (showBackButton) {
+      const backBtn = document.createElement('button');
+      backBtn.className = 'modal-back-btn';
+      backBtn.innerHTML = `&larr; Back to ${PRODUCTS_DATA.find(cat => cat.id === categoryId).name} Collections`;
+      backBtn.addEventListener('click', () => {
+        setActiveCategory(categoryId);
+      });
+      modalGrid.appendChild(backBtn);
+    }
+
+    const groupContainer = document.createElement('div');
+    groupContainer.className = 'modal-range-group';
+
+    const rangeTitle = document.createElement('h4');
+    rangeTitle.className = 'modal-range-title';
+    rangeTitle.textContent = rangeName;
+    groupContainer.appendChild(rangeTitle);
+
+    const rangeGrid = document.createElement('div');
+    rangeGrid.className = 'modal-range-grid';
+
+    items.forEach(item => {
       const card = document.createElement('div');
       card.className = 'modal-product-card';
       card.style.cursor = 'pointer';
@@ -144,7 +222,7 @@ function initProductExplorer() {
       card.innerHTML = `
         <div class="modal-card-img-box" style="background-color: ${bg};">
           <img src="${item.img}" alt="${item.name}" loading="lazy">
-          <span class="range-badge">${item.range}</span>
+          <span class="range-badge">${item.range || 'Standard'}</span>
         </div>
         <div class="modal-card-body">
           <h4 class="modal-card-title">${item.name}</h4>
@@ -174,57 +252,36 @@ function initProductExplorer() {
           e.stopPropagation(); // prevent card click
           const productLink = window.location.origin + "/product.html?category=" + categoryId + "&product=" + encodeURIComponent(item.name);
           const subject = encodeURIComponent(`Product Inquiry: ${item.name}`);
-          const body = encodeURIComponent(`Hello, I'm interested in the following product from Blit:\n\nProduct: ${item.name}\nRange: ${item.range}\nLink: ${productLink}`);
+          const body = encodeURIComponent(`Hello, I'm interested in the following product from Blit:\n\nProduct: ${item.name}\nRange: ${item.range || 'Standard'}\nLink: ${productLink}`);
           const mailtoUrl = `mailto:info@blit.com?subject=${subject}&body=${body}`;
           window.open(mailtoUrl, '_self');
           closeModal();
         });
       }
 
-      modalGrid.appendChild(card);
+      rangeGrid.appendChild(card);
     });
+
+    groupContainer.appendChild(rangeGrid);
+    modalGrid.appendChild(groupContainer);
   };
 
-  // Open modal and show products for selected category
-  const openCategoryModal = (categoryId) => {
+  // Set the active category and sync states
+  const setActiveCategory = (categoryId) => {
     const categoryData = PRODUCTS_DATA.find(cat => cat.id === categoryId);
     if (!categoryData) return;
 
     modalTitle.textContent = categoryData.name;
 
-    // Render subcategory tabs dynamically for any category with multiple ranges
-    const modalTabs = document.getElementById('modal-tabs');
-    if (modalTabs) {
-      const ranges = [...new Set(categoryData.items.map(item => item.range).filter(Boolean))];
-      
-      if (ranges.length > 1) {
-        modalTabs.style.display = 'flex';
-        const allRanges = ['All', ...ranges];
-        
-        modalTabs.innerHTML = allRanges.map((range, index) => `
-          <button class="modal-tab ${index === 0 ? 'active' : ''}" data-range="${range}">
-            ${range}
-          </button>
-        `).join('');
-
-        // Add event listeners to tabs
-        const tabs = modalTabs.querySelectorAll('.modal-tab');
-        tabs.forEach(tab => {
-          tab.addEventListener('click', () => {
-            tabs.forEach(t => t.classList.remove('active'));
-            tab.classList.add('active');
-            const selectedRange = tab.getAttribute('data-range');
-            renderProductGrid(categoryData.items, selectedRange, categoryId);
-          });
-        });
+    // Update active tab styling
+    const tabs = document.querySelectorAll('.modal-tab');
+    tabs.forEach(tab => {
+      if (tab.getAttribute('data-category-id') === categoryId) {
+        tab.classList.add('active');
       } else {
-        modalTabs.style.display = 'none';
-        modalTabs.innerHTML = '';
+        tab.classList.remove('active');
       }
-    }
-
-    // Initial render with 'All' products
-    renderProductGrid(categoryData.items, 'All', categoryId);
+    });
 
     // Sync header active link
     headerCategories.forEach(item => {
@@ -236,9 +293,36 @@ function initProductExplorer() {
       }
     });
 
+    // Group items by range to see how many ranges we have
+    const ranges = {};
+    categoryData.items.forEach(item => {
+      const rangeName = item.range || 'Standard';
+      if (!ranges[rangeName]) {
+        ranges[rangeName] = [];
+      }
+      ranges[rangeName].push(item);
+    });
+
+    const rangeNames = Object.keys(ranges);
+
+    // If there is more than 1 range, show the Range Selection View.
+    // Otherwise, directly show the products for the single range.
+    if (rangeNames.length > 1) {
+      renderCategoryRanges(categoryId, ranges);
+    } else {
+      renderRangeProducts(categoryId, rangeNames[0] || 'Standard', ranges[rangeNames[0] || 'Standard'] || categoryData.items, false);
+    }
+  };
+
+  // Open modal and show products for selected category
+  const openCategoryModal = (categoryId) => {
     // Show modal
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
+
+    // Render tabs and set active category
+    renderCategoryTabs(categoryId);
+    setActiveCategory(categoryId);
   };
 
   // Close modal
@@ -303,32 +387,6 @@ function initProductExplorer() {
       }, 500);
     });
   });
-
-  // Pre-fill Quote Form logic
-  const triggerInquiry = (categoryVal, productVal) => {
-    const quoteFormSelect = document.getElementById('client-needs');
-    const quoteFormTextarea = document.getElementById('client-message');
-    const quoteSection = document.getElementById('quote');
-
-    if (quoteFormSelect) {
-      const validCategories = ['switches', 'weatherproof', 'wiring_accessories', 'cable_management', 'cable_termination', 'installation_boxes', 'ventilation', 'insect_killer'];
-      let selectVal = validCategories.includes(categoryVal) ? categoryVal : 'switches';
-      quoteFormSelect.value = selectVal;
-    }
-
-    if (quoteFormTextarea) {
-      quoteFormTextarea.value = `I am interested in requesting a quote for: ${productVal}.\n\nPlease provide specifications, pricing, and minimum order quantity.`;
-    }
-
-    if (quoteSection) {
-      quoteSection.scrollIntoView({ behavior: 'smooth' });
-      const quoteBox = quoteSection.querySelector('.quote-box');
-      if (quoteBox) {
-        quoteBox.classList.add('pulse-highlight');
-        setTimeout(() => quoteBox.classList.remove('pulse-highlight'), 1500);
-      }
-    }
-  };
 }
 
 /**
