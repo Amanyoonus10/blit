@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Air & Ventilation | Blit Electric</title>
-  <meta name="description" content="Explore the premium Air & Ventilation collection from Blit Electric, featuring industrial stand fans and wall-mount fans. Built for heavy-duty performance.">
+  <meta name="description" content="Explore the premium Air & Ventilation collection from Blit Electric, featuring industrial stand fans and wall-bracket mount fans.">
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -217,7 +217,7 @@
         <span style="font-size: 13px; font-weight: 700; color: #FF1A1A; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 16px;">Collection Showcase</span>
         <h1 style="font-family: var(--font-heading); font-size: 48px; font-weight: 800; color: #FFFFFF; line-height: 1.1; margin-bottom: 24px; letter-spacing: -1px;">Air & Ventilation</h1>
         <p style="font-size: 16px; color: rgba(255, 255, 255, 0.85); line-height: 1.6; margin-bottom: 40px;">
-          Powerful air delivery. Discover our heavy-duty industrial stand fans and space-saving wall-mount fans. Engineered with high air volume capacity, robust steel blades, and durable safety wire guards.
+          Powerful air everywhere you need. Discover our high-delivery industrial stand fans and wall-bracket mount fans. Engineered with heavy steel-wire guards, balanced metal blades, and high-performance copper wind motors.
         </p>
         <a href="#ranges" class="hero-btn" style="background-color: #FF1A1A; color: #FFFFFF; padding: 15px 30px; border-radius: 30px; font-weight: 600; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: var(--transition-smooth);">Explore Ranges <span class="arrow">↓</span></a>
       </div>
@@ -229,7 +229,7 @@
     <div class="container">
       <div class="section-header">
         <h2>Choose a Range</h2>
-        <p>Select any of our industrial ventilation ranges below to filter fan dimensions, blade counts, and speeds.</p>
+        <p>Select any of our ventilation categories below to filter dimensions, sweeps, and installation brackets.</p>
       </div>
 
       <div class="ranges-overview-grid" id="ranges-selector-container">
@@ -277,13 +277,13 @@
           <div class="form-group">
             <label for="category">Product Range Interest</label>
             <select id="category">
-              <option value="Industrial Stand Fan">Industrial Stand Fan</option>
-              <option value="Industrial Wall Fan">Industrial Wall Fan</option>
+              <option value="Industrial Stand Fan">Pedestal Stand Fan</option>
+              <option value="Industrial Wall Fan">Wall Bracket Fan</option>
             </select>
           </div>
           <div class="form-group">
             <label for="message">Your Requirements</label>
-            <textarea id="message" rows="4" placeholder="Mention dimensions or quantities here..." required></textarea>
+            <textarea id="message" rows="4" placeholder="Mention fan counts or custom requirements here..." required></textarea>
           </div>
           <button type="submit" class="featured-btn" style="border: none; width: 100%; justify-content: center; cursor: pointer;">Submit Request</button>
         </form>
@@ -326,8 +326,8 @@
 
       // Descriptions mapping for each range
       const rangeDescriptions = {
-        "Industrial Stand Fan": "Heavy-duty stand fans with adjustable height, wide-angle oscillation, and high-velocity blades.",
-        "Industrial Wall Fan": "Space-saving wall-mount fans with robust brackets, heavy wire guards, and high air displacement."
+        "Industrial Stand Fan": "Pedestal stand fans with heavy cross base mounts, adjustable height, and high-velocity blades.",
+        "Industrial Wall Fan": "Wall-bracket mount fans with wide angle oscillation, offering space-saving powerful airflow."
       };
 
       let activeRangeName = Object.keys(ranges)[0] || "Industrial Stand Fan";
