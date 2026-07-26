@@ -101,7 +101,7 @@ button {
 
 .logo-title {
   font-family: var(--font-heading);
-  font-size: 24px;
+  font-size: 34px;
   font-weight: 800;
   color: var(--primary-red);
   letter-spacing: -0.5px;
@@ -109,10 +109,10 @@ button {
 }
 
 .logo-subtitle {
-  font-size: 8px;
+  font-size: 11px;
   font-weight: 700;
   color: var(--primary-red);
-  letter-spacing: 2.2px;
+  letter-spacing: 3.2px;
 }
 
 /* Nav Menu Wrapper for Desktop & Responsive */
