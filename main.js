@@ -162,6 +162,10 @@ function initProductExplorer() {
           window.location.href = './cable-termination.html';
           return;
         }
+        if (categoryId === 'installation_boxes') {
+          window.location.href = './installation-boxes.html';
+          return;
+        }
         setActiveCategory(categoryId);
       });
     });
@@ -354,6 +358,10 @@ function initProductExplorer() {
     }
     if (categoryId === 'cable_termination') {
       window.location.href = './cable-termination.html';
+      return;
+    }
+    if (categoryId === 'installation_boxes') {
+      window.location.href = './installation-boxes.html';
       return;
     }
     // Show modal
