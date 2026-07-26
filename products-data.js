@@ -410,26 +410,7 @@ export const PRODUCTS_DATA = [
       }
     ]
   },
-  {
-    id: "industrial_plug_socket",
-    name: "Industrial Plugs",
-    items: [
-      {
-        name: "Heavy-Duty Industrial Plug & Socket Set",
-        img: "./assets/products/industrial_plug_socket/industrial_plug_socket.png",
-        desc: "Heavy-duty industrial plug and socket connectors, IP44/IP67 rated, delivering high performance and durability under tough environments.",
-        specs: ["3-Pin/4-Pin/5-Pin options", "16A / 32A / 63A Ratings", "Splashproof IP44 / Waterproof IP67"],
-        range: "Ind Plug & Socket"
-      },
-      {
-        name: "Industrial Wall Socket Outlet",
-        img: "./assets/products/industrial_plug_socket/industrial_plug_socket.png",
-        desc: "Industrial surface-mounted wall socket outlet with mechanical interlock system for ultimate operator safety.",
-        specs: ["Mechanical Interlock Switch", "High Impact Thermoplastic", "Red/Blue Voltage Coding"],
-        range: "Ind Plug & Socket"
-      }
-    ]
-  },
+
   {
     id: "installation_boxes",
     name: "Installation Boxes",
