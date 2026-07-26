@@ -150,6 +150,14 @@ function initProductExplorer() {
           window.location.href = './weatherproof.html';
           return;
         }
+        if (categoryId === 'wiring_accessories') {
+          window.location.href = './wiring-accessories.html';
+          return;
+        }
+        if (categoryId === 'cable_management') {
+          window.location.href = './cable-management.html';
+          return;
+        }
         setActiveCategory(categoryId);
       });
     });
@@ -330,6 +338,14 @@ function initProductExplorer() {
     }
     if (categoryId === 'weatherproof') {
       window.location.href = './weatherproof.html';
+      return;
+    }
+    if (categoryId === 'wiring_accessories') {
+      window.location.href = './wiring-accessories.html';
+      return;
+    }
+    if (categoryId === 'cable_management') {
+      window.location.href = './cable-management.html';
       return;
     }
     // Show modal
