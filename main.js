@@ -142,6 +142,10 @@ function initProductExplorer() {
     tabs.forEach(tab => {
       tab.addEventListener('click', () => {
         const categoryId = tab.getAttribute('data-category-id');
+        if (categoryId === 'switches') {
+          window.location.href = './switches.html';
+          return;
+        }
         setActiveCategory(categoryId);
       });
     });
@@ -316,6 +320,10 @@ function initProductExplorer() {
 
   // Open modal and show products for selected category
   const openCategoryModal = (categoryId) => {
+    if (categoryId === 'switches') {
+      window.location.href = './switches.html';
+      return;
+    }
     // Show modal
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
