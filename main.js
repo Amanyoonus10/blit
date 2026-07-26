@@ -166,6 +166,10 @@ function initProductExplorer() {
           window.location.href = './installation-boxes.html';
           return;
         }
+        if (categoryId === 'air_ventilation') {
+          window.location.href = './air-ventilation.html';
+          return;
+        }
         setActiveCategory(categoryId);
       });
     });
@@ -362,6 +366,10 @@ function initProductExplorer() {
     }
     if (categoryId === 'installation_boxes') {
       window.location.href = './installation-boxes.html';
+      return;
+    }
+    if (categoryId === 'air_ventilation') {
+      window.location.href = './air-ventilation.html';
       return;
     }
     // Show modal
