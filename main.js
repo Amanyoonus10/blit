@@ -158,6 +158,10 @@ function initProductExplorer() {
           window.location.href = './cable-management.html';
           return;
         }
+        if (categoryId === 'cable_termination') {
+          window.location.href = './cable-termination.html';
+          return;
+        }
         setActiveCategory(categoryId);
       });
     });
@@ -346,6 +350,10 @@ function initProductExplorer() {
     }
     if (categoryId === 'cable_management') {
       window.location.href = './cable-management.html';
+      return;
+    }
+    if (categoryId === 'cable_termination') {
+      window.location.href = './cable-termination.html';
       return;
     }
     // Show modal

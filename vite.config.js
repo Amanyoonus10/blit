@@ -11,6 +11,7 @@ export default defineConfig({
         weatherproof: resolve(__dirname, 'weatherproof.html'),
         'wiring-accessories': resolve(__dirname, 'wiring-accessories.html'),
         'cable-management': resolve(__dirname, 'cable-management.html'),
+        'cable-termination': resolve(__dirname, 'cable-termination.html'),
       },
     },
   },
