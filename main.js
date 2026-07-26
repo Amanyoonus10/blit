@@ -146,6 +146,10 @@ function initProductExplorer() {
           window.location.href = './switches.html';
           return;
         }
+        if (categoryId === 'weatherproof') {
+          window.location.href = './weatherproof.html';
+          return;
+        }
         setActiveCategory(categoryId);
       });
     });
@@ -322,6 +326,10 @@ function initProductExplorer() {
   const openCategoryModal = (categoryId) => {
     if (categoryId === 'switches') {
       window.location.href = './switches.html';
+      return;
+    }
+    if (categoryId === 'weatherproof') {
+      window.location.href = './weatherproof.html';
       return;
     }
     // Show modal

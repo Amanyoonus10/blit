@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weatherproof Solutions | Blit Electric</title>
+  <meta name="description" content="Explore the premium Weatherproof Solutions collection from Blit Electric, featuring IP66, IP55, and Isolator ranges. Built for every environment.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="preload" href="/assets/products/weatherproof/weatherproof_hero.jpg" as="image" type="image/jpeg">
+  <link rel="stylesheet" href="./style.css">
+  
+  <style>
+    :root {
+      --primary-red: #FF1A1A;
+      --bg-dark: #FFFFFF;
+      --card-bg: #FAFAFA;
+      --text-white: #111111;
+      --text-muted: #555555;
+      --border-color: rgba(0, 0, 0, 0.08);
+      --font-family: 'Outfit', sans-serif;
+      --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-white);
+      font-family: var(--font-family);
+      line-height: 1.6;
+    }
+
+    .switches-hero {
+      background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.45) 60%, rgba(0, 0, 0, 0.15) 100%), url('/assets/products/weatherproof/weatherproof_hero.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 120px 0;
+      min-height: 520px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    /* Range selector cards */
+    .ranges-section {
+      padding: 80px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-header h2 {
+      font-family: var(--font-heading);
+      font-size: 48px;
+      font-weight: 800;
+      color: #111111;
+      letter-spacing: -1px;
+      margin-bottom: 15px;
+    }
+
+    .section-header p {
+      font-size: 16px;
+      color: #555555;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .ranges-overview-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 60px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (max-width: 767px) {
+      .ranges-overview-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 479px) {
+      .ranges-overview-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .range-selector-card {
+      background: #FFFFFF;
+      border: 2px solid rgba(0, 0, 0, 0.06);
+      border-radius: 20px;
+      padding: 24px;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.02);
+      transition: var(--transition-smooth);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .range-selector-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(255, 26, 26, 0.25);
+      box-shadow: 0 15px 35px rgba(255, 26, 26, 0.05);
+    }
+
+    .range-selector-card.active {
+      border-color: var(--primary-red);
+      background-color: #FAFAFA;
+      box-shadow: 0 15px 35px rgba(255, 26, 26, 0.08);
+    }
+
+    .range-selector-card.active::after {
+      content: '✓';
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: var(--primary-red);
+      color: #FFFFFF;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      font-size: 11px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .range-img-box {
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+      width: 100%;
+      background: #FFFFFF;
+      border-radius: 12px;
+      padding: 10px;
+      border: 1px solid rgba(0,0,0,0.02);
+    }
+
+    .range-img-box img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .range-title {
+      font-family: var(--font-heading);
+      font-size: 17px;
+      font-weight: 800;
+      color: #111111;
+      margin-bottom: 5px;
+    }
+
+    .range-description {
+      font-size: 12px;
+      color: #777777;
+      line-height: 1.4;
+    }
+
+    /* Product grid section */
+    .products-display-section {
+      background-color: #FAFAFA;
+      padding: 80px 0;
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .products-display-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    /* Form improvements */
+    .quote-form-section {
+      padding: 80px 0;
+      background-color: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header" style="position: sticky; top: 0; background-color: rgba(5, 5, 8, 0.95); z-index: 100; border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+    <div class="header-container" style="max-width: 1200px; margin: 0 auto; padding: 15px 24px; display: flex; align-items: center; justify-content: space-between;">
+      <div class="logo-area">
+        <a href="./index.html" class="logo flex-logo" style="text-decoration: none;">
+          <div class="logo-text-group">
+            <span class="logo-title">Blit</span>
+            <span class="logo-subtitle">Electric</span>
+          </div>
+        </a>
+      </div>
+      <div class="nav-menu-wrapper" style="display: flex; align-items: center; justify-content: flex-end; gap: 20px;">
+        <a href="./index.html" class="back-btn" style="color: #FFFFFF; text-decoration: none; display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; border: 1px solid rgba(255,255,255,0.15); padding: 8px 16px; border-radius: 30px; background: rgba(255,255,255,0.02); transition: var(--transition-smooth);">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          Back to Home
+        </a>
+        <a href="#quote" class="quote-btn" style="background-color: #FF1A1A; color: #FFFFFF; padding: 10px 20px; border-radius: 20px; font-size: 13px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: var(--transition-smooth);">Get a Quote <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="switches-hero">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 24px; width: 100%;">
+      <div style="max-width: 580px;">
+        <span style="font-size: 13px; font-weight: 700; color: #FF1A1A; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 16px;">Collection Showcase</span>
+        <h1 style="font-family: var(--font-heading); font-size: 48px; font-weight: 800; color: #FFFFFF; line-height: 1.1; margin-bottom: 24px; letter-spacing: -1px;">Weatherproof Solutions</h1>
+        <p style="font-size: 16px; color: rgba(255, 255, 255, 0.85); line-height: 1.6; margin-bottom: 40px;">
+          Built for every environment. Discover our high-performance IP66 and IP55 weatherproof switch & socket enclosures, isolators, and impact-resistant wiring blocks. Engineered for ultimate outdoor safety and durability.
+        </p>
+        <a href="#ranges" class="hero-btn" style="background-color: #FF1A1A; color: #FFFFFF; padding: 15px 30px; border-radius: 30px; font-weight: 600; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: var(--transition-smooth);">Explore Ranges <span class="arrow">↓</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ranges Selector Section -->
+  <section class="ranges-section" id="ranges">
+    <div class="container">
+      <div class="section-header">
+        <h2>Choose a Range</h2>
+        <p>Select any of our protective weatherproof categories below to filter the models, specifications, and lockable enclosures.</p>
+      </div>
+
+      <div class="ranges-overview-grid" id="ranges-selector-container">
+        <!-- Dyn. populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Product list display -->
+  <section class="products-display-section" id="products-display">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 40px; text-align: left;">
+        <h3 id="active-range-title" style="font-family: var(--font-heading); font-size: 26px; font-weight: 800; color: #111111; border-left: 4px solid var(--primary-red); padding-left: 15px;">IP66 Collection</h3>
+        <p id="active-range-desc" style="margin: 8px 0 0 0; text-align: left; max-width: 100%;">Explore the premium switches and switched sockets in this collection.</p>
+      </div>
+
+      <div class="products-display-grid" id="products-grid-container">
+        <!-- Dyn. populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="quote-form-section" id="quote">
+    <div class="container" style="max-width: 1000px; margin: 0 auto; padding: 0 24px;">
+      <div class="quote-box">
+        <div class="quote-info">
+          <h2>Request a Catalog Quote</h2>
+          <p>Tell us about your project requirements and we will send a customized proposal along with catalog data sheets.</p>
+          <div class="quote-contact-details" style="margin-top: 40px;">
+            <p><strong>Direct Helpline:</strong> +971 50 199 5589</p>
+            <p><strong>WhatsApp Support:</strong> Chat Live</p>
+            <p><strong>Corporate Email:</strong> info@blit-electric.com</p>
+          </div>
+        </div>
+        <form class="quote-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="E.g., John Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="E.g., john@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="category">Product Range Interest</label>
+            <select id="category">
+              <option value="IP66">IP66 Waterproof Range</option>
+              <option value="IP55">IP55 Splashproof Range</option>
+              <option value="Isolator">Industrial Isolator Range</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Requirements</label>
+            <textarea id="message" rows="4" placeholder="Mention item counts or custom specifications here..." required></textarea>
+          </div>
+          <button type="submit" class="featured-btn" style="border: none; width: 100%; justify-content: center; cursor: pointer;">Submit Request</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background-color: #0E0E12; padding: 60px 0; color: #888888; border-top: 1px solid rgba(255,255,255,0.05);">
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 24px; text-align: center;">
+      <p style="font-size: 14px;">&copy; 2026 Blit Electric. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Code Logic -->
+  <script type="module">
+    import { PRODUCTS_DATA, IMAGE_BG_MAP } from './products-data.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const selectorContainer = document.getElementById('ranges-selector-container');
+      const productsContainer = document.getElementById('products-grid-container');
+      const rangeTitle = document.getElementById('active-range-title');
+      const rangeDesc = document.getElementById('active-range-desc');
+      const selectElement = document.getElementById('category');
+
+      if (!selectorContainer || !productsContainer) return;
+
+      // Extract Weatherproof Solutions data
+      const weatherproofCat = PRODUCTS_DATA.find(cat => cat.id === 'weatherproof');
+      if (!weatherproofCat) return;
+
+      // Group items by range
+      const ranges = {};
+      weatherproofCat.items.forEach(item => {
+        if (!ranges[item.range]) {
+          ranges[item.range] = [];
+        }
+        ranges[item.range].push(item);
+      });
+
+      // Descriptions mapping for each range
+      const rangeDescriptions = {
+        "IP66": "Dust tight and protected against powerful water jets. High-performance outdoor switches and heavy-duty socket covers.",
+        "IP55": "Splashproof and dust protected. Perfect for semi-sheltered outdoor zones, balconies, and garage walls.",
+        "Isolator": "Heavy-duty outdoor rotary isolator switches with lockable handles, offering reliable power disconnection for HVAC and machinery."
+      };
+
+      let activeRangeName = Object.keys(ranges)[0] || "IP66";
+
+      // Render Range Cards
+      const renderRangeCards = () => {
+        selectorContainer.innerHTML = '';
+        Object.entries(ranges).forEach(([rangeName, items]) => {
+          const repItem = items[0];
+          if (!repItem) return;
+
+          const card = document.createElement('div');
+          card.className = `range-selector-card ${rangeName === activeRangeName ? 'active' : ''}`;
+          
+          card.innerHTML = `
+            <div class="range-img-box">
+              <img src="${repItem.img}" alt="${rangeName}" loading="lazy">
+            </div>
+            <div class="range-title">${rangeName}</div>
+            <div class="range-description">${items.length} Products</div>
+          `;
+
+          card.addEventListener('click', () => {
+            activeRangeName = rangeName;
+            renderRangeCards();
+            renderActiveProducts();
+            
+            // Sync form dropdown
+            if (selectElement) {
+              selectElement.value = rangeName;
+            }
+
+            // Scroll down to products grid smoothly
+            const gridSec = document.getElementById('products-display');
+            if (gridSec) {
+              gridSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          });
+
+          selectorContainer.appendChild(card);
+        });
+      };
+
+      // Render active range products in detailed grid
+      const renderActiveProducts = () => {
+        productsContainer.innerHTML = '';
+        const items = ranges[activeRangeName] || [];
+
+        // Set titles
+        rangeTitle.innerText = `${activeRangeName} Collection`;
+        rangeDesc.innerText = rangeDescriptions[activeRangeName] || "Explore the premium products in this collection.";
+
+        items.forEach(item => {
+          const card = document.createElement('div');
+          card.className = 'modal-product-card';
+
+          const bg = IMAGE_BG_MAP[item.img] || '#FFFFFF';
+
+          card.innerHTML = `
+            <div class="modal-card-img-box" style="background-color: ${bg};">
+              <img src="${item.img}" alt="${item.name}" loading="lazy">
+            </div>
+            <div class="modal-card-body">
+              <h4 class="modal-card-title">${item.name}</h4>
+              <p class="modal-card-desc">${item.desc}</p>
+              <ul class="modal-card-specs">
+                ${item.specs.map(spec => `<li>${spec}</li>`).join('')}
+              </ul>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: auto;">
+                <a href="./product.html?category=weatherproof&product=${encodeURIComponent(item.name)}" class="modal-inquiry-btn" style="text-decoration: none;">View Details</a>
+                <a href="#quote" class="modal-inquiry-btn" style="text-decoration: none; background: var(--primary-red); color: #FFFFFF; border-color: var(--primary-red);">Inquire</a>
+              </div>
+            </div>
+          `;
+
+          productsContainer.appendChild(card);
+        });
+      };
+
+      // Handle inquiry buttons anchoring and dynamic drop-downs
+      document.body.addEventListener('click', (e) => {
+        if (e.target.closest('a') && e.target.closest('a').getAttribute('href') === '#quote') {
+          // If clicked inquire, select correct range in dropdown
+          if (selectElement) {
+            selectElement.value = activeRangeName;
+          }
+        }
+      });
+
+      // Init UI
+      renderRangeCards();
+      renderActiveProducts();
+    });
+  </script>
+
+</body>
+</html>

@@ -8,6 +8,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         product: resolve(__dirname, 'product.html'),
         switches: resolve(__dirname, 'switches.html'),
+        weatherproof: resolve(__dirname, 'weatherproof.html'),
       },
     },
   },
