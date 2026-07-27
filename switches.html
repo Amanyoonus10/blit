@@ -34,15 +34,10 @@
     }
 
     .switches-hero {
-      background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.05) 100%), url('/assets/products/switches/switches_sockets_hero.webp');
-      background-size: cover;
-      background-position: center;
-      padding: 120px 0;
-      min-height: calc(100vh - 70px);
-      display: flex;
-      align-items: center;
+      background-color: #0F172A;
+      padding: 80px 0;
       position: relative;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
 
     /* Range selector cards */
@@ -215,14 +210,22 @@
 
   <!-- Hero Section -->
   <section class="switches-hero">
-    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 24px; width: 100%;">
-      <div style="max-width: 580px;">
-        <span style="font-size: 13px; font-weight: 700; color: #FF1A1A; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 16px;">Collection Showcase</span>
-        <h1 style="font-family: var(--font-heading); font-size: 48px; font-weight: 800; color: #FFFFFF; line-height: 1.1; margin-bottom: 24px; letter-spacing: -1px;">Switches & Sockets</h1>
-        <p style="font-size: 16px; color: rgba(255, 255, 255, 0.85); line-height: 1.6; margin-bottom: 40px;">
-          Artistry in connectivity. Discover our wide range of premium switches, switched sockets, industrial metal-clad panels, and gold bezels. Engineered to meet safety regulations while offering state-of-the-art designs.
-        </p>
-        <a href="#ranges" class="hero-btn" style="background-color: #FF1A1A; color: #FFFFFF; padding: 15px 30px; border-radius: 30px; font-weight: 600; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: var(--transition-smooth);">Explore Ranges <span class="arrow">↓</span></a>
+    <div class="container" style="max-width: 1240px; margin: 0 auto; padding: 0 24px; width: 100%;">
+      <div style="display: grid; grid-template-columns: 1fr 1.1fr; gap: 48px; align-items: center;">
+        <!-- Left Column: Content -->
+        <div style="max-width: 540px;">
+          <span style="font-size: 13px; font-weight: 700; color: #FF1A1A; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 16px;">COLLECTION SHOWCASE</span>
+          <h1 style="font-family: var(--font-heading); font-size: 48px; font-weight: 800; color: #FFFFFF; line-height: 1.1; margin-bottom: 20px; letter-spacing: -1px;">Switches & Sockets</h1>
+          <p style="font-size: 16px; color: #94A3B8; line-height: 1.65; margin-bottom: 32px;">
+            Artistry in connectivity. Discover our wide range of premium switches, switched sockets, industrial metal-clad panels, and gold bezels. Engineered to meet safety regulations while offering state-of-the-art designs.
+          </p>
+          <a href="#ranges" class="hero-btn" style="background-color: #FF1A1A; color: #FFFFFF; padding: 14px 28px; border-radius: 30px; font-weight: 700; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: var(--transition-smooth); box-shadow: 0 8px 20px rgba(255,26,26,0.3);">Explore Ranges <span class="arrow">↓</span></a>
+        </div>
+
+        <!-- Right Column: Dedicated Image Frame -->
+        <div style="border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 20px 40px rgba(0,0,0,0.4); background: #1E293B;">
+          <img src="/assets/products/switches/switches_sockets_hero.webp" alt="Switches & Sockets Collection Showcase" style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 20px;">
+        </div>
       </div>
     </div>
   </section>
