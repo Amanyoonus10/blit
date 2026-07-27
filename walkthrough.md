@@ -1,19 +1,13 @@
-# Walkthrough - Switches Hero Image Shroud Fix
+# Walkthrough - Switches Hero Full-Screen Image Update
 
-Fixed dark/dim hero background image visibility on [switches.html](file:///Users/amanyoonus/Desktop/Blit/switches.html).
+Updated the Switches & Sockets page hero section on [switches.html](file:///Users/amanyoonus/Desktop/Blit/switches.html) so your uploaded studio photograph fills the screen **100% full screen edge-to-edge**.
 
-## Why It Looked Dark & What Was Fixed
+## Layout Updates
 
-1. **Heavy Gradient Overlay Opacity**:
-   - The `.switches-hero` CSS class previously had an 85% opacity dark overlay (`rgba(0,0,0,0.85)`), which heavily obscured the background image and made it look pitch black / un-changed.
-   - Reduced overlay opacity to a subtle, crystal-clear gradient (`rgba(0,0,0,0.45)` to `rgba(0,0,0,0.05)`).
+1. **Edge-to-Edge Full-Screen Photography**:
+   - Expanded background photography to span **100% viewport width and full height** (`width: 100%`, `min-height: calc(100vh - 70px)`).
+   - Removed all inner card margins, border radii, and dark padding boxes around the image.
+   - Text overlay is cleanly positioned over a dark slate gradient fade (`rgba(11, 15, 23, 0.95)` to `transparent`) on the left side, allowing the full studio photograph to fill the screen edge-to-edge.
 
-2. **Image Brightness & Vibrancy**:
-   - Processed `switches_sockets_hero.jpg` and `switches_sockets_hero.webp` with enhanced brightness (+8%) and contrast (+5%) at 98% quality.
-
----
-
-## Deployment Status
-
-- **Git Commit**: `35518ce`
-- **GitHub Push**: Successfully pushed to `origin main` at `https://github.com/Amanyoonus10/blit.git` (Vercel deployment auto-updated).
+2. **Deployed to Production**:
+   - Committed (`5a43e3a`) and pushed to `main` on GitHub for Vercel deployment.
