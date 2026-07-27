@@ -53,22 +53,71 @@ export const PRODUCTS_DATA = [
       {
         name: "White Range 1-Gang Switch",
         img: "./assets/products/switches/white_range_switch_1g.webp",
-        desc: "Classic white 1-gang light switch with smooth toggle click operation, built with flame-retardant casing.",
+        desc: "Classic white 1-gang 10AX light switch with smooth toggle click operation (Model W301/W302).",
         specs: ["Flame Retardant Polycarbonate", "Smooth Toggle Action", "10A 250V Rating"],
+        range: "White Range"
+      },
+      {
+        name: "White Range 2-Gang 2-Way Switch",
+        img: "./assets/products/switches/w_range_switch_2g.png",
+        desc: "White 2-gang 2-way light switch plate engineered for dual circuit control (Model W304).",
+        specs: ["Dual Gang Independent Control", "2-Way Circuit Switching", "10AX 250V Rating"],
+        range: "White Range"
+      },
+      {
+        name: "White Range Bell Push Switch",
+        img: "./assets/products/switches/w_range_bell_switches.png",
+        desc: "Retractive 10A bell push switch featuring crisp indicator bell symbol (Model W317/W319).",
+        specs: ["Retractive Momentary Push", "Optional Neon Indicator", "BS EN 60669-1"],
         range: "White Range"
       },
       {
         name: "White Range Single Switched Socket",
         img: "./assets/products/switches/white_range_single_socket.webp",
-        desc: "Classic white 13A single switched socket outlet, featuring internal safety shutters and integrated neon indicator.",
+        desc: "Classic white 13A single switched socket outlet with safety shutters (Model W405/W407).",
         specs: ["13A Switched Outlet", "Safety Shutters Included", "Neon Power Indicator"],
         range: "White Range"
       },
       {
         name: "White Range Twin Switched USB Socket",
         img: "./assets/products/switches/white_range_usb_twin_socket.webp",
-        desc: "Double switched 13A socket outlet with integrated dual USB-C charging slots, minimal flat borders.",
-        specs: ["Twin 13A Outlets", "Dual USB-C Charger Ports", "Smart Load Balancing"],
+        desc: "Double switched 13A socket outlet with integrated dual USB charging slots (Model W503).",
+        specs: ["Twin 13A Outlets", "Dual USB Charger Ports", "Smart Load Balancing"],
+        range: "White Range"
+      },
+      {
+        name: "White Range 45A Cooker Control Unit",
+        img: "./assets/products/switches/w_range_cooker_control.png",
+        desc: "Heavy duty 45A cooker control unit with red neon indicator and integrated 13A switched socket outlet (Model W331).",
+        specs: ["45A Double Pole Rating", "Integrated 13A Socket", "BS 4177 Compliant"],
+        range: "White Range"
+      },
+      {
+        name: "White Range 400W Rotary Dimmer",
+        img: "./assets/products/switches/w_range_dimmers.png",
+        desc: "1-gang 400W rotary push ON/OFF dimmer switch for smooth lighting adjustment (Model W352/W401).",
+        specs: ["400W Load Rating", "Push ON/OFF Rotary Action", "BS EN 60669-2-1"],
+        range: "White Range"
+      },
+      {
+        name: "White Range Universal Multi Socket",
+        img: "./assets/products/switches/w_range_multi_sockets.png",
+        desc: "10A/13A universal multi-standard socket accepting international plug pin configurations (Model W460/W407M).",
+        specs: ["Universal Pin Compatibility", "Internal Safety Shutter", "IEC 60884 Compliant"],
+        range: "White Range"
+      },
+      {
+        name: "White Range 13A Switched FCU + Neon",
+        img: "./assets/products/switches/w_range_fcus.png",
+        desc: "13A switched fused connection spur unit with front-accessible fuse drawer and neon indicator (Model W413/W419).",
+        specs: ["13A BS1362 Fuse Fitted", "Front Access Fuse Carrier", "BS 1363-4 Compliant"],
+        range: "White Range"
+      },
+      {
+        name: "White Range RJ45 Cat6 Data Outlet",
+        img: "./assets/products/switches/w_range_data_tv.png",
+        desc: "Cat6 RJ45 high-speed data network wall plate with shuttered connector port (Model W442/W443).",
+        specs: ["Cat6 Gigabit Performance", "Shuttered Data Port", "TIA/EIA-568 Standard"],
         range: "White Range"
       },
       {
