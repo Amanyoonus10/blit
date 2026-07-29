@@ -22,6 +22,7 @@ export const IMAGE_BG_MAP = {
   "/assets/products/switches/v_range_usb_socket.webp": "#000000",
   "/assets/products/switches/white_range_single_socket.webp": "#000000",
   "/assets/products/switches/white_range_switch_1g.webp": "#ffffff",
+  "/assets/products/switches/white_range_switch_v2.webp": "#ffffff",
   "/assets/products/switches/white_range_usb_twin_socket.webp": "#000000",
   "/assets/products/weatherproof/enclosure_box.webp": "#f7f7f7",
   "/assets/products/weatherproof/ip55_cover.webp": "#ffffff",
@@ -52,7 +53,7 @@ export const PRODUCTS_DATA = [
     items: [
       {
         name: "White Range 1-Gang Switch",
-        img: "/assets/products/switches/white_range_switch_1g.webp",
+        img: "/assets/products/switches/white_range_switch_v2.webp",
         desc: "Classic white 1-gang 10AX light switch with smooth toggle click operation (Model W301/W302).",
         specs: ["Flame Retardant Polycarbonate", "Smooth Toggle Action", "10A 250V Rating"],
         range: "White Range"
