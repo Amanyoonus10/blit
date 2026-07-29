@@ -21,7 +21,7 @@ export const IMAGE_BG_MAP = {
   "/assets/products/switches/v_range_single_socket.webp": "#000000",
   "/assets/products/switches/v_range_usb_socket.webp": "#000000",
   "/assets/products/switches/white_range_single_socket.webp": "#000000",
-  "/assets/products/switches/white_range_switch_1g.webp": "#f7f7f7",
+  "/assets/products/switches/white_range_switch_1g.webp": "#ffffff",
   "/assets/products/switches/white_range_usb_twin_socket.webp": "#000000",
   "/assets/products/weatherproof/enclosure_box.webp": "#f7f7f7",
   "/assets/products/weatherproof/ip55_cover.webp": "#ffffff",
