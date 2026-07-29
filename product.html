@@ -694,10 +694,10 @@
       </div>
 
       <!-- Bottom Downloads & Price Support Cards -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 30px;">
         <!-- Left Download Card -->
-        <div id="download-catalogue-card" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; padding: 32px 28px; display: flex; align-items: center; gap: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.02); transition: all 0.3s ease;">
-          <div style="width: 58px; height: 58px; min-width: 58px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 14px; display: flex; align-items: center; justify-content: center;">
+        <div id="download-catalogue-card" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 32px 28px; display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.03); transition: all 0.3s ease;">
+          <div style="width: 54px; height: 54px; min-width: 54px; background: rgba(255, 26, 26, 0.08); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FF1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
               <polyline points="14 2 14 8 20 8"/>
@@ -707,33 +707,11 @@
             </svg>
           </div>
           <div style="flex-grow: 1;">
-            <div style="font-size: 18px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">Download Complete W Range Catalogue</div>
-            <div style="font-size: 13.5px; color: #64748B; line-height: 1.45; margin-bottom: 18px;">Get the full range with all product codes, dimensions and specifications.</div>
-            <a id="w-catalogue-download-link" href="/assets/catalogues/BLIT_W_Range_Catalogue_2026.pdf" download="BLIT_W_Range_Catalogue_2026.pdf" style="display: inline-flex; align-items: center; gap: 8px; border: 1.5px solid var(--primary-red); color: var(--primary-red); background: #FFFFFF; padding: 10px 22px; border-radius: 25px; font-size: 13.5px; font-weight: 600; text-decoration: none; transition: all 0.25s ease;">
-              Download Catalogue
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                <polyline points="7 10 12 15 17 10"/>
-                <line x1="12" y1="15" x2="12" y2="3"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-          <div style="width: 58px; height: 58px; min-width: 58px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 14px; display: flex; align-items: center; justify-content: center;">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FF1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
-              <polyline points="14 2 14 8 20 8"/>
-              <line x1="16" y1="13" x2="8" y2="13"/>
-              <line x1="16" y1="17" x2="8" y2="17"/>
-              <line x1="10" y1="9" x2="8" y2="9"/>
-            </svg>
-          </div>
-          <div style="flex-grow: 1;">
-            <div style="font-size: 18px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">Download Complete W Range Catalogue</div>
-            <div style="font-size: 13.5px; color: #64748B; line-height: 1.45; margin-bottom: 18px;">Get the full range with all product codes, dimensions and specifications.</div>
-            <a href="/assets/catalogues/BLIT_W_Range_Catalogue_2026.pdf" download="BLIT_W_Range_Catalogue_2026.pdf" style="display: inline-flex; align-items: center; gap: 8px; border: 1.5px solid var(--primary-red); color: var(--primary-red); background: #FFFFFF; padding: 10px 22px; border-radius: 25px; font-size: 13.5px; font-weight: 600; text-decoration: none; transition: all 0.25s ease;">
-              Download Catalogue
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <h4 style="font-size: 18px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">Download Complete W Range Catalogue</h4>
+            <p style="font-size: 13.5px; color: #64748B; line-height: 1.5; margin-bottom: 20px;">Get the full collection catalog with all product codes, dimensions, specifications, and layout diagrams in PDF format.</p>
+            <a id="w-catalogue-download-link" href="/assets/catalogues/BLIT_W_Range_Catalogue_2026.pdf" download="BLIT_W_Range_Catalogue_2026.pdf" style="display: inline-flex; align-items: center; gap: 10px; background-color: #FF1A1A; color: #FFFFFF; border: none; padding: 12px 26px; border-radius: 30px; font-size: 14px; font-weight: 700; text-decoration: none; box-shadow: 0 8px 20px rgba(255, 26, 26, 0.28); transition: all 0.3s ease;">
+              <span>Download Catalogue</span>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                 <polyline points="7 10 12 15 17 10"/>
                 <line x1="12" y1="15" x2="12" y2="3"/>
@@ -743,17 +721,17 @@
         </div>
 
         <!-- Right Price Request Card -->
-        <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; padding: 32px 28px; display: flex; align-items: center; gap: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.02);">
-          <div style="width: 58px; height: 58px; min-width: 58px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 14px; display: flex; align-items: center; justify-content: center;">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FF1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 32px 28px; display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.03); transition: all 0.3s ease;">
+          <div style="width: 54px; height: 54px; min-width: 54px; background: rgba(15, 23, 42, 0.06); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
               <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
             </svg>
           </div>
           <div style="flex-grow: 1;">
-            <div style="font-size: 18px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">Need Price List or Project Support?</div>
-            <div style="font-size: 13.5px; color: #64748B; line-height: 1.45; margin-bottom: 18px;">Our team is ready to assist you with pricing and technical support.</div>
-            <a href="javascript:void(0)" onclick="document.getElementById('w-price-modal').style.display='flex'" style="display: inline-flex; align-items: center; gap: 6px; border: 1.5px solid var(--primary-red); color: var(--primary-red); background: #FFFFFF; padding: 10px 22px; border-radius: 25px; font-size: 13.5px; font-weight: 600; text-decoration: none; transition: all 0.25s ease;">
+            <h4 style="font-size: 18px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">Need Price List or Project Support?</h4>
+            <p style="font-size: 13.5px; color: #64748B; line-height: 1.5; margin-bottom: 20px;">Our sales & engineering team is ready to assist you with wholesale pricing, BOQ estimates, and technical support.</p>
+            <a href="javascript:void(0)" onclick="document.getElementById('w-price-modal').style.display='flex'" style="display: inline-flex; align-items: center; gap: 8px; border: 1.5px solid #0F172A; color: #0F172A; background: #FFFFFF; padding: 11px 22px; border-radius: 30px; font-size: 14px; font-weight: 700; text-decoration: none; transition: all 0.3s ease;">
               Request Price List <span class="arrow">→</span>
             </a>
           </div>
