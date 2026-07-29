@@ -957,28 +957,18 @@
     };
 
     function openWCategoryModal(catKey) {
-      const pdfUrl = "/assets/catalogues/BLIT_W_Range_Catalogue_2026.pdf";
-      
       // Smoothly scroll directly to the Download Catalogue button card
       const downloadCard = document.getElementById('download-catalogue-card');
       if (downloadCard) {
         downloadCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
         
-        // Brief highlight effect on the download card
+        // Brief highlight effect on the download card & button
         downloadCard.style.transition = 'all 0.3s ease';
-        downloadCard.style.boxShadow = '0 0 0 3px #FF1A1A, 0 10px 25px rgba(255, 26, 26, 0.2)';
+        downloadCard.style.boxShadow = '0 0 0 3px #FF1A1A, 0 10px 25px rgba(255, 26, 26, 0.25)';
         setTimeout(() => {
-          downloadCard.style.boxShadow = '0 4px 15px rgba(0,0,0,0.02)';
+          downloadCard.style.boxShadow = '0 10px 25px rgba(0,0,0,0.03)';
         }, 1800);
       }
-
-      // Directly trigger PDF catalogue download
-      const link = document.createElement('a');
-      link.href = pdfUrl;
-      link.download = "BLIT_W_Range_Catalogue_2026.pdf";
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
     }
 
     function switchCatalogPage(pageNum) {
