@@ -525,7 +525,7 @@
 
 
   <!-- Main Product Detail View -->
-  <main class="detail-main">
+  <main class="detail-main" id="product-detail-main">
     <div class="container">
       <div class="detail-grid" id="detail-grid-container">
         <!-- Rendered dynamically by JS -->
@@ -1175,11 +1175,17 @@
           ${rightInfoHtml}
         `;
 
-        // Toggle W Range Catalogue section display (Show ONLY for White Range products)
+        // Toggle visibility between Single Product Detail View and W Range Catalogue Page
+        const detailMain = document.getElementById('product-detail-main');
         const wCatalogSection = document.getElementById('w-catalog-section');
-        if (wCatalogSection) {
-          const isWhiteRange = (product.range === 'White Range') || (product.name && product.name.toLowerCase().includes('white range'));
-          wCatalogSection.style.display = isWhiteRange ? 'block' : 'none';
+        const isWhiteRangeMain = (product.name === 'White Range 1-Gang Switch');
+
+        if (isWhiteRangeMain) {
+          if (detailMain) detailMain.style.display = 'none';
+          if (wCatalogSection) wCatalogSection.style.display = 'block';
+        } else {
+          if (detailMain) detailMain.style.display = 'block';
+          if (wCatalogSection) wCatalogSection.style.display = 'none';
         }
 
         // Render bottom details section
