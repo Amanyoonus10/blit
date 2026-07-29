@@ -524,8 +524,21 @@
   </header>
 
 
+  <!-- Main Product Detail View -->
+  <main class="detail-main">
+    <div class="container">
+      <div class="detail-grid" id="detail-grid-container">
+        <!-- Rendered dynamically by JS -->
+      </div>
+      
+      <div class="product-details-tabs" id="product-details-tabs-container">
+        <!-- Rendered dynamically by JS -->
+      </div>
+    </div>
+  </main>
+
   <!-- Embedded W Range Catalogue Section (Full Screen Width Catalog Layout) -->
-  <section class="w-catalog-section-embed" id="w-catalog-section" style="background: #F8F9FA; padding: 40px 0; border-top: 1px solid #EAEAEA;">
+  <section class="w-catalog-section-embed" id="w-catalog-section" style="background: #F8F9FA; padding: 40px 0; border-top: 1px solid #EAEAEA; display: none;">
     <div class="container" style="max-width: 1440px; margin: 0 auto; padding: 0 20px;">
       
       <!-- Outer Catalog Box Frame -->
@@ -1118,6 +1131,38 @@
           `;
         }
 
+        const rightInfoHtml = `
+          <div class="product-info-section">
+            <span class="category-label">${category.name}</span>
+            <h1 class="product-title">${product.name}</h1>
+            
+            <table class="specs-summary-table">
+              <tbody>
+                <tr>
+                  <td class="spec-label">Range / Collection:</td>
+                  <td class="spec-value">${product.range || "Standard Series"}</td>
+                </tr>
+                ${(product.specs || []).map(spec => `
+                  <tr>
+                    <td class="spec-label">Feature / Spec:</td>
+                    <td class="spec-value">${spec}</td>
+                  </tr>
+                `).join('')}
+              </tbody>
+            </table>
+
+            <div class="description-section">
+              <h3 class="description-title">Description</h3>
+              <p class="product-desc">${product.desc}</p>
+            </div>
+
+            <div class="action-buttons-group">
+              <button id="inquire-btn" class="action-btn-primary">Inquire About Product</button>
+              <button id="scroll-specs-btn" class="action-btn-secondary">View Full Specs ↓</button>
+            </div>
+          </div>
+        `;
+
         container.innerHTML = `
           <!-- Left Display -->
           <div class="product-image-section">
@@ -1127,7 +1172,15 @@
             </div>
             ${thumbnailsHtml}
           </div>
+          ${rightInfoHtml}
         `;
+
+        // Toggle W Range Catalogue section display (Show ONLY for White Range products)
+        const wCatalogSection = document.getElementById('w-catalog-section');
+        if (wCatalogSection) {
+          const isWhiteRange = (product.range === 'White Range') || (product.name && product.name.toLowerCase().includes('white range'));
+          wCatalogSection.style.display = isWhiteRange ? 'block' : 'none';
+        }
 
         // Render bottom details section
         const techTableRows = Object.entries(techSpecs).map(([label, val]) => `
