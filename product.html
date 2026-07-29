@@ -523,39 +523,32 @@
     </div>
   </header>
 
-  <!-- Main Detail View -->
-  <main class="detail-main">
-    <div class="container">
-      <div class="detail-grid" id="detail-grid-container">
-        <!-- Will be dynamically populated via JS -->
-        <p style="text-align: center; color: var(--text-muted); grid-column: span 2;">Loading product information...</p>
-      </div>
 
-      <!-- Bottom Tab Layout: Overview & Tech Specs -->
-      <div class="product-details-tabs" id="product-details-tabs-container">
-        <!-- Will be dynamically populated via JS -->
-      </div>
-    </div>
-  </main>
-
-  <!-- Embedded W Range Catalogue Section (Boxed Container on Product Page) -->
-  <section class="w-catalog-section-embed" id="w-catalog-section" style="background: #F8F9FA; padding: 60px 0; border-top: 1px solid #EAEAEA;">
-    <div class="container" style="max-width: 1240px; margin: 0 auto; padding: 0 24px;">
+  <!-- Embedded W Range Catalogue Section (Full Screen Width Catalog Layout) -->
+  <section class="w-catalog-section-embed" id="w-catalog-section" style="background: #F8F9FA; padding: 40px 0; border-top: 1px solid #EAEAEA;">
+    <div class="container" style="max-width: 1440px; margin: 0 auto; padding: 0 20px;">
       
       <!-- Outer Catalog Box Frame -->
-      <div class="w-catalog-outer-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 28px; padding: 48px 40px; box-shadow: 0 12px 35px rgba(0,0,0,0.04);">
+      <div class="w-catalog-outer-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 32px 28px; box-shadow: 0 12px 35px rgba(0,0,0,0.04);">
         
-        <!-- W Range Hero Sub-Banner Inside Box -->
-        <div class="w-hero-container" style="display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 36px; align-items: stretch; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 24px; padding: 0; margin-bottom: 50px; overflow: hidden;">
-          <div class="w-hero-content" style="padding: 40px 0 40px 40px; display: flex; flex-direction: column; justify-content: center;">
+        <!-- W Range Hero Sub-Banner (Stacked: Full Width Image on Top up to Border, Description Below) -->
+        <div class="w-hero-container" style="display: flex; flex-direction: column; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 20px; margin-bottom: 50px; overflow: hidden;">
+          
+          <!-- Top: Full Width Image up to the border (Fully Viewable without Cropping) -->
+          <div style="width: 100%; overflow: hidden;">
+            <img src="/assets/products/switches/w_range_hero_3d.png" alt="W Range Interior Lifestyle Switches & Sockets" style="width: 100%; height: auto; display: block;">
+          </div>
+
+          <!-- Bottom: Description & Value Proposition Badges -->
+          <div class="w-hero-content" style="padding: 36px 40px; display: flex; flex-direction: column;">
             <span style="display: inline-block; color: var(--primary-red); font-weight: 700; font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px;">W RANGE</span>
-            <h2 style="font-size: 42px; font-weight: 800; line-height: 1.15; color: #0F172A; margin-bottom: 16px; letter-spacing: -0.5px;">Simple. Reliable. Everyday.</h2>
-            <p style="font-size: 15.5px; color: #475569; line-height: 1.6; margin-bottom: 30px; max-width: 500px;">
+            <h2 style="font-size: 38px; font-weight: 800; line-height: 1.15; color: #0F172A; margin-bottom: 14px; letter-spacing: -0.5px;">Simple. Reliable. Everyday.</h2>
+            <p style="font-size: 15.5px; color: #475569; line-height: 1.6; margin-bottom: 30px; max-width: 800px;">
               W Range is a complete range of moulded-white switches and sockets designed for modern homes, offices and commercial spaces.
             </p>
 
             <!-- 5 Feature Value Prop Badges -->
-            <div class="w-features-row" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px;">
+            <div class="w-features-row" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px;">
               <div class="w-feature-pill" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 12px 6px; text-align: center;">
                 <div class="w-feature-icon" style="width: 26px; height: 26px; margin: 0 auto 6px; display: flex; align-items: center; justify-content: center; color: #334155;">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -607,9 +600,6 @@
             </div>
           </div>
 
-          <div style="height: 100%; width: 100%; position: relative; overflow: hidden;">
-            <img src="/assets/products/switches/w_range_hero_3d.png" alt="W Range Interior Lifestyle Switches & Sockets" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-          </div>
         </div>
 
 
@@ -629,7 +619,7 @@
           </div>
           <div style="font-size: 16.5px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">1. Plate Switches</div>
           <div style="font-size: 13px; color: #64748B; line-height: 1.45; margin-bottom: 18px; flex-grow: 1;">1-Gang to 6-Gang, 1-Way, 2-Way & Intermediate Switches</div>
-          <div style="color: var(--primary-red); font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">View Options →</div>
+          <div style="color: var(--primary-red); font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">Download Catalogue ⬇</div>
         </div>
 
         <!-- Category 2 -->
@@ -639,7 +629,7 @@
           </div>
           <div style="font-size: 16.5px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">2. Bell & Special Switches</div>
           <div style="font-size: 13px; color: #64748B; line-height: 1.45; margin-bottom: 18px; flex-grow: 1;">Bell Switches, Bell Push with Indicator & Special Switches</div>
-          <div style="color: var(--primary-red); font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">View Options →</div>
+          <div style="color: var(--primary-red); font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">Download Catalogue ⬇</div>
         </div>
 
         <!-- Category 3 -->
@@ -649,7 +639,7 @@
           </div>
           <div style="font-size: 16.5px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">3. 20A & 45A Switches</div>
           <div style="font-size: 13px; color: #64748B; line-height: 1.45; margin-bottom: 18px; flex-grow: 1;">20A & 45A DP Switches, Cooker Control Units & Neon Variants</div>
-          <div style="color: var(--primary-red); font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">View Options →</div>
+          <div style="color: var(--primary-red); font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">Download Catalogue ⬇</div>
         </div>
 
         <!-- Category 4 -->
@@ -659,7 +649,7 @@
           </div>
           <div style="font-size: 16.5px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">4. Dimmers & Fan Controls</div>
           <div style="font-size: 13px; color: #64748B; line-height: 1.45; margin-bottom: 18px; flex-grow: 1;">Dimmer Switches & Fan Speed Controllers (Single & Double Gang)</div>
-          <div style="color: var(--primary-red); font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">View Options →</div>
+          <div style="color: var(--primary-red); font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">Download Catalogue ⬇</div>
         </div>
 
         <!-- Category 5 -->
@@ -669,7 +659,7 @@
           </div>
           <div style="font-size: 16.5px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">5. Socket Outlets</div>
           <div style="font-size: 13px; color: #64748B; line-height: 1.45; margin-bottom: 18px; flex-grow: 1;">13A Single & Twin Sockets, SP, DP & Neon Socket Outlets</div>
-          <div style="color: var(--primary-red); font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">View Options →</div>
+          <div style="color: var(--primary-red); font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">Download Catalogue ⬇</div>
         </div>
 
         <!-- Category 6 -->
@@ -679,7 +669,7 @@
           </div>
           <div style="font-size: 16.5px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">6. Multi Function Sockets</div>
           <div style="font-size: 13px; color: #64748B; line-height: 1.45; margin-bottom: 18px; flex-grow: 1;">Universal, Multi Standard, Round Pin, Shaver & Special Socket Outlets</div>
-          <div style="color: var(--primary-red); font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">View Options →</div>
+          <div style="color: var(--primary-red); font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">Download Catalogue ⬇</div>
         </div>
 
         <!-- Category 7 -->
@@ -689,7 +679,7 @@
           </div>
           <div style="font-size: 16.5px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">7. FCUs & Plates</div>
           <div style="font-size: 13px; color: #64748B; line-height: 1.45; margin-bottom: 18px; flex-grow: 1;">3A, 5A & 13A FCUs, Blank Plates & Connection Plates</div>
-          <div style="color: var(--primary-red); font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">View Options →</div>
+          <div style="color: var(--primary-red); font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">Download Catalogue ⬇</div>
         </div>
 
         <!-- Category 8 -->
@@ -699,14 +689,36 @@
           </div>
           <div style="font-size: 16.5px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">8. Data, TV & Telecom</div>
           <div style="font-size: 13px; color: #64748B; line-height: 1.45; margin-bottom: 18px; flex-grow: 1;">TV, Satellite, Telephone (RJ11) & Data (RJ45) Socket Outlets</div>
-          <div style="color: var(--primary-red); font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">View Options →</div>
+          <div style="color: var(--primary-red); font-size: 14px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">Download Catalogue ⬇</div>
         </div>
       </div>
 
       <!-- Bottom Downloads & Price Support Cards -->
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
         <!-- Left Download Card -->
-        <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; padding: 32px 28px; display: flex; align-items: center; gap: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.02);">
+        <div id="download-catalogue-card" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 18px; padding: 32px 28px; display: flex; align-items: center; gap: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.02); transition: all 0.3s ease;">
+          <div style="width: 58px; height: 58px; min-width: 58px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 14px; display: flex; align-items: center; justify-content: center;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FF1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+              <line x1="10" y1="9" x2="8" y2="9"/>
+            </svg>
+          </div>
+          <div style="flex-grow: 1;">
+            <div style="font-size: 18px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">Download Complete W Range Catalogue</div>
+            <div style="font-size: 13.5px; color: #64748B; line-height: 1.45; margin-bottom: 18px;">Get the full range with all product codes, dimensions and specifications.</div>
+            <a id="w-catalogue-download-link" href="/assets/catalogues/BLIT_W_Range_Catalogue_2026.pdf" download="BLIT_W_Range_Catalogue_2026.pdf" style="display: inline-flex; align-items: center; gap: 8px; border: 1.5px solid var(--primary-red); color: var(--primary-red); background: #FFFFFF; padding: 10px 22px; border-radius: 25px; font-size: 13.5px; font-weight: 600; text-decoration: none; transition: all 0.25s ease;">
+              Download Catalogue
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+            </a>
+          </div>
+        </div>
           <div style="width: 58px; height: 58px; min-width: 58px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 14px; display: flex; align-items: center; justify-content: center;">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FF1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
@@ -967,40 +979,28 @@
     };
 
     function openWCategoryModal(catKey) {
-      const data = W_MODAL_DATA[catKey];
-      if (!data) return;
-      document.getElementById('w-modal-cat-title').innerText = data.title;
-      document.getElementById('w-modal-cat-sub').innerText = data.sub;
+      const pdfUrl = "/assets/catalogues/BLIT_W_Range_Catalogue_2026.pdf";
+      
+      // Smoothly scroll directly to the Download Catalogue button card
+      const downloadCard = document.getElementById('download-catalogue-card');
+      if (downloadCard) {
+        downloadCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        
+        // Brief highlight effect on the download card
+        downloadCard.style.transition = 'all 0.3s ease';
+        downloadCard.style.boxShadow = '0 0 0 3px #FF1A1A, 0 10px 25px rgba(255, 26, 26, 0.2)';
+        setTimeout(() => {
+          downloadCard.style.boxShadow = '0 4px 15px rgba(0,0,0,0.02)';
+        }, 1800);
+      }
 
-      const catImg = W_CAT_IMAGES[catKey] || "/assets/products/switches/w_range_hero_3d.png";
-
-      let html = `
-        <div style="background:#FAFAFA; border:1px solid #E2E8F0; border-radius:14px; padding:16px; margin-bottom:20px; display:flex; align-items:center; justify-content:center; max-height:180px; overflow:hidden;">
-          <img src="${catImg}" alt="${data.title}" style="max-height:150px; max-width:90%; object-fit:contain;">
-        </div>
-        <table style="width:100%; border-collapse:collapse; margin-top:10px;">
-          <thead>
-            <tr style="background:#F8FAFC;">
-              <th style="padding:10px; text-align:left; border-bottom:1px solid #E2E8F0; font-size:12.5px;">Product Code</th>
-              <th style="padding:10px; text-align:left; border-bottom:1px solid #E2E8F0; font-size:12.5px;">Description</th>
-              <th style="padding:10px; text-align:left; border-bottom:1px solid #E2E8F0; font-size:12.5px;">Size</th>
-              <th style="padding:10px; text-align:left; border-bottom:1px solid #E2E8F0; font-size:12.5px;">Standard</th>
-            </tr>
-          </thead>
-          <tbody>`;
-
-      data.items.forEach(item => {
-        html += `<tr>
-          <td style="padding:10px; border-bottom:1px solid #E2E8F0;"><span style="font-family:monospace; background:#F1F5F9; color:#FF1A1A; padding:3px 6px; border-radius:4px; font-weight:700; font-size:12px;">${item.code}</span></td>
-          <td style="padding:10px; border-bottom:1px solid #E2E8F0; font-size:13px; font-weight:600; color:#1E293B;">${item.desc}</td>
-          <td style="padding:10px; border-bottom:1px solid #E2E8F0; font-size:12.5px; color:#64748B;">${item.size}</td>
-          <td style="padding:10px; border-bottom:1px solid #E2E8F0; font-size:12.5px; color:#64748B;">${item.std}</td>
-        </tr>`;
-      });
-      html += '</tbody></table>';
-
-      document.getElementById('w-modal-table-body').innerHTML = html;
-      document.getElementById('w-options-modal').style.display = 'flex';
+      // Directly trigger PDF catalogue download
+      const link = document.createElement('a');
+      link.href = pdfUrl;
+      link.download = "BLIT_W_Range_Catalogue_2026.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
     }
 
     function switchCatalogPage(pageNum) {
@@ -1158,48 +1158,6 @@
               <img class="product-img" src="${product.img}" alt="${product.name}" decoding="async">
             </div>
             ${thumbnailsHtml}
-          </div>
-
-          <!-- Right Info -->
-          <div class="product-info-section">
-            <div>
-              <span class="category-label">${category.name}</span>
-              <h1 class="product-title">${product.name}</h1>
-            </div>
-
-            <!-- Summary Specs Grid -->
-            <table class="specs-summary-table">
-              <tbody>
-                <tr>
-                  <td class="spec-label">Product Range:</td>
-                  <td class="spec-value">${product.range || 'Standard'}</td>
-                </tr>
-                <tr>
-                  <td class="spec-label">Voltage:</td>
-                  <td class="spec-value">${inferredVoltage}</td>
-                </tr>
-                <tr>
-                  <td class="spec-label">Ingress Protection (IP):</td>
-                  <td class="spec-value">${inferredIP.split(' ')[0]}</td>
-                </tr>
-                <tr>
-                  <td class="spec-label">Material:</td>
-                  <td class="spec-value">${inferredMaterial.split(' (')[0]}</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <!-- Description Section -->
-            <div class="description-section">
-              <h3 class="description-title">Description</h3>
-              <p class="product-desc">${product.desc}</p>
-            </div>
-
-            <!-- Action Buttons Group -->
-            <div class="action-buttons-group">
-              <button class="action-btn-primary" id="inquire-btn">Enquire Now</button>
-              <button class="action-btn-secondary" id="scroll-specs-btn">Get Technical Specs</button>
-            </div>
           </div>
         `;
 
