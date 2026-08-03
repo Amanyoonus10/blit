@@ -1178,7 +1178,7 @@
         // Toggle visibility between Single Product Detail View and W Range Catalogue Page
         const detailMain = document.getElementById('product-detail-main');
         const wCatalogSection = document.getElementById('w-catalog-section');
-        const isWhiteRangeMain = (product.name === 'White Range 1-Gang Switch');
+        const isWhiteRangeMain = (product.name === 'W Range 1-Gang Switch' || product.name === 'White Range 1-Gang Switch');
 
         if (isWhiteRangeMain) {
           if (detailMain) detailMain.style.display = 'none';

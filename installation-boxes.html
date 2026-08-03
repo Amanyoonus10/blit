@@ -380,7 +380,7 @@
               <img src="${repItem.img}" alt="${rangeName}" loading="lazy">
             </div>
             <div class="range-title">${rangeName}</div>
-            <div class="range-description">${items.length} Products</div>
+            <div class="range-description">${rangeDescriptions[rangeName] || 'Flush mounting and enclosure boxes.'}</div>
           `;
 
           card.addEventListener('click', () => {

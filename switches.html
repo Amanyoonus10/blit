@@ -316,7 +316,7 @@
           <div class="form-group">
             <label for="category">Product Range Interest</label>
             <select id="category">
-              <option value="White Range">White Range Collection</option>
+              <option value="W Range">W Range Collection</option>
               <option value="EN Range">EN Range Collection</option>
               <option value="Metal Clad">Metal Clad Collection</option>
               <option value="V Range">V Range Collection</option>
@@ -365,14 +365,14 @@
 
       // Descriptions mapping for each range
       const rangeDescriptions = {
-        "White Range": "Classic gloss polycarbonate switches and switched sockets with smooth toggle actions, offering fire-retardant safety.",
+        "W Range": "Classic gloss polycarbonate switches and switched sockets with smooth toggle actions, offering fire-retardant safety.",
         "EN Range": "Minimalist square design plates with flat borders and screwless click-on covers, ideal for modern office setups.",
         "Metal Clad": "Heavy-duty surface mount steel enclosures with high impact resistance, perfect for workshops and industrial buildings.",
         "V Range": "Luxury brushed metal plates in champagne and anthracite shades with premium switches, designed for boutique hotels.",
         "CW Range": "Prestigious polished gold and brass plate profiles with beveled metallic borders for luxurious villas."
       };
 
-      let activeRangeName = Object.keys(ranges)[0] || "White Range";
+      let activeRangeName = Object.keys(ranges)[0] || "W Range";
 
       // Render Range Cards
       const renderRangeCards = () => {
@@ -389,7 +389,7 @@
               <img src="${repItem.img}" alt="${rangeName}" loading="lazy">
             </div>
             <div class="range-title">${rangeName}</div>
-            <div class="range-description">${items.length} Products</div>
+            <div class="range-description">${rangeDescriptions[rangeName] || 'High quality electrical fittings engineered for reliability.'}</div>
           `;
 
           card.addEventListener('click', () => {
