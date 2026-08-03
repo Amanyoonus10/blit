@@ -363,6 +363,15 @@
         ranges[item.range].push(item);
       });
 
+      // Clean white background representative images for each range
+      const rangeImages = {
+        "W Range": "/assets/products/switches/w_range_clean.webp",
+        "EN Range": "/assets/products/switches/en_range_clean.webp",
+        "Metal Clad": "/assets/products/switches/metal_clad_clean.webp",
+        "V Range": "/assets/products/switches/v_range_clean.webp",
+        "CW Range": "/assets/products/switches/cw_range_clean.webp"
+      };
+
       // Descriptions mapping for each range
       const rangeDescriptions = {
         "W Range": "Classic gloss polycarbonate switches and switched sockets with smooth toggle actions, offering fire-retardant safety.",
@@ -384,9 +393,11 @@
           const card = document.createElement('div');
           card.className = 'range-selector-card';
           
+          const imgSrc = rangeImages[rangeName] || repItem.img;
+
           card.innerHTML = `
             <div class="range-img-box">
-              <img src="${repItem.img}" alt="${rangeName}" loading="lazy">
+              <img src="${imgSrc}" alt="${rangeName}" loading="lazy">
             </div>
             <div class="range-title">${rangeName}</div>
             <div class="range-description">${rangeDescriptions[rangeName] || 'High quality electrical fittings engineered for reliability.'}</div>
