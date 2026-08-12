@@ -40,9 +40,9 @@
 
     /* Header Styling */
     .detail-header {
-      border-bottom: 1px solid var(--border-color);
-      padding: 20px 0;
-      background: rgba(255, 255, 255, 0.85);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 16px 0;
+      background: #8A0B0E !important;
       backdrop-filter: blur(10px);
       position: sticky;
       top: 0;
@@ -62,24 +62,24 @@
     }
 
     .back-btn {
-      color: var(--text-white);
+      color: #FFFFFF !important;
       text-decoration: none;
       display: flex;
       align-items: center;
       gap: 8px;
       font-size: 14px;
-      font-weight: 500;
+      font-weight: 600;
       transition: var(--transition-smooth);
-      border: 1px solid var(--border-color);
+      border: 1px solid rgba(255, 255, 255, 0.35);
       padding: 8px 16px;
       border-radius: 30px;
-      background: rgba(255, 255, 255, 0.02);
+      background: rgba(255, 255, 255, 0.15);
     }
 
     .back-btn:hover {
-      border-color: var(--primary-red);
-      background: rgba(255, 26, 26, 0.05);
-      color: var(--primary-red);
+      border-color: #FFFFFF;
+      background: #FFFFFF;
+      color: #8A0B0E !important;
       transform: translateX(-3px);
     }
 
@@ -87,11 +87,16 @@
       font-size: 22px;
       font-weight: 800;
       letter-spacing: 1px;
-      color: var(--primary-red);
+      color: #FFFFFF !important;
       text-decoration: none;
       display: flex;
       align-items: center;
       gap: 6px;
+    }
+
+    .detail-header .logo-title,
+    .detail-header .logo-subtitle {
+      color: #FFFFFF !important;
     }
 
     .flex-logo {
@@ -539,9 +544,9 @@
 
   <!-- Embedded W Range Catalogue Section (Full Screen Width Catalog Layout) -->
   <section class="w-catalog-section-embed" id="w-catalog-section" style="background: #F8F9FA; padding: 0 0 60px 0; border-top: 1px solid #EAEAEA; display: none;">
-    <!-- Absolute Full Screen Hero Banner Image -->
-    <div class="w-hero-fullscreen" style="width: 100%; position: relative; overflow: hidden; background: #0F172A; margin-bottom: 40px;">
-      <img src="/assets/products/switches/w_range_hero_3d.jpg?v=4" alt="W Range Interior Lifestyle Switches & Sockets" style="width: 100%; height: auto; display: block;">
+    <!-- Full Screen Hero Banner Image (Optimized Balanced Height) -->
+    <div class="w-hero-fullscreen" style="width: 100%; max-width: 100%; max-height: 520px; margin: 0 0 40px 0; padding: 0; position: relative; overflow: hidden; cursor: pointer;" onclick="openFullscreenLightbox(this.querySelector('img').src)">
+      <img src="/assets/products/switches/w_range_hero_full.webp?v=1000" alt="W Range Interior Lifestyle Switches & Sockets" width="1915" height="821" loading="eager" fetchpriority="high" decoding="async" style="width: 100%; height: 100%; max-height: 520px; display: block; border-radius: 0; object-fit: cover; object-position: center;">
     </div>
 
     <div class="container" style="max-width: 1440px; margin: 0 auto; padding: 0 20px;">
@@ -803,6 +808,31 @@
       </form>
     </div>
   </div>
+
+  <!-- Image Lightbox Modal (Full Screen View) -->
+  <div id="image-lightbox-modal" onclick="closeFullscreenLightbox()" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.92); backdrop-filter: blur(10px); display: none; align-items: center; justify-content: center; z-index: 3000; cursor: zoom-out;">
+    <button onclick="closeFullscreenLightbox()" style="position: absolute; top: 24px; right: 24px; background: rgba(255, 255, 255, 0.2); color: #FFF; border: none; width: 44px; height: 44px; border-radius: 50%; cursor: pointer; font-size: 20px; font-weight: 700; display: flex; align-items: center; justify-content: center; transition: background 0.2s;">✕</button>
+    <img id="lightbox-img" src="" alt="Full Screen Product View" style="max-width: 95vw; max-height: 92vh; object-fit: contain; border-radius: 8px; box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
+  </div>
+
+  <script>
+    function openFullscreenLightbox(imgUrl) {
+      const modal = document.getElementById('image-lightbox-modal');
+      const img = document.getElementById('lightbox-img');
+      if (modal && img) {
+        img.src = imgUrl;
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+    }
+    function closeFullscreenLightbox() {
+      const modal = document.getElementById('image-lightbox-modal');
+      if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    }
+  </script>
 
   <script>
     const W_MODAL_DATA = {
@@ -1166,7 +1196,7 @@
         container.innerHTML = `
           <!-- Left Display -->
           <div class="product-image-section">
-            <div class="image-container" style="background-color: ${imgBg};">
+            <div class="image-container" style="background-color: ${imgBg}; cursor: pointer;" onclick="openFullscreenLightbox('${product.img}')">
               <span class="badge-range">${product.range}</span>
               <img class="product-img" src="${product.img}" alt="${product.name}" decoding="async">
             </div>

@@ -60,11 +60,11 @@ button {
   position: relative;
 }
 
-/* Header Section (Dark Luxury Theme) */
+/* Header Section (Red Luxury Theme) */
 .main-header {
-  background-color: rgba(5, 5, 8, 0.95);
+  background-color: #8A0B0E !important;
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -90,7 +90,7 @@ button {
 .logo-bolt {
   width: 26px;
   height: 26px;
-  filter: drop-shadow(0 0 8px rgba(255, 26, 26, 0.6));
+  filter: brightness(0) invert(1) drop-shadow(0 0 6px rgba(255, 255, 255, 0.4));
 }
 
 .logo-text-group {
@@ -103,7 +103,7 @@ button {
   font-family: var(--font-heading);
   font-size: 34px;
   font-weight: 800;
-  color: var(--primary-red);
+  color: #FFFFFF !important;
   letter-spacing: -0.5px;
   padding-right: 4px;
 }
@@ -111,7 +111,7 @@ button {
 .logo-subtitle {
   font-size: 11px;
   font-weight: 700;
-  color: var(--primary-red);
+  color: #FFFFFF !important;
   letter-spacing: 3.2px;
 }
 
@@ -145,7 +145,7 @@ button {
 .mobile-menu-toggle .hamburger-line {
   width: 100%;
   height: 2px;
-  background-color: #FFFFFF;
+  background-color: #FFFFFF !important;
   border-radius: 2px;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
@@ -162,10 +162,11 @@ button {
   gap: 8px;
   padding: 20px 0;
   font-size: 13px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+  color: #FFFFFF !important;
   position: relative;
   transition: var(--transition-smooth);
+  opacity: 0.92;
 }
 
 .nav-links .category-item .nav-icon {
@@ -173,12 +174,13 @@ button {
   height: 14px;
   stroke: currentColor;
   stroke-width: 2px;
-  color: #FF1A1A;
+  color: #FFFFFF !important;
 }
 
 .nav-links .category-item:hover,
 .nav-links .category-item.active {
-  color: #FFFFFF;
+  color: #FFFFFF !important;
+  opacity: 1;
 }
 
 .nav-links .category-item::after {
@@ -187,11 +189,12 @@ button {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 2px;
-  background-color: #FF1A1A;
+  height: 3px;
+  background-color: #FFFFFF !important;
   transform: scaleX(0);
   transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transform-origin: bottom center;
+  border-radius: 2px 2px 0 0;
 }
 
 .nav-links .category-item.active::after {
@@ -213,31 +216,39 @@ button {
 .contact-icon {
   width: 18px;
   height: 18px;
-  color: var(--primary-red);
+  color: #FFFFFF !important;
 }
 
 .contact-text {
   font-size: 13px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  color: #FFFFFF !important;
   transition: var(--transition-smooth);
 }
 
 .contact-text:hover {
-  color: #FFFFFF;
+  color: #FFFFFF !important;
+  text-decoration: underline;
 }
 
 .quote-btn {
-  background-color: var(--primary-red);
-  color: #FFFFFF;
+  background-color: #FFFFFF !important;
+  color: #8A0B0E !important;
   padding: 10px 20px;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: 30px;
   display: inline-flex;
   align-items: center;
   gap: 6px;
   transition: var(--transition-smooth);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.quote-btn:hover {
+  background-color: #F5F5F5 !important;
+  color: #CC0000 !important;
+  transform: translateY(-1px);
 }
 
 .quote-btn:hover {
@@ -2691,9 +2702,32 @@ button {
 }
 
 .reveal-delay-2 {
-  transition-delay: 0.3s;
+  transition-delay: 0.2s;
 }
 
 .reveal-delay-3 {
-  transition-delay: 0.45s;
+  transition-delay: 0.3s;
+}
+
+/* Authorised Distributor Section Responsive Styles */
+@media (max-width: 992px) {
+  .distributor-card-frame {
+    padding: 32px 24px !important;
+  }
+  .distributor-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  .distributor-brand-col {
+    border-right: none !important;
+    padding-right: 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 28px !important;
+  }
+  .distributor-details-col > div {
+    grid-template-columns: 1fr !important;
+  }
+  .distributor-details-col > div > div {
+    grid-column: span 1 !important;
+  }
 }
