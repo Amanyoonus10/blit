@@ -2656,19 +2656,21 @@ button {
 
 @media (max-width: 768px) {
   .hero-section {
-    height: auto !important;
-    min-height: 460px !important;
-    padding: 24px 0 44px 0 !important;
+    height: 380px !important;
+    min-height: unset !important;
+    padding: 0 !important;
     background-color: #05070C !important;
   }
 
   .hero-slide {
     flex-direction: column !important;
-    justify-content: flex-start !important;
+    justify-content: center !important;
     align-items: center !important;
-    min-height: 400px !important;
-    padding: 0 16px !important;
-    position: relative !important;
+    height: 100% !important;
+    min-height: unset !important;
+    padding: 24px 16px 36px 16px !important;
+    position: absolute !important;
+    box-sizing: border-box;
   }
 
   .hero-content {
@@ -2676,7 +2678,7 @@ button {
     padding: 0 !important;
     text-align: center !important;
     order: 1 !important;
-    margin: 0 0 14px 0 !important;
+    margin: 0 0 10px 0 !important;
     z-index: 5 !important;
     position: relative !important;
   }
@@ -2685,23 +2687,25 @@ button {
     font-size: 24px !important;
     line-height: 1.25 !important;
     font-weight: 800 !important;
-    margin-bottom: 12px !important;
+    margin-bottom: 10px !important;
     color: #FFFFFF !important;
+    transform: none !important;
   }
 
   .hero-btn {
     display: inline-flex !important;
-    margin-top: 6px !important;
+    margin-top: 0 !important;
     padding: 10px 20px !important;
     font-size: 12px !important;
     z-index: 5 !important;
+    transform: none !important;
   }
 
   .hero-image-container {
     width: 100% !important;
-    height: 220px !important;
+    height: 180px !important;
     order: 2 !important;
-    margin-top: 12px !important;
+    margin-top: 8px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -2714,7 +2718,7 @@ button {
 
   .hero-img {
     object-fit: contain !important;
-    max-height: 220px !important;
+    max-height: 180px !important;
     width: 100% !important;
   }
 
