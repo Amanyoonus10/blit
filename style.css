@@ -2736,10 +2736,11 @@ button {
 
   .switches-hero {
     height: auto !important;
-    min-height: 360px !important;
-    padding: 36px 16px !important;
+    min-height: 280px !important;
+    padding: 30px 16px !important;
     flex-direction: column !important;
     text-align: center !important;
+    justify-content: center !important;
   }
 
   .switches-hero .hero-bg-media {
@@ -2748,13 +2749,38 @@ button {
   }
 
   .switches-hero h1 {
-    font-size: 28px !important;
+    font-size: 26px !important;
     line-height: 1.2 !important;
+    margin-bottom: 10px !important;
   }
 
   .switches-hero p {
     font-size: 14px !important;
-    line-height: 1.5 !important;
+    line-height: 1.4 !important;
+    max-width: 100% !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Global Category Page Mobile Overrides */
+  .ranges-section,
+  .products-section {
+    padding: 40px 0 !important;
+  }
+
+  .section-header {
+    margin-bottom: 30px !important;
+  }
+
+  .section-header h2 {
+    font-size: 26px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 12px !important;
+    letter-spacing: 0 !important;
+  }
+
+  .section-header p {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
   }
 
   .catalogue-banner-card {
