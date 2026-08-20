@@ -1215,6 +1215,89 @@ function initWhereToBuy() {
     }
   };
 
+  // Modal Controllers
+  const distModal = document.getElementById('distributor-modal');
+  const distModalClose = document.getElementById('distributor-modal-close');
+  const partnerModal = document.getElementById('partner-modal');
+  const partnerModalClose = document.getElementById('partner-modal-close');
+
+  const openDistributorModal = (e) => {
+    if (e && typeof e.preventDefault === 'function') e.preventDefault();
+    if (!distModal) return;
+    distModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => {
+      if (leafletMap) {
+        leafletMap.invalidateSize();
+        applyFilters(true);
+      }
+    }, 200);
+  };
+
+  const closeDistributorModal = () => {
+    if (!distModal) return;
+    distModal.classList.remove('active');
+    document.body.style.overflow = '';
+  };
+
+  const openPartnerModal = (e) => {
+    if (e && typeof e.preventDefault === 'function') e.preventDefault();
+    if (!partnerModal) return;
+    partnerModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closePartnerModal = () => {
+    if (!partnerModal) return;
+    partnerModal.classList.remove('active');
+    document.body.style.overflow = '';
+  };
+
+  // Bind trigger buttons & links for distributor locator modal
+  document.querySelectorAll('.open-distributor-modal, a[href*="#distributor"], .quote-btn').forEach(btn => {
+    btn.addEventListener('click', openDistributorModal);
+  });
+
+  if (distModalClose) {
+    distModalClose.addEventListener('click', closeDistributorModal);
+  }
+
+  if (distModal) {
+    distModal.addEventListener('click', (e) => {
+      if (e.target === distModal) closeDistributorModal();
+    });
+  }
+
+  // Bind trigger buttons & links for become distributor modal
+  document.querySelectorAll('.open-partner-modal, a[href*="#become-distributor"]').forEach(btn => {
+    btn.addEventListener('click', openPartnerModal);
+  });
+
+  if (partnerModalClose) {
+    partnerModalClose.addEventListener('click', closePartnerModal);
+  }
+
+  if (partnerModal) {
+    partnerModal.addEventListener('click', (e) => {
+      if (e.target === partnerModal) closePartnerModal();
+    });
+  }
+
+  // Global Escape key dismiss
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeDistributorModal();
+      closePartnerModal();
+    }
+  });
+
+  // Handle URL hash on load
+  if (window.location.hash === '#distributor') {
+    setTimeout(openDistributorModal, 400);
+  } else if (window.location.hash === '#become-distributor') {
+    setTimeout(openPartnerModal, 400);
+  }
+
   // Run initialization
   initDropdowns();
   initMap();
