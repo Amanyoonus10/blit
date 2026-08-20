@@ -87,6 +87,28 @@ button {
   text-decoration: none;
 }
 
+.header-logo-img {
+  height: 44px;
+  width: auto;
+  max-width: 135px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.header-logo-img:hover {
+  transform: scale(1.04);
+}
+
+.footer-logo-img {
+  height: 48px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  display: block;
+}
+
 .logo-bolt {
   width: 26px;
   height: 26px;
@@ -2875,4 +2897,689 @@ button {
 
 .reveal-delay-3 {
   transition-delay: 0.3s;
+}
+
+/* ==========================================================================
+   Legrand-Inspired Where to Buy Section Styles
+   ========================================================================== */
+.whereToBuy_sec {
+  background: #F8F6F0;
+  border-top: 1px solid #E5E0D8;
+  border-bottom: 1px solid #E5E0D8;
+  padding: 75px 0 85px 0;
+  position: relative;
+}
+
+.wtb-header-wrapper {
+  margin-bottom: 32px;
+}
+
+.wtb-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(138, 11, 14, 0.08);
+  border: 1px solid rgba(138, 11, 14, 0.25);
+  padding: 6px 16px;
+  border-radius: 30px;
+  color: #8A0B0E;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.wtb-title {
+  color: #1A1A1A;
+  font-size: 36px;
+  font-weight: 800;
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.wtb-subtitle {
+  color: #555555;
+  font-size: 15px;
+  max-width: 720px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.wtb-main-grid {
+  display: grid;
+  grid-template-columns: 440px 1fr;
+  background: #FFFFFF;
+  border: 1px solid #E5E0D8;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 14px 45px rgba(0, 0, 0, 0.07);
+}
+
+.wtb-sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 24px;
+  border-right: 1px solid #EAE5DC;
+  background: #FFFFFF;
+  max-height: 750px;
+  overflow: hidden;
+}
+
+.wtb-filter-section {
+  flex-shrink: 0;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #F0EBE3;
+}
+
+.wtb-dropdown-group {
+  position: relative;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.wtb-trigger-box {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FAFAFA;
+  border: 1.5px solid #DDD7CD;
+  border-radius: 12px;
+  padding: 11px 16px;
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+.wtb-trigger-box:hover {
+  border-color: #8A0B0E;
+  background: #FFFFFF;
+}
+
+.wtb-trigger-box.active {
+  border-color: #8A0B0E;
+  background: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(138, 11, 14, 0.1);
+}
+
+.wtb-trigger-box.is-disabled {
+  background: #F4F1EB;
+  border-color: #E5E0D8;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.wtb-trigger-box.field-error {
+  border-color: #8A0B0E !important;
+  animation: wtb-shake 0.35s ease;
+}
+
+@keyframes wtb-shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+.wtb-trigger-box h5 {
+  margin: 0;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #222222;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wtb-arrow-icon {
+  width: 14px;
+  height: 14px;
+  stroke: #777777;
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+
+.wtb-trigger-box.active .wtb-arrow-icon {
+  transform: rotate(180deg);
+  stroke: #8A0B0E;
+}
+
+.wtb-options-list {
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  z-index: 2000;
+  max-height: 200px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 6px;
+  background: #FFFFFF;
+  border: 1px solid #DDD7CD;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  list-style: none;
+}
+
+.wtb-option-item {
+  padding: 9px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #444444;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.wtb-option-item:hover,
+.wtb-option-item.selected {
+  background: #FDF2F4;
+  color: #8A0B0E;
+  font-weight: 700;
+}
+
+.wtb-filter-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.wtb-btn-search {
+  flex: 1.2;
+  background: #8A0B0E;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 11px 16px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(138, 11, 14, 0.25);
+}
+
+.wtb-btn-search:hover {
+  background: #6B0609;
+  transform: translateY(-1px);
+}
+
+.wtb-btn-clear {
+  flex: 0.8;
+  background: #F5F2EC;
+  border: 1px solid #DDD7CD;
+  color: #444444;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.wtb-btn-clear:hover {
+  background: #EAE5DC;
+  color: #1A1A1A;
+}
+
+/* Search Bar & Counter */
+.wtb-search-wrap {
+  position: relative;
+  margin-bottom: 12px;
+  flex-shrink: 0;
+}
+
+.wtb-search-input {
+  width: 100%;
+  background: #FBF9F5;
+  border: 1.5px solid #DDD7CD;
+  border-radius: 10px;
+  padding: 10px 14px 10px 38px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #1A1A1A;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.wtb-search-input:focus {
+  border-color: #8A0B0E;
+  background: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(138, 11, 14, 0.08);
+}
+
+.wtb-search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  stroke: #888888;
+  pointer-events: none;
+}
+
+.wtb-results-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 0 2px;
+  flex-shrink: 0;
+}
+
+.wtb-results-count {
+  font-size: 12px;
+  font-weight: 700;
+  color: #666666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Scrollable Dealer Cards List */
+.wtb-cards-scroll-wrap {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.wtb-cards-scroll-wrap::-webkit-scrollbar {
+  width: 5px;
+}
+.wtb-cards-scroll-wrap::-webkit-scrollbar-track {
+  background: #F5F2EC;
+  border-radius: 10px;
+}
+.wtb-cards-scroll-wrap::-webkit-scrollbar-thumb {
+  background: #D5CFC4;
+  border-radius: 10px;
+}
+.wtb-cards-scroll-wrap::-webkit-scrollbar-thumb:hover {
+  background: #8A0B0E;
+}
+
+/* Individual Dealer Card */
+.wtb-card {
+  background: #FFFFFF;
+  border: 1.5px solid #EBE6DC;
+  border-radius: 14px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.wtb-card:hover {
+  border-color: #8A0B0E;
+  box-shadow: 0 6px 18px rgba(138, 11, 14, 0.08);
+  transform: translateY(-2px);
+}
+
+.wtb-card.highlight-active {
+  border-color: #8A0B0E;
+  background: #FDF8F8;
+  box-shadow: 0 6px 20px rgba(138, 11, 14, 0.12);
+  border-left: 4px solid #8A0B0E;
+}
+
+.wtb-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.wtb-card-title {
+  margin: 0;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #1A1A1A;
+  font-family: var(--font-heading);
+  line-height: 1.3;
+}
+
+.wtb-cat-pill {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.wtb-cat-pill.distributor {
+  background: rgba(138, 11, 14, 0.1);
+  color: #8A0B0E;
+  border: 1px solid rgba(138, 11, 14, 0.2);
+}
+
+.wtb-cat-pill.stockist {
+  background: #EEF4FF;
+  color: #1E40AF;
+  border: 1px solid #BFDBFE;
+}
+
+.wtb-cat-pill.showroom {
+  background: #F0FDF4;
+  color: #166534;
+  border: 1px solid #BBF7D0;
+}
+
+.wtb-card-address {
+  font-size: 12.5px;
+  color: #555555;
+  line-height: 1.45;
+  margin-bottom: 8px;
+}
+
+.wtb-card-info-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  color: #444444;
+  margin-bottom: 4px;
+}
+
+.wtb-card-info-row svg {
+  width: 14px;
+  height: 14px;
+  stroke: #8A0B0E;
+  flex-shrink: 0;
+}
+
+.wtb-card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #F0ECE4;
+}
+
+.wtb-card-btn {
+  flex: 1;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.wtb-card-btn-call {
+  background: #F5F2EC;
+  color: #1A1A1A;
+  border: 1px solid #DDD7CD;
+}
+.wtb-card-btn-call:hover {
+  background: #E8E2D6;
+}
+
+.wtb-card-btn-whatsapp {
+  background: #25D366;
+  color: #FFFFFF;
+  border: 1px solid #20BD5A;
+}
+.wtb-card-btn-whatsapp:hover {
+  background: #1EBE5D;
+}
+
+.wtb-card-btn-map {
+  background: #8A0B0E;
+  color: #FFFFFF;
+  border: 1px solid #8A0B0E;
+}
+.wtb-card-btn-map:hover {
+  background: #6B0609;
+}
+
+/* Empty State */
+.wtb-empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #888888;
+}
+
+.wtb-empty-state svg {
+  width: 44px;
+  height: 44px;
+  stroke: #BBB2A4;
+  margin-bottom: 12px;
+}
+
+/* Map Right Panel */
+.wtb-map-panel {
+  position: relative;
+  min-height: 750px;
+  height: 100%;
+  background: #EAE5DC;
+}
+
+#where-to-buy-map {
+  width: 100%;
+  height: 100%;
+  min-height: 750px;
+  z-index: 1;
+}
+
+/* Map Quick Filter Pills on Top Right */
+.wtb-map-quick-filters {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.94);
+  padding: 6px;
+  border-radius: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.wtb-quick-pill {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: transparent;
+  color: #444444;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.wtb-quick-pill:hover {
+  background: #F0ECE4;
+  color: #1A1A1A;
+}
+
+.wtb-quick-pill.active {
+  background: #8A0B0E;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+/* Custom Marker Pulsing Ring */
+.blink-container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.blink-ring {
+  width: 36px;
+  height: 36px;
+  border: 3px solid #8A0B0E;
+  border-radius: 50%;
+  animation: border-ripple 1.6s infinite ease-out;
+}
+
+@keyframes border-ripple {
+  0% {
+    transform: scale(0.4);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+/* Leaflet Custom Marker & Popup */
+.custom-blit-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.custom-blit-marker:hover {
+  transform: scale(1.18);
+  z-index: 1000 !important;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 14px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2) !important;
+  border: 1px solid #E5E0D8 !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  width: 280px !important;
+  line-height: 1.4 !important;
+}
+
+.wtb-popup-body {
+  padding: 16px 18px;
+  font-family: var(--font-body);
+}
+
+.wtb-popup-title {
+  font-size: 14.5px;
+  font-weight: 800;
+  color: #1A1A1A;
+  margin-bottom: 6px;
+  font-family: var(--font-heading);
+}
+
+.wtb-popup-addr {
+  font-size: 12px;
+  color: #555555;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 6px;
+  align-items: flex-start;
+}
+
+.wtb-popup-phone {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1A1A1A;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.wtb-popup-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.wtb-popup-btn {
+  flex: 1;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 7px 10px;
+  border-radius: 8px;
+  text-decoration: none !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.wtb-popup-btn-call {
+  background: #8A0B0E;
+  color: #FFFFFF !important;
+}
+.wtb-popup-btn-call:hover {
+  background: #6B0609;
+}
+
+.wtb-popup-btn-dir {
+  background: #F5F2EC;
+  color: #1A1A1A !important;
+  border: 1px solid #DDD7CD;
+}
+.wtb-popup-btn-dir:hover {
+  background: #E8E2D6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .wtb-main-grid {
+    grid-template-columns: 1fr;
+    max-height: unset;
+  }
+  .wtb-sidebar {
+    border-right: none;
+    border-bottom: 1px solid #EAE5DC;
+    max-height: 520px;
+  }
+  .wtb-map-panel,
+  #where-to-buy-map {
+    min-height: 480px;
+    height: 480px;
+  }
+}
+
+@media (max-width: 768px) {
+  .whereToBuy_sec {
+    padding: 50px 0 60px 0;
+  }
+  .wtb-title {
+    font-size: 28px;
+  }
+  .wtb-sidebar {
+    padding: 20px 16px;
+    max-height: 480px;
+  }
+  .wtb-map-panel,
+  #where-to-buy-map {
+    min-height: 360px;
+    height: 360px;
+  }
+  .wtb-map-quick-filters {
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    justify-content: center;
+  }
 }
