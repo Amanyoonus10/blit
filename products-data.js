@@ -165,24 +165,276 @@ export const PRODUCTS_DATA = [
         range: "Metal Clad"
       },
       {
-        name: "V Range Brushed Switch (2-Gang)",
-        img: "/assets/products/switches/v_range_brushed_switch_2g_alt.webp",
-        desc: "Premium V Range 2-gang switch plate finished in brushed silver metal with modern dark borders.",
-        specs: ["Brushed Silver finish", "Anti-fingerprint Lacquer", "Luxury Residential Standard"],
+        name: "V Range 1-Gang 1-Way Switch",
+        img: "/assets/products/v_range/BTV301.webp",
+        desc: "Luxury brushed anthracite 1-gang 1-way light switch with crisp toggle action (Model BTV301).",
+        specs: ["Brushed Metal Finish", "10AX 250V Rating", "BS EN 60669-1 Compliant"],
         range: "V Range"
       },
       {
-        name: "V Range Switched Outlet (Single)",
-        img: "/assets/products/switches/v_range_single_socket.webp",
-        desc: "Luxury single switched socket plate in a matte dark anthracite or brushed silver finish.",
-        specs: ["Luxury Anthracite Plate", "Silver Alloy Terminals", "13A Switched BS Standard"],
+        name: "V Range 1-Gang 2-Way Switch",
+        img: "/assets/products/v_range/BTV302.webp",
+        desc: "Luxury brushed anthracite 1-gang 2-way light switch engineered for dual switching control (Model BTV302).",
+        specs: ["2-Way Switching Circuit", "Solid Silver Alloy Contacts", "BS EN 60669-1 Compliant"],
         range: "V Range"
       },
       {
-        name: "V Range USB Switched Socket",
-        img: "/assets/products/switches/v_range_usb_socket.webp",
-        desc: "Sophisticated brushed metal double socket panel, containing fast charging USB ports and black switches.",
-        specs: ["Dual Switched Sockets", "Integrated Fast USB Port", "Premium Brushed Finish"],
+        name: "V Range 1-Gang Intermediate Switch",
+        img: "/assets/products/v_range/BTV313.webp",
+        desc: "Luxury 1-gang 2-way intermediate crossover switch for 3-way lighting circuits (Model BTV313).",
+        specs: ["Intermediate Circuit Control", "Brushed Metal Faceplate", "BS EN 60669-1 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 2-Gang 1-Way Switch",
+        img: "/assets/products/v_range/BTV303.webp",
+        desc: "Luxury brushed metal 2-gang 1-way dual toggle switch plate (Model BTV303).",
+        specs: ["Dual Gang Independent Control", "Brushed Metal Finish", "10AX 250V Rating"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 2-Gang 2-Way Switch",
+        img: "/assets/products/v_range/BTV304.webp",
+        desc: "Luxury brushed metal 2-gang 2-way toggle switch plate for multi-point lighting (Model BTV304).",
+        specs: ["Dual 2-Way Controls", "Smooth Click Operation", "BS EN 60669-1 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 3-Gang 1-Way Switch",
+        img: "/assets/products/v_range/BTV305.webp",
+        desc: "Architectural 3-gang 1-way switch plate with sleek brushed anthracite finish (Model BTV305).",
+        specs: ["3-Gang Independent Toggles", "Low Profile Brushed Plate", "10AX 250V Rating"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 3-Gang 2-Way Switch",
+        img: "/assets/products/v_range/BTV306.webp",
+        desc: "Architectural 3-gang 2-way switch plate for versatile multi-zone lighting circuits (Model BTV306).",
+        specs: ["3-Gang 2-Way Circuits", "Anti-fingerprint Coated", "BS EN 60669-1 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 4-Gang 1-Way Switch",
+        img: "/assets/products/v_range/BTV307.webp",
+        desc: "Wide plate 4-gang 1-way luxury switch board for expansive architectural lighting (Model BTV307).",
+        specs: ["4-Gang Wide Plate 146x86mm", "Brushed Metal Finish", "10AX 250V Rating"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 4-Gang 2-Way Switch",
+        img: "/assets/products/v_range/BTV307X.webp",
+        desc: "Square compact 4-gang 2-way luxury switch plate for high-density multi-circuit control (Model BTV307X).",
+        specs: ["4-Gang 2-Way Square Layout", "Brushed Anthracite Bezel", "BS EN 60669-1 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 6-Gang 1-Way Switch",
+        img: "/assets/products/v_range/BTV309.webp",
+        desc: "Executive 6-gang wide plate switch board for master lighting control in halls and suites (Model BTV309).",
+        specs: ["6-Gang Master Plate 146x86mm", "Heavy Duty Sub-frame", "10AX 250V Rating"],
+        range: "V Range"
+      },
+      {
+        name: "V Range Bell Push Switch",
+        img: "/assets/products/v_range/BTV317.webp",
+        desc: "Luxury retractive bell push switch with engraved bell icon for upscale entryways (Model BTV317).",
+        specs: ["Momentary Push Action", "Laser Engraved Icon", "BS EN 60669-1 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 20A DP Switch + Neon",
+        img: "/assets/products/v_range/BTV324.webp",
+        desc: "Heavy-duty 20A double pole water heater and appliance switch with illuminated neon (Model BTV324).",
+        specs: ["20A Double Pole Rating", "Illuminated Neon Indicator", "BS EN 60669-2-1 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 45A DP Switch + Neon",
+        img: "/assets/products/v_range/BTV327.webp",
+        desc: "Heavy duty 45A double pole main cooker / air conditioning isolator switch with red neon (Model BTV327).",
+        specs: ["45A Double Pole Isolator", "High Conductivity Terminals", "BS EN 60669-2-1 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 45A DP Switch + Neon (Large)",
+        img: "/assets/products/v_range/BTV329.webp",
+        desc: "Large plate profile 45A double pole high current isolator switch with vertical indicator (Model BTV329).",
+        specs: ["45A DP Large Profile", "High Thermal Dissipation", "BS EN 60669-2-1 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 45A Cooker Control Unit",
+        img: "/assets/products/v_range/BTV331.webp",
+        desc: "Combined 45A cooker control isolator with integrated 13A switched socket and dual neons (Model BTV331).",
+        specs: ["45A Cooker Switch + 13A Socket", "Dual Neon Power Lights", "BS 4177 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 400W Rotary Dimmer",
+        img: "/assets/products/v_range/BTV350-2.webp",
+        desc: "Smooth rotary push ON/OFF 400W/500W light dimmer for customizable ambient mood lighting (Model BTV350-2).",
+        specs: ["400W-500W Dimming Capacity", "Push ON/OFF Rotary Dial", "BS EN 60669-2-1 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 400W Fan Speed Controller",
+        img: "/assets/products/v_range/BTV351.webp",
+        desc: "Precision rotary fan speed step controller for ceiling and exhaust ventilation fans (Model BTV351).",
+        specs: ["400W Fan Speed Rating", "Stepless Smooth Rotary", "IEC 60669 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 2-Gang Rotary Dimmer",
+        img: "/assets/products/v_range/BTV353-2.webp",
+        desc: "Dual gang rotary dimmer switch plate for independent two-channel lighting control (Model BTV353-2).",
+        specs: ["2-Gang Independent Dimmers", "Brushed Metal Plate", "BS EN 60669-2-1 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 500W Dimmer Switch",
+        img: "/assets/products/v_range/BTV355.webp",
+        desc: "High capacity 500W rotary dimmer switch engineered for halogen and incandescent arrays (Model BTV355).",
+        specs: ["500W Heavy Load Dimmer", "Thermal Overload Protection", "BS EN 60669-2-1 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 1000W Dimmer Switch",
+        img: "/assets/products/v_range/BTV359.webp",
+        desc: "Commercial high power 600W/1000W rotary dimmer unit for large chandelier and hotel hall lighting (Model BTV359).",
+        specs: ["1000W Max Load Rating", "Heavy Duty Heat Sink", "BS EN 60669-2-1 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 13A Single Switched Socket",
+        img: "/assets/products/v_range/BTV4010B.webp",
+        desc: "Single 13A switched socket outlet with brushed metal plate and safety shutter mechanism (Model BTV4010B).",
+        specs: ["13A Single Switched Outlet", "Safety Shutters Included", "BS 1363-2 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 13A Twin Switched Socket",
+        img: "/assets/products/v_range/BTV4030B.webp",
+        desc: "Double 13A switched socket outlet featuring dual rocker switches and luxury brushed plate (Model BTV4030B).",
+        specs: ["Twin 13A Switched Outlets", "Double Pole Switching Option", "BS 1363-2 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 13A Single USB Switched Socket",
+        img: "/assets/products/v_range/BTV4113-3.1A.webp",
+        desc: "Single 13A switched socket outlet with integrated dual 3.1A high-speed USB charging ports (Model BTV4113-3.1A).",
+        specs: ["13A Switched Socket + Dual USB", "3.1A Smart Fast Charging", "BS 1363-2 / IEC 62368"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 13A Twin USB Switched Socket",
+        img: "/assets/products/v_range/BTV4121-3.1A.webp",
+        desc: "Double 13A switched socket outlet equipped with integrated dual 3.1A smart USB charging slots (Model BTV4121-3.1A).",
+        specs: ["Twin 13A Outlets + Dual USB", "3.1A High Output Charging", "BS 1363-2 / IEC 62368"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 13A Multi-Socket + USB",
+        img: "/assets/products/v_range/BTV4243-3.1A.webp",
+        desc: "Universal multi-pin switched socket accepting international plugs with integrated 3.1A USB port (Model BTV4243-3.1A).",
+        specs: ["Universal Pin Socket + USB", "3.1A Fast Charger Port", "IEC 60884 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 2-Gang Multi-Socket Outlet",
+        img: "/assets/products/v_range/BTV4250.webp",
+        desc: "Double universal multi-standard socket plate compatible with UK, US, EU, and AU pin plugs (Model BTV4250).",
+        specs: ["Twin Universal Multi-Sockets", "Child Safety Shuttering", "IEC 60884 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 2-Gang Multi-Socket + USB",
+        img: "/assets/products/v_range/BTV4253-3.1A.webp",
+        desc: "Double universal multi-socket board equipped with integrated 3.1A USB charging slots (Model BTV4253-3.1A).",
+        specs: ["Twin Multi-Sockets + USB", "3.1A Dual Charging Ports", "IEC 60884 / IEC 62368"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 15A Round Pin Switched Socket",
+        img: "/assets/products/v_range/BTV429.webp",
+        desc: "15A heavy-duty switched round-pin socket outlet for dedicated air conditioner and heavy load circuits (Model BTV429).",
+        specs: ["15A Round Pin Socket", "Dedicated Heavy Load Circuit", "BS 546 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 1-Gang Multi-Socket Outlet",
+        img: "/assets/products/v_range/BTV480.webp",
+        desc: "Single universal multi-pin standard socket outlet with brushed anthracite faceplate (Model BTV480).",
+        specs: ["Universal Pin Compatibility", "Internal Safety Shutter", "IEC 60884 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 1-Gang Switched Multi-Socket + Neon",
+        img: "/assets/products/v_range/BTV482.webp",
+        desc: "13A switched universal multi-socket outlet with power neon indicator light (Model BTV482).",
+        specs: ["13A Switched Multi-Socket", "Illuminated Power Neon", "BS 1363 / IEC 60884"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 2-Gang Switched Multi-Socket",
+        img: "/assets/products/v_range/BTV484.webp",
+        desc: "Double switched universal multi-standard socket board with independent toggle controls (Model BTV484).",
+        specs: ["Twin Switched Multi-Sockets", "Dual Rocker Switches", "BS 1363 / IEC 60884"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 13A Fused Connection Unit",
+        img: "/assets/products/v_range/BTV416.webp",
+        desc: "13A unswitched fused connection spur unit with front-accessible fuse compartment (Model BTV416).",
+        specs: ["13A BS1362 Fuse Fitted", "Front Access Fuse Carrier", "BS 1363-4 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 13A Switched FCU + Neon",
+        img: "/assets/products/v_range/BTV422.webp",
+        desc: "13A switched fused connection spur unit with DP switch and power neon indicator (Model BTV422).",
+        specs: ["13A DP Switched FCU", "Illuminated Red Neon", "BS 1363-4 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 1-Gang Blank Plate",
+        img: "/assets/products/v_range/BTV401.webp",
+        desc: "Single gang 86x86mm luxury brushed metal blank cover plate for cable junction concealment (Model BTV401).",
+        specs: ["86x86mm Blank Plate", "Brushed Metal Finish", "BS 5733 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 2-Gang Blank Plate",
+        img: "/assets/products/v_range/BTV402.webp",
+        desc: "Double gang 146x86mm luxury brushed metal blank cover plate for dual junction boxes (Model BTV402).",
+        specs: ["146x86mm Blank Plate", "Brushed Metal Finish", "BS 5733 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 20A Connection Plate",
+        img: "/assets/products/v_range/BTV820.webp",
+        desc: "20A heavy-duty cable outlet connection plate with internal terminal block (Model BTV820).",
+        specs: ["20A Cable Outlet Plate", "High Current Terminal Block", "BS 5733 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 45A Connection Plate",
+        img: "/assets/products/v_range/BTV821.webp",
+        desc: "45A heavy-duty high current cable connection plate for large electric cookers and equipment (Model BTV821).",
+        specs: ["45A High Current Outlet", "Heavy Gauge Terminals", "BS 5733 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 1-Gang RJ45 Cat6 Data Outlet",
+        img: "/assets/products/v_range/BTV442.webp",
+        desc: "Single port Cat6 RJ45 Gigabit Ethernet data network wall outlet with shuttered socket (Model BTV442).",
+        specs: ["Cat6 Gigabit RJ45 Port", "Shuttered Dust Protection", "TIA/EIA-568 Compliant"],
+        range: "V Range"
+      },
+      {
+        name: "V Range 2-Gang RJ45 Cat6 Data Outlet",
+        img: "/assets/products/v_range/BTV443.webp",
+        desc: "Dual port Cat6 RJ45 Gigabit Ethernet high-speed network wall outlet plate (Model BTV443).",
+        specs: ["Twin Cat6 Data Ports", "Independent 8-Pin Terminals", "TIA/EIA-568 Compliant"],
         range: "V Range"
       },
       {

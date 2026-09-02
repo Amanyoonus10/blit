@@ -410,7 +410,7 @@
           `;
 
           card.addEventListener('click', () => {
-            window.location.href = `./product.html?category=switches&product=${encodeURIComponent(repItem.name)}`;
+            window.location.href = `./product.html?category=switches&range=${encodeURIComponent(rangeName)}&product=${encodeURIComponent(repItem.name)}`;
           });
 
           selectorContainer.appendChild(card);
