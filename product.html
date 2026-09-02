@@ -924,31 +924,6 @@
           </div>
         </div>
 
-        <!-- Section: Interactive 39 Products Gallery Showcase -->
-        <div style="margin-top: 40px; margin-bottom: 60px; border-top: 1px solid #E2E8F0; padding-top: 50px;">
-          <div style="text-align: center; margin-bottom: 30px;">
-            <h3 style="font-size: 22px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: #0F172A; margin-bottom: 10px;">ALL V RANGE PRODUCTS (39 MODELS)</h3>
-            <p style="font-size: 14px; color: #64748B; max-width: 600px; margin: 0 auto 24px auto;">Click any product image to zoom and view high-resolution details.</p>
-            
-            <!-- Category Filter Tabs -->
-            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;" id="v-gallery-filters">
-              <button class="v-filter-btn active" onclick="filterVGallery('all', event)" style="background: var(--primary-red); color: #FFFFFF; border: none; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">All (39)</button>
-              <button class="v-filter-btn" onclick="filterVGallery('plate_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Plate Switches (10)</button>
-              <button class="v-filter-btn" onclick="filterVGallery('high_power', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">20A & 45A Switches (4)</button>
-              <button class="v-filter-btn" onclick="filterVGallery('dimmers', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Dimmers & Speed (5)</button>
-              <button class="v-filter-btn" onclick="filterVGallery('socket_outlets', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Sockets & USB (11)</button>
-              <button class="v-filter-btn" onclick="filterVGallery('fcus', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">FCUs & Plates (6)</button>
-              <button class="v-filter-btn" onclick="filterVGallery('data_tv', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Data & Telecom (2)</button>
-              <button class="v-filter-btn" onclick="filterVGallery('bell_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Bell Push (1)</button>
-            </div>
-          </div>
-
-          <!-- Product Cards Grid -->
-          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px;" id="v-products-gallery-grid">
-            <!-- Populated dynamically by script -->
-          </div>
-        </div>
-
         <!-- Bottom Downloads & Price Support Cards -->
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 30px;">
           <!-- Left Download Card -->
@@ -1422,139 +1397,8 @@
       }
     };
 
-    const ALL_V_PRODUCTS = [
-      { code: "BTV301", cat: "plate_switches", name: "1G 1W Switch", desc: "10AX 250V 1-Way Switch", img: "/assets/products/v_range/BTV301.webp" },
-      { code: "BTV302", cat: "plate_switches", name: "1G 2W Switch", desc: "10AX 250V 2-Way Switch", img: "/assets/products/v_range/BTV302.webp" },
-      { code: "BTV313", cat: "plate_switches", name: "1G Intermediate Switch", desc: "10AX Crossover Intermediate", img: "/assets/products/v_range/BTV313.webp" },
-      { code: "BTV303", cat: "plate_switches", name: "2G 1W Switch", desc: "10AX 2-Gang 1-Way Switch", img: "/assets/products/v_range/BTV303.webp" },
-      { code: "BTV304", cat: "plate_switches", name: "2G 2W Switch", desc: "10AX 2-Gang 2-Way Switch", img: "/assets/products/v_range/BTV304.webp" },
-      { code: "BTV305", cat: "plate_switches", name: "3G 1W Switch", desc: "10AX 3-Gang 1-Way Switch", img: "/assets/products/v_range/BTV305.webp" },
-      { code: "BTV306", cat: "plate_switches", name: "3G 2W Switch", desc: "10AX 3-Gang 2-Way Switch", img: "/assets/products/v_range/BTV306.webp" },
-      { code: "BTV307", cat: "plate_switches", name: "4G 1W Switch (Wide)", desc: "10AX 4-Gang 146x86mm Switch", img: "/assets/products/v_range/BTV307.webp" },
-      { code: "BTV307X", cat: "plate_switches", name: "4G 2W Switch (Square)", desc: "10AX 4-Gang Square Profile", img: "/assets/products/v_range/BTV307X.webp" },
-      { code: "BTV309", cat: "plate_switches", name: "6G 1W Switch (Wide)", desc: "10AX 6-Gang Master Switch", img: "/assets/products/v_range/BTV309.webp" },
-      
-      { code: "BTV317", cat: "bell_switches", name: "1G Bell Push Switch", desc: "Momentary Retractive Bell Switch", img: "/assets/products/v_range/BTV317.webp" },
-      
-      { code: "BTV324", cat: "high_power", name: "20A DP Switch + Neon", desc: "20A Double Pole Isolator", img: "/assets/products/v_range/BTV324.webp" },
-      { code: "BTV327", cat: "high_power", name: "45A DP Switch + Neon", desc: "45A Double Pole Main Switch", img: "/assets/products/v_range/BTV327.webp" },
-      { code: "BTV329", cat: "high_power", name: "45A DP Switch (Large)", desc: "45A Large Plate Isolator", img: "/assets/products/v_range/BTV329.webp" },
-      { code: "BTV331", cat: "high_power", name: "45A Cooker Control Unit", desc: "45A Cooker + 13A Socket + Neons", img: "/assets/products/v_range/BTV331.webp" },
-      
-      { code: "BTV350-2", cat: "dimmers", name: "400W Rotary Dimmer", desc: "400W-500W Ambient Dimmer", img: "/assets/products/v_range/BTV350-2.webp" },
-      { code: "BTV351", cat: "dimmers", name: "400W Fan Speed Switch", desc: "Stepless Fan Speed Controller", img: "/assets/products/v_range/BTV351.webp" },
-      { code: "BTV353-2", cat: "dimmers", name: "2G Rotary Dimmer", desc: "Dual Channel Rotary Dimmer", img: "/assets/products/v_range/BTV353-2.webp" },
-      { code: "BTV355", cat: "dimmers", name: "500W Rotary Dimmer", desc: "500W Heavy Load Dimmer", img: "/assets/products/v_range/BTV355.webp" },
-      { code: "BTV359", cat: "dimmers", name: "1000W Rotary Dimmer", desc: "1000W Master Chandelier Dimmer", img: "/assets/products/v_range/BTV359.webp" },
-      
-      { code: "BTV4010B", cat: "socket_outlets", name: "13A Single Switched Socket", desc: "13A 1-Gang BS 1363-2 Socket", img: "/assets/products/v_range/BTV4010B.webp" },
-      { code: "BTV4030B", cat: "socket_outlets", name: "13A Twin Switched Socket", desc: "13A 2-Gang Switched Socket", img: "/assets/products/v_range/BTV4030B.webp" },
-      { code: "BTV4113-3.1A", cat: "socket_outlets", name: "13A Single Socket + USB", desc: "13A Switched + 3.1A Dual USB", img: "/assets/products/v_range/BTV4113-3.1A.webp" },
-      { code: "BTV4121-3.1A", cat: "socket_outlets", name: "13A Twin Socket + USB", desc: "Twin 13A Switched + 3.1A USB", img: "/assets/products/v_range/BTV4121-3.1A.webp" },
-      
-      { code: "BTV4243-3.1A", cat: "socket_outlets", name: "13A Multi-Socket + USB", desc: "Universal Multi-Pin + 3.1A USB", img: "/assets/products/v_range/BTV4243-3.1A.webp" },
-      { code: "BTV4250", cat: "socket_outlets", name: "2G Universal Multi-Socket", desc: "Twin Multi-Pin Standard Socket", img: "/assets/products/v_range/BTV4250.webp" },
-      { code: "BTV4253-3.1A", cat: "socket_outlets", name: "2G Multi-Socket + USB", desc: "Twin Multi Socket + 3.1A USB", img: "/assets/products/v_range/BTV4253-3.1A.webp" },
-      { code: "BTV429", cat: "socket_outlets", name: "15A Round Pin Socket", desc: "15A Heavy Duty BS 546 Socket", img: "/assets/products/v_range/BTV429.webp" },
-      { code: "BTV480", cat: "socket_outlets", name: "1G Multi-Socket", desc: "Universal Multi-Pin Standard", img: "/assets/products/v_range/BTV480.webp" },
-      { code: "BTV482", cat: "socket_outlets", name: "1G Switched Multi-Socket + Neon", desc: "13A Switched Multi + Neon", img: "/assets/products/v_range/BTV482.webp" },
-      { code: "BTV484", cat: "socket_outlets", name: "2G Switched Multi-Socket", desc: "Twin Switched Multi-Standard", img: "/assets/products/v_range/BTV484.webp" },
-      
-      { code: "BTV416", cat: "fcus", name: "13A Fused Connection Unit", desc: "13A Unswitched FCU Spur", img: "/assets/products/v_range/BTV416.webp" },
-      { code: "BTV422", cat: "fcus", name: "13A Switched FCU + Neon", desc: "13A DP Switched FCU with Neon", img: "/assets/products/v_range/BTV422.webp" },
-      { code: "BTV401", cat: "fcus", name: "1G Blank Plate", desc: "86x86mm Luxury Blank Plate", img: "/assets/products/v_range/BTV401.webp" },
-      { code: "BTV402", cat: "fcus", name: "2G Blank Plate", desc: "146x86mm Double Blank Plate", img: "/assets/products/v_range/BTV402.webp" },
-      { code: "BTV820", cat: "fcus", name: "20A Connection Plate", desc: "20A Cable Outlet Block Plate", img: "/assets/products/v_range/BTV820.webp" },
-      { code: "BTV821", cat: "fcus", name: "45A Connection Plate", desc: "45A High Current Cable Outlet", img: "/assets/products/v_range/BTV821.webp" },
-      
-      { code: "BTV442", cat: "data_tv", name: "1G RJ45 Cat6 Data Outlet", desc: "Gigabit Cat6 Network Wall Plate", img: "/assets/products/v_range/BTV442.webp" },
-      { code: "BTV443", cat: "data_tv", name: "2G RJ45 Cat6 Data Outlet", desc: "Twin Port Gigabit Cat6 Plate", img: "/assets/products/v_range/BTV443.webp" }
-    ];
-
-    function openVCategoryModal(catKey) {
-      const modal = document.getElementById('v-options-modal');
-      const titleEl = document.getElementById('v-modal-cat-title');
-      const subEl = document.getElementById('v-modal-cat-sub');
-      const tableBody = document.getElementById('v-modal-table-body');
-      const data = V_MODAL_DATA[catKey];
-
-      if (!modal || !data) return;
-
-      titleEl.textContent = data.title;
-      subEl.textContent = data.sub;
-
-      let rows = data.items.map(item => `
-        <tr style="border-bottom: 1px solid #E2E8F0; transition: background 0.2s;" onmouseover="this.style.background='#F8FAFC'" onmouseout="this.style.background='transparent'">
-          <td style="padding: 10px 12px; vertical-align: middle; text-align: center; width: 64px;">
-            <img src="${item.img}" alt="${item.code}" style="width: 50px; height: 50px; object-fit: contain; background: #FAFAFA; border-radius: 8px; border: 1px solid #E2E8F0; cursor: pointer;" onclick="openFullscreenLightbox('${item.img}')" title="Click to enlarge">
-          </td>
-          <td style="padding: 12px; font-weight: 700; color: var(--primary-red); font-size: 13.5px; vertical-align: middle;">${item.code}</td>
-          <td style="padding: 12px; font-size: 13.5px; color: #1E293B; font-weight: 500; vertical-align: middle;">${item.desc}</td>
-          <td style="padding: 12px; font-size: 13px; color: #64748B; text-align: center; vertical-align: middle;">${item.size}</td>
-          <td style="padding: 12px; font-size: 12.5px; color: #475569; text-align: center; vertical-align: middle;"><span style="background: #F1F5F9; padding: 4px 8px; border-radius: 6px; font-weight: 600;">${item.std}</span></td>
-        </tr>
-      `).join('');
-
-      tableBody.innerHTML = `
-        <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
-          <thead>
-            <tr style="background: #0F172A; color: #FFFFFF; font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.5px;">
-              <th style="padding: 10px; border-radius: 8px 0 0 0; text-align: center;">View</th>
-              <th style="padding: 10px 12px; text-align: left;">Model</th>
-              <th style="padding: 10px 12px; text-align: left;">Description</th>
-              <th style="padding: 10px; text-align: center;">Size</th>
-              <th style="padding: 10px; border-radius: 0 8px 0 0; text-align: center;">Standard</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${rows}
-          </tbody>
-        </table>
-      `;
-
       modal.style.display = 'flex';
     }
-
-    function renderVGallery(filter = 'all') {
-      const grid = document.getElementById('v-products-gallery-grid');
-      if (!grid) return;
-
-      const items = filter === 'all' ? ALL_V_PRODUCTS : ALL_V_PRODUCTS.filter(p => p.cat === filter);
-      grid.innerHTML = items.map(p => `
-        <div class="v-product-card-item" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 18px; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(0,0,0,0.02);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='rgba(255,26,26,0.3)'; this.style.boxShadow='0 12px 25px rgba(255,26,26,0.08)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.02)';">
-          <div style="width: 100%; height: 160px; background: #FAFAFA; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 14px; position: relative; overflow: hidden; cursor: pointer;" onclick="openFullscreenLightbox('${p.img}')">
-            <span style="position: absolute; top: 8px; left: 8px; background: #0F172A; color: #FFFFFF; font-size: 10.5px; font-weight: 700; padding: 3px 8px; border-radius: 6px; letter-spacing: 0.5px;">${p.code}</span>
-            <img src="${p.img}" alt="${p.name}" loading="lazy" style="max-width: 82%; max-height: 82%; object-fit: contain; transition: transform 0.3s ease;">
-          </div>
-          <div>
-            <h4 style="font-size: 15px; font-weight: 700; color: #0F172A; margin-bottom: 4px; line-height: 1.3;">${p.name}</h4>
-            <p style="font-size: 12.5px; color: #64748B; line-height: 1.4; margin-bottom: 14px;">${p.desc}</p>
-          </div>
-          <button onclick="openFullscreenLightbox('${p.img}')" style="background: #F8FAFC; border: 1px solid #E2E8F0; color: #334155; font-size: 12px; font-weight: 600; padding: 8px 12px; border-radius: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; transition: all 0.2s ease;" onmouseover="this.style.background='var(--primary-red)'; this.style.color='#FFFFFF'; this.style.borderColor='var(--primary-red)';" onmouseout="this.style.background='#F8FAFC'; this.style.color='#334155'; this.style.borderColor='#E2E8F0';">
-            <span>Enlarge & Specs</span> 🔍
-          </button>
-        </div>
-      `).join('');
-    }
-
-    function filterVGallery(filterKey, e) {
-      if (e) {
-        const btns = document.querySelectorAll('#v-gallery-filters .v-filter-btn');
-        btns.forEach(b => {
-          b.style.background = '#F1F5F9';
-          b.style.color = '#334155';
-          b.classList.remove('active');
-        });
-        e.target.style.background = 'var(--primary-red)';
-        e.target.style.color = '#FFFFFF';
-        e.target.classList.add('active');
-      }
-      renderVGallery(filterKey);
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      renderVGallery('all');
-    });
   </script>
 
 <!-- Footer -->
@@ -1583,8 +1427,14 @@
           return;
         }
 
-        // Lookup Product
-        const product = category.items.find(item => item.name === productName);
+        // Lookup Product with flexible fallback
+        let product = category.items.find(item => item.name.toLowerCase() === productName.toLowerCase());
+        if (!product) {
+          product = category.items.find(item => item.name.toLowerCase().includes(productName.toLowerCase()) || productName.toLowerCase().includes(item.name.toLowerCase()));
+        }
+        if (!product && category.items.length > 0) {
+          product = category.items[0];
+        }
         if (!product) {
           renderError("Product not found.");
           return;
@@ -1824,8 +1674,32 @@
 
       // Parse Query String
       const params = new URLSearchParams(window.location.search);
-      const categoryId = params.get('category');
-      const productName = params.get('product');
+      const categoryId = params.get('category') || 'switches';
+      const productName = params.get('product') || '';
+      const reqRange = params.get('range') || '';
+
+      const detailMain = document.getElementById('product-detail-main');
+      const wCatalogSection = document.getElementById('w-catalog-section');
+      const vCatalogSection = document.getElementById('v-catalog-section');
+
+      const isVRange = (reqRange.toLowerCase().includes('v range') || productName.toLowerCase().includes('v range') || productName.toUpperCase().includes('BTV') || reqRange.toLowerCase() === 'v');
+      const isWRange = (reqRange.toLowerCase().includes('w range') || productName.toLowerCase().includes('w range') || productName.toLowerCase().includes('white range') || productName.toUpperCase().includes('W3') || productName.toUpperCase().includes('W4') || reqRange.toLowerCase() === 'w');
+
+      if (isVRange) {
+        if (detailMain) detailMain.style.display = 'none';
+        if (wCatalogSection) wCatalogSection.style.display = 'none';
+        if (vCatalogSection) vCatalogSection.style.display = 'block';
+        window.scrollTo(0, 0);
+        return;
+      }
+
+      if (isWRange) {
+        if (detailMain) detailMain.style.display = 'none';
+        if (vCatalogSection) vCatalogSection.style.display = 'none';
+        if (wCatalogSection) wCatalogSection.style.display = 'block';
+        window.scrollTo(0, 0);
+        return;
+      }
 
       if (!categoryId || !productName) {
         renderError("Missing product parameters.");
