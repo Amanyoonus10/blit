@@ -8,6 +8,31 @@ export const IMAGE_BG_MAP = {
   "/assets/products/cable_termination/gland.webp": "#fdfdfd",
   "/assets/products/cable_termination/insulated_terminals.webp": "#ffffff",
   "/assets/products/cable_termination/lug.webp": "#f7f7f7",
+  "/assets/products/cw_range/BTCW3011-WHI.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW3012-WHI.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW3016BEL-WHI.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW3022-WHI.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW3032-WHI.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW3042-WHI.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW3213-WHI.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW3267-WHI.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW3341-WHI.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW3415-WHI.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW3416LED-WHI.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW3501-WHI.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW3502-WHI.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW4010C-WHI.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW4030L-WHI.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW4113H-3.1A-WHI.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW4120-3.1A-WHI.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW4210-WHI.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW4242-20W-WHI.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW4252-20W-WHI.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW4311-WHI.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW442-WHI.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW443-WHI.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW4620-WHI.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW4645-WHI.webp": "#ffffff",
   "/assets/products/switches/cw_range_gold_switch_1g.webp": "#ffffff",
   "/assets/products/switches/cw_range_clean.webp": "#ffffff",
   "/assets/products/switches/cw_range_gold_switch_3g_alt.webp": "#313131",
@@ -438,24 +463,178 @@ export const PRODUCTS_DATA = [
         range: "V Range"
       },
       {
-        name: "CW Range Gold Switch (1-Gang)",
-        img: "/assets/products/switches/cw_range_gold_switch_1g.webp",
-        desc: "Exquisite champagne gold single switch, offering ultimate prestige and high conductivity contacts.",
-        specs: ["Champagne Gold coating", "Polished Bezel Edges", "Silver Alloy Switches"],
+        name: "CW Range 1-Gang 1-Way Plate Switch",
+        img: "/assets/products/cw_range/BTCW3011-WHI.webp",
+        desc: "10AX 250V~ single gang 1-way switch plate with premium architectural white finish and bevelled border (Model BTCW3011-WHI).",
+        specs: ["10AX 1-Gang 1-Way Switch", "86 x 86 mm Flush Plate", "BS EN 60669-1 Compliant"],
         range: "CW Range"
       },
       {
-        name: "CW Range Gold Switch (3-Gang)",
-        img: "/assets/products/switches/cw_range_gold_switch_3g_alt.webp",
-        desc: "Polished champagne gold 3-gang switch plate with gold toggle buttons, high-gloss premium look.",
-        specs: ["3-Gang Gold Toggles", "Polished Metallic Bezel", "Luxury Residence Spec"],
+        name: "CW Range 1-Gang 2-Way Plate Switch",
+        img: "/assets/products/cw_range/BTCW3012-WHI.webp",
+        desc: "10AX 250V~ single gang 2-way switch plate for multi-location lighting circuits (Model BTCW3012-WHI).",
+        specs: ["10AX 1-Gang 2-Way Switch", "86 x 86 mm Flush Plate", "BS EN 60669-1 Compliant"],
         range: "CW Range"
       },
       {
-        name: "CW Range Gold Twin Switched Socket",
-        img: "/assets/products/switches/cw_range_gold_twin_socket.webp",
-        desc: "Luxurious double switched socket board in a champagne gold finish, combining absolute style and child safety.",
-        specs: ["Champagne Gold Dual Sockets", "Premium Insulation Barrier", "13A Switched Standard"],
+        name: "CW Range 1-Gang Bell Push Switch",
+        img: "/assets/products/cw_range/BTCW3016BEL-WHI.webp",
+        desc: "10A 250V~ momentary retractive bell push switch plate with laser-engraved bell icon (Model BTCW3016BEL-WHI).",
+        specs: ["10A Bell Push Switch", "Laser-Etched Bell Symbol", "BS EN 60669-1 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 2-Gang 2-Way Plate Switch",
+        img: "/assets/products/cw_range/BTCW3022-WHI.webp",
+        desc: "10AX 250V~ dual gang 2-way switch plate with independent rocker controls (Model BTCW3022-WHI).",
+        specs: ["10AX 2-Gang 2-Way Switch", "Dual Independent Rockers", "BS EN 60669-1 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 3-Gang 2-Way Plate Switch",
+        img: "/assets/products/cw_range/BTCW3032-WHI.webp",
+        desc: "10AX 250V~ triple gang 2-way switch plate for multi-zone lighting management (Model BTCW3032-WHI).",
+        specs: ["10AX 3-Gang 2-Way Switch", "Compact 3-Rocker Array", "BS EN 60669-1 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 4-Gang 2-Way Plate Switch",
+        img: "/assets/products/cw_range/BTCW3042-WHI.webp",
+        desc: "10AX 250V~ quad gang 2-way switch plate with four precision rockers (Model BTCW3042-WHI).",
+        specs: ["10AX 4-Gang 2-Way Switch", "4-Rocker Quad Control", "BS EN 60669-1 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 1-Gang Intermediate Switch",
+        img: "/assets/products/cw_range/BTCW3213-WHI.webp",
+        desc: "10AX 250V~ 1-gang intermediate cross-over switch for staircase and corridor 3-way switching (Model BTCW3213-WHI).",
+        specs: ["10AX Intermediate Switch", "Cross-Over 4-Terminal", "BS EN 60669-1 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 45A DP Switch + Neon",
+        img: "/assets/products/cw_range/BTCW3267-WHI.webp",
+        desc: "45A double pole heavy-duty main isolator switch with red neon power indicator (Model BTCW3267-WHI).",
+        specs: ["45A Double Pole Isolator", "High-Visibility Neon", "BS EN 60669-2-1 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 20A DP Switch + Neon",
+        img: "/assets/products/cw_range/BTCW3341-WHI.webp",
+        desc: "20A double pole isolator switch with illuminated neon indicator for water heaters and AC units (Model BTCW3341-WHI).",
+        specs: ["20A Double Pole Switch", "Illuminated Power Neon", "BS EN 60669-2-1 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 13A Unswitched FCU Spur",
+        img: "/assets/products/cw_range/BTCW3415-WHI.webp",
+        desc: "13A unswitched fused connection unit with front-accessible fuse carrier compartment (Model BTCW3415-WHI).",
+        specs: ["13A Unswitched Fused Unit", "Front Access Fuse Carrier", "BS 1363-4 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 13A Switched FCU + LED",
+        img: "/assets/products/cw_range/BTCW3416LED-WHI.webp",
+        desc: "13A switched fused connection spur unit with integrated DP rocker switch and LED power indicator (Model BTCW3416LED-WHI).",
+        specs: ["13A DP Switched FCU", "Integrated LED Indicator", "BS 1363-4 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 1-Gang Rotary Dimmer (400W)",
+        img: "/assets/products/cw_range/BTCW3501-WHI.webp",
+        desc: "Precision rotary lighting dimmer switch and fan controller with push ON/OFF rotary knob (Model BTCW3501-WHI).",
+        specs: ["400W/500W Rotary Control", "Push On/Off Action", "BS EN 60669-2-1 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 2-Gang Rotary Dimmer",
+        img: "/assets/products/cw_range/BTCW3502-WHI.webp",
+        desc: "Dual-gang 2-channel rotary dimmer unit with independent stepless brightness controls on a wide plate (Model BTCW3502-WHI).",
+        specs: ["2-Gang Dual Dimmer", "Dual Independent Knobs", "BS EN 60669-2-1 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 13A Single Switched Socket",
+        img: "/assets/products/cw_range/BTCW4010C-WHI.webp",
+        desc: "13A 1-gang BS 1363-2 switched socket outlet with child safety shutters and smooth rocker switch (Model BTCW4010C-WHI).",
+        specs: ["13A 1-Gang Switched Socket", "Child Safety Shutters", "BS 1363-2 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 13A Twin Switched Socket + Neon",
+        img: "/assets/products/cw_range/BTCW4030L-WHI.webp",
+        desc: "Double 13A switched socket outlet featuring dual rocker switches and illuminated neon power indicators (Model BTCW4030L-WHI).",
+        specs: ["Twin 13A Switched Outlets", "Dual Power Neons", "BS 1363-2 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 13A Single Socket + Dual USB 3.1A",
+        img: "/assets/products/cw_range/BTCW4113H-3.1A-WHI.webp",
+        desc: "13A switched socket outlet with integrated dual 3.1A fast-charging USB ports and smart IC charging chip (Model BTCW4113H-3.1A-WHI).",
+        specs: ["13A Socket + Dual USB", "3.1A Smart Fast Charge", "BS 1363-2 / IEC 62368"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 13A Twin Socket + Dual USB 3.1A",
+        img: "/assets/products/cw_range/BTCW4120-3.1A-WHI.webp",
+        desc: "Twin 13A switched double socket outlet equipped with integrated dual 3.1A smart USB charging ports (Model BTCW4120-3.1A-WHI).",
+        specs: ["Twin 13A Outlets + Dual USB", "3.1A High Output Charging", "BS 1363-2 / IEC 62368"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 15A Round Pin Switched Socket",
+        img: "/assets/products/cw_range/BTCW4210-WHI.webp",
+        desc: "15A heavy-duty BS 546 round-pin switched socket outlet for air conditioning and high current circuits (Model BTCW4210-WHI).",
+        specs: ["15A Round Pin Socket", "Dedicated AC/Heavy Circuit", "BS 546 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 1-Gang Multi-Socket + 20W PD Type-C",
+        img: "/assets/products/cw_range/BTCW4242-20W-WHI.webp",
+        desc: "Universal multi-pin standard socket combined with ultra-fast 20W USB Type-C Power Delivery & USB-A fast charging (Model BTCW4242-20W-WHI).",
+        specs: ["Universal Socket + 20W PD", "Type-C & Type-A Fast Charge", "IEC 60884 / IEC 62368"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 2-Gang Multi-Socket + 20W PD Type-C",
+        img: "/assets/products/cw_range/BTCW4252-20W-WHI.webp",
+        desc: "Twin universal multi-standard socket board featuring integrated 20W USB Type-C Power Delivery & USB fast charge ports (Model BTCW4252-20W-WHI).",
+        specs: ["Twin Universal Multi-Sockets", "20W Type-C Power Delivery", "IEC 60884 / IEC 62368"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range TV / Satellite Multimedia Outlet",
+        img: "/assets/products/cw_range/BTCW4311-WHI.webp",
+        desc: "High-shielded coaxial TV and satellite antenna multimedia socket outlet for clear signal distribution (Model BTCW4311-WHI).",
+        specs: ["Coaxial / Satellite Outlet", "High Shielding Enclosure", "BS 3041 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 1-Gang RJ45 Cat6 Data Outlet",
+        img: "/assets/products/cw_range/BTCW442-WHI.webp",
+        desc: "Single port Cat6 RJ45 Gigabit Ethernet network data outlet with protective dust shutter (Model BTCW442-WHI).",
+        specs: ["Cat6 Gigabit RJ45 Port", "Spring Dust Shutter", "TIA/EIA-568 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 2-Gang RJ45 Cat6 Data Outlet",
+        img: "/assets/products/cw_range/BTCW443-WHI.webp",
+        desc: "Dual port Cat6 RJ45 Gigabit Ethernet high-speed network wall outlet plate (Model BTCW443-WHI).",
+        specs: ["Twin Cat6 Data Ports", "Independent 8-Pin Terminals", "TIA/EIA-568 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 20A Cable Connection / Blank Plate",
+        img: "/assets/products/cw_range/BTCW4620-WHI.webp",
+        desc: "20A heavy-duty cable outlet connection plate with internal terminal block and cord grip (Model BTCW4620-WHI).",
+        specs: ["20A Cable Connection Plate", "Internal Screw Terminals", "BS 5733 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 45A Cable Connection Plate",
+        img: "/assets/products/cw_range/BTCW4645-WHI.webp",
+        desc: "45A high-current cooker and heavy equipment cable outlet connection plate with heavy-gauge terminal clamp (Model BTCW4645-WHI).",
+        specs: ["45A High Current Outlet", "Heavy Gauge Clamp Terminals", "BS 5733 Compliant"],
         range: "CW Range"
       }
     ]
