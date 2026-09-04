@@ -50,91 +50,53 @@ W_CATEGORIES = [
     {
         "cat_title": "1. Plate Switches Collection (10AX 250V~ BS EN 60669-1)",
         "items": [
-            {"code": "W301", "desc": "1 Gang 1 Way Switch", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/white_range_switch_1g.webp"},
-            {"code": "W302", "desc": "1 Gang 2 Way Switch", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/white_range_switch_1g.webp"},
-            {"code": "W313", "desc": "1 Gang 2 Way Intermediate Switch", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/white_range_switch_1g.webp"},
-            {"code": "W303", "desc": "2 Gang 1 Way Switch", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_switch_2g.webp"},
-            {"code": "W304", "desc": "2 Gang 2 Way Switch", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_switch_2g.webp"},
-            {"code": "W305", "desc": "3 Gang 1 Way Switch", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_plate_switches.webp"},
-            {"code": "W306", "desc": "3 Gang 2 Way Switch", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_plate_switches.webp"},
-            {"code": "W307", "desc": "4 Gang 1 Way Switch (Wide)", "dim": "146 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_plate_switches.webp"},
-            {"code": "W308", "desc": "4 Gang 2 Way Switch (Wide)", "dim": "146 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_plate_switches.webp"},
-            {"code": "W309", "desc": "6 Gang 1 Way Switch (Wide)", "dim": "146 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_plate_switches.webp"}
+            {"code": "W301", "desc": "1 Gang 1 Way Switch", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W301.png"},
+            {"code": "W303 / W304", "desc": "2 Gang 1 Way / 2 Way Switch", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W303.png"},
+            {"code": "W305 / W306", "desc": "3 Gang 1 Way / 2 Way Switch", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W305.png"},
+            {"code": "W307", "desc": "4 Gang 1 Way Switch (Wide)", "dim": "146 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W307.png"},
+            {"code": "W309", "desc": "6 Gang 1 Way Switch (Wide)", "dim": "146 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W309.png"},
+            {"code": "W313", "desc": "1 Gang 2 Way Intermediate Switch", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W313.png"}
         ]
     },
     {
-        "cat_title": "2. Bell & Special Switches",
+        "cat_title": "2. Bell Push Switch",
         "items": [
-            {"code": "W317", "desc": "1 Gang Retractive Bell Switch", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_bell_switches.webp"},
-            {"code": "W319", "desc": "1 Gang Bell Switch + Neon Indicator", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_bell_switches.webp"},
-            {"code": "W360", "desc": "1 Gang Bell Switch (Press Symbol)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_bell_switches.webp"},
-            {"code": "W316", "desc": "1 Gang Bell Switch (Large Rocker)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_bell_switches.webp"}
+            {"code": "W317", "desc": "1 Gang Retractive Bell Push Switch", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W317.png"}
         ]
     },
     {
         "cat_title": "3. 20A & 45A High Power Switches & Cooker Units",
         "items": [
-            {"code": "W324", "desc": "20A DP Switch + Neon Indicator", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_high_power.webp"},
-            {"code": "W327", "desc": "45A DP Switch + Neon Indicator", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_high_power.webp"},
-            {"code": "W329", "desc": "45A DP Switch (Large Plate)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_high_power.webp"},
-            {"code": "W331", "desc": "45A Cooker Unit + 13A Switched Socket + Dual Neons", "dim": "146 x 86 mm", "std": "BS 4177", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_cooker_control.webp"}
+            {"code": "W324", "desc": "20A DP Switch + Neon Indicator", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W324.png"},
+            {"code": "W327", "desc": "45A DP Switch + Neon Indicator", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W327.png"},
+            {"code": "W329", "desc": "45A DP Switch (Large Plate + Neon)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W329.png"},
+            {"code": "W331", "desc": "45A Cooker Unit + 13A Switched Socket + Dual Neons", "dim": "146 x 86 mm", "std": "BS 4177", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W331.png"}
         ]
     },
     {
-        "cat_title": "4. Dimmers & Fan Speed Controllers",
+        "cat_title": "4. 13A & 15A Socket Outlets",
         "items": [
-            {"code": "W350", "desc": "1 Gang 250W Rotary Dimmer", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_dimmers.webp"},
-            {"code": "W352", "desc": "1 Gang 400W Rotary Dimmer", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_dimmers.webp"},
-            {"code": "W355", "desc": "1 Gang 500W Rotary Dimmer", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_dimmers.webp"},
-            {"code": "W555", "desc": "1 Gang 1000W Rotary Dimmer", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_dimmers.webp"},
-            {"code": "W354", "desc": "2 Gang 400W Rotary Dimmer", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W3542_dimmer_2g_400w_2way.png"},
-            {"code": "W351", "desc": "1 Gang 250W Fan Speed Controller", "dim": "86 x 86 mm", "std": "IEC 60669", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W5572_speed_switch_1000w_2way.png"},
-            {"code": "W371", "desc": "1 Gang 400W Fan Speed Controller", "dim": "86 x 86 mm", "std": "IEC 60669", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W5572_speed_switch_1000w_2way.png"},
-            {"code": "W557", "desc": "1 Gang 1000W Fan Speed Controller", "dim": "86 x 86 mm", "std": "IEC 60669", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W5572_speed_switch_1000w_2way.png"}
+            {"code": "W405", "desc": "1 Gang 13A Single Switched Socket", "dim": "86 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W405.png"},
+            {"code": "W406", "desc": "2 Gang 13A Twin Switched Socket", "dim": "146 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W406.png"},
+            {"code": "W429", "desc": "15A 1 Gang Switched Round Pin Socket", "dim": "86 x 86 mm", "std": "BS 546", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W429.png"}
         ]
     },
     {
-        "cat_title": "5. 13A Socket Outlets & USB Charging Outlets",
+        "cat_title": "5. FCUs, Blank Plates & Connection Units",
         "items": [
-            {"code": "W405", "desc": "1 Gang 13A Single Switched Socket", "dim": "86 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/white_range_single_socket.webp"},
-            {"code": "W406", "desc": "2 Gang 13A Twin Switched Socket", "dim": "146 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_socket_outlets.webp"},
-            {"code": "W407", "desc": "1 Gang 13A Switched Socket + Neon", "dim": "86 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/white_range_single_socket.webp"},
-            {"code": "W408", "desc": "2 Gang 13A Twin Switched Socket + Neon", "dim": "146 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_socket_outlets.webp"},
-            {"code": "W503", "desc": "Twin 13A Switched Socket + Dual USB Charger", "dim": "146 x 86 mm", "std": "BS 1363-2 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/white_range_usb_twin_socket.webp"},
-            {"code": "W429", "desc": "15A 1 Gang Switched Round Pin Socket", "dim": "86 x 86 mm", "std": "BS 546", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_socket_1g.webp"}
+            {"code": "W401", "desc": "1 Gang Blank Cover Plate", "dim": "86 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W401.png"},
+            {"code": "W402", "desc": "2 Gang Blank Cover Plate", "dim": "146 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W402.png"},
+            {"code": "W419", "desc": "13A Switched FCU Spur + Neon", "dim": "86 x 86 mm", "std": "BS 1363-4", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W419.png"},
+            {"code": "W820", "desc": "20A Heavy Duty Connection Plate", "dim": "86 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W820.png"},
+            {"code": "W821", "desc": "45A Heavy Duty Connection Plate", "dim": "86 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W821.png"}
         ]
     },
     {
-        "cat_title": "6. Universal Multi-Function & Special Sockets",
+        "cat_title": "6. Data, Telecom & TV Multimedia Outlets",
         "items": [
-            {"code": "W460", "desc": "10A 1 Gang Universal Multi Socket", "dim": "86 x 86 mm", "std": "IEC 60884", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_multi_sockets.webp"},
-            {"code": "W444", "desc": "10A 2 Gang Universal Multi Socket", "dim": "146 x 86 mm", "std": "IEC 60884", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_multi_sockets.webp"},
-            {"code": "W445", "desc": "10A 1G Multi Socket + 20A 1G Switch", "dim": "86 x 86 mm", "std": "IEC 60884", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_multi_sockets.webp"},
-            {"code": "W407M", "desc": "13A 1G Switched Multi Socket + Neon", "dim": "86 x 86 mm", "std": "BS 1363 / IEC 60884", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_multi_sockets.webp"},
-            {"code": "W458", "desc": "Dual Voltage Shaver Socket (115V/230V)", "dim": "146 x 86 mm", "std": "BS EN 61558-2-5", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_shaver_socket.webp"}
-        ]
-    },
-    {
-        "cat_title": "7. FCUs, Blank Plates & Connection Units",
-        "items": [
-            {"code": "W416", "desc": "13A Unswitched Fused Connection Unit", "dim": "86 x 86 mm", "std": "BS 1363-4", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_fcus.webp"},
-            {"code": "W413", "desc": "13A FCU Spur + Neon Indicator", "dim": "86 x 86 mm", "std": "BS 1363-4", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_fcus.webp"},
-            {"code": "W422", "desc": "13A Switched FCU Spur", "dim": "86 x 86 mm", "std": "BS 1363-4", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_fcus.webp"},
-            {"code": "W419", "desc": "13A Switched FCU Spur + Neon", "dim": "86 x 86 mm", "std": "BS 1363-4", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_fcus.webp"},
-            {"code": "W401", "desc": "1 Gang Blank Cover Plate", "dim": "86 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_fcus.webp"},
-            {"code": "W402", "desc": "2 Gang Blank Cover Plate", "dim": "146 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_fcus.webp"},
-            {"code": "W820", "desc": "20A Heavy Duty Connection Plate", "dim": "86 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_fcus.webp"},
-            {"code": "W821", "desc": "45A Heavy Duty Connection Plate", "dim": "86 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_fcus.webp"}
-        ]
-    },
-    {
-        "cat_title": "8. Data, Telecom & TV Multimedia Outlets",
-        "items": [
-            {"code": "W166", "desc": "1 Gang Satellite Socket Outlet", "dim": "86 x 86 mm", "std": "BS 3041", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_data_tv.webp"},
-            {"code": "W432", "desc": "1 Gang Co-axial TV Socket", "dim": "86 x 86 mm", "std": "BS 3041", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_data_tv.webp"},
-            {"code": "W438", "desc": "1 Gang RJ11 Telephone Socket", "dim": "86 x 86 mm", "std": "BS 6312", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_data_tv.webp"},
-            {"code": "W442", "desc": "1 Gang Cat6 RJ45 Gigabit Data Outlet", "dim": "86 x 86 mm", "std": "TIA/EIA-568", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_data_tv.webp"},
-            {"code": "W443", "desc": "2 Gang Cat6 RJ45 Gigabit Data Outlet", "dim": "86 x 86 mm", "std": "TIA/EIA-568", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/switches/w_range_data_tv.webp"}
+            {"code": "W432", "desc": "1 Gang Co-axial TV Socket", "dim": "86 x 86 mm", "std": "BS 3041", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W432.png"},
+            {"code": "W438", "desc": "1 Gang RJ11 Telephone Socket", "dim": "86 x 86 mm", "std": "BS 6312", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W438.png"},
+            {"code": "W442", "desc": "1 Gang Cat6 RJ45 Gigabit Data Outlet", "dim": "86 x 86 mm", "std": "TIA/EIA-568", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W442.png"}
         ]
     }
 ]

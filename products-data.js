@@ -77,74 +77,158 @@ export const PRODUCTS_DATA = [
     id: "switches",
     name: "Switches & Sockets",
     items: [
-      {
-        name: "W Range 1-Gang Switch",
-        img: "/assets/products/switches/white_range_switch_v2.webp",
-        desc: "Classic white 1-gang 10AX light switch with smooth toggle click operation (Model W301/W302).",
-        specs: ["Flame Retardant Polycarbonate", "Smooth Toggle Action", "10A 250V Rating"],
+            {
+        name: "W Range 1-Gang Plate Switch (W301)",
+        img: "/assets/products/w_range/W301.webp",
+        desc: "Classic white 1-gang 10AX light switch with smooth toggle click operation (Model W301).",
+        specs: ["10AX 250V~ Rating", "1-Gang 1-Way / 2-Way", "BS EN 60669-1 Certified"],
         range: "W Range"
       },
       {
-        name: "W Range 2-Gang 2-Way Switch",
-        img: "/assets/products/switches/w_range_switch_2g.png",
-        desc: "White 2-gang 2-way light switch plate engineered for dual circuit control (Model W304).",
-        specs: ["Dual Gang Independent Control", "2-Way Circuit Switching", "10AX 250V Rating"],
+        name: "W Range 2-Gang Plate Switch (W303 / W304)",
+        img: "/assets/products/w_range/W303.webp",
+        desc: "White 2-gang light switch plate engineered for dual circuit control (Model W303 / W304).",
+        specs: ["10AX 250V~ Rating", "Dual Independent Rockers", "BS EN 60669-1 Certified"],
         range: "W Range"
       },
       {
-        name: "W Range Bell Push Switch",
-        img: "/assets/products/switches/w_range_bell_switches.png",
-        desc: "Retractive 10A bell push switch featuring crisp indicator bell symbol (Model W317/W319).",
-        specs: ["Retractive Momentary Push", "Optional Neon Indicator", "BS EN 60669-1"],
+        name: "W Range 3-Gang Plate Switch (W305 / W306)",
+        img: "/assets/products/w_range/W305.webp",
+        desc: "White 3-gang multi-zone light switch plate for residential and commercial circuits (Model W305 / W306).",
+        specs: ["10AX 250V~ Rating", "Triple Gang Control", "BS EN 60669-1 Certified"],
         range: "W Range"
       },
       {
-        name: "W Range Single Switched Socket",
-        img: "/assets/products/switches/white_range_single_socket.webp",
-        desc: "Classic white 13A single switched socket outlet with safety shutters (Model W405/W407).",
-        specs: ["13A Switched Outlet", "Safety Shutters Included", "Neon Power Indicator"],
+        name: "W Range 4-Gang Wide Plate Switch (W307)",
+        img: "/assets/products/w_range/W307.webp",
+        desc: "White 4-gang wide plate switch for comprehensive multi-point lighting control (Model W307).",
+        specs: ["10AX 250V~ Rating", "146 x 86 mm Wide Plate", "BS EN 60669-1 Certified"],
         range: "W Range"
       },
       {
-        name: "W Range Twin Switched USB Socket",
-        img: "/assets/products/switches/white_range_usb_twin_socket.webp",
-        desc: "Double switched 13A socket outlet with integrated dual USB charging slots (Model W503).",
-        specs: ["Twin 13A Outlets", "Dual USB Charger Ports", "Smart Load Balancing"],
+        name: "W Range 6-Gang Wide Plate Switch (W309)",
+        img: "/assets/products/w_range/W309.webp",
+        desc: "White 6-gang master switch plate for large residential or commercial halls (Model W309).",
+        specs: ["10AX 250V~ Rating", "146 x 86 mm Wide Plate", "BS EN 60669-1 Certified"],
         range: "W Range"
       },
       {
-        name: "W Range 45A Cooker Control Unit",
-        img: "/assets/products/switches/w_range_cooker_control.png",
-        desc: "Heavy duty 45A cooker control unit with red neon indicator and integrated 13A switched socket outlet (Model W331).",
-        specs: ["45A Double Pole Rating", "Integrated 13A Socket", "BS 4177 Compliant"],
+        name: "W Range 1-Gang Intermediate Switch (W313)",
+        img: "/assets/products/w_range/W313.webp",
+        desc: "10AX 250V~ 1-gang cross-over intermediate plate switch for multi-point switching circuits (Model W313).",
+        specs: ["10AX 250V~ Rating", "Intermediate Multi-Way", "BS EN 60669-1 Certified"],
         range: "W Range"
       },
       {
-        name: "W Range 400W Rotary Dimmer",
-        img: "/assets/products/switches/w_range_dimmers.png",
-        desc: "1-gang 400W rotary push ON/OFF dimmer switch for smooth lighting adjustment (Model W352/W401).",
-        specs: ["400W Load Rating", "Push ON/OFF Rotary Action", "BS EN 60669-2-1"],
+        name: "W Range 1-Gang Bell Push Switch (W317)",
+        img: "/assets/products/w_range/W317.webp",
+        desc: "Retractive 10A momentary bell push switch featuring engraved bell symbol (Model W317).",
+        specs: ["10A 250V~ Rating", "Momentary Push Action", "Engraved Bell Symbol"],
         range: "W Range"
       },
       {
-        name: "W Range Universal Multi Socket",
-        img: "/assets/products/switches/w_range_multi_sockets.png",
-        desc: "10A/13A universal multi-standard socket accepting international plug pin configurations (Model W460/W407M).",
-        specs: ["Universal Pin Compatibility", "Internal Safety Shutter", "IEC 60884 Compliant"],
+        name: "W Range 20A DP Switch + Neon (W324)",
+        img: "/assets/products/w_range/W324.webp",
+        desc: "20A double pole heavy duty water heater / AC isolator switch with red neon indicator (Model W324).",
+        specs: ["20A Double Pole", "Red Neon Power Indicator", "BS EN 60669-2-1 Compliant"],
         range: "W Range"
       },
       {
-        name: "W Range 13A Switched FCU + Neon",
-        img: "/assets/products/switches/w_range_fcus.png",
-        desc: "13A switched fused connection spur unit with front-accessible fuse drawer and neon indicator (Model W413/W419).",
-        specs: ["13A BS1362 Fuse Fitted", "Front Access Fuse Carrier", "BS 1363-4 Compliant"],
+        name: "W Range 45A DP Switch + Neon (W327)",
+        img: "/assets/products/w_range/W327.webp",
+        desc: "45A double pole heavy duty main isolator switch with red neon indicator (Model W327).",
+        specs: ["45A Double Pole Rating", "Illuminated Neon Indicator", "BS EN 60669-2-1 Compliant"],
         range: "W Range"
       },
       {
-        name: "W Range RJ45 Cat6 Data Outlet",
-        img: "/assets/products/switches/w_range_data_tv.png",
-        desc: "Cat6 RJ45 high-speed data network wall plate with shuttered connector port (Model W442/W443).",
-        specs: ["Cat6 Gigabit Performance", "Shuttered Data Port", "TIA/EIA-568 Standard"],
+        name: "W Range 45A DP Switch Large Plate (W329)",
+        img: "/assets/products/w_range/W329.webp",
+        desc: "45A large rocker double pole isolator switch with integrated neon indicator (Model W329).",
+        specs: ["45A High Current Load", "Large Ergonomic Rocker", "BS EN 60669-2-1 Compliant"],
+        range: "W Range"
+      },
+      {
+        name: "W Range 45A Cooker Control Unit + Socket (W331)",
+        img: "/assets/products/w_range/W331.webp",
+        desc: "Heavy duty 45A cooker control unit with red neon and integrated 13A switched socket outlet (Model W331).",
+        specs: ["45A Cooker Isolator", "Integrated 13A Socket", "Dual Neon Indicators"],
+        range: "W Range"
+      },
+      {
+        name: "W Range 1-Gang Blank Cover Plate (W401)",
+        img: "/assets/products/w_range/W401.webp",
+        desc: "1-gang flush architectural blank cover plate for junction box concealment (Model W401).",
+        specs: ["1-Gang Square Profile", "Flame Retardant Material", "BS 5733 Compliant"],
+        range: "W Range"
+      },
+      {
+        name: "W Range 2-Gang Blank Cover Plate (W402)",
+        img: "/assets/products/w_range/W402.webp",
+        desc: "2-gang wide architectural blank cover plate for dual box enclosures (Model W402).",
+        specs: ["2-Gang Wide Profile", "Flush Wall Fitting", "BS 5733 Compliant"],
+        range: "W Range"
+      },
+      {
+        name: "W Range 13A Single Switched Socket (W405)",
+        img: "/assets/products/w_range/W405.webp",
+        desc: "Classic white 13A single switched socket outlet with child safety shutters (Model W405).",
+        specs: ["13A Switched Outlet", "Integrated Safety Shutters", "BS 1363-2 Certified"],
+        range: "W Range"
+      },
+      {
+        name: "W Range 13A Twin Switched Socket (W406)",
+        img: "/assets/products/w_range/W406.webp",
+        desc: "13A 2-gang double switched socket outlet with child safety shutters (Model W406).",
+        specs: ["Twin 13A Switched Sockets", "Child Safety Shutters", "BS 1363-2 Certified"],
+        range: "W Range"
+      },
+      {
+        name: "W Range 13A Switched FCU + Neon (W419)",
+        img: "/assets/products/w_range/W419.webp",
+        desc: "13A DP switched fused connection spur unit with front-accessible fuse drawer and neon indicator (Model W419).",
+        specs: ["13A BS1362 Fuse Fitted", "DP Switch & Neon Indicator", "Front Access Fuse Carrier"],
+        range: "W Range"
+      },
+      {
+        name: "W Range 15A Round Pin Switched Socket (W429)",
+        img: "/assets/products/w_range/W429.webp",
+        desc: "15A heavy duty BS 546 round pin AC switched socket outlet (Model W429).",
+        specs: ["15A Round Pin Socket", "Dedicated On/Off Switch", "BS 546 Compliant"],
+        range: "W Range"
+      },
+      {
+        name: "W Range 1-Gang Co-axial TV Socket (W432)",
+        img: "/assets/products/w_range/W432.webp",
+        desc: "1-gang standard co-axial / antenna TV signal wall outlet socket (Model W432).",
+        specs: ["Co-axial TV Socket", "Low Insertion Loss", "BS 3041 Compliant"],
+        range: "W Range"
+      },
+      {
+        name: "W Range 1-Gang RJ11 Telephone Socket (W438)",
+        img: "/assets/products/w_range/W438.webp",
+        desc: "1-gang RJ11 telecom telephone wall outlet plate (Model W438).",
+        specs: ["RJ11 Telecom Port", "Gold-Plated Contacts", "BS 6312 Standard"],
+        range: "W Range"
+      },
+      {
+        name: "W Range Cat6 RJ45 Gigabit Data Outlet (W442)",
+        img: "/assets/products/w_range/W442.webp",
+        desc: "Cat6 RJ45 high-speed gigabit data network wall plate with protective shutter (Model W442).",
+        specs: ["Cat6 Gigabit Ethernet", "Dust Protective Shutter", "TIA/EIA-568 Compliant"],
+        range: "W Range"
+      },
+      {
+        name: "W Range 20A Connection Plate (W820)",
+        img: "/assets/products/w_range/W820.webp",
+        desc: "20A heavy duty cable outlet connection plate with internal terminals (Model W820).",
+        specs: ["20A Rated Terminals", "Bottom Flex Outlet Grip", "BS 5733 Compliant"],
+        range: "W Range"
+      },
+      {
+        name: "W Range 45A Connection Plate (W821)",
+        img: "/assets/products/w_range/W821.webp",
+        desc: "45A high current cable connection plate for cookers and shower units (Model W821).",
+        specs: ["45A Heavy Gauge Terminals", "Flex Cable Outlet Clamp", "BS 5733 Compliant"],
         range: "W Range"
       },
       {
