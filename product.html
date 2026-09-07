@@ -912,7 +912,7 @@
                     <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
                   </svg>
                 </div>
-                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">Complete Range<br>25 Models</div>
+                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">White &amp; Black<br>44 Models</div>
               </div>
             </div>
 
@@ -922,20 +922,28 @@
         <!-- Categories & Products Header -->
         <div style="text-align: center; margin-bottom: 35px;">
           <h3 style="font-size: 24px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: #0F172A; margin-bottom: 10px;">CW RANGE PRODUCT COLLECTION</h3>
-          <p style="font-size: 14.5px; color: #64748B; max-width: 650px; margin: 0 auto 20px auto;">Browse all 25 distinct models in the prestigious architectural collection. Click any product image to zoom.</p>
-          <div style="width: 44px; height: 3px; background-color: var(--primary-red); margin: 0 auto 30px auto; border-radius: 2px;"></div>
+          <p style="font-size: 14.5px; color: #64748B; max-width: 650px; margin: 0 auto 20px auto;">Browse all 44 distinct models across Architectural White and Matte Black collections. Click any product image to zoom.</p>
+          <div style="width: 44px; height: 3px; background-color: var(--primary-red); margin: 0 auto 25px auto; border-radius: 2px;"></div>
           
+          <!-- Finish Filter Selector -->
+          <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px; margin-bottom: 18px;" id="cw-finish-filters">
+            <span style="font-size: 13px; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.5px;">Finish:</span>
+            <button class="cw-finish-btn active" onclick="filterCWFinish('all', event)" style="background: #0F172A; color: #FFFFFF; border: 1px solid #0F172A; padding: 7px 16px; border-radius: 20px; font-size: 12.5px; font-weight: 700; cursor: pointer; transition: all 0.2s ease;">All Finishes (44)</button>
+            <button class="cw-finish-btn" onclick="filterCWFinish('white', event)" style="background: #F1F5F9; color: #334155; border: 1px solid #CBD5E1; padding: 7px 16px; border-radius: 20px; font-size: 12.5px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">⚪ Architectural White (25)</button>
+            <button class="cw-finish-btn" onclick="filterCWFinish('black', event)" style="background: #F1F5F9; color: #334155; border: 1px solid #CBD5E1; padding: 7px 16px; border-radius: 20px; font-size: 12.5px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">⚫ Matte Black (19)</button>
+          </div>
+
           <!-- Category Filter Tabs -->
           <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;" id="cw-gallery-filters">
-            <button class="cw-filter-btn active" onclick="filterCWRangeProducts('all', event)" style="background: var(--primary-red); color: #FFFFFF; border: none; padding: 9px 20px; border-radius: 20px; font-size: 13px; font-weight: 700; cursor: pointer; transition: all 0.2s ease;">All (25)</button>
-            <button class="cw-filter-btn" onclick="filterCWRangeProducts('plate_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Plate Switches (6)</button>
-            <button class="cw-filter-btn" onclick="filterCWRangeProducts('high_power', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">20A & 45A Switches (2)</button>
-            <button class="cw-filter-btn" onclick="filterCWRangeProducts('dimmers', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Dimmers & Speed (2)</button>
-            <button class="cw-filter-btn" onclick="filterCWRangeProducts('socket_outlets', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Sockets & USB (5)</button>
-            <button class="cw-filter-btn" onclick="filterCWRangeProducts('multi_sockets', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Multi-Function (2)</button>
-            <button class="cw-filter-btn" onclick="filterCWRangeProducts('fcus', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">FCUs & Connection Plates (4)</button>
-            <button class="cw-filter-btn" onclick="filterCWRangeProducts('data_tv', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Data & Telecom (3)</button>
-            <button class="cw-filter-btn" onclick="filterCWRangeProducts('bell_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Bell Push (1)</button>
+            <button class="cw-filter-btn active" onclick="filterCWRangeProducts('all', event)" style="background: var(--primary-red); color: #FFFFFF; border: none; padding: 9px 20px; border-radius: 20px; font-size: 13px; font-weight: 700; cursor: pointer; transition: all 0.2s ease;">All Categories (44)</button>
+            <button class="cw-filter-btn" onclick="filterCWRangeProducts('plate_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Plate Switches (9)</button>
+            <button class="cw-filter-btn" onclick="filterCWRangeProducts('high_power', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">20A & 45A Switches (3)</button>
+            <button class="cw-filter-btn" onclick="filterCWRangeProducts('dimmers', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Dimmers & Speed (3)</button>
+            <button class="cw-filter-btn" onclick="filterCWRangeProducts('socket_outlets', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Sockets & USB (9)</button>
+            <button class="cw-filter-btn" onclick="filterCWRangeProducts('multi_sockets', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Multi-Function (4)</button>
+            <button class="cw-filter-btn" onclick="filterCWRangeProducts('fcus', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">FCUs & Connection Plates (8)</button>
+            <button class="cw-filter-btn" onclick="filterCWRangeProducts('data_tv', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Data & Telecom (6)</button>
+            <button class="cw-filter-btn" onclick="filterCWRangeProducts('bell_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Bell Push (2)</button>
           </div>
         </div>
 
@@ -1441,51 +1449,99 @@
 
     <script>
     const UNIQUE_CW_PRODUCTS = [
-      { code: "BTCW3011-WHI", cat: "plate_switches", name: "1-Gang 1-Way Plate Switch", desc: "10AX 250V~ 1-Gang Switch with Architectural White Finish", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/cw_range/BTCW3011-WHI.webp" },
-      { code: "BTCW3012-WHI", cat: "plate_switches", name: "1-Gang 2-Way Plate Switch", desc: "10AX 250V~ 1-Gang 2-Way Switch for Multi-Location Circuits", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/cw_range/BTCW3012-WHI.webp" },
-      { code: "BTCW3213-WHI", cat: "plate_switches", name: "1-Gang Intermediate Switch", desc: "10AX 250V~ 1-Gang Cross-Over Intermediate Plate Switch", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/cw_range/BTCW3213-WHI.webp" },
-      { code: "BTCW3022-WHI", cat: "plate_switches", name: "2-Gang 2-Way Plate Switch", desc: "10AX 250V~ 2-Gang Dual Circuit Rocker Switch Plate", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/cw_range/BTCW3022-WHI.webp" },
-      { code: "BTCW3032-WHI", cat: "plate_switches", name: "3-Gang 2-Way Plate Switch", desc: "10AX 250V~ 3-Gang Multi-Zone Light Switch Plate", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/cw_range/BTCW3032-WHI.webp" },
-      { code: "BTCW3042-WHI", cat: "plate_switches", name: "4-Gang 2-Way Plate Switch", desc: "10AX 250V~ 4-Gang Quad Control Rocker Switch Plate", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/cw_range/BTCW3042-WHI.webp" },
+      // 1. Plate Switches
+      { code: "BTCW3011-WHI", cat: "plate_switches", finish: "white", finishName: "White", name: "1-Gang 1-Way Plate Switch (White)", desc: "10AX 250V~ 1-Gang Switch with Architectural White Finish", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/cw_range/BTCW3011-WHI.webp" },
+      { code: "BTCW3012-WHI", cat: "plate_switches", finish: "white", finishName: "White", name: "1-Gang 2-Way Plate Switch (White)", desc: "10AX 250V~ 1-Gang 2-Way Switch for Multi-Location Circuits", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/cw_range/BTCW3012-WHI.webp" },
+      { code: "BTCW3213-WHI", cat: "plate_switches", finish: "white", finishName: "White", name: "1-Gang Intermediate Switch (White)", desc: "10AX 250V~ 1-Gang Cross-Over Intermediate Plate Switch", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/cw_range/BTCW3213-WHI.webp" },
+      { code: "BTCW3013-BLK", cat: "plate_switches", finish: "black", finishName: "Matte Black", name: "1-Gang Intermediate Switch (Black)", desc: "10AX 250V~ 1-gang intermediate cross-over switch in matte black", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/cw_range/BTCW3013-BLK.webp" },
+      { code: "BTCW3022-WHI", cat: "plate_switches", finish: "white", finishName: "White", name: "2-Gang 2-Way Plate Switch (White)", desc: "10AX 250V~ 2-Gang Dual Circuit Rocker Switch Plate", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/cw_range/BTCW3022-WHI.webp" },
+      { code: "BTCW3022-BLK", cat: "plate_switches", finish: "black", finishName: "Matte Black", name: "2-Gang 2-Way Plate Switch (Black)", desc: "10AX 250V~ 2-gang dual circuit rocker switch in matte black", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/cw_range/BTCW3022-BLK.webp" },
+      { code: "BTCW3032-WHI", cat: "plate_switches", finish: "white", finishName: "White", name: "3-Gang 2-Way Plate Switch (White)", desc: "10AX 250V~ 3-Gang Multi-Zone Light Switch Plate", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/cw_range/BTCW3032-WHI.webp" },
+      { code: "BTCW3042-WHI", cat: "plate_switches", finish: "white", finishName: "White", name: "4-Gang 2-Way Plate Switch (White)", desc: "10AX 250V~ 4-Gang Quad Control Rocker Switch Plate", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/cw_range/BTCW3042-WHI.webp" },
+      { code: "BTCW3042-BLK", cat: "plate_switches", finish: "black", finishName: "Matte Black", name: "4-Gang 2-Way Plate Switch (Black)", desc: "10AX 250V~ 4-gang quad control rocker switch in matte black", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/cw_range/BTCW3042-BLK.webp" },
       
-      { code: "BTCW3016BEL-WHI", cat: "bell_switches", name: "1-Gang Bell Push Switch", desc: "10A 250V~ Retractive Bell Push Switch with Engraved Bell Symbol", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/cw_range/BTCW3016BEL-WHI.webp" },
+      // 2. Bell & Special Switches
+      { code: "BTCW3016BEL-WHI", cat: "bell_switches", finish: "white", finishName: "White", name: "1-Gang Bell Push Switch (White)", desc: "10A 250V~ Retractive Bell Push Switch with Engraved Bell Symbol", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/cw_range/BTCW3016BEL-WHI.webp" },
+      { code: "BTCW3016BEL-BLK", cat: "bell_switches", finish: "black", finishName: "Matte Black", name: "1-Gang Bell Push Switch (Black)", desc: "10A 250V~ retractive bell push switch with engraved bell symbol in matte black", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/cw_range/BTCW3016BEL-BLK.webp" },
       
-      { code: "BTCW3341-WHI", cat: "high_power", name: "20A DP Switch + Neon", desc: "20A Double Pole Isolator Switch with Illuminated Neon Indicator", size: "86 x 86 mm", std: "BS EN 60669-2-1", img: "/assets/products/cw_range/BTCW3341-WHI.webp" },
-      { code: "BTCW3267-WHI", cat: "high_power", name: "45A DP Switch + Neon", desc: "45A Double Pole Main Isolator Switch with Red Neon Indicator", size: "86 x 86 mm", std: "BS EN 60669-2-1", img: "/assets/products/cw_range/BTCW3267-WHI.webp" },
+      // 3. 20A & 45A High Power Isolator Switches
+      { code: "BTCW3341-WHI", cat: "high_power", finish: "white", finishName: "White", name: "20A DP Switch + Neon (White)", desc: "20A Double Pole Isolator Switch with Illuminated Neon Indicator", size: "86 x 86 mm", std: "BS EN 60669-2-1", img: "/assets/products/cw_range/BTCW3341-WHI.webp" },
+      { code: "BTCW3341-BLK", cat: "high_power", finish: "black", finishName: "Matte Black", name: "20A DP Switch + Neon (Black)", desc: "20A double pole isolator switch with illuminated neon indicator in matte black", size: "86 x 86 mm", std: "BS EN 60669-2-1", img: "/assets/products/cw_range/BTCW3341-BLK.webp" },
+      { code: "BTCW3267-WHI", cat: "high_power", finish: "white", finishName: "White", name: "45A DP Switch + Neon (White)", desc: "45A Double Pole Main Isolator Switch with Red Neon Indicator", size: "86 x 86 mm", std: "BS EN 60669-2-1", img: "/assets/products/cw_range/BTCW3267-WHI.webp" },
       
-      { code: "BTCW3501-WHI", cat: "dimmers", name: "1-Gang Rotary Dimmer (400W)", desc: "400W/500W Rotary Dimmer Switch & Precision Fan Speed Controller", size: "86 x 86 mm", std: "BS EN 60669-2-1", img: "/assets/products/cw_range/BTCW3501-WHI.webp" },
-      { code: "BTCW3502-WHI", cat: "dimmers", name: "2-Gang Rotary Dimmer", desc: "Dual Channel Rotary Lighting Dimmer Switch on Wide Plate", size: "146 x 86 mm", std: "BS EN 60669-2-1", img: "/assets/products/cw_range/BTCW3502-WHI.webp" },
+      // 4. Rotary Dimmers & Speed Controllers
+      { code: "BTCW3501-WHI", cat: "dimmers", finish: "white", finishName: "White", name: "1-Gang Rotary Dimmer (400W) (White)", desc: "400W/500W Rotary Dimmer Switch & Precision Fan Speed Controller", size: "86 x 86 mm", std: "BS EN 60669-2-1", img: "/assets/products/cw_range/BTCW3501-WHI.webp" },
+      { code: "BTCW3501-BLK", cat: "dimmers", finish: "black", finishName: "Matte Black", name: "1-Gang Rotary Dimmer (400W) (Black)", desc: "400W/500W rotary dimmer switch & fan speed controller in matte black", size: "86 x 86 mm", std: "BS EN 60669-2-1", img: "/assets/products/cw_range/BTCW3501-BLK.webp" },
+      { code: "BTCW3502-WHI", cat: "dimmers", finish: "white", finishName: "White", name: "2-Gang Rotary Dimmer (White)", desc: "Dual Channel Rotary Lighting Dimmer Switch on Wide Plate", size: "146 x 86 mm", std: "BS EN 60669-2-1", img: "/assets/products/cw_range/BTCW3502-WHI.webp" },
       
-      { code: "BTCW4010C-WHI", cat: "socket_outlets", name: "13A Single Switched Socket", desc: "13A 1-Gang BS 1363-2 Switched Power Outlet with Child Shutters", size: "86 x 86 mm", std: "BS 1363-2", img: "/assets/products/cw_range/BTCW4010C-WHI.webp" },
-      { code: "BTCW4030L-WHI", cat: "socket_outlets", name: "13A Twin Switched Socket + Neon", desc: "13A 2-Gang BS 1363-2 Double Switched Socket with Dual Neons", size: "146 x 86 mm", std: "BS 1363-2", img: "/assets/products/cw_range/BTCW4030L-WHI.webp" },
-      { code: "BTCW4113H-3.1A-WHI", cat: "socket_outlets", name: "13A Single Socket + Dual USB 3.1A", desc: "13A Switched Single Socket + Dual 3.1A Fast USB Charging Ports", size: "86 x 86 mm", std: "BS 1363-2 / IEC 62368", img: "/assets/products/cw_range/BTCW4113H-3.1A-WHI.webp" },
-      { code: "BTCW4120-3.1A-WHI", cat: "socket_outlets", name: "13A Twin Socket + Dual USB 3.1A", desc: "Twin 13A Double Switched Socket + Dual 3.1A Fast USB Charging Ports", size: "146 x 86 mm", std: "BS 1363-2 / IEC 62368", img: "/assets/products/cw_range/BTCW4120-3.1A-WHI.webp" },
-      { code: "BTCW4210-WHI", cat: "socket_outlets", name: "15A Round Pin Switched Socket", desc: "15A Heavy Duty BS 546 Round Pin AC Switched Socket Outlet", size: "86 x 86 mm", std: "BS 546", img: "/assets/products/cw_range/BTCW4210-WHI.webp" },
+      // 5. 13A & 15A Socket Outlets & Dual USB Fast Chargers
+      { code: "BTCW4010C-WHI", cat: "socket_outlets", finish: "white", finishName: "White", name: "13A Single Switched Socket (White)", desc: "13A 1-Gang BS 1363-2 Switched Power Outlet with Child Shutters", size: "86 x 86 mm", std: "BS 1363-2", img: "/assets/products/cw_range/BTCW4010C-WHI.webp" },
+      { code: "BTCW4010C-BLK", cat: "socket_outlets", finish: "black", finishName: "Matte Black", name: "13A Single Switched Socket (Black)", desc: "13A 1-gang BS 1363-2 switched socket outlet with child shutters in matte black", size: "86 x 86 mm", std: "BS 1363-2", img: "/assets/products/cw_range/BTCW4010C-BLK.webp" },
+      { code: "BTCW4030L-WHI", cat: "socket_outlets", finish: "white", finishName: "White", name: "13A Twin Switched Socket + Neon (White)", desc: "13A 2-Gang BS 1363-2 Double Switched Socket with Dual Neons", size: "146 x 86 mm", std: "BS 1363-2", img: "/assets/products/cw_range/BTCW4030L-WHI.webp" },
+      { code: "BTCW4113H-3.1A-WHI", cat: "socket_outlets", finish: "white", finishName: "White", name: "13A Single Socket + Dual USB 3.1A (White)", desc: "13A Switched Single Socket + Dual 3.1A Fast USB Charging Ports", size: "86 x 86 mm", std: "BS 1363-2 / IEC 62368", img: "/assets/products/cw_range/BTCW4113H-3.1A-WHI.webp" },
+      { code: "BTCW4113H-3.1A-BLK", cat: "socket_outlets", finish: "black", finishName: "Matte Black", name: "13A Single Socket + Dual USB 3.1A (Black)", desc: "13A switched single socket + dual 3.1A fast USB charging in matte black", size: "86 x 86 mm", std: "BS 1363-2 / IEC 62368", img: "/assets/products/cw_range/BTCW4113H-3.1A-BLK.webp" },
+      { code: "BTCW4120-3.1A-WHI", cat: "socket_outlets", finish: "white", finishName: "White", name: "13A Twin Socket + Dual USB 3.1A (White)", desc: "Twin 13A Double Switched Socket + Dual 3.1A Fast USB Charging Ports", size: "146 x 86 mm", std: "BS 1363-2 / IEC 62368", img: "/assets/products/cw_range/BTCW4120-3.1A-WHI.webp" },
+      { code: "BTCW4120-3.1A-BLK", cat: "socket_outlets", finish: "black", finishName: "Matte Black", name: "13A Twin Socket + Dual USB 3.1A (Black)", desc: "Twin 13A switched socket + dual 3.1A fast USB charging in matte black", size: "146 x 86 mm", std: "BS 1363-2 / IEC 62368", img: "/assets/products/cw_range/BTCW4120-3.1A-BLK.webp" },
+      { code: "BTCW4210-WHI", cat: "socket_outlets", finish: "white", finishName: "White", name: "15A Round Pin Switched Socket (White)", desc: "15A Heavy Duty BS 546 Round Pin AC Switched Socket Outlet", size: "86 x 86 mm", std: "BS 546", img: "/assets/products/cw_range/BTCW4210-WHI.webp" },
+      { code: "BTCW4210-BLK", cat: "socket_outlets", finish: "black", finishName: "Matte Black", name: "15A Round Pin Switched Socket (Black)", desc: "15A heavy-duty BS 546 round pin AC switched socket in matte black", size: "86 x 86 mm", std: "BS 546", img: "/assets/products/cw_range/BTCW4210-BLK.webp" },
       
-      { code: "BTCW4242-20W-WHI", cat: "multi_sockets", name: "1-Gang Multi-Socket + 20W PD Type-C", desc: "Universal Multi-Pin Socket with 20W USB Type-C & Type-A Fast Charger", size: "86 x 86 mm", std: "IEC 60884 / IEC 62368", img: "/assets/products/cw_range/BTCW4242-20W-WHI.webp" },
-      { code: "BTCW4252-20W-WHI", cat: "multi_sockets", name: "2-Gang Multi-Socket + 20W PD Type-C", desc: "Twin Universal Multi-Pin Sockets + 20W Type-C Power Delivery Fast Charger", size: "146 x 86 mm", std: "IEC 60884 / IEC 62368", img: "/assets/products/cw_range/BTCW4252-20W-WHI.webp" },
+      // 6. Universal Multi-Function & Type-C PD Fast Charging Sockets
+      { code: "BTCW4242-20W-WHI", cat: "multi_sockets", finish: "white", finishName: "White", name: "1-Gang Multi-Socket + 20W PD Type-C (White)", desc: "Universal Multi-Pin Socket with 20W USB Type-C & Type-A Fast Charger", size: "86 x 86 mm", std: "IEC 60884 / IEC 62368", img: "/assets/products/cw_range/BTCW4242-20W-WHI.webp" },
+      { code: "BTCW4242-20W-BLK", cat: "multi_sockets", finish: "black", finishName: "Matte Black", name: "1-Gang Multi-Socket + 20W PD Type-C (Black)", desc: "Universal multi-pin socket + 20W USB Type-C & Type-A fast charger in matte black", size: "86 x 86 mm", std: "IEC 60884 / IEC 62368", img: "/assets/products/cw_range/BTCW4242-20W-BLK.webp" },
+      { code: "BTCW4252-20W-WHI", cat: "multi_sockets", finish: "white", finishName: "White", name: "2-Gang Multi-Socket + 20W PD Type-C (White)", desc: "Twin Universal Multi-Pin Sockets + 20W Type-C Power Delivery Fast Charger", size: "146 x 86 mm", std: "IEC 60884 / IEC 62368", img: "/assets/products/cw_range/BTCW4252-20W-WHI.webp" },
+      { code: "BTCW4252-20W-BLK", cat: "multi_sockets", finish: "black", finishName: "Matte Black", name: "2-Gang Multi-Socket + 20W PD Type-C (Black)", desc: "Twin universal multi-pin sockets + 20W Type-C Power Delivery in matte black", size: "146 x 86 mm", std: "IEC 60884 / IEC 62368", img: "/assets/products/cw_range/BTCW4252-20W-BLK.webp" },
       
-      { code: "BTCW3415-WHI", cat: "fcus", name: "13A Unswitched FCU Spur", desc: "13A Unswitched Fused Connection Unit with Front Fuse Carrier", size: "86 x 86 mm", std: "BS 1363-4", img: "/assets/products/cw_range/BTCW3415-WHI.webp" },
-      { code: "BTCW3416LED-WHI", cat: "fcus", name: "13A Switched FCU + LED", desc: "13A DP Switched Fused Connection Spur Unit with LED Neon Indicator", size: "86 x 86 mm", std: "BS 1363-4", img: "/assets/products/cw_range/BTCW3416LED-WHI.webp" },
-      { code: "BTCW4620-WHI", cat: "fcus", name: "20A Cable Connection / Blank Plate", desc: "20A Heavy Duty Cable Outlet Connection Plate with Internal Terminals", size: "86 x 86 mm", std: "BS 5733", img: "/assets/products/cw_range/BTCW4620-WHI.webp" },
-      { code: "BTCW4645-WHI", cat: "fcus", name: "45A Cable Connection Plate", desc: "45A High Current Cable Connection Plate for Large Cooker Units", size: "86 x 86 mm", std: "BS 5733", img: "/assets/products/cw_range/BTCW4645-WHI.webp" },
+      // 7. Fused Connection Units (FCUs) & Cable Outlet Plates
+      { code: "BTCW3415-WHI", cat: "fcus", finish: "white", finishName: "White", name: "13A Unswitched FCU Spur (White)", desc: "13A Unswitched Fused Connection Unit with Front Fuse Carrier", size: "86 x 86 mm", std: "BS 1363-4", img: "/assets/products/cw_range/BTCW3415-WHI.webp" },
+      { code: "BTCW3415-BLK", cat: "fcus", finish: "black", finishName: "Matte Black", name: "13A Unswitched FCU Spur (Black)", desc: "13A unswitched fused connection unit with front fuse carrier in matte black", size: "86 x 86 mm", std: "BS 1363-4", img: "/assets/products/cw_range/BTCW3415-BLK.webp" },
+      { code: "BTCW3416LED-WHI", cat: "fcus", finish: "white", finishName: "White", name: "13A Switched FCU + LED (White)", desc: "13A DP Switched Fused Connection Spur Unit with LED Neon Indicator", size: "86 x 86 mm", std: "BS 1363-4", img: "/assets/products/cw_range/BTCW3416LED-WHI.webp" },
+      { code: "BTCW3416LED-BLK", cat: "fcus", finish: "black", finishName: "Matte Black", name: "13A Switched FCU + LED (Black)", desc: "13A DP switched fused connection spur unit with LED indicator in matte black", size: "86 x 86 mm", std: "BS 1363-4", img: "/assets/products/cw_range/BTCW3416LED-BLK.webp" },
+      { code: "BTCW4620-WHI", cat: "fcus", finish: "white", finishName: "White", name: "20A Cable Connection / Blank Plate (White)", desc: "20A Heavy Duty Cable Outlet Connection Plate with Internal Terminals", size: "86 x 86 mm", std: "BS 5733", img: "/assets/products/cw_range/BTCW4620-WHI.webp" },
+      { code: "BTCW4620-BLK", cat: "fcus", finish: "black", finishName: "Matte Black", name: "20A Cable Connection / Blank Plate (Black)", desc: "20A heavy-duty cable outlet connection plate with internal terminals in matte black", size: "86 x 86 mm", std: "BS 5733", img: "/assets/products/cw_range/BTCW4620-BLK.webp" },
+      { code: "BTCW4645-WHI", cat: "fcus", finish: "white", finishName: "White", name: "45A Cable Connection Plate (White)", desc: "45A High Current Cable Connection Plate for Large Cooker Units", size: "86 x 86 mm", std: "BS 5733", img: "/assets/products/cw_range/BTCW4645-WHI.webp" },
+      { code: "BTCW4645-BLK", cat: "fcus", finish: "black", finishName: "Matte Black", name: "45A Cable Connection Plate (Black)", desc: "45A high-current cooker and heavy equipment cable outlet plate in matte black", size: "86 x 86 mm", std: "BS 5733", img: "/assets/products/cw_range/BTCW4645-BLK.webp" },
       
-      { code: "BTCW4311-WHI", cat: "data_tv", name: "TV / Satellite Multimedia Outlet", desc: "Coaxial TV and Satellite Antenna Outlet on Wide Plate", size: "146 x 86 mm", std: "BS 3041", img: "/assets/products/cw_range/BTCW4311-WHI.webp" },
-      { code: "BTCW442-WHI", cat: "data_tv", name: "1-Gang RJ45 Cat6 Data Outlet", desc: "1-Port Gigabit Ethernet Cat6 Data Wall Plate with Dust Shutter", size: "86 x 86 mm", std: "TIA/EIA-568", img: "/assets/products/cw_range/BTCW442-WHI.webp" },
-      { code: "BTCW443-WHI", cat: "data_tv", name: "2-Gang RJ45 Cat6 Data Outlet", desc: "2-Port Dual Gigabit Ethernet Cat6 Data Wall Plate", size: "86 x 86 mm", std: "TIA/EIA-568", img: "/assets/products/cw_range/BTCW443-WHI.webp" }
+      // 8. Data, Telecom & TV Multimedia Outlets
+      { code: "BTCW4311-WHI", cat: "data_tv", finish: "white", finishName: "White", name: "TV / Satellite Multimedia Outlet (White)", desc: "Coaxial TV and Satellite Antenna Outlet on Wide Plate", size: "146 x 86 mm", std: "BS 3041", img: "/assets/products/cw_range/BTCW4311-WHI.webp" },
+      { code: "BTCW4311-BLK", cat: "data_tv", finish: "black", finishName: "Matte Black", name: "TV / Satellite Multimedia Outlet (Black)", desc: "Coaxial TV and satellite antenna multimedia socket outlet in matte black", size: "146 x 86 mm", std: "BS 3041", img: "/assets/products/cw_range/BTCW4311-BLK.webp" },
+      { code: "BTCW442-WHI", cat: "data_tv", finish: "white", finishName: "White", name: "1-Gang RJ45 Cat6 Data Outlet (White)", desc: "1-Port Gigabit Ethernet Cat6 Data Wall Plate with Dust Shutter", size: "86 x 86 mm", std: "TIA/EIA-568", img: "/assets/products/cw_range/BTCW442-WHI.webp" },
+      { code: "BTCW442-BLK", cat: "data_tv", finish: "black", finishName: "Matte Black", name: "1-Gang RJ45 Cat6 Data Outlet (Black)", desc: "1-port Gigabit Ethernet Cat6 data wall plate with dust shutter in matte black", size: "86 x 86 mm", std: "TIA/EIA-568", img: "/assets/products/cw_range/BTCW442-BLK.webp" },
+      { code: "BTCW443-WHI", cat: "data_tv", finish: "white", finishName: "White", name: "2-Gang RJ45 Cat6 Data Outlet (White)", desc: "2-Port Dual Gigabit Ethernet Cat6 Data Wall Plate", size: "86 x 86 mm", std: "TIA/EIA-568", img: "/assets/products/cw_range/BTCW443-WHI.webp" },
+      { code: "BTCW443-BLK", cat: "data_tv", finish: "black", finishName: "Matte Black", name: "2-Gang RJ45 Cat6 Data Outlet (Black)", desc: "2-port dual Gigabit Ethernet Cat6 data wall plate in matte black", size: "86 x 86 mm", std: "TIA/EIA-568", img: "/assets/products/cw_range/BTCW443-BLK.webp" }
     ];
 
-    function renderCWRangeProducts(filter = 'all') {
+    let currentCWCatFilter = 'all';
+    let currentCWFinishFilter = 'all';
+
+    function renderCWRangeProducts() {
       const grid = document.getElementById('cw-products-grid');
       if (!grid) return;
 
-      const items = filter === 'all' ? UNIQUE_CW_PRODUCTS : UNIQUE_CW_PRODUCTS.filter(p => p.cat === filter);
+      let items = UNIQUE_CW_PRODUCTS;
+      if (currentCWCatFilter !== 'all') {
+        items = items.filter(p => p.cat === currentCWCatFilter);
+      }
+      if (currentCWFinishFilter !== 'all') {
+        items = items.filter(p => p.finish === currentCWFinishFilter);
+      }
+
+      if (items.length === 0) {
+        grid.innerHTML = `
+          <div style="grid-column: 1 / -1; text-align: center; padding: 50px 20px; color: #64748B;">
+            <p style="font-size: 16px; font-weight: 600; margin-bottom: 8px;">No products match the selected filter combination.</p>
+            <button onclick="resetCWFilters()" style="background: var(--primary-red); color: #FFF; border: none; padding: 8px 20px; border-radius: 20px; font-size: 13px; font-weight: 700; cursor: pointer;">Show All Products</button>
+          </div>
+        `;
+        return;
+      }
+
       grid.innerHTML = items.map(p => `
         <div class="cw-product-card-item" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.02);" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='rgba(255,26,26,0.35)'; this.style.boxShadow='0 14px 28px rgba(255,26,26,0.09)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.02)';">
           
           <!-- Image Box with Click to Enlarge -->
           <div style="width: 100%; height: 190px; background: #FAFAFA; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; position: relative; overflow: hidden; cursor: pointer;" onclick="openFullscreenLightbox('${p.img}')" title="Click to enlarge image">
             <span style="position: absolute; top: 10px; left: 10px; background: #0F172A; color: #FFFFFF; font-size: 11px; font-weight: 700; padding: 4px 9px; border-radius: 6px; letter-spacing: 0.5px;">${p.code}</span>
+            <span style="position: absolute; top: 10px; right: 10px; background: ${p.finish === 'black' ? '#1E293B' : '#E2E8F0'}; color: ${p.finish === 'black' ? '#F8FAFC' : '#0F172A'}; font-size: 10.5px; font-weight: 700; padding: 3px 8px; border-radius: 6px;">${p.finishName}</span>
             <img src="${p.img}" alt="${p.name}" loading="lazy" style="max-width: 82%; max-height: 82%; object-fit: contain; transition: transform 0.3s ease;">
           </div>
 
@@ -1508,6 +1564,7 @@
     }
 
     function filterCWRangeProducts(filterKey, e) {
+      currentCWCatFilter = filterKey;
       if (e) {
         const btns = document.querySelectorAll('#cw-gallery-filters .cw-filter-btn');
         btns.forEach(b => {
@@ -1519,11 +1576,46 @@
         e.target.style.color = '#FFFFFF';
         e.target.classList.add('active');
       }
-      renderCWRangeProducts(filterKey);
+      renderCWRangeProducts();
+    }
+
+    function filterCWFinish(finishKey, e) {
+      currentCWFinishFilter = finishKey;
+      if (e) {
+        const btns = document.querySelectorAll('#cw-finish-filters .cw-finish-btn');
+        btns.forEach(b => {
+          b.style.background = '#F1F5F9';
+          b.style.color = '#334155';
+          b.style.border = '1px solid #CBD5E1';
+          b.classList.remove('active');
+        });
+        e.target.style.background = '#0F172A';
+        e.target.style.color = '#FFFFFF';
+        e.target.style.border = '1px solid #0F172A';
+        e.target.classList.add('active');
+      }
+      renderCWRangeProducts();
+    }
+
+    function resetCWFilters() {
+      currentCWCatFilter = 'all';
+      currentCWFinishFilter = 'all';
+      const catBtns = document.querySelectorAll('#cw-gallery-filters .cw-filter-btn');
+      catBtns.forEach((b, i) => {
+        b.style.background = i === 0 ? 'var(--primary-red)' : '#F1F5F9';
+        b.style.color = i === 0 ? '#FFFFFF' : '#334155';
+      });
+      const finishBtns = document.querySelectorAll('#cw-finish-filters .cw-finish-btn');
+      finishBtns.forEach((b, i) => {
+        b.style.background = i === 0 ? '#0F172A' : '#F1F5F9';
+        b.style.color = i === 0 ? '#FFFFFF' : '#334155';
+        b.style.border = i === 0 ? '1px solid #0F172A' : '1px solid #CBD5E1';
+      });
+      renderCWRangeProducts();
     }
 
     document.addEventListener('DOMContentLoaded', () => {
-      renderCWRangeProducts('all');
+      renderCWRangeProducts();
     });
   </script>
 

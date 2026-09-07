@@ -55,66 +55,85 @@ CW_CATEGORIES = [
     {
         "cat_title": "1. Plate Switches Collection (10AX 250V~ BS EN 60669-1)",
         "items": [
-            {"code": "BTCW3011-WHI", "desc": "1 Gang 1 Way Switch", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3011-WHI.webp"},
-            {"code": "BTCW3012-WHI", "desc": "1 Gang 2 Way Switch", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3012-WHI.webp"},
-            {"code": "BTCW3213-WHI", "desc": "1 Gang Intermediate Switch", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3213-WHI.webp"},
-            {"code": "BTCW3022-WHI", "desc": "2 Gang 2 Way Switch", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3022-WHI.webp"},
-            {"code": "BTCW3032-WHI", "desc": "3 Gang 2 Way Switch", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3032-WHI.webp"},
-            {"code": "BTCW3042-WHI", "desc": "4 Gang 2 Way Switch", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3042-WHI.webp"}
+            {"code": "BTCW3011-WHI", "desc": "1 Gang 1 Way Switch (White)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3011-WHI.webp"},
+            {"code": "BTCW3012-WHI", "desc": "1 Gang 2 Way Switch (White)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3012-WHI.webp"},
+            {"code": "BTCW3213-WHI", "desc": "1 Gang Intermediate Switch (White)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3213-WHI.webp"},
+            {"code": "BTCW3013-BLK", "desc": "1 Gang Intermediate Switch (Black)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3013-BLK.webp"},
+            {"code": "BTCW3022-WHI", "desc": "2 Gang 2 Way Switch (White)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3022-WHI.webp"},
+            {"code": "BTCW3022-BLK", "desc": "2 Gang 2 Way Switch (Black)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3022-BLK.webp"},
+            {"code": "BTCW3032-WHI", "desc": "3 Gang 2 Way Switch (White)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3032-WHI.webp"},
+            {"code": "BTCW3042-WHI", "desc": "4 Gang 2 Way Switch (White)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3042-WHI.webp"},
+            {"code": "BTCW3042-BLK", "desc": "4 Gang 2 Way Switch (Black)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3042-BLK.webp"}
         ]
     },
     {
         "cat_title": "2. Bell & Special Switches",
         "items": [
-            {"code": "BTCW3016BEL-WHI", "desc": "1 Gang Retractive Bell Push Switch", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3016BEL-WHI.webp"}
+            {"code": "BTCW3016BEL-WHI", "desc": "1 Gang Retractive Bell Push Switch (White)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3016BEL-WHI.webp"},
+            {"code": "BTCW3016BEL-BLK", "desc": "1 Gang Retractive Bell Push Switch (Black)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3016BEL-BLK.webp"}
         ]
     },
     {
         "cat_title": "3. 20A & 45A High Power Isolator Switches",
         "items": [
-            {"code": "BTCW3341-WHI", "desc": "20A DP Switch + Neon Indicator", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3341-WHI.webp"},
-            {"code": "BTCW3267-WHI", "desc": "45A DP Switch + Neon Indicator", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3267-WHI.webp"}
+            {"code": "BTCW3341-WHI", "desc": "20A DP Switch + Neon (White)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3341-WHI.webp"},
+            {"code": "BTCW3341-BLK", "desc": "20A DP Switch + Neon (Black)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3341-BLK.webp"},
+            {"code": "BTCW3267-WHI", "desc": "45A DP Switch + Neon (White)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3267-WHI.webp"}
         ]
     },
     {
         "cat_title": "4. Rotary Dimmers & Speed Controllers",
         "items": [
-            {"code": "BTCW3501-WHI", "desc": "1 Gang 400W/500W Rotary Dimmer", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3501-WHI.webp"},
-            {"code": "BTCW3502-WHI", "desc": "2 Gang Rotary Dimmer (Wide Plate)", "dim": "146 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3502-WHI.webp"}
+            {"code": "BTCW3501-WHI", "desc": "1 Gang 400W/500W Rotary Dimmer (White)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3501-WHI.webp"},
+            {"code": "BTCW3501-BLK", "desc": "1 Gang 400W/500W Rotary Dimmer (Black)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3501-BLK.webp"},
+            {"code": "BTCW3502-WHI", "desc": "2 Gang Rotary Dimmer (White)", "dim": "146 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3502-WHI.webp"}
         ]
     },
     {
         "cat_title": "5. 13A & 15A Socket Outlets & Dual USB Fast Chargers",
         "items": [
-            {"code": "BTCW4010C-WHI", "desc": "1 Gang 13A Single Switched Socket", "dim": "86 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4010C-WHI.webp"},
-            {"code": "BTCW4030L-WHI", "desc": "2 Gang 13A Twin Switched Socket + Neon", "dim": "146 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4030L-WHI.webp"},
-            {"code": "BTCW4113H-3.1A-WHI", "desc": "13A Single Socket + Dual USB 3.1A", "dim": "86 x 86 mm", "std": "BS 1363-2 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4113H-3.1A-WHI.webp"},
-            {"code": "BTCW4120-3.1A-WHI", "desc": "Twin 13A Socket + Dual USB 3.1A", "dim": "146 x 86 mm", "std": "BS 1363-2 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4120-3.1A-WHI.webp"},
-            {"code": "BTCW4210-WHI", "desc": "15A Round Pin Switched Socket", "dim": "86 x 86 mm", "std": "BS 546", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4210-WHI.webp"}
+            {"code": "BTCW4010C-WHI", "desc": "1 Gang 13A Switched Socket (White)", "dim": "86 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4010C-WHI.webp"},
+            {"code": "BTCW4010C-BLK", "desc": "1 Gang 13A Switched Socket (Black)", "dim": "86 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4010C-BLK.webp"},
+            {"code": "BTCW4030L-WHI", "desc": "2 Gang 13A Twin Socket + Neon (White)", "dim": "146 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4030L-WHI.webp"},
+            {"code": "BTCW4113H-3.1A-WHI", "desc": "13A Single Socket + Dual USB 3.1A (White)", "dim": "86 x 86 mm", "std": "BS 1363-2 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4113H-3.1A-WHI.webp"},
+            {"code": "BTCW4113H-3.1A-BLK", "desc": "13A Single Socket + Dual USB 3.1A (Black)", "dim": "86 x 86 mm", "std": "BS 1363-2 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4113H-3.1A-BLK.webp"},
+            {"code": "BTCW4120-3.1A-WHI", "desc": "Twin 13A Socket + Dual USB 3.1A (White)", "dim": "146 x 86 mm", "std": "BS 1363-2 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4120-3.1A-WHI.webp"},
+            {"code": "BTCW4120-3.1A-BLK", "desc": "Twin 13A Socket + Dual USB 3.1A (Black)", "dim": "146 x 86 mm", "std": "BS 1363-2 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4120-3.1A-BLK.webp"},
+            {"code": "BTCW4210-WHI", "desc": "15A Round Pin Switched Socket (White)", "dim": "86 x 86 mm", "std": "BS 546", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4210-WHI.webp"},
+            {"code": "BTCW4210-BLK", "desc": "15A Round Pin Switched Socket (Black)", "dim": "86 x 86 mm", "std": "BS 546", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4210-BLK.webp"}
         ]
     },
     {
         "cat_title": "6. Universal Multi-Function & Type-C PD Fast Charging Sockets",
         "items": [
-            {"code": "BTCW4242-20W-WHI", "desc": "1G Multi-Socket + 20W PD Type-C & USB", "dim": "86 x 86 mm", "std": "IEC 60884 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4242-20W-WHI.webp"},
-            {"code": "BTCW4252-20W-WHI", "desc": "2G Multi-Socket + 20W PD Type-C & USB", "dim": "146 x 86 mm", "std": "IEC 60884 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4252-20W-WHI.webp"}
+            {"code": "BTCW4242-20W-WHI", "desc": "1G Multi-Socket + 20W PD Type-C (White)", "dim": "86 x 86 mm", "std": "IEC 60884 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4242-20W-WHI.webp"},
+            {"code": "BTCW4242-20W-BLK", "desc": "1G Multi-Socket + 20W PD Type-C (Black)", "dim": "86 x 86 mm", "std": "IEC 60884 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4242-20W-BLK.webp"},
+            {"code": "BTCW4252-20W-WHI", "desc": "2G Multi-Socket + 20W PD Type-C (White)", "dim": "146 x 86 mm", "std": "IEC 60884 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4252-20W-WHI.webp"},
+            {"code": "BTCW4252-20W-BLK", "desc": "2G Multi-Socket + 20W PD Type-C (Black)", "dim": "146 x 86 mm", "std": "IEC 60884 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4252-20W-BLK.webp"}
         ]
     },
     {
         "cat_title": "7. Fused Connection Units (FCUs) & Cable Outlet Plates",
         "items": [
-            {"code": "BTCW3415-WHI", "desc": "13A Unswitched Fused Connection Unit", "dim": "86 x 86 mm", "std": "BS 1363-4", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3415-WHI.webp"},
-            {"code": "BTCW3416LED-WHI", "desc": "13A Switched FCU Spur + LED Indicator", "dim": "86 x 86 mm", "std": "BS 1363-4", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3416LED-WHI.webp"},
-            {"code": "BTCW4620-WHI", "desc": "20A Heavy Duty Cable Connection Plate", "dim": "86 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4620-WHI.webp"},
-            {"code": "BTCW4645-WHI", "desc": "45A High Current Cable Connection Plate", "dim": "86 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4645-WHI.webp"}
+            {"code": "BTCW3415-WHI", "desc": "13A Unswitched FCU Spur (White)", "dim": "86 x 86 mm", "std": "BS 1363-4", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3415-WHI.webp"},
+            {"code": "BTCW3415-BLK", "desc": "13A Unswitched FCU Spur (Black)", "dim": "86 x 86 mm", "std": "BS 1363-4", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3415-BLK.webp"},
+            {"code": "BTCW3416LED-WHI", "desc": "13A Switched FCU + LED (White)", "dim": "86 x 86 mm", "std": "BS 1363-4", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3416LED-WHI.webp"},
+            {"code": "BTCW3416LED-BLK", "desc": "13A Switched FCU + LED (Black)", "dim": "86 x 86 mm", "std": "BS 1363-4", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3416LED-BLK.webp"},
+            {"code": "BTCW4620-WHI", "desc": "20A Cable Connection Plate (White)", "dim": "86 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4620-WHI.webp"},
+            {"code": "BTCW4620-BLK", "desc": "20A Cable Connection Plate (Black)", "dim": "86 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4620-BLK.webp"},
+            {"code": "BTCW4645-WHI", "desc": "45A Cable Connection Plate (White)", "dim": "86 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4645-WHI.webp"},
+            {"code": "BTCW4645-BLK", "desc": "45A Cable Connection Plate (Black)", "dim": "86 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4645-BLK.webp"}
         ]
     },
     {
         "cat_title": "8. Data, Telecom & TV Multimedia Outlets",
         "items": [
-            {"code": "BTCW4311-WHI", "desc": "Coaxial TV & Satellite Multimedia Socket", "dim": "146 x 86 mm", "std": "BS 3041", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4311-WHI.webp"},
-            {"code": "BTCW442-WHI", "desc": "1 Gang RJ45 Cat6 Gigabit Data Outlet", "dim": "86 x 86 mm", "std": "TIA/EIA-568", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW442-WHI.webp"},
-            {"code": "BTCW443-WHI", "desc": "2 Gang RJ45 Cat6 Gigabit Data Outlet", "dim": "86 x 86 mm", "std": "TIA/EIA-568", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW443-WHI.webp"}
+            {"code": "BTCW4311-WHI", "desc": "Coaxial TV & Satellite Socket (White)", "dim": "146 x 86 mm", "std": "BS 3041", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4311-WHI.webp"},
+            {"code": "BTCW4311-BLK", "desc": "Coaxial TV & Satellite Socket (Black)", "dim": "146 x 86 mm", "std": "BS 3041", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4311-BLK.webp"},
+            {"code": "BTCW442-WHI", "desc": "1 Gang RJ45 Cat6 Data Outlet (White)", "dim": "86 x 86 mm", "std": "TIA/EIA-568", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW442-WHI.webp"},
+            {"code": "BTCW442-BLK", "desc": "1 Gang RJ45 Cat6 Data Outlet (Black)", "dim": "86 x 86 mm", "std": "TIA/EIA-568", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW442-BLK.webp"},
+            {"code": "BTCW443-WHI", "desc": "2 Gang RJ45 Cat6 Data Outlet (White)", "dim": "86 x 86 mm", "std": "TIA/EIA-568", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW443-WHI.webp"},
+            {"code": "BTCW443-BLK", "desc": "2 Gang RJ45 Cat6 Data Outlet (Black)", "dim": "86 x 86 mm", "std": "TIA/EIA-568", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW443-BLK.webp"}
         ]
     }
 ]

@@ -33,6 +33,25 @@ export const IMAGE_BG_MAP = {
   "/assets/products/cw_range/BTCW443-WHI.webp": "#ffffff",
   "/assets/products/cw_range/BTCW4620-WHI.webp": "#ffffff",
   "/assets/products/cw_range/BTCW4645-WHI.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW3013-BLK.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW3016BEL-BLK.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW3022-BLK.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW3042-BLK.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW3341-BLK.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW3415-BLK.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW3416LED-BLK.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW3501-BLK.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW4010C-BLK.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW4113H-3.1A-BLK.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW4120-3.1A-BLK.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW4210-BLK.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW4242-20W-BLK.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW4252-20W-BLK.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW4311-BLK.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW442-BLK.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW443-BLK.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW4620-BLK.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW4645-BLK.webp": "#ffffff",
   "/assets/products/switches/cw_range_gold_switch_1g.webp": "#ffffff",
   "/assets/products/switches/cw_range_clean.webp": "#ffffff",
   "/assets/products/switches/cw_range_gold_switch_3g_alt.webp": "#313131",
@@ -718,6 +737,139 @@ export const PRODUCTS_DATA = [
         name: "CW Range 45A Cable Connection Plate",
         img: "/assets/products/cw_range/BTCW4645-WHI.webp",
         desc: "45A high-current cooker and heavy equipment cable outlet connection plate with heavy-gauge terminal clamp (Model BTCW4645-WHI).",
+        specs: ["45A High Current Outlet", "Heavy Gauge Clamp Terminals", "BS 5733 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 1-Gang Intermediate Switch (Black)",
+        img: "/assets/products/cw_range/BTCW3013-BLK.webp",
+        desc: "10AX 250V~ 1-gang intermediate cross-over switch plate in architectural matte black finish (Model BTCW3013-BLK).",
+        specs: ["10AX Intermediate Switch", "Cross-Over 4-Terminal", "BS EN 60669-1 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 1-Gang Bell Push Switch (Black)",
+        img: "/assets/products/cw_range/BTCW3016BEL-BLK.webp",
+        desc: "10A 250V~ momentary retractive bell push switch plate with laser-engraved bell icon in architectural matte black finish (Model BTCW3016BEL-BLK).",
+        specs: ["10A Bell Push Switch", "Laser-Etched Bell Symbol", "BS EN 60669-1 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 2-Gang 2-Way Plate Switch (Black)",
+        img: "/assets/products/cw_range/BTCW3022-BLK.webp",
+        desc: "10AX 250V~ dual gang 2-way switch plate with independent rocker controls in architectural matte black finish (Model BTCW3022-BLK).",
+        specs: ["10AX 2-Gang 2-Way Switch", "Dual Independent Rockers", "BS EN 60669-1 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 4-Gang 2-Way Plate Switch (Black)",
+        img: "/assets/products/cw_range/BTCW3042-BLK.webp",
+        desc: "10AX 250V~ quad gang 2-way switch plate with four precision rockers in architectural matte black finish (Model BTCW3042-BLK).",
+        specs: ["10AX 4-Gang 2-Way Switch", "4-Rocker Quad Control", "BS EN 60669-1 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 20A DP Switch + Neon (Black)",
+        img: "/assets/products/cw_range/BTCW3341-BLK.webp",
+        desc: "20A double pole isolator switch with illuminated neon indicator for water heaters and AC units in architectural matte black finish (Model BTCW3341-BLK).",
+        specs: ["20A Double Pole Switch", "Illuminated Power Neon", "BS EN 60669-2-1 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 13A Unswitched FCU Spur (Black)",
+        img: "/assets/products/cw_range/BTCW3415-BLK.webp",
+        desc: "13A unswitched fused connection unit with front-accessible fuse carrier compartment in architectural matte black finish (Model BTCW3415-BLK).",
+        specs: ["13A Unswitched Fused Unit", "Front Access Fuse Carrier", "BS 1363-4 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 13A Switched FCU + LED (Black)",
+        img: "/assets/products/cw_range/BTCW3416LED-BLK.webp",
+        desc: "13A switched fused connection spur unit with integrated DP rocker switch and LED power indicator in architectural matte black finish (Model BTCW3416LED-BLK).",
+        specs: ["13A DP Switched FCU", "Integrated LED Indicator", "BS 1363-4 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 1-Gang Rotary Dimmer (400W) (Black)",
+        img: "/assets/products/cw_range/BTCW3501-BLK.webp",
+        desc: "Precision rotary lighting dimmer switch and fan controller with push ON/OFF rotary knob in architectural matte black finish (Model BTCW3501-BLK).",
+        specs: ["400W/500W Rotary Control", "Push On/Off Action", "BS EN 60669-2-1 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 13A Single Switched Socket (Black)",
+        img: "/assets/products/cw_range/BTCW4010C-BLK.webp",
+        desc: "13A 1-gang BS 1363-2 switched socket outlet with child safety shutters and smooth rocker switch in architectural matte black finish (Model BTCW4010C-BLK).",
+        specs: ["13A 1-Gang Switched Socket", "Child Safety Shutters", "BS 1363-2 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 13A Single Socket + Dual USB 3.1A (Black)",
+        img: "/assets/products/cw_range/BTCW4113H-3.1A-BLK.webp",
+        desc: "13A switched socket outlet with integrated dual 3.1A fast-charging USB ports and smart IC charging chip in architectural matte black finish (Model BTCW4113H-3.1A-BLK).",
+        specs: ["13A Socket + Dual USB", "3.1A Smart Fast Charge", "BS 1363-2 / IEC 62368"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 13A Twin Socket + Dual USB 3.1A (Black)",
+        img: "/assets/products/cw_range/BTCW4120-3.1A-BLK.webp",
+        desc: "Twin 13A switched double socket outlet equipped with integrated dual 3.1A smart USB charging ports in architectural matte black finish (Model BTCW4120-3.1A-BLK).",
+        specs: ["Twin 13A Outlets + Dual USB", "3.1A High Output Charging", "BS 1363-2 / IEC 62368"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 15A Round Pin Switched Socket (Black)",
+        img: "/assets/products/cw_range/BTCW4210-BLK.webp",
+        desc: "15A heavy-duty BS 546 round-pin switched socket outlet for air conditioning and high current circuits in architectural matte black finish (Model BTCW4210-BLK).",
+        specs: ["15A Round Pin Socket", "Dedicated AC/Heavy Circuit", "BS 546 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 1-Gang Multi-Socket + 20W PD Type-C (Black)",
+        img: "/assets/products/cw_range/BTCW4242-20W-BLK.webp",
+        desc: "Universal multi-pin standard socket combined with ultra-fast 20W USB Type-C Power Delivery & USB-A fast charging in architectural matte black finish (Model BTCW4242-20W-BLK).",
+        specs: ["Universal Socket + 20W PD", "Type-C & Type-A Fast Charge", "IEC 60884 / IEC 62368"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 2-Gang Multi-Socket + 20W PD Type-C (Black)",
+        img: "/assets/products/cw_range/BTCW4252-20W-BLK.webp",
+        desc: "Twin universal multi-standard socket board featuring integrated 20W USB Type-C Power Delivery & USB fast charge ports in architectural matte black finish (Model BTCW4252-20W-BLK).",
+        specs: ["Twin Universal Multi-Sockets", "20W Type-C Power Delivery", "IEC 60884 / IEC 62368"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range TV / Satellite Multimedia Outlet (Black)",
+        img: "/assets/products/cw_range/BTCW4311-BLK.webp",
+        desc: "High-shielded coaxial TV and satellite antenna multimedia socket outlet for clear signal distribution in architectural matte black finish (Model BTCW4311-BLK).",
+        specs: ["Coaxial / Satellite Outlet", "High Shielding Enclosure", "BS 3041 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 1-Gang RJ45 Cat6 Data Outlet (Black)",
+        img: "/assets/products/cw_range/BTCW442-BLK.webp",
+        desc: "Single port Cat6 RJ45 Gigabit Ethernet network data outlet with protective dust shutter in architectural matte black finish (Model BTCW442-BLK).",
+        specs: ["Cat6 Gigabit RJ45 Port", "Spring Dust Shutter", "TIA/EIA-568 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 2-Gang RJ45 Cat6 Data Outlet (Black)",
+        img: "/assets/products/cw_range/BTCW443-BLK.webp",
+        desc: "Dual port Cat6 RJ45 Gigabit Ethernet high-speed network wall outlet plate in architectural matte black finish (Model BTCW443-BLK).",
+        specs: ["Twin Cat6 Data Ports", "Independent 8-Pin Terminals", "TIA/EIA-568 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 20A Cable Connection / Blank Plate (Black)",
+        img: "/assets/products/cw_range/BTCW4620-BLK.webp",
+        desc: "20A heavy-duty cable outlet connection plate with internal terminal block and cord grip in architectural matte black finish (Model BTCW4620-BLK).",
+        specs: ["20A Cable Connection Plate", "Internal Screw Terminals", "BS 5733 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 45A Cable Connection Plate (Black)",
+        img: "/assets/products/cw_range/BTCW4645-BLK.webp",
+        desc: "45A high-current cooker and heavy equipment cable outlet connection plate with heavy-gauge terminal clamp in architectural matte black finish (Model BTCW4645-BLK).",
         specs: ["45A High Current Outlet", "Heavy Gauge Clamp Terminals", "BS 5733 Compliant"],
         range: "CW Range"
       }
