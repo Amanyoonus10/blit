@@ -56,12 +56,15 @@ CW_CATEGORIES = [
         "cat_title": "1. Plate Switches Collection (10AX 250V~ BS EN 60669-1)",
         "items": [
             {"code": "BTCW3011-WHI", "desc": "1 Gang 1 Way Switch (White)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3011-WHI.webp"},
+            {"code": "BTCW3011-BLK", "desc": "1 Gang 1 Way Switch (Black)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3011-BLK.webp"},
             {"code": "BTCW3012-WHI", "desc": "1 Gang 2 Way Switch (White)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3012-WHI.webp"},
+            {"code": "BTCW3012-BLK", "desc": "1 Gang 2 Way Switch (Black)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3012-BLK.webp"},
             {"code": "BTCW3213-WHI", "desc": "1 Gang Intermediate Switch (White)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3213-WHI.webp"},
             {"code": "BTCW3013-BLK", "desc": "1 Gang Intermediate Switch (Black)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3013-BLK.webp"},
             {"code": "BTCW3022-WHI", "desc": "2 Gang 2 Way Switch (White)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3022-WHI.webp"},
             {"code": "BTCW3022-BLK", "desc": "2 Gang 2 Way Switch (Black)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3022-BLK.webp"},
             {"code": "BTCW3032-WHI", "desc": "3 Gang 2 Way Switch (White)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3032-WHI.webp"},
+            {"code": "BTCW3032-BLK", "desc": "3 Gang 2 Way Switch (Black)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3032-BLK.webp"},
             {"code": "BTCW3042-WHI", "desc": "4 Gang 2 Way Switch (White)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3042-WHI.webp"},
             {"code": "BTCW3042-BLK", "desc": "4 Gang 2 Way Switch (Black)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3042-BLK.webp"}
         ]
@@ -78,7 +81,8 @@ CW_CATEGORIES = [
         "items": [
             {"code": "BTCW3341-WHI", "desc": "20A DP Switch + Neon (White)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3341-WHI.webp"},
             {"code": "BTCW3341-BLK", "desc": "20A DP Switch + Neon (Black)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3341-BLK.webp"},
-            {"code": "BTCW3267-WHI", "desc": "45A DP Switch + Neon (White)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3267-WHI.webp"}
+            {"code": "BTCW3267-WHI", "desc": "45A DP Switch + Neon (White)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3267-WHI.webp"},
+            {"code": "BTCW3267-BLK", "desc": "45A DP Switch + Neon (Black)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3267-BLK.webp"}
         ]
     },
     {
@@ -86,7 +90,8 @@ CW_CATEGORIES = [
         "items": [
             {"code": "BTCW3501-WHI", "desc": "1 Gang 400W/500W Rotary Dimmer (White)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3501-WHI.webp"},
             {"code": "BTCW3501-BLK", "desc": "1 Gang 400W/500W Rotary Dimmer (Black)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3501-BLK.webp"},
-            {"code": "BTCW3502-WHI", "desc": "2 Gang Rotary Dimmer (White)", "dim": "146 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3502-WHI.webp"}
+            {"code": "BTCW3502-WHI", "desc": "2 Gang Rotary Dimmer (White)", "dim": "146 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3502-WHI.webp"},
+            {"code": "BTCW3502-BLK", "desc": "2 Gang Rotary Dimmer (Black)", "dim": "146 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW3502-BLK.webp"}
         ]
     },
     {
@@ -95,6 +100,7 @@ CW_CATEGORIES = [
             {"code": "BTCW4010C-WHI", "desc": "1 Gang 13A Switched Socket (White)", "dim": "86 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4010C-WHI.webp"},
             {"code": "BTCW4010C-BLK", "desc": "1 Gang 13A Switched Socket (Black)", "dim": "86 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4010C-BLK.webp"},
             {"code": "BTCW4030L-WHI", "desc": "2 Gang 13A Twin Socket + Neon (White)", "dim": "146 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4030L-WHI.webp"},
+            {"code": "BTCW4030L-BLK", "desc": "2 Gang 13A Twin Socket + Neon (Black)", "dim": "146 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4030L-BLK.webp"},
             {"code": "BTCW4113H-3.1A-WHI", "desc": "13A Single Socket + Dual USB 3.1A (White)", "dim": "86 x 86 mm", "std": "BS 1363-2 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4113H-3.1A-WHI.webp"},
             {"code": "BTCW4113H-3.1A-BLK", "desc": "13A Single Socket + Dual USB 3.1A (Black)", "dim": "86 x 86 mm", "std": "BS 1363-2 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4113H-3.1A-BLK.webp"},
             {"code": "BTCW4120-3.1A-WHI", "desc": "Twin 13A Socket + Dual USB 3.1A (White)", "dim": "146 x 86 mm", "std": "BS 1363-2 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/cw_range/BTCW4120-3.1A-WHI.webp"},

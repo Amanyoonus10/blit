@@ -88,7 +88,13 @@ export const IMAGE_BG_MAP = {
   "/assets/products/ventilation/industrial_stand_fan.webp": "#ffffff",
   "/assets/products/ventilation/industrial_wall_fan.webp": "#ffffff",
   "/assets/products/insect_killer/elite_series.webp": "#ffffff",
-  "/assets/products/insect_killer/prime_series.webp": "#ffffff"
+  "/assets/products/insect_killer/prime_series.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW3011-BLK.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW3012-BLK.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW3032-BLK.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW3267-BLK.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW3502-BLK.webp": "#ffffff",
+  "/assets/products/cw_range/BTCW4030L-BLK.webp": "#ffffff"
 };
 
 export const PRODUCTS_DATA = [
@@ -871,6 +877,48 @@ export const PRODUCTS_DATA = [
         img: "/assets/products/cw_range/BTCW4645-BLK.webp",
         desc: "45A high-current cooker and heavy equipment cable outlet connection plate with heavy-gauge terminal clamp in architectural matte black finish (Model BTCW4645-BLK).",
         specs: ["45A High Current Outlet", "Heavy Gauge Clamp Terminals", "BS 5733 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 1-Gang 1-Way Plate Switch (Black)",
+        img: "/assets/products/cw_range/BTCW3011-BLK.webp",
+        desc: "10AX 250V~ single gang 1-way switch plate with premium matte black finish and bevelled border (Model BTCW3011-BLK).",
+        specs: ["10AX 1-Gang 1-Way Switch", "Matte Black Architecture Plate", "BS EN 60669-1 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 1-Gang 2-Way Plate Switch (Black)",
+        img: "/assets/products/cw_range/BTCW3012-BLK.webp",
+        desc: "10AX 250V~ single gang 2-way switch plate for multi-location lighting circuits in matte black (Model BTCW3012-BLK).",
+        specs: ["10AX 1-Gang 2-Way Switch", "2-Way Circuit Control", "BS EN 60669-1 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 3-Gang 2-Way Plate Switch (Black)",
+        img: "/assets/products/cw_range/BTCW3032-BLK.webp",
+        desc: "10AX 250V~ triple gang 2-way switch plate for multi-zone lighting management in matte black (Model BTCW3032-BLK).",
+        specs: ["10AX 3-Gang 2-Way Switch", "Compact 3-Rocker Array", "BS EN 60669-1 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 45A DP Switch + Neon (Black)",
+        img: "/assets/products/cw_range/BTCW3267-BLK.webp",
+        desc: "45A double pole heavy-duty main isolator switch with red neon power indicator in matte black (Model BTCW3267-BLK).",
+        specs: ["45A Double Pole Isolator", "High-Visibility Neon", "BS EN 60669-2-1 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 2-Gang Rotary Dimmer (Black)",
+        img: "/assets/products/cw_range/BTCW3502-BLK.webp",
+        desc: "Dual-gang 2-channel rotary dimmer unit with independent stepless brightness controls in matte black (Model BTCW3502-BLK).",
+        specs: ["2-Gang Dual Dimmer", "Dual Independent Knobs", "BS EN 60669-2-1 Compliant"],
+        range: "CW Range"
+      },
+      {
+        name: "CW Range 13A Twin Switched Socket + Neon (Black)",
+        img: "/assets/products/cw_range/BTCW4030L-BLK.webp",
+        desc: "Double 13A switched socket outlet featuring dual rocker switches and illuminated neon indicators in matte black (Model BTCW4030L-BLK).",
+        specs: ["Twin 13A Switched Outlets", "Dual Power Neons", "BS 1363-2 Compliant"],
         range: "CW Range"
       }
     ]
