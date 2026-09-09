@@ -51,6 +51,8 @@ export const IMAGE_BG_MAP = {
   "/assets/products/metal_clad/M405.webp": "#ffffff",
   "/assets/products/metal_clad/M406.webp": "#ffffff",
   "/assets/products/metal_clad/M429.webp": "#ffffff",
+  "/assets/products/e_range/E405.webp": "#ffffff",
+  "/assets/products/e_range/E406.webp": "#ffffff",
   "/assets/product_cables_new.webp": "#181b1d",
   "/assets/products/cable_management/flexible_conduits.webp": "#f8f9f8",
   "/assets/products/cable_management/gi_conduits.webp": "#ebeceb",
@@ -671,6 +673,20 @@ export const PRODUCTS_DATA = [
         desc: "146 x 86 mm Double Width Blank Heavy Duty Steel Cover Plate (Model M402A).",
         specs: ["BS 5733 Compliant", "146 x 86 mm", "Heavy Gauge Steel"],
         range: "Metal Clad"
+      },
+      {
+        name: "E Range 13A 1-Gang Switched Socket",
+        img: "/assets/products/e_range/E405.webp",
+        desc: "13A 250V~ Single Switched Power Outlet with Curved White Polycarbonate Profile and Child Safety Shutters (Model E405).",
+        specs: ["BS 1363-2 Compliant", "86 x 86 mm", "Curved White Polycarbonate"],
+        range: "E Range"
+      },
+      {
+        name: "E Range 13A 2-Gang Twin Switched Socket",
+        img: "/assets/products/e_range/E406.webp",
+        desc: "13A 250V~ Double Switched Twin Power Outlet with Integrated Safety Shutters and Dual Earth Terminals (Model E406).",
+        specs: ["BS 1363-2 Compliant", "146 x 86 mm", "Curved White Polycarbonate"],
+        range: "E Range"
       },
       {
         name: "V Range 1-Gang 1-Way Switch",
