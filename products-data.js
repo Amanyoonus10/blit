@@ -41,6 +41,16 @@ export const IMAGE_BG_MAP = {
   "/assets/products/en_range/BTEN442BRC.webp": "#ffffff",
   "/assets/products/en_range/BTEN443STB.webp": "#ffffff",
   "/assets/products/en_range/BTEN443BRC.webp": "#ffffff",
+  "/assets/products/metal_clad/M301_M302.webp": "#ffffff",
+  "/assets/products/metal_clad/M304.webp": "#ffffff",
+  "/assets/products/metal_clad/M306.webp": "#ffffff",
+  "/assets/products/metal_clad/M324.webp": "#ffffff",
+  "/assets/products/metal_clad/M327.webp": "#ffffff",
+  "/assets/products/metal_clad/M401A.webp": "#ffffff",
+  "/assets/products/metal_clad/M402A.webp": "#ffffff",
+  "/assets/products/metal_clad/M405.webp": "#ffffff",
+  "/assets/products/metal_clad/M406.webp": "#ffffff",
+  "/assets/products/metal_clad/M429.webp": "#ffffff",
   "/assets/product_cables_new.webp": "#181b1d",
   "/assets/products/cable_management/flexible_conduits.webp": "#f8f9f8",
   "/assets/products/cable_management/gi_conduits.webp": "#ebeceb",
@@ -593,17 +603,73 @@ export const PRODUCTS_DATA = [
         range: "EN Range"
       },
       {
-        name: "Metal Clad 2-Gang Switch",
-        img: "/assets/products/switches/metal_clad_switch_2g.webp",
-        desc: "Heavy-duty industrial grade metal-clad switch block, ideal for workshops, garages, and plant rooms.",
-        specs: ["Galvanized Steel Housing", "IK08 Impact Rated", "Surface Mount Plate"],
+        name: "Metal Clad 1-Gang 1-Way / 2-Way Switch",
+        img: "/assets/products/metal_clad/M301_M302.webp",
+        desc: "10AX 250V~ 1-Gang Industrial Metal Clad Switch with heavy-duty steel enclosure and earth terminal (Model M301 / M302).",
+        specs: ["BS EN 60669-1 Compliant", "86 x 86 mm", "IK08 Heavy Duty Steel"],
         range: "Metal Clad"
       },
       {
-        name: "Metal Clad 2-Gang Switched Socket",
-        img: "/assets/products/switches/metal_clad_socket_double.webp",
-        desc: "Rugged double switched 13A socket outlet enclosed in an impact-resistant metal clad housing, designed for heavy industrial use.",
-        specs: ["Double 13A Switched Sockets", "Heavy Duty Steel Enclosure", "Earth Terminal Included"],
+        name: "Metal Clad 2-Gang 2-Way Switch",
+        img: "/assets/products/metal_clad/M304.webp",
+        desc: "10AX 250V~ 2-Gang Dual Circuit Industrial Metal Clad Switch with rugged steel housing (Model M304).",
+        specs: ["BS EN 60669-1 Compliant", "86 x 86 mm", "IK08 Heavy Duty Steel"],
+        range: "Metal Clad"
+      },
+      {
+        name: "Metal Clad 3-Gang 2-Way Switch",
+        img: "/assets/products/metal_clad/M306.webp",
+        desc: "10AX 250V~ 3-Gang Multi-Circuit Metal Clad Switch for workshops and industrial facilities (Model M306).",
+        specs: ["BS EN 60669-1 Compliant", "86 x 86 mm", "IK08 Heavy Duty Steel"],
+        range: "Metal Clad"
+      },
+      {
+        name: "Metal Clad 20A DP Switch + Neon",
+        img: "/assets/products/metal_clad/M324.webp",
+        desc: "20A Double Pole Heavy Duty Metal Clad Isolator Switch with illuminated neon indicator (Model M324).",
+        specs: ["BS EN 60669-2-1 Compliant", "86 x 86 mm", "20A DP Isolator"],
+        range: "Metal Clad"
+      },
+      {
+        name: "Metal Clad 45A DP Switch + Neon",
+        img: "/assets/products/metal_clad/M327.webp",
+        desc: "45A Double Pole Heavy Duty Industrial Cooker / Motor Isolator Switch with Red Neon (Model M327).",
+        specs: ["BS EN 60669-2-1 Compliant", "86 x 86 mm", "45A DP Isolator"],
+        range: "Metal Clad"
+      },
+      {
+        name: "Metal Clad 13A 1-Gang Switched Socket",
+        img: "/assets/products/metal_clad/M405.webp",
+        desc: "13A Single BS 1363-2 Switched Power Outlet in rugged impact-resistant steel enclosure (Model M405).",
+        specs: ["BS 1363-2 Compliant", "86 x 86 mm", "IK08 Impact Rated"],
+        range: "Metal Clad"
+      },
+      {
+        name: "Metal Clad 13A 2-Gang Twin Switched Socket",
+        img: "/assets/products/metal_clad/M406.webp",
+        desc: "13A Double BS 1363-2 Twin Switched Socket in heavy-duty galvanized surface mount enclosure (Model M406).",
+        specs: ["BS 1363-2 Compliant", "146 x 86 mm", "Dual 13A Sockets"],
+        range: "Metal Clad"
+      },
+      {
+        name: "Metal Clad 15A Round Pin Switched Socket",
+        img: "/assets/products/metal_clad/M429.webp",
+        desc: "15A BS 546 Round Pin AC Switched Power Socket in heavy-duty metal clad casing (Model M429).",
+        specs: ["BS 546 Compliant", "86 x 86 mm", "15A Heavy Duty"],
+        range: "Metal Clad"
+      },
+      {
+        name: "Metal Clad 1-Gang Blank Plate",
+        img: "/assets/products/metal_clad/M401A.webp",
+        desc: "86 x 86 mm Flush Blank Heavy Duty Steel Cover Plate for unused boxes and junction points (Model M401A).",
+        specs: ["BS 5733 Compliant", "86 x 86 mm", "Heavy Gauge Steel"],
+        range: "Metal Clad"
+      },
+      {
+        name: "Metal Clad 2-Gang Wide Blank Plate",
+        img: "/assets/products/metal_clad/M402A.webp",
+        desc: "146 x 86 mm Double Width Blank Heavy Duty Steel Cover Plate (Model M402A).",
+        specs: ["BS 5733 Compliant", "146 x 86 mm", "Heavy Gauge Steel"],
         range: "Metal Clad"
       },
       {
