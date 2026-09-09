@@ -1,8 +1,9 @@
 import os
+import shutil
 from PIL import Image
 from fpdf import FPDF
-import shutil
 
+# Convert webp/png to temporary thumbnail for FPDF compatibility & performance
 os.makedirs('/tmp/blit_en_thumbnails', exist_ok=True)
 
 def prepare_thumb(path):
@@ -86,12 +87,12 @@ EN_CATEGORIES = [
     {
         "cat_title": "4. Rotary Dimmers & Fan Speed Controllers",
         "items": [
-            {"code": "BTEN350-2STB", "desc": "1 Gang 400W Rotary Dimmer (Silver)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN350-2STB.webp"},
-            {"code": "BTEN350-2BRC", "desc": "1 Gang 400W Rotary Dimmer (Gold)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN350-2BRC.webp"},
-            {"code": "BTEN351STB", "desc": "1 Gang 400W Fan Speed Controller (Silver)", "dim": "86 x 86 mm", "std": "IEC 60669", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN351STB.webp"},
-            {"code": "BTEN351BRC", "desc": "1 Gang 400W Fan Speed Controller (Gold)", "dim": "86 x 86 mm", "std": "IEC 60669", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN351BRC.webp"},
-            {"code": "BTEN353-2STB", "desc": "2 Gang 400W Rotary Dimmer (Silver)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN353-2STB.webp"},
-            {"code": "BTEN353-2BRC", "desc": "2 Gang 400W Rotary Dimmer (Gold)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN353-2BRC.webp"},
+            {"code": "BTEN350-2STB", "desc": "1 Gang Rotary Dimmer (400W) (Silver)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN350-2STB.webp"},
+            {"code": "BTEN350-2BRC", "desc": "1 Gang Rotary Dimmer (400W) (Gold)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN350-2BRC.webp"},
+            {"code": "BTEN351STB", "desc": "1 Gang Fan Speed Controller (Silver)", "dim": "86 x 86 mm", "std": "IEC 60669", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN351STB.webp"},
+            {"code": "BTEN351BRC", "desc": "1 Gang Fan Speed Controller (Gold)", "dim": "86 x 86 mm", "std": "IEC 60669", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN351BRC.webp"},
+            {"code": "BTEN353-2STB", "desc": "2 Gang Rotary Dimmer (Silver)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN353-2STB.webp"},
+            {"code": "BTEN353-2BRC", "desc": "2 Gang Rotary Dimmer (Gold)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN353-2BRC.webp"},
             {"code": "BTEN355-2STB", "desc": "1 Gang 1000W Heavy Duty Dimmer (Silver)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN355-2STB.webp"},
             {"code": "BTEN355-2BRC", "desc": "1 Gang 1000W Heavy Duty Dimmer (Gold)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN355-2BRC.webp"}
         ]
@@ -99,10 +100,10 @@ EN_CATEGORIES = [
     {
         "cat_title": "5. 13A & 15A Socket Outlets & Dual USB Fast Chargers",
         "items": [
-            {"code": "BTEN405STB", "desc": "1 Gang 13A Single Switched Socket (Silver)", "dim": "86 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN405STB.webp"},
-            {"code": "BTEN405BRC", "desc": "1 Gang 13A Single Switched Socket (Gold)", "dim": "86 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN405BRC.webp"},
-            {"code": "BTEN406STB", "desc": "2 Gang 13A Twin Switched Socket (Silver)", "dim": "146 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN406STB.webp"},
-            {"code": "BTEN406BRC", "desc": "2 Gang 13A Twin Switched Socket (Gold)", "dim": "146 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN406BRC.webp"},
+            {"code": "BTEN405STB", "desc": "1 Gang 13A Switched Socket (Silver)", "dim": "86 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN405STB.webp"},
+            {"code": "BTEN405BRC", "desc": "1 Gang 13A Switched Socket (Gold)", "dim": "86 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN405BRC.webp"},
+            {"code": "BTEN406STB", "desc": "2 Gang 13A Twin Socket (Silver)", "dim": "146 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN406STB.webp"},
+            {"code": "BTEN406BRC", "desc": "2 Gang 13A Twin Socket (Gold)", "dim": "146 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN406BRC.webp"},
             {"code": "BTHY4113H-B-3.1ASTB", "desc": "13A Single Socket + Dual USB 3.1A (Silver)", "dim": "86 x 86 mm", "std": "BS 1363-2 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTHY4113H-B-3.1ASTB.webp"},
             {"code": "BTHY4113H-B-3.1ABRC", "desc": "13A Single Socket + Dual USB 3.1A (Gold)", "dim": "86 x 86 mm", "std": "BS 1363-2 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTHY4113H-B-3.1ABRC.webp"},
             {"code": "BTHY4121-B-3.1ASTB", "desc": "Twin 13A Socket + Dual USB 3.1A (Silver)", "dim": "146 x 86 mm", "std": "BS 1363-2 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTHY4121-B-3.1ASTB.webp"},
@@ -114,10 +115,10 @@ EN_CATEGORIES = [
     {
         "cat_title": "6. Blank Connection Plates",
         "items": [
-            {"code": "BTEN401STB", "desc": "1 Gang Flush Blank Plate (Silver)", "dim": "86 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN401STB.webp"},
-            {"code": "BTEN401BRC", "desc": "1 Gang Flush Blank Plate (Gold)", "dim": "86 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN401BRC.webp"},
-            {"code": "BTEN402STB", "desc": "2 Gang Wide Blank Plate (Silver)", "dim": "146 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN402STB.webp"},
-            {"code": "BTEN402BRC", "desc": "2 Gang Wide Blank Plate (Gold)", "dim": "146 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN402BRC.webp"}
+            {"code": "BTEN401STB", "desc": "1-Gang Blank Cover Plate (Silver)", "dim": "86 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN401STB.webp"},
+            {"code": "BTEN401BRC", "desc": "1-Gang Blank Cover Plate (Gold)", "dim": "86 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN401BRC.webp"},
+            {"code": "BTEN402STB", "desc": "2-Gang Wide Blank Cover Plate (Silver)", "dim": "146 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN402STB.webp"},
+            {"code": "BTEN402BRC", "desc": "2-Gang Wide Blank Cover Plate (Gold)", "dim": "146 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN402BRC.webp"}
         ]
     },
     {
@@ -143,7 +144,7 @@ pdf.cell(170, 8, 'EN RANGE ARCHITECTURAL SWITCHES & SOCKETS', 0, 1, 'L')
 pdf.set_font('Helvetica', '', 9.5)
 pdf.set_text_color(71, 85, 105)
 pdf.set_x(20)
-pdf.cell(170, 6, 'Complete Product Specifications, High-Resolution Imagery & International Compliance Reference', 0, 1, 'L')
+pdf.cell(170, 6, 'Complete Specifications for Satin Brushed Steel (Silver) & Brushed Brass (Gold) Collections', 0, 1, 'L')
 pdf.ln(8)
 
 for cat in EN_CATEGORIES:
@@ -196,7 +197,7 @@ for cat in EN_CATEGORIES:
         if img_path and os.path.exists(img_path):
             pdf.image(img_path, x=17.5, y=row_y + 1, w=19, h=14)
 
-        pdf.set_font('Helvetica', 'B', 8)
+        pdf.set_font('Helvetica', 'B', 8.5)
         pdf.set_text_color(255, 26, 26)
         pdf.set_xy(40.5, row_y + 5)
         pdf.cell(31, 6, item["code"], 0, 0, 'L')
