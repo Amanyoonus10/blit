@@ -299,297 +299,297 @@ export const PRODUCTS_DATA = [
         range: "W Range"
       },
             {
-        name: "EN Range 1-Gang 2-Way Plate Switch (Silver)",
-        img: "/assets/products/en_range/BTEN302STB.webp",
-        desc: "10AX 250V~ 1-Gang 2-Way Switch with Architectural Profile in Satin Brushed Steel finish (Model BTEN302STB).",
-        specs: ["BS EN 60669-1 Compliant", "86 x 86 mm", "Satin Brushed Steel"],
-        range: "EN Range"
-      },
-      {
         name: "EN Range 1-Gang 2-Way Plate Switch (Gold)",
-        img: "/assets/products/en_range/BTEN302BRC.webp",
-        desc: "10AX 250V~ 1-Gang 2-Way Switch with Architectural Profile in Brushed Brass / Gold finish (Model BTEN302BRC).",
-        specs: ["BS EN 60669-1 Compliant", "86 x 86 mm", "Brushed Brass Gold"],
+        img: "/assets/products/en_range/BTEN302STB.webp",
+        desc: "10AX 250V~ 1-Gang 2-Way Switch with Architectural Profile in Satin Brass / Gold finish (Model BTEN302STB).",
+        specs: ["BS EN 60669-1 Compliant", "86 x 86 mm", "Satin Brass Gold"],
         range: "EN Range"
       },
       {
-        name: "EN Range 2-Gang 2-Way Plate Switch (Silver)",
-        img: "/assets/products/en_range/BTEN304STB.webp",
-        desc: "10AX 250V~ 2-Gang Dual Circuit Rocker Switch Plate in Satin Brushed Steel finish (Model BTEN304STB).",
-        specs: ["BS EN 60669-1 Compliant", "86 x 86 mm", "Satin Brushed Steel"],
+        name: "EN Range 1-Gang 2-Way Plate Switch (Silver)",
+        img: "/assets/products/en_range/BTEN302BRC.webp",
+        desc: "10AX 250V~ 1-Gang 2-Way Switch with Architectural Profile in Brushed Chrome / Silver finish (Model BTEN302BRC).",
+        specs: ["BS EN 60669-1 Compliant", "86 x 86 mm", "Brushed Chrome Silver"],
         range: "EN Range"
       },
       {
         name: "EN Range 2-Gang 2-Way Plate Switch (Gold)",
-        img: "/assets/products/en_range/BTEN304BRC.webp",
-        desc: "10AX 250V~ 2-Gang Dual Circuit Rocker Switch Plate in Brushed Brass / Gold finish (Model BTEN304BRC).",
-        specs: ["BS EN 60669-1 Compliant", "86 x 86 mm", "Brushed Brass Gold"],
+        img: "/assets/products/en_range/BTEN304STB.webp",
+        desc: "10AX 250V~ 2-Gang Dual Circuit Rocker Switch Plate in Satin Brass / Gold finish (Model BTEN304STB).",
+        specs: ["BS EN 60669-1 Compliant", "86 x 86 mm", "Satin Brass Gold"],
         range: "EN Range"
       },
       {
-        name: "EN Range 3-Gang 2-Way Plate Switch (Silver)",
-        img: "/assets/products/en_range/BTEN306STB.webp",
-        desc: "10AX 250V~ 3-Gang Multi-Zone Light Switch Plate in Satin Brushed Steel finish (Model BTEN306STB).",
-        specs: ["BS EN 60669-1 Compliant", "86 x 86 mm", "Satin Brushed Steel"],
+        name: "EN Range 2-Gang 2-Way Plate Switch (Silver)",
+        img: "/assets/products/en_range/BTEN304BRC.webp",
+        desc: "10AX 250V~ 2-Gang Dual Circuit Rocker Switch Plate in Brushed Chrome / Silver finish (Model BTEN304BRC).",
+        specs: ["BS EN 60669-1 Compliant", "86 x 86 mm", "Brushed Chrome Silver"],
         range: "EN Range"
       },
       {
         name: "EN Range 3-Gang 2-Way Plate Switch (Gold)",
-        img: "/assets/products/en_range/BTEN306BRC.webp",
-        desc: "10AX 250V~ 3-Gang Multi-Zone Light Switch Plate in Brushed Brass / Gold finish (Model BTEN306BRC).",
-        specs: ["BS EN 60669-1 Compliant", "86 x 86 mm", "Brushed Brass Gold"],
+        img: "/assets/products/en_range/BTEN306STB.webp",
+        desc: "10AX 250V~ 3-Gang Multi-Zone Light Switch Plate in Satin Brass / Gold finish (Model BTEN306STB).",
+        specs: ["BS EN 60669-1 Compliant", "86 x 86 mm", "Satin Brass Gold"],
         range: "EN Range"
       },
       {
-        name: "EN Range 4-Gang 2-Way Wide Switch (Silver)",
-        img: "/assets/products/en_range/BTEN308STB.webp",
-        desc: "10AX 250V~ 4-Gang Quad Control Rocker Switch on Wide Plate in Satin Brushed Steel finish (Model BTEN308STB).",
-        specs: ["BS EN 60669-1 Compliant", "146 x 86 mm", "Satin Brushed Steel"],
+        name: "EN Range 3-Gang 2-Way Plate Switch (Silver)",
+        img: "/assets/products/en_range/BTEN306BRC.webp",
+        desc: "10AX 250V~ 3-Gang Multi-Zone Light Switch Plate in Brushed Chrome / Silver finish (Model BTEN306BRC).",
+        specs: ["BS EN 60669-1 Compliant", "86 x 86 mm", "Brushed Chrome Silver"],
         range: "EN Range"
       },
       {
         name: "EN Range 4-Gang 2-Way Wide Switch (Gold)",
-        img: "/assets/products/en_range/BTEN308BRC.webp",
-        desc: "10AX 250V~ 4-Gang Quad Control Rocker Switch on Wide Plate in Brushed Brass / Gold finish (Model BTEN308BRC).",
-        specs: ["BS EN 60669-1 Compliant", "146 x 86 mm", "Brushed Brass Gold"],
+        img: "/assets/products/en_range/BTEN308STB.webp",
+        desc: "10AX 250V~ 4-Gang Quad Control Rocker Switch on Wide Plate in Satin Brass / Gold finish (Model BTEN308STB).",
+        specs: ["BS EN 60669-1 Compliant", "146 x 86 mm", "Satin Brass Gold"],
         range: "EN Range"
       },
       {
-        name: "EN Range 1-Gang Bell Push Switch (Silver)",
-        img: "/assets/products/en_range/BTEN317STB.webp",
-        desc: "10A 250V~ Retractive Momentary Bell Push with Bell Symbol in Satin Brushed Steel finish (Model BTEN317STB).",
-        specs: ["BS EN 60669-1 Compliant", "86 x 86 mm", "Satin Brushed Steel"],
+        name: "EN Range 4-Gang 2-Way Wide Switch (Silver)",
+        img: "/assets/products/en_range/BTEN308BRC.webp",
+        desc: "10AX 250V~ 4-Gang Quad Control Rocker Switch on Wide Plate in Brushed Chrome / Silver finish (Model BTEN308BRC).",
+        specs: ["BS EN 60669-1 Compliant", "146 x 86 mm", "Brushed Chrome Silver"],
         range: "EN Range"
       },
       {
         name: "EN Range 1-Gang Bell Push Switch (Gold)",
-        img: "/assets/products/en_range/BTEN317BRC.webp",
-        desc: "10A 250V~ Retractive Momentary Bell Push with Bell Symbol in Brushed Brass / Gold finish (Model BTEN317BRC).",
-        specs: ["BS EN 60669-1 Compliant", "86 x 86 mm", "Brushed Brass Gold"],
+        img: "/assets/products/en_range/BTEN317STB.webp",
+        desc: "10A 250V~ Retractive Momentary Bell Push with Bell Symbol in Satin Brass / Gold finish (Model BTEN317STB).",
+        specs: ["BS EN 60669-1 Compliant", "86 x 86 mm", "Satin Brass Gold"],
         range: "EN Range"
       },
       {
-        name: "EN Range 20A DP Switch + Neon (Silver)",
-        img: "/assets/products/en_range/BTEN324STB.webp",
-        desc: "20A Double Pole Heavy Duty Isolator Switch with Illuminated Neon in Satin Brushed Steel finish (Model BTEN324STB).",
-        specs: ["BS EN 60669-2-1 Compliant", "86 x 86 mm", "Satin Brushed Steel"],
+        name: "EN Range 1-Gang Bell Push Switch (Silver)",
+        img: "/assets/products/en_range/BTEN317BRC.webp",
+        desc: "10A 250V~ Retractive Momentary Bell Push with Bell Symbol in Brushed Chrome / Silver finish (Model BTEN317BRC).",
+        specs: ["BS EN 60669-1 Compliant", "86 x 86 mm", "Brushed Chrome Silver"],
         range: "EN Range"
       },
       {
         name: "EN Range 20A DP Switch + Neon (Gold)",
-        img: "/assets/products/en_range/BTEN324BRC.webp",
-        desc: "20A Double Pole Heavy Duty Isolator Switch with Illuminated Neon in Brushed Brass / Gold finish (Model BTEN324BRC).",
-        specs: ["BS EN 60669-2-1 Compliant", "86 x 86 mm", "Brushed Brass Gold"],
+        img: "/assets/products/en_range/BTEN324STB.webp",
+        desc: "20A Double Pole Heavy Duty Isolator Switch with Illuminated Neon in Satin Brass / Gold finish (Model BTEN324STB).",
+        specs: ["BS EN 60669-2-1 Compliant", "86 x 86 mm", "Satin Brass Gold"],
         range: "EN Range"
       },
       {
-        name: "EN Range 45A DP Switch + Neon (Silver)",
-        img: "/assets/products/en_range/BTEN327STB.webp",
-        desc: "45A Double Pole Main Isolator Switch with Red Neon Indicator in Satin Brushed Steel finish (Model BTEN327STB).",
-        specs: ["BS EN 60669-2-1 Compliant", "86 x 86 mm", "Satin Brushed Steel"],
+        name: "EN Range 20A DP Switch + Neon (Silver)",
+        img: "/assets/products/en_range/BTEN324BRC.webp",
+        desc: "20A Double Pole Heavy Duty Isolator Switch with Illuminated Neon in Brushed Chrome / Silver finish (Model BTEN324BRC).",
+        specs: ["BS EN 60669-2-1 Compliant", "86 x 86 mm", "Brushed Chrome Silver"],
         range: "EN Range"
       },
       {
         name: "EN Range 45A DP Switch + Neon (Gold)",
-        img: "/assets/products/en_range/BTEN327BRC.webp",
-        desc: "45A Double Pole Main Isolator Switch with Red Neon Indicator in Brushed Brass / Gold finish (Model BTEN327BRC).",
-        specs: ["BS EN 60669-2-1 Compliant", "86 x 86 mm", "Brushed Brass Gold"],
+        img: "/assets/products/en_range/BTEN327STB.webp",
+        desc: "45A Double Pole Main Isolator Switch with Red Neon Indicator in Satin Brass / Gold finish (Model BTEN327STB).",
+        specs: ["BS EN 60669-2-1 Compliant", "86 x 86 mm", "Satin Brass Gold"],
         range: "EN Range"
       },
       {
-        name: "EN Range 45A DP Large Plate Switch + Neon (Silver)",
-        img: "/assets/products/en_range/BTEN329STB.webp",
-        desc: "45A Large Rocker Double Pole Cooker Isolator Switch with Neon in Satin Brushed Steel finish (Model BTEN329STB).",
-        specs: ["BS EN 60669-2-1 Compliant", "86 x 146 mm", "Satin Brushed Steel"],
+        name: "EN Range 45A DP Switch + Neon (Silver)",
+        img: "/assets/products/en_range/BTEN327BRC.webp",
+        desc: "45A Double Pole Main Isolator Switch with Red Neon Indicator in Brushed Chrome / Silver finish (Model BTEN327BRC).",
+        specs: ["BS EN 60669-2-1 Compliant", "86 x 86 mm", "Brushed Chrome Silver"],
         range: "EN Range"
       },
       {
         name: "EN Range 45A DP Large Plate Switch + Neon (Gold)",
-        img: "/assets/products/en_range/BTEN329BRC.webp",
-        desc: "45A Large Rocker Double Pole Cooker Isolator Switch with Neon in Brushed Brass / Gold finish (Model BTEN329BRC).",
-        specs: ["BS EN 60669-2-1 Compliant", "86 x 146 mm", "Brushed Brass Gold"],
+        img: "/assets/products/en_range/BTEN329STB.webp",
+        desc: "45A Large Rocker Double Pole Cooker Isolator Switch with Neon in Satin Brass / Gold finish (Model BTEN329STB).",
+        specs: ["BS EN 60669-2-1 Compliant", "86 x 146 mm", "Satin Brass Gold"],
         range: "EN Range"
       },
       {
-        name: "EN Range 1-Gang Rotary Dimmer (400W) (Silver)",
-        img: "/assets/products/en_range/BTEN350-2STB.webp",
-        desc: "400W Rotary Lighting Dimmer Switch with Smooth Push-On Action in Satin Brushed Steel finish (Model BTEN350-2STB).",
-        specs: ["BS EN 60669-2-1 Compliant", "86 x 86 mm", "Satin Brushed Steel"],
+        name: "EN Range 45A DP Large Plate Switch + Neon (Silver)",
+        img: "/assets/products/en_range/BTEN329BRC.webp",
+        desc: "45A Large Rocker Double Pole Cooker Isolator Switch with Neon in Brushed Chrome / Silver finish (Model BTEN329BRC).",
+        specs: ["BS EN 60669-2-1 Compliant", "86 x 146 mm", "Brushed Chrome Silver"],
         range: "EN Range"
       },
       {
         name: "EN Range 1-Gang Rotary Dimmer (400W) (Gold)",
-        img: "/assets/products/en_range/BTEN350-2BRC.webp",
-        desc: "400W Rotary Lighting Dimmer Switch with Smooth Push-On Action in Brushed Brass / Gold finish (Model BTEN350-2BRC).",
-        specs: ["BS EN 60669-2-1 Compliant", "86 x 86 mm", "Brushed Brass Gold"],
+        img: "/assets/products/en_range/BTEN350-2STB.webp",
+        desc: "400W Rotary Lighting Dimmer Switch with Smooth Push-On Action in Satin Brass / Gold finish (Model BTEN350-2STB).",
+        specs: ["BS EN 60669-2-1 Compliant", "86 x 86 mm", "Satin Brass Gold"],
         range: "EN Range"
       },
       {
-        name: "EN Range 1-Gang Fan Speed Controller (Silver)",
-        img: "/assets/products/en_range/BTEN351STB.webp",
-        desc: "400W Stepless Fan Speed Regulator Controller Switch in Satin Brushed Steel finish (Model BTEN351STB).",
-        specs: ["IEC 60669 Compliant", "86 x 86 mm", "Satin Brushed Steel"],
+        name: "EN Range 1-Gang Rotary Dimmer (400W) (Silver)",
+        img: "/assets/products/en_range/BTEN350-2BRC.webp",
+        desc: "400W Rotary Lighting Dimmer Switch with Smooth Push-On Action in Brushed Chrome / Silver finish (Model BTEN350-2BRC).",
+        specs: ["BS EN 60669-2-1 Compliant", "86 x 86 mm", "Brushed Chrome Silver"],
         range: "EN Range"
       },
       {
         name: "EN Range 1-Gang Fan Speed Controller (Gold)",
-        img: "/assets/products/en_range/BTEN351BRC.webp",
-        desc: "400W Stepless Fan Speed Regulator Controller Switch in Brushed Brass / Gold finish (Model BTEN351BRC).",
-        specs: ["IEC 60669 Compliant", "86 x 86 mm", "Brushed Brass Gold"],
+        img: "/assets/products/en_range/BTEN351STB.webp",
+        desc: "400W Stepless Fan Speed Regulator Controller Switch in Satin Brass / Gold finish (Model BTEN351STB).",
+        specs: ["IEC 60669 Compliant", "86 x 86 mm", "Satin Brass Gold"],
         range: "EN Range"
       },
       {
-        name: "EN Range 2-Gang Rotary Dimmer (Silver)",
-        img: "/assets/products/en_range/BTEN353-2STB.webp",
-        desc: "Dual Channel 400W Rotary Lighting Dimmer Switch Plate in Satin Brushed Steel finish (Model BTEN353-2STB).",
-        specs: ["BS EN 60669-2-1 Compliant", "86 x 86 mm", "Satin Brushed Steel"],
+        name: "EN Range 1-Gang Fan Speed Controller (Silver)",
+        img: "/assets/products/en_range/BTEN351BRC.webp",
+        desc: "400W Stepless Fan Speed Regulator Controller Switch in Brushed Chrome / Silver finish (Model BTEN351BRC).",
+        specs: ["IEC 60669 Compliant", "86 x 86 mm", "Brushed Chrome Silver"],
         range: "EN Range"
       },
       {
         name: "EN Range 2-Gang Rotary Dimmer (Gold)",
-        img: "/assets/products/en_range/BTEN353-2BRC.webp",
-        desc: "Dual Channel 400W Rotary Lighting Dimmer Switch Plate in Brushed Brass / Gold finish (Model BTEN353-2BRC).",
-        specs: ["BS EN 60669-2-1 Compliant", "86 x 86 mm", "Brushed Brass Gold"],
+        img: "/assets/products/en_range/BTEN353-2STB.webp",
+        desc: "Dual Channel 400W Rotary Lighting Dimmer Switch Plate in Satin Brass / Gold finish (Model BTEN353-2STB).",
+        specs: ["BS EN 60669-2-1 Compliant", "86 x 86 mm", "Satin Brass Gold"],
         range: "EN Range"
       },
       {
-        name: "EN Range 1-Gang 1000W Heavy Duty Dimmer (Silver)",
-        img: "/assets/products/en_range/BTEN355-2STB.webp",
-        desc: "1000W High Power Rotary Lighting Dimmer for Commercial Spaces in Satin Brushed Steel finish (Model BTEN355-2STB).",
-        specs: ["BS EN 60669-2-1 Compliant", "86 x 86 mm", "Satin Brushed Steel"],
+        name: "EN Range 2-Gang Rotary Dimmer (Silver)",
+        img: "/assets/products/en_range/BTEN353-2BRC.webp",
+        desc: "Dual Channel 400W Rotary Lighting Dimmer Switch Plate in Brushed Chrome / Silver finish (Model BTEN353-2BRC).",
+        specs: ["BS EN 60669-2-1 Compliant", "86 x 86 mm", "Brushed Chrome Silver"],
         range: "EN Range"
       },
       {
         name: "EN Range 1-Gang 1000W Heavy Duty Dimmer (Gold)",
-        img: "/assets/products/en_range/BTEN355-2BRC.webp",
-        desc: "1000W High Power Rotary Lighting Dimmer for Commercial Spaces in Brushed Brass / Gold finish (Model BTEN355-2BRC).",
-        specs: ["BS EN 60669-2-1 Compliant", "86 x 86 mm", "Brushed Brass Gold"],
+        img: "/assets/products/en_range/BTEN355-2STB.webp",
+        desc: "1000W High Power Rotary Lighting Dimmer for Commercial Spaces in Satin Brass / Gold finish (Model BTEN355-2STB).",
+        specs: ["BS EN 60669-2-1 Compliant", "86 x 86 mm", "Satin Brass Gold"],
         range: "EN Range"
       },
       {
-        name: "EN Range 13A Single Switched Socket (Silver)",
-        img: "/assets/products/en_range/BTEN405STB.webp",
-        desc: "13A 1-Gang BS 1363-2 Single Switched Power Outlet with Child Shutters in Satin Brushed Steel finish (Model BTEN405STB).",
-        specs: ["BS 1363-2 Compliant", "86 x 86 mm", "Satin Brushed Steel"],
+        name: "EN Range 1-Gang 1000W Heavy Duty Dimmer (Silver)",
+        img: "/assets/products/en_range/BTEN355-2BRC.webp",
+        desc: "1000W High Power Rotary Lighting Dimmer for Commercial Spaces in Brushed Chrome / Silver finish (Model BTEN355-2BRC).",
+        specs: ["BS EN 60669-2-1 Compliant", "86 x 86 mm", "Brushed Chrome Silver"],
         range: "EN Range"
       },
       {
         name: "EN Range 13A Single Switched Socket (Gold)",
-        img: "/assets/products/en_range/BTEN405BRC.webp",
-        desc: "13A 1-Gang BS 1363-2 Single Switched Power Outlet with Child Shutters in Brushed Brass / Gold finish (Model BTEN405BRC).",
-        specs: ["BS 1363-2 Compliant", "86 x 86 mm", "Brushed Brass Gold"],
+        img: "/assets/products/en_range/BTEN405STB.webp",
+        desc: "13A 1-Gang BS 1363-2 Single Switched Power Outlet with Child Shutters in Satin Brass / Gold finish (Model BTEN405STB).",
+        specs: ["BS 1363-2 Compliant", "86 x 86 mm", "Satin Brass Gold"],
         range: "EN Range"
       },
       {
-        name: "EN Range 13A Twin Switched Socket (Silver)",
-        img: "/assets/products/en_range/BTEN406STB.webp",
-        desc: "13A 2-Gang BS 1363-2 Double Switched Socket with Safety Shutters in Satin Brushed Steel finish (Model BTEN406STB).",
-        specs: ["BS 1363-2 Compliant", "146 x 86 mm", "Satin Brushed Steel"],
+        name: "EN Range 13A Single Switched Socket (Silver)",
+        img: "/assets/products/en_range/BTEN405BRC.webp",
+        desc: "13A 1-Gang BS 1363-2 Single Switched Power Outlet with Child Shutters in Brushed Chrome / Silver finish (Model BTEN405BRC).",
+        specs: ["BS 1363-2 Compliant", "86 x 86 mm", "Brushed Chrome Silver"],
         range: "EN Range"
       },
       {
         name: "EN Range 13A Twin Switched Socket (Gold)",
-        img: "/assets/products/en_range/BTEN406BRC.webp",
-        desc: "13A 2-Gang BS 1363-2 Double Switched Socket with Safety Shutters in Brushed Brass / Gold finish (Model BTEN406BRC).",
-        specs: ["BS 1363-2 Compliant", "146 x 86 mm", "Brushed Brass Gold"],
+        img: "/assets/products/en_range/BTEN406STB.webp",
+        desc: "13A 2-Gang BS 1363-2 Double Switched Socket with Safety Shutters in Satin Brass / Gold finish (Model BTEN406STB).",
+        specs: ["BS 1363-2 Compliant", "146 x 86 mm", "Satin Brass Gold"],
         range: "EN Range"
       },
       {
-        name: "EN Range 13A Single Socket + Dual USB 3.1A (Silver)",
-        img: "/assets/products/en_range/BTHY4113H-B-3.1ASTB.webp",
-        desc: "13A Single Switched Socket with Integrated Dual 3.1A USB Fast Charging in Satin Brushed Steel finish (Model BTHY4113H-B-3.1ASTB).",
-        specs: ["BS 1363-2 / IEC 62368 Compliant", "86 x 86 mm", "Satin Brushed Steel"],
+        name: "EN Range 13A Twin Switched Socket (Silver)",
+        img: "/assets/products/en_range/BTEN406BRC.webp",
+        desc: "13A 2-Gang BS 1363-2 Double Switched Socket with Safety Shutters in Brushed Chrome / Silver finish (Model BTEN406BRC).",
+        specs: ["BS 1363-2 Compliant", "146 x 86 mm", "Brushed Chrome Silver"],
         range: "EN Range"
       },
       {
         name: "EN Range 13A Single Socket + Dual USB 3.1A (Gold)",
-        img: "/assets/products/en_range/BTHY4113H-B-3.1ABRC.webp",
-        desc: "13A Single Switched Socket with Integrated Dual 3.1A USB Fast Charging in Brushed Brass / Gold finish (Model BTHY4113H-B-3.1ABRC).",
-        specs: ["BS 1363-2 / IEC 62368 Compliant", "86 x 86 mm", "Brushed Brass Gold"],
+        img: "/assets/products/en_range/BTHY4113H-B-3.1ASTB.webp",
+        desc: "13A Single Switched Socket with Integrated Dual 3.1A USB Fast Charging in Satin Brass / Gold finish (Model BTHY4113H-B-3.1ASTB).",
+        specs: ["BS 1363-2 / IEC 62368 Compliant", "86 x 86 mm", "Satin Brass Gold"],
         range: "EN Range"
       },
       {
-        name: "EN Range 13A Twin Socket + Dual USB 3.1A (Silver)",
-        img: "/assets/products/en_range/BTHY4121-B-3.1ASTB.webp",
-        desc: "Twin 13A Double Switched Socket with Integrated Dual 3.1A Fast USB Ports in Satin Brushed Steel finish (Model BTHY4121-B-3.1ASTB).",
-        specs: ["BS 1363-2 / IEC 62368 Compliant", "146 x 86 mm", "Satin Brushed Steel"],
+        name: "EN Range 13A Single Socket + Dual USB 3.1A (Silver)",
+        img: "/assets/products/en_range/BTHY4113H-B-3.1ABRC.webp",
+        desc: "13A Single Switched Socket with Integrated Dual 3.1A USB Fast Charging in Brushed Chrome / Silver finish (Model BTHY4113H-B-3.1ABRC).",
+        specs: ["BS 1363-2 / IEC 62368 Compliant", "86 x 86 mm", "Brushed Chrome Silver"],
         range: "EN Range"
       },
       {
         name: "EN Range 13A Twin Socket + Dual USB 3.1A (Gold)",
-        img: "/assets/products/en_range/BTHY4121-B-3.1ABRC.webp",
-        desc: "Twin 13A Double Switched Socket with Integrated Dual 3.1A Fast USB Ports in Brushed Brass / Gold finish (Model BTHY4121-B-3.1ABRC).",
-        specs: ["BS 1363-2 / IEC 62368 Compliant", "146 x 86 mm", "Brushed Brass Gold"],
+        img: "/assets/products/en_range/BTHY4121-B-3.1ASTB.webp",
+        desc: "Twin 13A Double Switched Socket with Integrated Dual 3.1A Fast USB Ports in Satin Brass / Gold finish (Model BTHY4121-B-3.1ASTB).",
+        specs: ["BS 1363-2 / IEC 62368 Compliant", "146 x 86 mm", "Satin Brass Gold"],
         range: "EN Range"
       },
       {
-        name: "EN Range 15A Round Pin Switched Socket (Silver)",
-        img: "/assets/products/en_range/BTEN429STB.webp",
-        desc: "15A Heavy Duty BS 546 Round Pin AC Switched Power Socket Outlet in Satin Brushed Steel finish (Model BTEN429STB).",
-        specs: ["BS 546 Compliant", "86 x 86 mm", "Satin Brushed Steel"],
+        name: "EN Range 13A Twin Socket + Dual USB 3.1A (Silver)",
+        img: "/assets/products/en_range/BTHY4121-B-3.1ABRC.webp",
+        desc: "Twin 13A Double Switched Socket with Integrated Dual 3.1A Fast USB Ports in Brushed Chrome / Silver finish (Model BTHY4121-B-3.1ABRC).",
+        specs: ["BS 1363-2 / IEC 62368 Compliant", "146 x 86 mm", "Brushed Chrome Silver"],
         range: "EN Range"
       },
       {
         name: "EN Range 15A Round Pin Switched Socket (Gold)",
-        img: "/assets/products/en_range/BTEN429BRC.webp",
-        desc: "15A Heavy Duty BS 546 Round Pin AC Switched Power Socket Outlet in Brushed Brass / Gold finish (Model BTEN429BRC).",
-        specs: ["BS 546 Compliant", "86 x 86 mm", "Brushed Brass Gold"],
+        img: "/assets/products/en_range/BTEN429STB.webp",
+        desc: "15A Heavy Duty BS 546 Round Pin AC Switched Power Socket Outlet in Satin Brass / Gold finish (Model BTEN429STB).",
+        specs: ["BS 546 Compliant", "86 x 86 mm", "Satin Brass Gold"],
         range: "EN Range"
       },
       {
-        name: "EN Range 1-Gang Blank Cover Plate (Silver)",
-        img: "/assets/products/en_range/BTEN401STB.webp",
-        desc: "86 x 86 mm Flush Architectural Blank Cover Plate in Satin Brushed Steel finish (Model BTEN401STB).",
-        specs: ["BS 5733 Compliant", "86 x 86 mm", "Satin Brushed Steel"],
+        name: "EN Range 15A Round Pin Switched Socket (Silver)",
+        img: "/assets/products/en_range/BTEN429BRC.webp",
+        desc: "15A Heavy Duty BS 546 Round Pin AC Switched Power Socket Outlet in Brushed Chrome / Silver finish (Model BTEN429BRC).",
+        specs: ["BS 546 Compliant", "86 x 86 mm", "Brushed Chrome Silver"],
         range: "EN Range"
       },
       {
         name: "EN Range 1-Gang Blank Cover Plate (Gold)",
-        img: "/assets/products/en_range/BTEN401BRC.webp",
-        desc: "86 x 86 mm Flush Architectural Blank Cover Plate in Brushed Brass / Gold finish (Model BTEN401BRC).",
-        specs: ["BS 5733 Compliant", "86 x 86 mm", "Brushed Brass Gold"],
+        img: "/assets/products/en_range/BTEN401STB.webp",
+        desc: "86 x 86 mm Flush Architectural Blank Cover Plate in Satin Brass / Gold finish (Model BTEN401STB).",
+        specs: ["BS 5733 Compliant", "86 x 86 mm", "Satin Brass Gold"],
         range: "EN Range"
       },
       {
-        name: "EN Range 2-Gang Wide Blank Cover Plate (Silver)",
-        img: "/assets/products/en_range/BTEN402STB.webp",
-        desc: "146 x 86 mm Double Width Flush Architectural Blank Cover Plate in Satin Brushed Steel finish (Model BTEN402STB).",
-        specs: ["BS 5733 Compliant", "146 x 86 mm", "Satin Brushed Steel"],
+        name: "EN Range 1-Gang Blank Cover Plate (Silver)",
+        img: "/assets/products/en_range/BTEN401BRC.webp",
+        desc: "86 x 86 mm Flush Architectural Blank Cover Plate in Brushed Chrome / Silver finish (Model BTEN401BRC).",
+        specs: ["BS 5733 Compliant", "86 x 86 mm", "Brushed Chrome Silver"],
         range: "EN Range"
       },
       {
         name: "EN Range 2-Gang Wide Blank Cover Plate (Gold)",
-        img: "/assets/products/en_range/BTEN402BRC.webp",
-        desc: "146 x 86 mm Double Width Flush Architectural Blank Cover Plate in Brushed Brass / Gold finish (Model BTEN402BRC).",
-        specs: ["BS 5733 Compliant", "146 x 86 mm", "Brushed Brass Gold"],
+        img: "/assets/products/en_range/BTEN402STB.webp",
+        desc: "146 x 86 mm Double Width Flush Architectural Blank Cover Plate in Satin Brass / Gold finish (Model BTEN402STB).",
+        specs: ["BS 5733 Compliant", "146 x 86 mm", "Satin Brass Gold"],
         range: "EN Range"
       },
       {
-        name: "EN Range 1-Gang RJ45 Cat6 Data Outlet (Silver)",
-        img: "/assets/products/en_range/BTEN442STB.webp",
-        desc: "1-Port Gigabit Ethernet Cat6 Data Wall Plate with Shutter in Satin Brushed Steel finish (Model BTEN442STB).",
-        specs: ["TIA/EIA-568 Compliant", "86 x 86 mm", "Satin Brushed Steel"],
+        name: "EN Range 2-Gang Wide Blank Cover Plate (Silver)",
+        img: "/assets/products/en_range/BTEN402BRC.webp",
+        desc: "146 x 86 mm Double Width Flush Architectural Blank Cover Plate in Brushed Chrome / Silver finish (Model BTEN402BRC).",
+        specs: ["BS 5733 Compliant", "146 x 86 mm", "Brushed Chrome Silver"],
         range: "EN Range"
       },
       {
         name: "EN Range 1-Gang RJ45 Cat6 Data Outlet (Gold)",
-        img: "/assets/products/en_range/BTEN442BRC.webp",
-        desc: "1-Port Gigabit Ethernet Cat6 Data Wall Plate with Shutter in Brushed Brass / Gold finish (Model BTEN442BRC).",
-        specs: ["TIA/EIA-568 Compliant", "86 x 86 mm", "Brushed Brass Gold"],
+        img: "/assets/products/en_range/BTEN442STB.webp",
+        desc: "1-Port Gigabit Ethernet Cat6 Data Wall Plate with Shutter in Satin Brass / Gold finish (Model BTEN442STB).",
+        specs: ["TIA/EIA-568 Compliant", "86 x 86 mm", "Satin Brass Gold"],
         range: "EN Range"
       },
       {
-        name: "EN Range 2-Gang RJ45 Cat6 Data Outlet (Silver)",
-        img: "/assets/products/en_range/BTEN443STB.webp",
-        desc: "2-Port Dual Gigabit Ethernet Cat6 Data Wall Plate with Shutters in Satin Brushed Steel finish (Model BTEN443STB).",
-        specs: ["TIA/EIA-568 Compliant", "86 x 86 mm", "Satin Brushed Steel"],
+        name: "EN Range 1-Gang RJ45 Cat6 Data Outlet (Silver)",
+        img: "/assets/products/en_range/BTEN442BRC.webp",
+        desc: "1-Port Gigabit Ethernet Cat6 Data Wall Plate with Shutter in Brushed Chrome / Silver finish (Model BTEN442BRC).",
+        specs: ["TIA/EIA-568 Compliant", "86 x 86 mm", "Brushed Chrome Silver"],
         range: "EN Range"
       },
       {
         name: "EN Range 2-Gang RJ45 Cat6 Data Outlet (Gold)",
+        img: "/assets/products/en_range/BTEN443STB.webp",
+        desc: "2-Port Dual Gigabit Ethernet Cat6 Data Wall Plate with Shutters in Satin Brass / Gold finish (Model BTEN443STB).",
+        specs: ["TIA/EIA-568 Compliant", "86 x 86 mm", "Satin Brass Gold"],
+        range: "EN Range"
+      },
+      {
+        name: "EN Range 2-Gang RJ45 Cat6 Data Outlet (Silver)",
         img: "/assets/products/en_range/BTEN443BRC.webp",
-        desc: "2-Port Dual Gigabit Ethernet Cat6 Data Wall Plate with Shutters in Brushed Brass / Gold finish (Model BTEN443BRC).",
-        specs: ["TIA/EIA-568 Compliant", "86 x 86 mm", "Brushed Brass Gold"],
+        desc: "2-Port Dual Gigabit Ethernet Cat6 Data Wall Plate with Shutters in Brushed Chrome / Silver finish (Model BTEN443BRC).",
+        specs: ["TIA/EIA-568 Compliant", "86 x 86 mm", "Brushed Chrome Silver"],
         range: "EN Range"
       },
       {

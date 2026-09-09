@@ -56,78 +56,78 @@ EN_CATEGORIES = [
     {
         "cat_title": "1. Plate Switches Collection (10AX 250V~ BS EN 60669-1)",
         "items": [
-            {"code": "BTEN302STB", "desc": "1 Gang 2 Way Switch (Silver)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN302STB.webp"},
-            {"code": "BTEN302BRC", "desc": "1 Gang 2 Way Switch (Gold)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN302BRC.webp"},
-            {"code": "BTEN304STB", "desc": "2 Gang 2 Way Switch (Silver)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN304STB.webp"},
-            {"code": "BTEN304BRC", "desc": "2 Gang 2 Way Switch (Gold)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN304BRC.webp"},
-            {"code": "BTEN306STB", "desc": "3 Gang 2 Way Switch (Silver)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN306STB.webp"},
-            {"code": "BTEN306BRC", "desc": "3 Gang 2 Way Switch (Gold)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN306BRC.webp"},
-            {"code": "BTEN308STB", "desc": "4 Gang 2 Way Wide Switch (Silver)", "dim": "146 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN308STB.webp"},
-            {"code": "BTEN308BRC", "desc": "4 Gang 2 Way Wide Switch (Gold)", "dim": "146 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN308BRC.webp"}
+            {"code": "BTEN302STB", "desc": "1 Gang 2 Way Switch (Gold)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN302STB.webp"},
+            {"code": "BTEN302BRC", "desc": "1 Gang 2 Way Switch (Silver)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN302BRC.webp"},
+            {"code": "BTEN304STB", "desc": "2 Gang 2 Way Switch (Gold)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN304STB.webp"},
+            {"code": "BTEN304BRC", "desc": "2 Gang 2 Way Switch (Silver)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN304BRC.webp"},
+            {"code": "BTEN306STB", "desc": "3 Gang 2 Way Switch (Gold)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN306STB.webp"},
+            {"code": "BTEN306BRC", "desc": "3 Gang 2 Way Switch (Silver)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN306BRC.webp"},
+            {"code": "BTEN308STB", "desc": "4 Gang 2 Way Wide Switch (Gold)", "dim": "146 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN308STB.webp"},
+            {"code": "BTEN308BRC", "desc": "4 Gang 2 Way Wide Switch (Silver)", "dim": "146 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN308BRC.webp"}
         ]
     },
     {
         "cat_title": "2. Bell & Special Switches",
         "items": [
-            {"code": "BTEN317STB", "desc": "1 Gang Retractive Bell Push (Silver)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN317STB.webp"},
-            {"code": "BTEN317BRC", "desc": "1 Gang Retractive Bell Push (Gold)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN317BRC.webp"}
+            {"code": "BTEN317STB", "desc": "1 Gang Retractive Bell Push (Gold)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN317STB.webp"},
+            {"code": "BTEN317BRC", "desc": "1 Gang Retractive Bell Push (Silver)", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN317BRC.webp"}
         ]
     },
     {
         "cat_title": "3. 20A & 45A High Power Isolator Switches",
         "items": [
-            {"code": "BTEN324STB", "desc": "20A DP Switch + Neon (Silver)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN324STB.webp"},
-            {"code": "BTEN324BRC", "desc": "20A DP Switch + Neon (Gold)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN324BRC.webp"},
-            {"code": "BTEN327STB", "desc": "45A DP Switch + Neon (Silver)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN327STB.webp"},
-            {"code": "BTEN327BRC", "desc": "45A DP Switch + Neon (Gold)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN327BRC.webp"},
-            {"code": "BTEN329STB", "desc": "45A DP Large Plate Switch + Neon (Silver)", "dim": "86 x 146 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN329STB.webp"},
-            {"code": "BTEN329BRC", "desc": "45A DP Large Plate Switch + Neon (Gold)", "dim": "86 x 146 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN329BRC.webp"}
+            {"code": "BTEN324STB", "desc": "20A DP Switch + Neon (Gold)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN324STB.webp"},
+            {"code": "BTEN324BRC", "desc": "20A DP Switch + Neon (Silver)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN324BRC.webp"},
+            {"code": "BTEN327STB", "desc": "45A DP Switch + Neon (Gold)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN327STB.webp"},
+            {"code": "BTEN327BRC", "desc": "45A DP Switch + Neon (Silver)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN327BRC.webp"},
+            {"code": "BTEN329STB", "desc": "45A DP Large Plate Switch + Neon (Gold)", "dim": "86 x 146 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN329STB.webp"},
+            {"code": "BTEN329BRC", "desc": "45A DP Large Plate Switch + Neon (Silver)", "dim": "86 x 146 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN329BRC.webp"}
         ]
     },
     {
         "cat_title": "4. Rotary Dimmers & Fan Speed Controllers",
         "items": [
-            {"code": "BTEN350-2STB", "desc": "1 Gang Rotary Dimmer (400W) (Silver)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN350-2STB.webp"},
-            {"code": "BTEN350-2BRC", "desc": "1 Gang Rotary Dimmer (400W) (Gold)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN350-2BRC.webp"},
-            {"code": "BTEN351STB", "desc": "1 Gang Fan Speed Controller (Silver)", "dim": "86 x 86 mm", "std": "IEC 60669", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN351STB.webp"},
-            {"code": "BTEN351BRC", "desc": "1 Gang Fan Speed Controller (Gold)", "dim": "86 x 86 mm", "std": "IEC 60669", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN351BRC.webp"},
-            {"code": "BTEN353-2STB", "desc": "2 Gang Rotary Dimmer (Silver)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN353-2STB.webp"},
-            {"code": "BTEN353-2BRC", "desc": "2 Gang Rotary Dimmer (Gold)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN353-2BRC.webp"},
-            {"code": "BTEN355-2STB", "desc": "1 Gang 1000W Heavy Duty Dimmer (Silver)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN355-2STB.webp"},
-            {"code": "BTEN355-2BRC", "desc": "1 Gang 1000W Heavy Duty Dimmer (Gold)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN355-2BRC.webp"}
+            {"code": "BTEN350-2STB", "desc": "1 Gang Rotary Dimmer (400W) (Gold)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN350-2STB.webp"},
+            {"code": "BTEN350-2BRC", "desc": "1 Gang Rotary Dimmer (400W) (Silver)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN350-2BRC.webp"},
+            {"code": "BTEN351STB", "desc": "1 Gang Fan Speed Controller (Gold)", "dim": "86 x 86 mm", "std": "IEC 60669", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN351STB.webp"},
+            {"code": "BTEN351BRC", "desc": "1 Gang Fan Speed Controller (Silver)", "dim": "86 x 86 mm", "std": "IEC 60669", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN351BRC.webp"},
+            {"code": "BTEN353-2STB", "desc": "2 Gang Rotary Dimmer (Gold)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN353-2STB.webp"},
+            {"code": "BTEN353-2BRC", "desc": "2 Gang Rotary Dimmer (Silver)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN353-2BRC.webp"},
+            {"code": "BTEN355-2STB", "desc": "1 Gang 1000W Heavy Duty Dimmer (Gold)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN355-2STB.webp"},
+            {"code": "BTEN355-2BRC", "desc": "1 Gang 1000W Heavy Duty Dimmer (Silver)", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN355-2BRC.webp"}
         ]
     },
     {
         "cat_title": "5. 13A & 15A Socket Outlets & Dual USB Fast Chargers",
         "items": [
-            {"code": "BTEN405STB", "desc": "1 Gang 13A Switched Socket (Silver)", "dim": "86 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN405STB.webp"},
-            {"code": "BTEN405BRC", "desc": "1 Gang 13A Switched Socket (Gold)", "dim": "86 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN405BRC.webp"},
-            {"code": "BTEN406STB", "desc": "2 Gang 13A Twin Socket (Silver)", "dim": "146 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN406STB.webp"},
-            {"code": "BTEN406BRC", "desc": "2 Gang 13A Twin Socket (Gold)", "dim": "146 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN406BRC.webp"},
-            {"code": "BTHY4113H-B-3.1ASTB", "desc": "13A Single Socket + Dual USB 3.1A (Silver)", "dim": "86 x 86 mm", "std": "BS 1363-2 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTHY4113H-B-3.1ASTB.webp"},
-            {"code": "BTHY4113H-B-3.1ABRC", "desc": "13A Single Socket + Dual USB 3.1A (Gold)", "dim": "86 x 86 mm", "std": "BS 1363-2 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTHY4113H-B-3.1ABRC.webp"},
-            {"code": "BTHY4121-B-3.1ASTB", "desc": "Twin 13A Socket + Dual USB 3.1A (Silver)", "dim": "146 x 86 mm", "std": "BS 1363-2 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTHY4121-B-3.1ASTB.webp"},
-            {"code": "BTHY4121-B-3.1ABRC", "desc": "Twin 13A Socket + Dual USB 3.1A (Gold)", "dim": "146 x 86 mm", "std": "BS 1363-2 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTHY4121-B-3.1ABRC.webp"},
-            {"code": "BTEN429STB", "desc": "15A Round Pin Switched Socket (Silver)", "dim": "86 x 86 mm", "std": "BS 546", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN429STB.webp"},
-            {"code": "BTEN429BRC", "desc": "15A Round Pin Switched Socket (Gold)", "dim": "86 x 86 mm", "std": "BS 546", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN429BRC.webp"}
+            {"code": "BTEN405STB", "desc": "1 Gang 13A Switched Socket (Gold)", "dim": "86 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN405STB.webp"},
+            {"code": "BTEN405BRC", "desc": "1 Gang 13A Switched Socket (Silver)", "dim": "86 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN405BRC.webp"},
+            {"code": "BTEN406STB", "desc": "2 Gang 13A Twin Socket (Gold)", "dim": "146 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN406STB.webp"},
+            {"code": "BTEN406BRC", "desc": "2 Gang 13A Twin Socket (Silver)", "dim": "146 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN406BRC.webp"},
+            {"code": "BTHY4113H-B-3.1ASTB", "desc": "13A Single Socket + Dual USB 3.1A (Gold)", "dim": "86 x 86 mm", "std": "BS 1363-2 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTHY4113H-B-3.1ASTB.webp"},
+            {"code": "BTHY4113H-B-3.1ABRC", "desc": "13A Single Socket + Dual USB 3.1A (Silver)", "dim": "86 x 86 mm", "std": "BS 1363-2 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTHY4113H-B-3.1ABRC.webp"},
+            {"code": "BTHY4121-B-3.1ASTB", "desc": "Twin 13A Socket + Dual USB 3.1A (Gold)", "dim": "146 x 86 mm", "std": "BS 1363-2 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTHY4121-B-3.1ASTB.webp"},
+            {"code": "BTHY4121-B-3.1ABRC", "desc": "Twin 13A Socket + Dual USB 3.1A (Silver)", "dim": "146 x 86 mm", "std": "BS 1363-2 / IEC 62368", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTHY4121-B-3.1ABRC.webp"},
+            {"code": "BTEN429STB", "desc": "15A Round Pin Switched Socket (Gold)", "dim": "86 x 86 mm", "std": "BS 546", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN429STB.webp"},
+            {"code": "BTEN429BRC", "desc": "15A Round Pin Switched Socket (Silver)", "dim": "86 x 86 mm", "std": "BS 546", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN429BRC.webp"}
         ]
     },
     {
         "cat_title": "6. Blank Connection Plates",
         "items": [
-            {"code": "BTEN401STB", "desc": "1-Gang Blank Cover Plate (Silver)", "dim": "86 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN401STB.webp"},
-            {"code": "BTEN401BRC", "desc": "1-Gang Blank Cover Plate (Gold)", "dim": "86 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN401BRC.webp"},
-            {"code": "BTEN402STB", "desc": "2-Gang Wide Blank Cover Plate (Silver)", "dim": "146 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN402STB.webp"},
-            {"code": "BTEN402BRC", "desc": "2-Gang Wide Blank Cover Plate (Gold)", "dim": "146 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN402BRC.webp"}
+            {"code": "BTEN401STB", "desc": "1-Gang Blank Cover Plate (Gold)", "dim": "86 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN401STB.webp"},
+            {"code": "BTEN401BRC", "desc": "1-Gang Blank Cover Plate (Silver)", "dim": "86 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN401BRC.webp"},
+            {"code": "BTEN402STB", "desc": "2-Gang Wide Blank Cover Plate (Gold)", "dim": "146 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN402STB.webp"},
+            {"code": "BTEN402BRC", "desc": "2-Gang Wide Blank Cover Plate (Silver)", "dim": "146 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN402BRC.webp"}
         ]
     },
     {
         "cat_title": "7. Data & Telecom Outlets",
         "items": [
-            {"code": "BTEN442STB", "desc": "1 Gang RJ45 Cat6 Data Outlet (Silver)", "dim": "86 x 86 mm", "std": "TIA/EIA-568", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN442STB.webp"},
-            {"code": "BTEN442BRC", "desc": "1 Gang RJ45 Cat6 Data Outlet (Gold)", "dim": "86 x 86 mm", "std": "TIA/EIA-568", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN442BRC.webp"},
-            {"code": "BTEN443STB", "desc": "2 Gang RJ45 Cat6 Data Outlet (Silver)", "dim": "86 x 86 mm", "std": "TIA/EIA-568", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN443STB.webp"},
-            {"code": "BTEN443BRC", "desc": "2 Gang RJ45 Cat6 Data Outlet (Gold)", "dim": "86 x 86 mm", "std": "TIA/EIA-568", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN443BRC.webp"}
+            {"code": "BTEN442STB", "desc": "1 Gang RJ45 Cat6 Data Outlet (Gold)", "dim": "86 x 86 mm", "std": "TIA/EIA-568", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN442STB.webp"},
+            {"code": "BTEN442BRC", "desc": "1 Gang RJ45 Cat6 Data Outlet (Silver)", "dim": "86 x 86 mm", "std": "TIA/EIA-568", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN442BRC.webp"},
+            {"code": "BTEN443STB", "desc": "2 Gang RJ45 Cat6 Data Outlet (Gold)", "dim": "86 x 86 mm", "std": "TIA/EIA-568", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN443STB.webp"},
+            {"code": "BTEN443BRC", "desc": "2 Gang RJ45 Cat6 Data Outlet (Silver)", "dim": "86 x 86 mm", "std": "TIA/EIA-568", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/en_range/BTEN443BRC.webp"}
         ]
     }
 ]
