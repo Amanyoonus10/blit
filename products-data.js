@@ -134,6 +134,13 @@ export const IMAGE_BG_MAP = {
   "/assets/products/weatherproof/BTAG3016WHI-BEL.webp": "#ffffff",
   "/assets/products/weatherproof/BTAG3022WHI.webp": "#ffffff",
   "/assets/products/weatherproof/BTAG3214WHI.webp": "#ffffff",
+  "/assets/products/weatherproof/BTSP304.webp": "#ffffff",
+  "/assets/products/weatherproof/BTSP306.webp": "#ffffff",
+  "/assets/products/weatherproof/BTSP317.webp": "#ffffff",
+  "/assets/products/weatherproof/BTSP324.webp": "#ffffff",
+  "/assets/products/weatherproof/BTSP405.webp": "#ffffff",
+  "/assets/products/weatherproof/BTSP406.webp": "#ffffff",
+  "/assets/products/weatherproof/BTSP429.webp": "#ffffff",
   "/assets/products/weatherproof/isolator.webp": "#f7f7f7",
   "/assets/products/industrial_plug_socket/industrial_plug_socket.webp": "#f7f7f7",
   "/assets/products/wiring_accessories/cable_reel.webp": "#f7f7f7",
@@ -1387,10 +1394,52 @@ export const PRODUCTS_DATA = [
         range: "IP66"
       },
       {
-        name: "IP55 Weatherproof Double Socket",
-        img: "/assets/products/weatherproof/ip55_double_socket.webp",
-        desc: "Double socket outlet with weatherproof spring-loaded cover and heavy rubber lining.",
-        specs: ["IP55 Splashproof", "Twin 13A Outlets", "Lockable Cover Feature"],
+        name: "IP55 13A Twin Switched Socket (BTSP406)",
+        img: "/assets/products/weatherproof/BTSP406.webp",
+        desc: "13A 2-Gang BS 1363 twin switched socket outlet with dual transparent spring-loaded IP55 weatherproof covers and silicone gasket (Model BTSP406).",
+        specs: ["IP55 Weatherproof Twin Cover", "Dual 13A BS 1363 Outlets", "Independent Spring-Loaded Lids"],
+        range: "IP55"
+      },
+      {
+        name: "IP55 13A Single Switched Socket (BTSP405)",
+        img: "/assets/products/weatherproof/BTSP405.webp",
+        desc: "13A 1-Gang BS 1363 switched socket outlet with transparent spring-loaded IP55 weatherproof cover and protective seal (Model BTSP405).",
+        specs: ["IP55 Weatherproof Cover", "13A BS 1363 Socket", "Spring-Loaded Protective Lid"],
+        range: "IP55"
+      },
+      {
+        name: "IP55 15A Round Pin Switched Socket (BTSP429)",
+        img: "/assets/products/weatherproof/BTSP429.webp",
+        desc: "15A 1-Gang BS 546 round pin switched socket outlet with transparent spring-loaded IP55 weatherproof cover (Model BTSP429).",
+        specs: ["IP55 Weatherproof Cover", "15A BS 546 Round Pin", "Spring-Loaded Protective Lid"],
+        range: "IP55"
+      },
+      {
+        name: "IP55 1-Gang 2-Way Weatherproof Switch (BTSP304)",
+        img: "/assets/products/weatherproof/BTSP304.webp",
+        desc: "10AX 250V~ 1-Gang 2-Way IP55 splashproof switch plate with silicone seal for semi-sheltered outdoor and utility locations (Model BTSP304).",
+        specs: ["IP55 Splashproof & Dust Protected", "10AX 250V~ Rated", "BS EN 60669-1 Compliant"],
+        range: "IP55"
+      },
+      {
+        name: "IP55 2-Gang 2-Way Weatherproof Switch (BTSP306)",
+        img: "/assets/products/weatherproof/BTSP306.webp",
+        desc: "10AX 250V~ 2-Gang 2-Way IP55 splashproof dual rocker switch for multi-zone outdoor lighting control (Model BTSP306).",
+        specs: ["IP55 Splashproof & Dust Protected", "Dual 10AX Circuits", "BS EN 60669-1 Compliant"],
+        range: "IP55"
+      },
+      {
+        name: "IP55 1-Gang Bell Push Switch (BTSP317)",
+        img: "/assets/products/weatherproof/BTSP317.webp",
+        desc: "10A 250V~ Momentary retractive bell push switch plate with bell symbol and IP55 splashproof gasket (Model BTSP317).",
+        specs: ["IP55 Splashproof & Dust Protected", "10A Momentary Retractive", "Laser Engraved Bell Symbol"],
+        range: "IP55"
+      },
+      {
+        name: "IP55 20A DP Switch with Neon (BTSP324)",
+        img: "/assets/products/weatherproof/BTSP324.webp",
+        desc: "20A 250V~ Double Pole heavy-duty IP55 splashproof isolator switch with neon indicator for water heaters and air conditioning (Model BTSP324).",
+        specs: ["IP55 Splashproof & Dust Protected", "20A Double Pole Isolator", "Integrated Neon Indicator"],
         range: "IP55"
       },
       {
@@ -1399,13 +1448,6 @@ export const PRODUCTS_DATA = [
         desc: "Outdoor rotary isolator switches with IP66 lockable handle, ensuring safe disconnection of air conditioning or heavy machinery.",
         specs: ["IP66 Weatherproof", "Lockable Handle", "35A - 63A Ratings"],
         range: "Isolator"
-      },
-      {
-        name: "IP55 Semi-Weatherproof Socket Cover",
-        img: "/assets/products/weatherproof/ip55_cover.webp",
-        desc: "Semi-weatherproof socket covers and enclosures with rubber gasket seals, ideal for balconies, lawns, and utility zones.",
-        specs: ["IP55 Rated", "Transparent Lid", "Dust Protection"],
-        range: "IP55"
       }
     ]
   },
