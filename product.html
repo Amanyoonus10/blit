@@ -622,19 +622,18 @@
               <!-- Categories & Products Header -->
         <div style="text-align: center; margin-bottom: 35px;">
           <h3 style="font-size: 24px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: #0F172A; margin-bottom: 10px;">W RANGE PRODUCT COLLECTION</h3>
-          <p style="font-size: 14.5px; color: #64748B; max-width: 650px; margin: 0 auto 20px auto;">Browse the complete collection of 26 models in classic moulded-white switches, sockets, and lighting accessories. Click any product image to zoom.</p>
+          <p style="font-size: 14.5px; color: #64748B; max-width: 650px; margin: 0 auto 20px auto;">Browse the complete collection of 22 models in classic moulded-white switches, sockets, and wiring accessories. Click any product image to zoom.</p>
           <div style="width: 44px; height: 3px; background-color: var(--primary-red); margin: 0 auto 30px auto; border-radius: 2px;"></div>
           
                     <!-- Category Filter Tabs -->
           <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;" id="w-gallery-filters">
-            <button class="w-filter-btn active" onclick="filterWRangeProducts('all', event)" style="background: var(--primary-red); color: #FFFFFF; border: none; padding: 9px 20px; border-radius: 20px; font-size: 13px; font-weight: 700; cursor: pointer; transition: all 0.2s ease;">All (26)</button>
+            <button class="w-filter-btn active" onclick="filterWRangeProducts('all', event)" style="background: var(--primary-red); color: #FFFFFF; border: none; padding: 9px 20px; border-radius: 20px; font-size: 13px; font-weight: 700; cursor: pointer; transition: all 0.2s ease;">All (22)</button>
             <button class="w-filter-btn" onclick="filterWRangeProducts('plate_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Plate Switches (6)</button>
             <button class="w-filter-btn" onclick="filterWRangeProducts('high_power', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">20A & 45A Switches (4)</button>
             <button class="w-filter-btn" onclick="filterWRangeProducts('socket_outlets', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Sockets (3)</button>
             <button class="w-filter-btn" onclick="filterWRangeProducts('fcus', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">FCUs & Blank Plates (5)</button>
             <button class="w-filter-btn" onclick="filterWRangeProducts('data_tv', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Data & Telecom (3)</button>
             <button class="w-filter-btn" onclick="filterWRangeProducts('bell_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Bell Push (1)</button>
-            <button class="w-filter-btn" onclick="filterWRangeProducts('lighting_acc', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Lampholders & Ceiling Roses (4)</button>
           </div>
         </div>
 
@@ -1873,16 +1872,6 @@
           { code: "W463", desc: "2 gang RJ11 data socket (6 terminal)", size: "86 x 86 mm", std: "FCC Part 68" },
           { code: "W443", desc: "2 gang RJ45 data socket (8 terminal)", size: "86 x 86 mm", std: "TIA/EIA-568" }
         ]
-      },
-      lighting_acc: {
-        title: "9. Lampholders & Ceiling Roses Collection",
-        sub: "Straight batten, angled batten, pendant lampholders & ceiling rose bases",
-        items: [
-          { code: "W602M", desc: "Straight batten lampholder E27 with heat shield", size: "Standard Base", std: "BS EN 61184 / IEC 60238" },
-          { code: "W606M", desc: "Angled batten lampholder E27 (45° angle)", size: "Standard Base", std: "BS EN 61184 / IEC 60238" },
-          { code: "W614M", desc: "Pendant lampholder E27 with cord grip", size: "Standard Base", std: "BS EN 61184 / IEC 60238" },
-          { code: "W701", desc: "3-terminal ceiling rose mount base", size: "84 mm Dia.", std: "BS 67" }
-        ]
       }
     };
 
@@ -1969,12 +1958,7 @@
       
       { code: "W432", cat: "data_tv", name: "1-Gang Co-axial TV Socket", desc: "1-Gang Co-axial Antenna TV Outlet Socket", size: "86 x 86 mm", std: "BS 3041", img: "/assets/products/w_range/W432.webp" },
       { code: "W438", cat: "data_tv", name: "1-Gang RJ11 Telephone Socket", desc: "1-Gang Standard RJ11 Telephone Wall Plate", size: "86 x 86 mm", std: "BS 6312", img: "/assets/products/w_range/W438.webp" },
-      { code: "W442", cat: "data_tv", name: "Cat6 RJ45 Gigabit Data Outlet", desc: "1-Gang Cat6 RJ45 Gigabit Network Wall Plate", size: "86 x 86 mm", std: "TIA/EIA-568", img: "/assets/products/w_range/W442.webp" },
-      
-      { code: "W602M", cat: "lighting_acc", name: "Straight Batten Lampholder E27", desc: "Straight Batten Lamp Holder with E27 Screw Base and Heat Shield", size: "Standard Base", std: "BS EN 61184 / IEC 60238", img: "/assets/products/w_range/W602M.webp" },
-      { code: "W606M", cat: "lighting_acc", name: "Angled Batten Lampholder E27", desc: "Angled Batten Lamp Holder with 45° Projection (E27 Screw Base)", size: "Standard Base", std: "BS EN 61184 / IEC 60238", img: "/assets/products/w_range/W606M.webp" },
-      { code: "W614M", cat: "lighting_acc", name: "Pendant Lampholder E27", desc: "Suspended Pendant Lamp Holder with Integrated Cord Grip (E27 Base)", size: "Standard Base", std: "BS EN 61184 / IEC 60238", img: "/assets/products/w_range/W614M.webp" },
-      { code: "W701", cat: "lighting_acc", name: "Ceiling Rose Mount Base", desc: "3-Terminal Round Ceiling Rose Base Plate for Pendant Cord Fixtures", size: "84 mm Dia.", std: "BS 67", img: "/assets/products/w_range/W701.webp" }
+      { code: "W442", cat: "data_tv", name: "Cat6 RJ45 Gigabit Data Outlet", desc: "1-Gang Cat6 RJ45 Gigabit Network Wall Plate", size: "86 x 86 mm", std: "TIA/EIA-568", img: "/assets/products/w_range/W442.webp" }
     ];
 
     function renderWRangeProducts(filter = 'all') {

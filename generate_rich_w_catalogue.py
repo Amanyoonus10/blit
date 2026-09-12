@@ -98,15 +98,6 @@ W_CATEGORIES = [
             {"code": "W438", "desc": "1 Gang RJ11 Telephone Socket", "dim": "86 x 86 mm", "std": "BS 6312", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W438.png"},
             {"code": "W442", "desc": "1 Gang Cat6 RJ45 Gigabit Data Outlet", "dim": "86 x 86 mm", "std": "TIA/EIA-568", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W442.png"}
         ]
-    },
-    {
-        "cat_title": "7. Lampholders & Ceiling Roses Collection",
-        "items": [
-            {"code": "W602M", "desc": "Straight Batten Lampholder E27", "dim": "Standard", "std": "BS EN 61184", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W602M.png"},
-            {"code": "W606M", "desc": "Angled Batten Lampholder E27", "dim": "Standard", "std": "BS EN 61184", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W606M.png"},
-            {"code": "W614M", "desc": "Pendant Lampholder E27 with Cord Grip", "dim": "Standard", "std": "BS EN 61184", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W614M.png"},
-            {"code": "W701", "desc": "3-Terminal Ceiling Rose Mount Base", "dim": "84 mm Dia.", "std": "BS 67", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/w_range/W701.png"}
-        ]
     }
 ]
 
