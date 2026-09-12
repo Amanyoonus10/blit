@@ -401,7 +401,13 @@
           `;
 
           card.addEventListener('click', () => {
-            window.location.href = `./product.html?category=weatherproof&product=${encodeURIComponent(repItem.name)}`;
+            if (rangeName.toLowerCase().includes('ip66') || rangeName.toLowerCase().includes('66')) {
+              window.location.href = `./product.html?category=weatherproof&range=ip66`;
+            } else if (rangeName.toLowerCase().includes('ip55') || rangeName.toLowerCase().includes('55')) {
+              window.location.href = `./product.html?category=weatherproof&range=ip55`;
+            } else {
+              window.location.href = `./product.html?category=weatherproof&product=${encodeURIComponent(repItem.name)}`;
+            }
           });
 
           selectorContainer.appendChild(card);
