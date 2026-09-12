@@ -148,7 +148,33 @@ export const IMAGE_BG_MAP = {
   "/assets/products/cw_range/BTCW3032-BLK.webp": "#ffffff",
   "/assets/products/cw_range/BTCW3267-BLK.webp": "#ffffff",
   "/assets/products/cw_range/BTCW3502-BLK.webp": "#ffffff",
-  "/assets/products/cw_range/BTCW4030L-BLK.webp": "#ffffff"
+  "/assets/products/cw_range/BTCW4030L-BLK.webp": "#ffffff",
+  "/assets/products/w_range/W301.webp": "#ffffff",
+  "/assets/products/w_range/W303.webp": "#ffffff",
+  "/assets/products/w_range/W305.webp": "#ffffff",
+  "/assets/products/w_range/W307.webp": "#ffffff",
+  "/assets/products/w_range/W309.webp": "#ffffff",
+  "/assets/products/w_range/W313.webp": "#ffffff",
+  "/assets/products/w_range/W317.webp": "#ffffff",
+  "/assets/products/w_range/W324.webp": "#ffffff",
+  "/assets/products/w_range/W327.webp": "#ffffff",
+  "/assets/products/w_range/W329.webp": "#ffffff",
+  "/assets/products/w_range/W331.webp": "#ffffff",
+  "/assets/products/w_range/W401.webp": "#ffffff",
+  "/assets/products/w_range/W402.webp": "#ffffff",
+  "/assets/products/w_range/W405.webp": "#ffffff",
+  "/assets/products/w_range/W406.webp": "#ffffff",
+  "/assets/products/w_range/W419.webp": "#ffffff",
+  "/assets/products/w_range/W429.webp": "#ffffff",
+  "/assets/products/w_range/W432.webp": "#ffffff",
+  "/assets/products/w_range/W438.webp": "#ffffff",
+  "/assets/products/w_range/W442.webp": "#ffffff",
+  "/assets/products/w_range/W602M.webp": "#ffffff",
+  "/assets/products/w_range/W606M.webp": "#ffffff",
+  "/assets/products/w_range/W614M.webp": "#ffffff",
+  "/assets/products/w_range/W701.webp": "#ffffff",
+  "/assets/products/w_range/W820.webp": "#ffffff",
+  "/assets/products/w_range/W821.webp": "#ffffff"
 };
 
 export const PRODUCTS_DATA = [
@@ -308,6 +334,34 @@ export const PRODUCTS_DATA = [
         img: "/assets/products/w_range/W821.webp",
         desc: "45A high current cable connection plate for cookers and shower units (Model W821).",
         specs: ["45A Heavy Gauge Terminals", "Flex Cable Outlet Clamp", "BS 5733 Compliant"],
+        range: "W Range"
+      },
+      {
+        name: "W Range Straight Batten Lamp Holder E27 (W602M)",
+        img: "/assets/products/w_range/W602M.webp",
+        desc: "Straight batten lamp holder with E27 screw base and heat-resistant polycarbonate body (Model W602M).",
+        specs: ["E27 Screw Base", "Heat Resistant T2 Rating", "BS EN 61184 / IEC 60238"],
+        range: "W Range"
+      },
+      {
+        name: "W Range Angled Batten Lamp Holder E27 (W606M)",
+        img: "/assets/products/w_range/W606M.webp",
+        desc: "Angled batten lamp holder with E27 screw base for directional wall and ceiling mounting (Model W606M).",
+        specs: ["E27 Screw Base", "45° Angled Projection", "BS EN 61184 / IEC 60238"],
+        range: "W Range"
+      },
+      {
+        name: "W Range Pendant Lamp Holder E27 (W614M)",
+        img: "/assets/products/w_range/W614M.webp",
+        desc: "Pendant lamp holder with cord grip and E27 screw socket for suspended lighting fixtures (Model W614M).",
+        specs: ["E27 Screw Socket", "Integrated Cord Grip", "BS EN 61184 / IEC 60238"],
+        range: "W Range"
+      },
+      {
+        name: "W Range Ceiling Rose Mount Base (W701)",
+        img: "/assets/products/w_range/W701.webp",
+        desc: "High-grade 3-terminal ceiling rose mount base plate for standard pendant lighting cords (Model W701).",
+        specs: ["3-Terminal Standard", "Flame Retardant Moulding", "BS 67 Compliant"],
         range: "W Range"
       },
             {
