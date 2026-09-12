@@ -61,12 +61,6 @@ IP66_CATEGORIES = [
             {"code": "BTAG3016WHI-BEL", "desc": "1 Gang Retractive Bell Push Switch (10A)", "dim": "86 x 86 mm", "std": "BS EN 60669-1 / IP66", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/weatherproof/BTAG3016WHI-BEL.webp"},
             {"code": "BTAG3214WHI", "desc": "20A Double Pole Isolator Switch + Neon", "dim": "86 x 86 mm", "std": "BS EN 60669-2-1 / IP66", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/weatherproof/BTAG3214WHI.webp"}
         ]
-    },
-    {
-        "cat_title": "2. IP66 Protective Socket Enclosures",
-        "items": [
-            {"code": "BTAG-SKT", "desc": "IP66 Double Socket Enclosure with Spring Lock", "dim": "160 x 140 mm", "std": "BS 1363 / IP66", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/weatherproof/ip66_socket_cover.webp"}
-        ]
     }
 ]
 

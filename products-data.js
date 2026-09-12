@@ -1387,13 +1387,6 @@ export const PRODUCTS_DATA = [
         range: "IP66 Switch"
       },
       {
-        name: "IP66 Weatherproof Switched Socket Enclosure",
-        img: "/assets/products/weatherproof/ip66_socket_cover.webp",
-        desc: "Full weatherproof double socket box designed to withstand heavy rainfall, jet spray, and harsh outdoor climates.",
-        specs: ["IP66 Certified Waterproof", "Impact Resistant Cover", "Spring-loaded Lid Lock"],
-        range: "IP66 Socket"
-      },
-      {
         name: "IP55 13A Twin Switched Socket (BTSP406)",
         img: "/assets/products/weatherproof/BTSP406.webp",
         desc: "13A 2-Gang BS 1363 twin switched socket outlet with dual transparent spring-loaded IP55 weatherproof covers and silicone gasket (Model BTSP406).",
