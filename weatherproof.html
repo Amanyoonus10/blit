@@ -380,6 +380,14 @@
         "Isolator": "Heavy-duty outdoor rotary isolator switches with lockable handles, offering reliable power disconnection for HVAC and machinery."
       };
 
+      // Thumbnail mapping for cleaner cards
+      const rangeThumbnails = {
+        "IP66 Switch": "/assets/products/weatherproof/BTAG3012WHI.webp",
+        "IP66 Socket": "/assets/products/weatherproof/BTAG401_INSIDE.webp",
+        "IP55": "/assets/products/weatherproof/BTSP406.webp",
+        "Isolator": "/assets/products/weatherproof/isolator.webp"
+      };
+
       let activeRangeName = Object.keys(ranges)[0] || "IP66";
 
       // Render Range Cards
@@ -389,19 +397,23 @@
           const repItem = items[0];
           if (!repItem) return;
 
+          const cardImg = rangeThumbnails[rangeName] || repItem.img;
+
           const card = document.createElement('div');
           card.className = 'range-selector-card';
           
           card.innerHTML = `
             <div class="range-img-box">
-              <img src="${repItem.img}" alt="${rangeName}" loading="lazy">
+              <img src="${cardImg}" alt="${rangeName}" loading="lazy">
             </div>
             <div class="range-title">${rangeName}</div>
             <div class="range-description">${rangeDescriptions[rangeName] || 'High-performance weatherproof electrical equipment.'}</div>
           `;
 
           card.addEventListener('click', () => {
-            if (rangeName.toLowerCase().includes('ip66') || rangeName.toLowerCase().includes('66')) {
+            if (rangeName === 'IP66 Socket' || rangeName.toLowerCase().includes('socket')) {
+              window.location.href = `./product.html?category=weatherproof&range=ip66_socket`;
+            } else if (rangeName === 'IP66 Switch' || rangeName.toLowerCase().includes('switch') || rangeName.toLowerCase().includes('ip66')) {
               window.location.href = `./product.html?category=weatherproof&range=ip66`;
             } else if (rangeName.toLowerCase().includes('ip55') || rangeName.toLowerCase().includes('55')) {
               window.location.href = `./product.html?category=weatherproof&range=ip55`;

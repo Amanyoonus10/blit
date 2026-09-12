@@ -141,6 +141,12 @@ export const IMAGE_BG_MAP = {
   "/assets/products/weatherproof/BTSP405.webp": "#ffffff",
   "/assets/products/weatherproof/BTSP406.webp": "#ffffff",
   "/assets/products/weatherproof/BTSP429.webp": "#ffffff",
+  "/assets/products/weatherproof/BTAG401.webp": "#ffffff",
+  "/assets/products/weatherproof/BTAG401_INSIDE.webp": "#ffffff",
+  "/assets/products/weatherproof/BTAG402.webp": "#ffffff",
+  "/assets/products/weatherproof/BTAGZ4010L.webp": "#ffffff",
+  "/assets/products/weatherproof/BTAGZ4030L.webp": "#ffffff",
+  "/assets/products/weatherproof/BTAGZ4030L_INSIDE.webp": "#ffffff",
   "/assets/products/weatherproof/isolator.webp": "#f7f7f7",
   "/assets/products/industrial_plug_socket/industrial_plug_socket.webp": "#f7f7f7",
   "/assets/products/wiring_accessories/cable_reel.webp": "#f7f7f7",
@@ -1385,6 +1391,48 @@ export const PRODUCTS_DATA = [
         desc: "20A 250V~ Double Pole heavy-duty IP66 weatherproof isolator switch with integrated neon power indicator (Model BTAG3214WHI).",
         specs: ["IP66 Waterproof & Dustproof", "20A Double Pole Isolator", "Integrated Neon Indicator"],
         range: "IP66 Switch"
+      },
+      {
+        name: "IP66 13A 1-Gang Switched Socket (BTAGZ4010L)",
+        img: "/assets/products/weatherproof/BTAGZ4010L.webp",
+        desc: "13A 250V~ 1-Gang single switched socket outlet housed in IP66 weatherproof lockable protective enclosure with neon indicator (Model BTAGZ4010L).",
+        specs: ["IP66 Waterproof & Dustproof", "13A BS 1363-2 Rated", "Padlock Lockable Lid"],
+        range: "IP66 Socket"
+      },
+      {
+        name: "IP66 13A 2-Gang Twin Switched Socket (BTAGZ4030L)",
+        img: "/assets/products/weatherproof/BTAGZ4030L.webp",
+        desc: "13A 250V~ 2-Gang twin switched socket outlet housed in IP66 weatherproof lockable protective enclosure with dual neon indicators (Model BTAGZ4030L).",
+        specs: ["IP66 Waterproof & Dustproof", "Twin 13A BS 1363-2 Sockets", "Padlock Lockable Lid"],
+        range: "IP66 Socket"
+      },
+      {
+        name: "IP66 13A Twin Socket Enclosure - Open Lid (BTAGZ4030L)",
+        img: "/assets/products/weatherproof/BTAGZ4030L_INSIDE.webp",
+        desc: "Interior view of 2-Gang IP66 switched socket showing double pole switches, power neons, and safety shuttered BS 1363 outlets (Model BTAGZ4030L).",
+        specs: ["IP66 Waterproof & Dustproof", "Dual Shuttered Outlets", "Silicone Gasket Compression"],
+        range: "IP66 Socket"
+      },
+      {
+        name: "IP66 1-Gang Weatherproof Socket Enclosure (BTAG401)",
+        img: "/assets/products/weatherproof/BTAG401.webp",
+        desc: "IP66 heavy-duty single gang lockable weatherproof socket cover and protective enclosure box with high-seal silicone gasket (Model BTAG401).",
+        specs: ["IP66 Certified Enclosure", "Single Gang Standard", "UV-Stabilized Polycarbonate"],
+        range: "IP66 Socket"
+      },
+      {
+        name: "IP66 1-Gang Socket Enclosure - Open Lid (BTAG401)",
+        img: "/assets/products/weatherproof/BTAG401_INSIDE.webp",
+        desc: "Internal view of IP66 single gang weatherproof enclosure showing deep cable entry gland and spring hinge mechanism (Model BTAG401).",
+        specs: ["IP66 Certified Enclosure", "Spring Hinge Action", "Cable Entry Knockouts"],
+        range: "IP66 Socket"
+      },
+      {
+        name: "IP66 2-Gang Weatherproof Socket Enclosure (BTAG402)",
+        img: "/assets/products/weatherproof/BTAG402.webp",
+        desc: "IP66 heavy-duty double gang lockable weatherproof twin socket cover and protective enclosure box (Model BTAG402).",
+        specs: ["IP66 Certified Enclosure", "Double Gang Twin Width", "UV-Stabilized Polycarbonate"],
+        range: "IP66 Socket"
       },
       {
         name: "IP55 13A Twin Switched Socket (BTSP406)",
