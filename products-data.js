@@ -129,6 +129,11 @@ export const IMAGE_BG_MAP = {
   "/assets/products/weatherproof/ip66_switch_1g.webp": "#fffeff",
   "/assets/products/weatherproof/ip66_switch_2g.webp": "#fffeff",
   "/assets/products/weatherproof/ip66_socket_cover.webp": "#fffeff",
+  "/assets/products/weatherproof/BTAG3012WHI.webp": "#ffffff",
+  "/assets/products/weatherproof/BTAG3013WHI.webp": "#ffffff",
+  "/assets/products/weatherproof/BTAG3016WHI-BEL.webp": "#ffffff",
+  "/assets/products/weatherproof/BTAG3022WHI.webp": "#ffffff",
+  "/assets/products/weatherproof/BTAG3214WHI.webp": "#ffffff",
   "/assets/products/weatherproof/isolator.webp": "#f7f7f7",
   "/assets/products/industrial_plug_socket/industrial_plug_socket.webp": "#f7f7f7",
   "/assets/products/wiring_accessories/cable_reel.webp": "#f7f7f7",
@@ -1347,17 +1352,38 @@ export const PRODUCTS_DATA = [
         range: "IP66"
       },
       {
-        name: "IP66 Weatherproof Switch (1-Gang)",
-        img: "/assets/products/weatherproof/ip66_switch_1g.webp",
-        desc: "Single gang outdoor switch enclosure with waterproof seal, ideal for gardens, balconies, and wet areas.",
-        specs: ["IP66 Rated", "UV Resistant Casing", "10A Switch Control"],
+        name: "IP66 1-Gang 2-Way Weatherproof Switch (BTAG3012WHI)",
+        img: "/assets/products/weatherproof/BTAG3012WHI.webp",
+        desc: "20AX 250V~ 1-Gang 2-Way IP66 weatherproof outdoor switch with heavy-duty gasket seal and UV-stabilized casing (Model BTAG3012WHI).",
+        specs: ["IP66 Waterproof & Dustproof", "20AX 250V~ Rated", "BS EN 60669-1 Compliant"],
         range: "IP66"
       },
       {
-        name: "IP66 Weatherproof Switch (2-Gang)",
-        img: "/assets/products/weatherproof/ip66_switch_2g.webp",
-        desc: "Two gang outdoor switch enclosure with waterproof seal, designed for convenient dual lighting control.",
-        specs: ["IP66 Rated Waterproof", "UV Stabilized Case", "Dual 10A Controls"],
+        name: "IP66 2-Gang 2-Way Weatherproof Switch (BTAG3022WHI)",
+        img: "/assets/products/weatherproof/BTAG3022WHI.webp",
+        desc: "20AX 250V~ 2-Gang 2-Way IP66 weatherproof dual rocker switch for independent outdoor lighting circuits (Model BTAG3022WHI).",
+        specs: ["IP66 Waterproof & Dustproof", "Dual 20AX Circuits", "BS EN 60669-1 Compliant"],
+        range: "IP66"
+      },
+      {
+        name: "IP66 1-Gang Intermediate Weatherproof Switch (BTAG3013WHI)",
+        img: "/assets/products/weatherproof/BTAG3013WHI.webp",
+        desc: "20AX 250V~ 1-Gang Intermediate IP66 weatherproof cross-over switch for multi-point lighting control (Model BTAG3013WHI).",
+        specs: ["IP66 Waterproof & Dustproof", "20AX Intermediate Circuit", "BS EN 60669-1 Compliant"],
+        range: "IP66"
+      },
+      {
+        name: "IP66 1-Gang Bell Push Switch (BTAG3016WHI-BEL)",
+        img: "/assets/products/weatherproof/BTAG3016WHI-BEL.webp",
+        desc: "10A 250V~ momentary retractive bell push switch with engraved bell symbol and IP66 outdoor weatherproof seal (Model BTAG3016WHI-BEL).",
+        specs: ["IP66 Waterproof & Dustproof", "10A Momentary Retractive", "Laser Engraved Bell Symbol"],
+        range: "IP66"
+      },
+      {
+        name: "IP66 20A DP Switch with Neon (BTAG3214WHI)",
+        img: "/assets/products/weatherproof/BTAG3214WHI.webp",
+        desc: "20A 250V~ Double Pole heavy-duty IP66 weatherproof isolator switch with integrated neon power indicator (Model BTAG3214WHI).",
+        specs: ["IP66 Waterproof & Dustproof", "20A Double Pole Isolator", "Integrated Neon Indicator"],
         range: "IP66"
       },
       {

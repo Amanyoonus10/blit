@@ -2784,12 +2784,13 @@
       const metalCladCatalogSection = document.getElementById('metal-clad-catalog-section');
       const eCatalogSection = document.getElementById('e-catalog-section');
 
-      const isERange = (reqRange.toLowerCase() === 'e' || reqRange.toLowerCase().includes('e range') || productName.toLowerCase().includes('e range') || productName.toUpperCase().startsWith('E4'));
-      const isMetalClad = (reqRange.toLowerCase().includes('metal clad') || reqRange.toLowerCase().includes('metal_clad') || productName.toLowerCase().includes('metal clad') || reqRange.toLowerCase() === 'm' || reqRange.toLowerCase() === 'metal');
-      const isENRange = (reqRange.toLowerCase().includes('en range') || productName.toLowerCase().includes('en range') || productName.toUpperCase().includes('BTEN') || productName.toUpperCase().includes('BTHY') || reqRange.toLowerCase() === 'en');
-      const isCWRange = (reqRange.toLowerCase().includes('cw range') || productName.toLowerCase().includes('cw range') || productName.toUpperCase().includes('BTCW') || reqRange.toLowerCase() === 'cw');
-      const isVRange = (reqRange.toLowerCase().includes('v range') || productName.toLowerCase().includes('v range') || productName.toUpperCase().includes('BTV') || reqRange.toLowerCase() === 'v');
-      const isWRange = (reqRange.toLowerCase().includes('w range') || productName.toLowerCase().includes('w range') || productName.toLowerCase().includes('white range') || productName.toUpperCase().includes('W3') || productName.toUpperCase().includes('W4') || reqRange.toLowerCase() === 'w');
+      const isSwitchesCategory = (!categoryId || categoryId === 'switches');
+      const isERange = isSwitchesCategory && (reqRange.toLowerCase() === 'e' || reqRange.toLowerCase().includes('e range') || productName.toLowerCase().includes('e range') || productName.toUpperCase().startsWith('E4'));
+      const isMetalClad = isSwitchesCategory && (reqRange.toLowerCase().includes('metal clad') || reqRange.toLowerCase().includes('metal_clad') || productName.toLowerCase().includes('metal clad') || reqRange.toLowerCase() === 'm' || reqRange.toLowerCase() === 'metal');
+      const isENRange = isSwitchesCategory && (reqRange.toLowerCase().includes('en range') || productName.toLowerCase().includes('en range') || productName.toUpperCase().includes('BTEN') || productName.toUpperCase().includes('BTHY') || reqRange.toLowerCase() === 'en');
+      const isCWRange = isSwitchesCategory && (reqRange.toLowerCase().includes('cw range') || productName.toLowerCase().includes('cw range') || productName.toUpperCase().includes('BTCW') || reqRange.toLowerCase() === 'cw');
+      const isVRange = isSwitchesCategory && (reqRange.toLowerCase().includes('v range') || productName.toLowerCase().includes('v range') || productName.toUpperCase().includes('BTV') || reqRange.toLowerCase() === 'v');
+      const isWRange = isSwitchesCategory && (reqRange.toLowerCase().includes('w range') || productName.toLowerCase().includes('w range') || productName.toLowerCase().includes('white range') || productName.toUpperCase().includes('W3') || productName.toUpperCase().includes('W4') || reqRange.toLowerCase() === 'w');
 
       if (isERange) {
         if (detailMain) detailMain.style.display = 'none';
