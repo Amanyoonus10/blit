@@ -1352,46 +1352,46 @@ export const PRODUCTS_DATA = [
     name: "Weatherproof Solutions",
     items: [
       {
-        name: "IP66 Weatherproof Switched Socket Enclosure",
-        img: "/assets/products/weatherproof/ip66_socket_cover.webp",
-        desc: "Full weatherproof double socket box designed to withstand heavy rainfall, jet spray, and harsh outdoor climates.",
-        specs: ["IP66 Certified Waterproof", "Impact Resistant Cover", "Spring-loaded Lid Lock"],
-        range: "IP66"
-      },
-      {
         name: "IP66 1-Gang 2-Way Weatherproof Switch (BTAG3012WHI)",
         img: "/assets/products/weatherproof/BTAG3012WHI.webp",
         desc: "20AX 250V~ 1-Gang 2-Way IP66 weatherproof outdoor switch with heavy-duty gasket seal and UV-stabilized casing (Model BTAG3012WHI).",
         specs: ["IP66 Waterproof & Dustproof", "20AX 250V~ Rated", "BS EN 60669-1 Compliant"],
-        range: "IP66"
+        range: "IP66 Switch"
       },
       {
         name: "IP66 2-Gang 2-Way Weatherproof Switch (BTAG3022WHI)",
         img: "/assets/products/weatherproof/BTAG3022WHI.webp",
         desc: "20AX 250V~ 2-Gang 2-Way IP66 weatherproof dual rocker switch for independent outdoor lighting circuits (Model BTAG3022WHI).",
         specs: ["IP66 Waterproof & Dustproof", "Dual 20AX Circuits", "BS EN 60669-1 Compliant"],
-        range: "IP66"
+        range: "IP66 Switch"
       },
       {
         name: "IP66 1-Gang Intermediate Weatherproof Switch (BTAG3013WHI)",
         img: "/assets/products/weatherproof/BTAG3013WHI.webp",
         desc: "20AX 250V~ 1-Gang Intermediate IP66 weatherproof cross-over switch for multi-point lighting control (Model BTAG3013WHI).",
         specs: ["IP66 Waterproof & Dustproof", "20AX Intermediate Circuit", "BS EN 60669-1 Compliant"],
-        range: "IP66"
+        range: "IP66 Switch"
       },
       {
         name: "IP66 1-Gang Bell Push Switch (BTAG3016WHI-BEL)",
         img: "/assets/products/weatherproof/BTAG3016WHI-BEL.webp",
         desc: "10A 250V~ momentary retractive bell push switch with engraved bell symbol and IP66 outdoor weatherproof seal (Model BTAG3016WHI-BEL).",
         specs: ["IP66 Waterproof & Dustproof", "10A Momentary Retractive", "Laser Engraved Bell Symbol"],
-        range: "IP66"
+        range: "IP66 Switch"
       },
       {
         name: "IP66 20A DP Switch with Neon (BTAG3214WHI)",
         img: "/assets/products/weatherproof/BTAG3214WHI.webp",
         desc: "20A 250V~ Double Pole heavy-duty IP66 weatherproof isolator switch with integrated neon power indicator (Model BTAG3214WHI).",
         specs: ["IP66 Waterproof & Dustproof", "20A Double Pole Isolator", "Integrated Neon Indicator"],
-        range: "IP66"
+        range: "IP66 Switch"
+      },
+      {
+        name: "IP66 Weatherproof Switched Socket Enclosure",
+        img: "/assets/products/weatherproof/ip66_socket_cover.webp",
+        desc: "Full weatherproof double socket box designed to withstand heavy rainfall, jet spray, and harsh outdoor climates.",
+        specs: ["IP66 Certified Waterproof", "Impact Resistant Cover", "Spring-loaded Lid Lock"],
+        range: "IP66 Socket"
       },
       {
         name: "IP55 13A Twin Switched Socket (BTSP406)",

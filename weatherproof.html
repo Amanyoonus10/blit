@@ -118,15 +118,15 @@
 
     .ranges-overview-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
       margin-bottom: 60px;
-      max-width: 1000px;
+      max-width: 1200px;
       margin-left: auto;
       margin-right: auto;
     }
 
-    @media (max-width: 991px) {
+    @media (max-width: 1100px) {
       .ranges-overview-grid {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -325,7 +325,8 @@
           <div class="form-group">
             <label for="category">Product Range Interest</label>
             <select id="category">
-              <option value="IP66">IP66 Waterproof Range</option>
+              <option value="IP66 Switch">IP66 Switch Range</option>
+              <option value="IP66 Socket">IP66 Socket Enclosure</option>
               <option value="IP55">IP55 Splashproof Range</option>
               <option value="Isolator">Industrial Isolator Range</option>
             </select>
@@ -372,6 +373,8 @@
 
       // Descriptions mapping for each range
       const rangeDescriptions = {
+        "IP66 Switch": "Dust tight and protected against powerful water jets. High-performance outdoor switches with heavy-duty silicone gasket seals.",
+        "IP66 Socket": "Full weatherproof lockable double socket enclosure boxes designed to withstand heavy rainfall and jet sprays.",
         "IP66": "Dust tight and protected against powerful water jets. High-performance outdoor switches and heavy-duty socket covers.",
         "IP55": "Splashproof and dust protected. Perfect for semi-sheltered outdoor zones, balconies, and garage walls.",
         "Isolator": "Heavy-duty outdoor rotary isolator switches with lockable handles, offering reliable power disconnection for HVAC and machinery."
