@@ -134,6 +134,7 @@ export const IMAGE_BG_MAP = {
   "/assets/products/weatherproof/BTAG3016WHI-BEL.webp": "#ffffff",
   "/assets/products/weatherproof/BTAG3022WHI.webp": "#ffffff",
   "/assets/products/weatherproof/BTAG3214WHI.webp": "#ffffff",
+  "/assets/products/weatherproof/BTSP302.webp": "#ffffff",
   "/assets/products/weatherproof/BTSP304.webp": "#ffffff",
   "/assets/products/weatherproof/BTSP306.webp": "#ffffff",
   "/assets/products/weatherproof/BTSP317.webp": "#ffffff",
@@ -1453,6 +1454,13 @@ export const PRODUCTS_DATA = [
         img: "/assets/products/weatherproof/BTSP429.webp",
         desc: "15A 1-Gang BS 546 round pin switched socket outlet with transparent spring-loaded IP55 weatherproof cover (Model BTSP429).",
         specs: ["IP55 Weatherproof Cover", "15A BS 546 Round Pin", "Spring-Loaded Protective Lid"],
+        range: "IP55"
+      },
+      {
+        name: "IP55 1-Gang 1-Way Weatherproof Switch (BTSP302)",
+        img: "/assets/products/weatherproof/BTSP302.webp",
+        desc: "10AX 250V~ 1-Gang 1-Way IP55 splashproof switch plate with silicone seal for semi-sheltered outdoor and utility locations (Model BTSP302).",
+        specs: ["IP55 Splashproof & Dust Protected", "10AX 250V~ Rated", "BS EN 60669-1 Compliant"],
         range: "IP55"
       },
       {

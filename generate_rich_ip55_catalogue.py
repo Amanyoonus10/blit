@@ -55,6 +55,7 @@ IP55_CATEGORIES = [
     {
         "cat_title": "1. IP55 Splashproof Switches (10AX / 20A Heavy Duty)",
         "items": [
+            {"code": "BTSP302", "desc": "1 Gang 1 Way Splashproof Switch Plate (10AX)", "dim": "86 x 86 mm", "std": "BS EN 60669-1 / IP55", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/weatherproof/BTSP302.webp"},
             {"code": "BTSP304", "desc": "1 Gang 2 Way Splashproof Switch Plate (10AX)", "dim": "86 x 86 mm", "std": "BS EN 60669-1 / IP55", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/weatherproof/BTSP304.webp"},
             {"code": "BTSP306", "desc": "2 Gang 2 Way Splashproof Switch Plate (10AX)", "dim": "86 x 86 mm", "std": "BS EN 60669-1 / IP55", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/weatherproof/BTSP306.webp"},
             {"code": "BTSP317", "desc": "1 Gang Splashproof Bell Push Switch (10A)", "dim": "86 x 86 mm", "std": "BS EN 60669-1 / IP55", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/weatherproof/BTSP317.webp"},
