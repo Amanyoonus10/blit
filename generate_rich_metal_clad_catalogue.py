@@ -76,15 +76,6 @@ METAL_CLAD_CATEGORIES = [
             {"code": "M406", "desc": "13A 2-Gang Twin Switched Socket Plate", "dim": "146 x 86 mm", "std": "BS 1363-2", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/metal_clad/M406.webp"},
             {"code": "M429", "desc": "15A Round Pin AC Switched Power Socket", "dim": "86 x 86 mm", "std": "BS 546", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/metal_clad/M429.webp"}
         ]
-    },
-    {
-        "cat_title": "4. Blank Steel Plates & Surface Mounting Boxes",
-        "items": [
-            {"code": "M401A", "desc": "1-Gang Blank Flush Metal Clad Cover Plate", "dim": "86 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/metal_clad/M401A.webp"},
-            {"code": "M402A", "desc": "2-Gang Wide Blank Metal Clad Cover Plate", "dim": "146 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/metal_clad/M402A.webp"},
-            {"code": "M831", "desc": "1-Gang Galvanized Steel Surface Mounting Box", "dim": "86 x 86 x 40 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/metal_clad/M831.webp"},
-            {"code": "M832", "desc": "2-Gang Galvanized Steel Surface Mounting Box", "dim": "146 x 86 x 40 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/metal_clad/M832.webp"}
-        ]
     }
 ]
 

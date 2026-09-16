@@ -48,13 +48,9 @@ export const IMAGE_BG_MAP = {
   "/assets/products/metal_clad/M306.webp": "#ffffff",
   "/assets/products/metal_clad/M324.webp": "#ffffff",
   "/assets/products/metal_clad/M327.webp": "#ffffff",
-  "/assets/products/metal_clad/M401A.webp": "#ffffff",
-  "/assets/products/metal_clad/M402A.webp": "#ffffff",
   "/assets/products/metal_clad/M405.webp": "#ffffff",
   "/assets/products/metal_clad/M406.webp": "#ffffff",
   "/assets/products/metal_clad/M429.webp": "#ffffff",
-  "/assets/products/metal_clad/M831.webp": "#ffffff",
-  "/assets/products/metal_clad/M832.webp": "#ffffff",
   "/assets/products/e_range/E405.webp": "#ffffff",
   "/assets/products/e_range/E406.webp": "#ffffff",
   "/assets/product_cables_new.webp": "#181b1d",
@@ -710,34 +706,6 @@ export const PRODUCTS_DATA = [
         img: "/assets/products/metal_clad/M429.webp",
         desc: "15A BS 546 Round Pin AC Switched Power Socket in heavy-duty metal clad casing (Model M429).",
         specs: ["BS 546 Compliant", "86 x 86 mm", "15A Heavy Duty"],
-        range: "Metal Clad"
-      },
-      {
-        name: "Metal Clad 1-Gang Blank Plate",
-        img: "/assets/products/metal_clad/M401A.webp",
-        desc: "86 x 86 mm Flush Blank Heavy Duty Steel Cover Plate for unused boxes and junction points (Model M401A).",
-        specs: ["BS 5733 Compliant", "86 x 86 mm", "Heavy Gauge Steel"],
-        range: "Metal Clad"
-      },
-      {
-        name: "Metal Clad 2-Gang Wide Blank Plate",
-        img: "/assets/products/metal_clad/M402A.webp",
-        desc: "146 x 86 mm Double Width Blank Heavy Duty Steel Cover Plate (Model M402A).",
-        specs: ["BS 5733 Compliant", "146 x 86 mm", "Heavy Gauge Steel"],
-        range: "Metal Clad"
-      },
-      {
-        name: "Metal Clad 1-Gang Surface Mounting Box",
-        img: "/assets/products/metal_clad/M831.webp",
-        desc: "86 x 86 x 40 mm Surface Mounting Box with multiple knockouts in heavy duty galvanized steel (Model M831).",
-        specs: ["BS 5733 Compliant", "86 x 86 x 40 mm", "Galvanized Steel"],
-        range: "Metal Clad"
-      },
-      {
-        name: "Metal Clad 2-Gang Surface Mounting Box",
-        img: "/assets/products/metal_clad/M832.webp",
-        desc: "146 x 86 x 40 mm Twin Surface Mounting Box with multiple conduit knockouts (Model M832).",
-        specs: ["BS 5733 Compliant", "146 x 86 x 40 mm", "Galvanized Steel"],
         range: "Metal Clad"
       },
       {
