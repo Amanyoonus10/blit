@@ -41,6 +41,8 @@ export const IMAGE_BG_MAP = {
   "/assets/products/en_range/BTEN442BRC.webp": "#ffffff",
   "/assets/products/en_range/BTEN443STB.webp": "#ffffff",
   "/assets/products/en_range/BTEN443BRC.webp": "#ffffff",
+  "/assets/products/metal_clad/M301.webp": "#ffffff",
+  "/assets/products/metal_clad/M302.webp": "#ffffff",
   "/assets/products/metal_clad/M301_M302.webp": "#ffffff",
   "/assets/products/metal_clad/M304.webp": "#ffffff",
   "/assets/products/metal_clad/M306.webp": "#ffffff",
@@ -51,6 +53,8 @@ export const IMAGE_BG_MAP = {
   "/assets/products/metal_clad/M405.webp": "#ffffff",
   "/assets/products/metal_clad/M406.webp": "#ffffff",
   "/assets/products/metal_clad/M429.webp": "#ffffff",
+  "/assets/products/metal_clad/M831.webp": "#ffffff",
+  "/assets/products/metal_clad/M832.webp": "#ffffff",
   "/assets/products/e_range/E405.webp": "#ffffff",
   "/assets/products/e_range/E406.webp": "#ffffff",
   "/assets/product_cables_new.webp": "#181b1d",
@@ -646,9 +650,16 @@ export const PRODUCTS_DATA = [
         range: "EN Range"
       },
       {
-        name: "Metal Clad 1-Gang 1-Way / 2-Way Switch",
-        img: "/assets/products/metal_clad/M301_M302.webp",
-        desc: "10AX 250V~ 1-Gang Industrial Metal Clad Switch with heavy-duty steel enclosure and earth terminal (Model M301 / M302).",
+        name: "Metal Clad 1-Gang 1-Way Switch",
+        img: "/assets/products/metal_clad/M301.webp",
+        desc: "10AX 250V~ 1-Gang 1-Way Industrial Metal Clad Switch with heavy-duty steel enclosure and earth terminal (Model M301).",
+        specs: ["BS EN 60669-1 Compliant", "86 x 86 mm", "IK08 Heavy Duty Steel"],
+        range: "Metal Clad"
+      },
+      {
+        name: "Metal Clad 1-Gang 2-Way Switch",
+        img: "/assets/products/metal_clad/M302.webp",
+        desc: "10AX 250V~ 1-Gang 2-Way Industrial Metal Clad Switch with heavy-duty steel enclosure and earth terminal (Model M302).",
         specs: ["BS EN 60669-1 Compliant", "86 x 86 mm", "IK08 Heavy Duty Steel"],
         range: "Metal Clad"
       },
@@ -713,6 +724,20 @@ export const PRODUCTS_DATA = [
         img: "/assets/products/metal_clad/M402A.webp",
         desc: "146 x 86 mm Double Width Blank Heavy Duty Steel Cover Plate (Model M402A).",
         specs: ["BS 5733 Compliant", "146 x 86 mm", "Heavy Gauge Steel"],
+        range: "Metal Clad"
+      },
+      {
+        name: "Metal Clad 1-Gang Surface Mounting Box",
+        img: "/assets/products/metal_clad/M831.webp",
+        desc: "86 x 86 x 40 mm Surface Mounting Box with multiple knockouts in heavy duty galvanized steel (Model M831).",
+        specs: ["BS 5733 Compliant", "86 x 86 x 40 mm", "Galvanized Steel"],
+        range: "Metal Clad"
+      },
+      {
+        name: "Metal Clad 2-Gang Surface Mounting Box",
+        img: "/assets/products/metal_clad/M832.webp",
+        desc: "146 x 86 x 40 mm Twin Surface Mounting Box with multiple conduit knockouts (Model M832).",
+        specs: ["BS 5733 Compliant", "146 x 86 x 40 mm", "Galvanized Steel"],
         range: "Metal Clad"
       },
       {

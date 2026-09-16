@@ -1246,17 +1246,17 @@
 
         <!-- Categories & Products Header -->
         <div style="text-align: center; margin-bottom: 35px;">
-          <h3 style="font-size: 24px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: #0F172A; margin-bottom: 10px;">METAL CLAD PRODUCT COLLECTION</h3>
-          <p style="font-size: 14.5px; color: #64748B; max-width: 650px; margin: 0 auto 20px auto;">Browse all 10 rugged surface-mount metal clad switches, sockets, isolators, and blank cover plates. Click any image to zoom.</p>
+          <h3 style="font-size: 24px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: #0F172A; margin-bottom: 10px;">M RANGE / METAL CLAD COLLECTION</h3>
+          <p style="font-size: 14.5px; color: #64748B; max-width: 650px; margin: 0 auto 20px auto;">Browse all 13 rugged surface-mount metal clad switches, sockets, isolators, blank cover plates, and surface mounting boxes. Click any image to zoom.</p>
           <div style="width: 44px; height: 3px; background-color: var(--primary-red); margin: 0 auto 30px auto; border-radius: 2px;"></div>
           
           <!-- Category Filter Tabs -->
           <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;" id="metal-clad-gallery-filters">
-            <button class="metal-clad-filter-btn active" onclick="filterMetalCladProducts('all', event)" style="background: var(--primary-red); color: #FFFFFF; border: none; padding: 9px 20px; border-radius: 20px; font-size: 13px; font-weight: 700; cursor: pointer; transition: all 0.2s ease;">All (10)</button>
-            <button class="metal-clad-filter-btn" onclick="filterMetalCladProducts('plate_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Plate Switches (3)</button>
+            <button class="metal-clad-filter-btn active" onclick="filterMetalCladProducts('all', event)" style="background: var(--primary-red); color: #FFFFFF; border: none; padding: 9px 20px; border-radius: 20px; font-size: 13px; font-weight: 700; cursor: pointer; transition: all 0.2s ease;">All (13)</button>
+            <button class="metal-clad-filter-btn" onclick="filterMetalCladProducts('plate_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Plate Switches (4)</button>
             <button class="metal-clad-filter-btn" onclick="filterMetalCladProducts('high_power', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">20A & 45A Switches (2)</button>
             <button class="metal-clad-filter-btn" onclick="filterMetalCladProducts('socket_outlets', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Socket Outlets (3)</button>
-            <button class="metal-clad-filter-btn" onclick="filterMetalCladProducts('fcus', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Blank Plates (2)</button>
+            <button class="metal-clad-filter-btn" onclick="filterMetalCladProducts('fcus', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Blank Plates & Boxes (4)</button>
           </div>
         </div>
 
@@ -2781,7 +2781,8 @@
   <script>
     const UNIQUE_METAL_CLAD_PRODUCTS = [
       // 1. Plate Switches
-      { code: "M301 / M302", cat: "plate_switches", name: "1-Gang 1-Way / 2-Way Switch", desc: "10AX 250V~ 1-Gang Industrial Metal Clad Switch with Heavy Duty Steel Enclosure", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/metal_clad/M301_M302.webp" },
+      { code: "M301", cat: "plate_switches", name: "1-Gang 1-Way Switch", desc: "10AX 250V~ 1-Gang 1-Way Industrial Metal Clad Switch with Heavy Duty Steel Enclosure", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/metal_clad/M301.webp" },
+      { code: "M302", cat: "plate_switches", name: "1-Gang 2-Way Switch", desc: "10AX 250V~ 1-Gang 2-Way Industrial Metal Clad Switch with Heavy Duty Steel Enclosure", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/metal_clad/M302.webp" },
       { code: "M304", cat: "plate_switches", name: "2-Gang 2-Way Switch", desc: "10AX 250V~ 2-Gang Dual Circuit Industrial Metal Clad Switch Plate", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/metal_clad/M304.webp" },
       { code: "M306", cat: "plate_switches", name: "3-Gang 2-Way Switch", desc: "10AX 250V~ 3-Gang Multi-Circuit Metal Clad Switch Plate", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/metal_clad/M306.webp" },
       
@@ -2794,9 +2795,11 @@
       { code: "M406", cat: "socket_outlets", name: "13A 2-Gang Twin Switched Socket", desc: "13A Double BS 1363-2 Twin Switched Socket in Heavy Gauge Steel Enclosure", size: "146 x 86 mm", std: "BS 1363-2", img: "/assets/products/metal_clad/M406.webp" },
       { code: "M429", cat: "socket_outlets", name: "15A Round Pin Switched Socket", desc: "15A BS 546 Round Pin AC Switched Power Socket in Metal Clad Casing", size: "86 x 86 mm", std: "BS 546", img: "/assets/products/metal_clad/M429.webp" },
       
-      // 4. Blank Cover Plates
+      // 4. Blank Cover Plates & Surface Mounting Boxes
       { code: "M401A", cat: "fcus", name: "1-Gang Blank Cover Plate", desc: "86 x 86 mm Flush Blank Heavy Duty Steel Cover Plate", size: "86 x 86 mm", std: "BS 5733", img: "/assets/products/metal_clad/M401A.webp" },
-      { code: "M402A", cat: "fcus", name: "2-Gang Wide Blank Cover Plate", desc: "146 x 86 mm Double Width Blank Heavy Duty Steel Cover Plate", size: "146 x 86 mm", std: "BS 5733", img: "/assets/products/metal_clad/M402A.webp" }
+      { code: "M402A", cat: "fcus", name: "2-Gang Wide Blank Cover Plate", desc: "146 x 86 mm Double Width Blank Heavy Duty Steel Cover Plate", size: "146 x 86 mm", std: "BS 5733", img: "/assets/products/metal_clad/M402A.webp" },
+      { code: "M831", cat: "fcus", name: "1-Gang Surface Mounting Box", desc: "86 x 86 x 40 mm Heavy Duty Galvanized Steel Surface Mount Box with Knockouts", size: "86 x 86 x 40 mm", std: "BS 5733", img: "/assets/products/metal_clad/M831.webp" },
+      { code: "M832", cat: "fcus", name: "2-Gang Surface Mounting Box", desc: "146 x 86 x 40 mm Double Gang Galvanized Steel Surface Mount Box with Knockouts", size: "146 x 86 x 40 mm", std: "BS 5733", img: "/assets/products/metal_clad/M832.webp" }
     ];
 
     function renderMetalCladProducts(filter = 'all') {
@@ -3633,7 +3636,7 @@
       const isIP66Range = !isIP66SocketRange && (reqRange.toLowerCase().includes('ip66') || reqRange.toLowerCase().includes('66') || productName.toLowerCase().includes('btag') || productName.toLowerCase().includes('ip66'));
       const isIP55Range = (reqRange.toLowerCase().includes('ip55') || reqRange.toLowerCase().includes('55') || productName.toLowerCase().includes('btsp') || productName.toLowerCase().includes('ip55'));
       const isERange = isSwitchesCategory && (reqRange.toLowerCase() === 'e' || reqRange.toLowerCase().includes('e range') || productName.toLowerCase().includes('e range') || productName.toUpperCase().startsWith('E4'));
-      const isMetalClad = isSwitchesCategory && (reqRange.toLowerCase().includes('metal clad') || reqRange.toLowerCase().includes('metal_clad') || productName.toLowerCase().includes('metal clad') || reqRange.toLowerCase() === 'm' || reqRange.toLowerCase() === 'metal');
+      const isMetalClad = isSwitchesCategory && (reqRange.toLowerCase().includes('metal clad') || reqRange.toLowerCase().includes('metal_clad') || reqRange.toLowerCase().includes('m range') || reqRange.toLowerCase().includes('m_range') || productName.toLowerCase().includes('metal clad') || productName.toLowerCase().includes('m range') || reqRange.toLowerCase() === 'm' || reqRange.toLowerCase() === 'metal');
       const isENRange = isSwitchesCategory && (reqRange.toLowerCase().includes('en range') || productName.toLowerCase().includes('en range') || productName.toUpperCase().includes('BTEN') || productName.toUpperCase().includes('BTHY') || reqRange.toLowerCase() === 'en');
       const isCWRange = isSwitchesCategory && (reqRange.toLowerCase().includes('cw range') || productName.toLowerCase().includes('cw range') || productName.toUpperCase().includes('BTCW') || reqRange.toLowerCase() === 'cw');
       const isVRange = isSwitchesCategory && (reqRange.toLowerCase().includes('v range') || productName.toLowerCase().includes('v range') || productName.toUpperCase().includes('BTV') || reqRange.toLowerCase() === 'v');

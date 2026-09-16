@@ -56,7 +56,8 @@ METAL_CLAD_CATEGORIES = [
     {
         "cat_title": "1. Plate Switches Collection (10AX 250V~ BS EN 60669-1)",
         "items": [
-            {"code": "M301 / M302", "desc": "1-Gang 1-Way / 2-Way Metal Clad Switch", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/metal_clad/M301_M302.webp"},
+            {"code": "M301", "desc": "1-Gang 1-Way Metal Clad Switch Plate", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/metal_clad/M301.webp"},
+            {"code": "M302", "desc": "1-Gang 2-Way Metal Clad Switch Plate", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/metal_clad/M302.webp"},
             {"code": "M304", "desc": "2-Gang 2-Way Metal Clad Switch Plate", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/metal_clad/M304.webp"},
             {"code": "M306", "desc": "3-Gang 2-Way Metal Clad Switch Plate", "dim": "86 x 86 mm", "std": "BS EN 60669-1", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/metal_clad/M306.webp"}
         ]
@@ -77,10 +78,12 @@ METAL_CLAD_CATEGORIES = [
         ]
     },
     {
-        "cat_title": "4. Blank Steel Connection Plates",
+        "cat_title": "4. Blank Steel Plates & Surface Mounting Boxes",
         "items": [
             {"code": "M401A", "desc": "1-Gang Blank Flush Metal Clad Cover Plate", "dim": "86 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/metal_clad/M401A.webp"},
-            {"code": "M402A", "desc": "2-Gang Wide Blank Metal Clad Cover Plate", "dim": "146 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/metal_clad/M402A.webp"}
+            {"code": "M402A", "desc": "2-Gang Wide Blank Metal Clad Cover Plate", "dim": "146 x 86 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/metal_clad/M402A.webp"},
+            {"code": "M831", "desc": "1-Gang Galvanized Steel Surface Mounting Box", "dim": "86 x 86 x 40 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/metal_clad/M831.webp"},
+            {"code": "M832", "desc": "2-Gang Galvanized Steel Surface Mounting Box", "dim": "146 x 86 x 40 mm", "std": "BS 5733", "img": "/Users/amanyoonus/Desktop/Blit/assets/products/metal_clad/M832.webp"}
         ]
     }
 ]
