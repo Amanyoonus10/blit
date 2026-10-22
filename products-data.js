@@ -1510,6 +1510,7 @@ export const PRODUCTS_DATA = [
           "Organised Cable Storage"
         ],
         specs: ["Durable Construction", "Convenient Winding", "Portable Design"],
+        datasheet: "/assets/datasheets/BLIT_Technical_Sheet_BLIT_Cable_Reel.pdf",
         range: "Cable Reel"
       },
       {
@@ -1525,6 +1526,7 @@ export const PRODUCTS_DATA = [
           "Organised Cable Storage"
         ],
         specs: ["Compact Cassette Design", "Convenient Cable Winding", "Space-Saving"],
+        datasheet: "/assets/datasheets/BLIT_Technical_Sheet_BLIT_Cassette_Reel.pdf",
         range: "Cassette Reel"
       },
       {
@@ -1540,6 +1542,7 @@ export const PRODUCTS_DATA = [
           "Practical & Functional Design"
         ],
         specs: ["Multiple Sockets", "Durable Construction", "Safe Operation"],
+        datasheet: "/assets/datasheets/BLIT_Technical_Sheet_BLIT_Extension_Socket.pdf",
         range: "Extension Socket"
       },
       {
@@ -1555,6 +1558,7 @@ export const PRODUCTS_DATA = [
           "Space-Saving Construction"
         ],
         specs: ["Multi-Outlet Design", "Compact Plug-In", "Space-Saving"],
+        datasheet: "/assets/datasheets/BLIT_Technical_Sheet_BLIT_Multi_Adaptor.pdf",
         range: "Multi Adaptor"
       }
     ]
@@ -1576,6 +1580,7 @@ export const PRODUCTS_DATA = [
           "Clean & Professional Finish"
         ],
         specs: ["Heavy-Duty PVC", "Self-Adhesive Options", "Fire Resistant"],
+        datasheet: "/assets/datasheets/BLIT_Technical_Sheet_BLIT_Heavy_Duty_PVC_Trunking.pdf",
         range: "Heavy-Duty PVC Trunking"
       },
       {
@@ -1591,6 +1596,7 @@ export const PRODUCTS_DATA = [
           "Multiple Size Options"
         ],
         specs: ["High Impact Strength", "Easy Cold Bending", "Self-Extinguishing"],
+        datasheet: "/assets/datasheets/BLIT_Technical_Sheet_BLIT_Rigid_PVC_Conduits.pdf",
         range: "Rigid PVC Conduits"
       },
       {
@@ -1606,6 +1612,7 @@ export const PRODUCTS_DATA = [
           "Multiple Size Options"
         ],
         specs: ["Galvanised Steel", "High Mechanical Strength", "Flexible Routing"],
+        datasheet: "/assets/datasheets/BLIT_Technical_Sheet_BLIT_Heavy_Duty_GI_Flexible_Conduits.pdf",
         range: "Heavy-Duty GI Flexible Conduits"
       }
     ]
@@ -1627,6 +1634,7 @@ export const PRODUCTS_DATA = [
           "Multiple Size Options"
         ],
         specs: ["High Conductivity Copper", "Tin-Plated Finish", "Secure Crimp"],
+        datasheet: "/assets/datasheets/BLIT_Technical_Sheet_BLIT_Copper_Cable_Lugs.pdf",
         range: "Copper Cable Lugs"
       },
       {
@@ -1642,6 +1650,7 @@ export const PRODUCTS_DATA = [
           "Multiple Size Options"
         ],
         specs: ["Copper Palm & Aluminium Barrel", "Anti-Corrosion Joint", "Secure Crimp"],
+        datasheet: "/assets/datasheets/BLIT_Technical_Sheet_BLIT_Bimetallic_Cable_Lugs.pdf",
         range: "Bimetallic Cable Lugs"
       },
       {
@@ -1657,6 +1666,7 @@ export const PRODUCTS_DATA = [
           "Multiple Size Options"
         ],
         specs: ["Pin-Type Design", "Durable Copper/Brass", "Secure Crimp"],
+        datasheet: "/assets/datasheets/BLIT_Technical_Sheet_BLIT_Pin_Type_Cable_Lugs.pdf",
         range: "Pin-Type Cable Lugs"
       },
       {
@@ -1672,6 +1682,7 @@ export const PRODUCTS_DATA = [
           "Multiple Size Options"
         ],
         specs: ["Premium Brass", "IP68 Weatherproof Option", "Strain Relief"],
+        datasheet: "/assets/datasheets/BLIT_Technical_Sheet_BLIT_Brass_Cable_Glands.pdf",
         range: "Cable Glands"
       },
       {
@@ -1687,6 +1698,7 @@ export const PRODUCTS_DATA = [
           "Multiple Size Options"
         ],
         specs: ["Precision Formed", "Tinned Copper", "Clean Wire-End Finish"],
+        datasheet: "/assets/datasheets/BLIT_Technical_Sheet_BLIT_Cable_Ferrules.pdf",
         range: "Cable Ferrules"
       }
     ]
@@ -1708,6 +1720,7 @@ export const PRODUCTS_DATA = [
           "Adjustable Height & Three-Speed Control"
         ],
         specs: ["24\" / 26\" / 30\" Sizes", "Copper-Wound Motor", "3-Blade Design"],
+        datasheet: "/assets/datasheets/BLIT_Technical_Sheet_BLIT_Industrial_Stand_Fan_3_Blade.pdf",
         range: "Stand Fan 3 Blade"
       },
       {
@@ -1723,6 +1736,7 @@ export const PRODUCTS_DATA = [
           "Oscillating & Space-Saving Design"
         ],
         specs: ["24\" / 26\" / 30\" Sizes", "Copper-Wound Motor", "Wall-Mount Bracket"],
+        datasheet: "/assets/datasheets/BLIT_Technical_Sheet_BLIT_Industrial_Wall_Fan_3_Blade.pdf",
         range: "Wall Fan 3 Blade"
       },
       {
@@ -1738,6 +1752,7 @@ export const PRODUCTS_DATA = [
           "Stable & Adjustable Pedestal Stand"
         ],
         specs: ["24\" / 30\" Sizes", "High-Airflow Two-Blade", "Pedestal Stand"],
+        datasheet: "/assets/datasheets/BLIT_Technical_Sheet_BLIT_Heavy_Duty_Industrial_Stand_Fan_2_Blade.pdf",
         range: "Stand Fan 2 Blade"
       },
       {
@@ -1753,6 +1768,7 @@ export const PRODUCTS_DATA = [
           "Space-Saving Wall-Mounted Design"
         ],
         specs: ["24\" / 30\" Sizes", "High-Airflow Two-Blade", "Wall Bracket"],
+        datasheet: "/assets/datasheets/BLIT_Technical_Sheet_BLIT_Heavy_Duty_Industrial_Wall_Fan_2_Blade.pdf",
         range: "Wall Fan 2 Blade"
       },
       {
@@ -1768,6 +1784,7 @@ export const PRODUCTS_DATA = [
           "Stand & Wall-Mounted Options"
         ],
         specs: ["24\" / 26\" Sizes", "Fine Mist Cooling", "Adjustable Output"],
+        datasheet: "/assets/datasheets/BLIT_Technical_Sheet_BLIT_Mist_Fan_Series.pdf",
         range: "Mist Fan"
       },
       {
@@ -1783,6 +1800,7 @@ export const PRODUCTS_DATA = [
           "Robust Industrial Fan Blade Design"
         ],
         specs: ["12\" / 16\" / 18\" / 24\" Sizes", "Heavy-Duty Metal", "High Extraction"],
+        datasheet: "/assets/datasheets/BLIT_Technical_Sheet_BLIT_Super_Duty_Metal_Exhaust_Fan.pdf",
         range: "Metal Exhaust Fan"
       }
     ]
@@ -1803,6 +1821,7 @@ export const PRODUCTS_DATA = [
           "Removable Collection Tray"
         ],
         specs: ["UV Attraction", "Removable Tray", "Versatile Mounting"],
+        datasheet: "/assets/datasheets/BLIT_Technical_Sheet_BLIT_Elite_Series_Insect_Killer.pdf",
         range: "Elite Series"
       },
       {
@@ -1817,6 +1836,7 @@ export const PRODUCTS_DATA = [
           "Removable Collection Tray"
         ],
         specs: ["Aluminium Body", "Wide-Open Grille", "Removable Tray"],
+        datasheet: "/assets/datasheets/BLIT_Technical_Sheet_BLIT_Prime_Series_Insect_Killer.pdf",
         range: "Prime Series"
       }
     ]
@@ -1839,6 +1859,7 @@ export const PRODUCTS_DATA = [
           "Multiple Sizes & Colour Options"
         ],
         specs: ["White & Grey Finishes", "ABS Construction", "Knob Entry"],
+        datasheet: "/assets/datasheets/BLIT_Technical_Sheet_BLIT_Waterproof_Enclosure_Box_With_Knob.pdf",
         range: "Waterproof Enclosure Box – With Knob"
       },
       {
@@ -1855,6 +1876,7 @@ export const PRODUCTS_DATA = [
           "Multiple Sizes & Colour Options"
         ],
         specs: ["White & Grey Finishes", "ABS Construction", "Clean Exterior"],
+        datasheet: "/assets/datasheets/BLIT_Technical_Sheet_BLIT_Waterproof_Enclosure_Box_Without_Knob.pdf",
         range: "Waterproof Enclosure Box – Without Knob"
       }
     ]
