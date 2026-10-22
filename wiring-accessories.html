@@ -328,7 +328,7 @@
               <img src="${item.img}" alt="${item.name}" loading="lazy">
             </div>
             <div class="range-title" style="font-size: 18px; margin-top: 10px;">${item.name}</div>
-            <div class="range-description" style="margin-top: 8px;">${item.desc}</div>
+            <div class="range-description" style="margin-top: 8px;">${item.shortDesc || item.desc}</div>
           `;
 
           card.addEventListener('click', () => {

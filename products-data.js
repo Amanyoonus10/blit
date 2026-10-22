@@ -1499,6 +1499,7 @@ export const PRODUCTS_DATA = [
     items: [
       {
         name: "BLIT Cable Reel",
+        shortDesc: "Heavy duty cable reels designed for convenient power distribution and organised cable management.",
         img: "/assets/products/wiring_accessories/cable_reel.webp",
         desc: "Durable cable reels designed for convenient power distribution, efficient cable management, and dependable performance.",
         overview: "BLIT Cable Reels are designed to provide convenient and organised power access across residential, commercial, and professional environments. Combining durable construction with practical functionality, the range offers a dependable solution for applications requiring extended electrical connections and flexible power distribution.\n\nFeaturing a practical reel design, BLIT Cable Reels allow electrical cables to be extended when required and conveniently wound for organised storage. Their portable construction supports flexible positioning across different working environments, while the focus on durability and ease of handling makes the range suitable for a variety of everyday and professional electrical applications.",
@@ -1513,6 +1514,7 @@ export const PRODUCTS_DATA = [
       },
       {
         name: "BLIT Cassette Reel",
+        shortDesc: "Compact cassette reels designed for portable power access and convenient cable storage.",
         img: "/assets/products/wiring_accessories/cassette_reel.webp",
         desc: "Compact cassette cable reels designed for convenient power access, organised cable storage, and practical everyday use.",
         overview: "BLIT Cassette Reels are designed to provide convenient electrical connections through a compact and practical cable reel configuration. Combining space-efficient construction with functional design, the range offers an accessible power extension solution for residential, commercial, and everyday working environments.\n\nFeaturing a cassette-style reel design, the range supports convenient cable extension and organised storage when not in use. Its portable format allows easy handling and positioning, making it suitable for applications requiring flexible power access without the bulk of larger cable reels. The range reflects BLIT's focus on practical functionality, convenient operation, and dependable electrical accessories.",
@@ -1527,6 +1529,7 @@ export const PRODUCTS_DATA = [
       },
       {
         name: "BLIT Extension Socket",
+        shortDesc: "Versatile extension sockets designed for reliable and convenient power connections.",
         img: "/assets/products/wiring_accessories/extension_socket.webp",
         desc: "Versatile extension sockets designed for convenient power access, dependable electrical connections, and everyday practicality.",
         overview: "BLIT Extension Sockets are designed to provide convenient access to multiple electrical connections across residential, commercial, and professional environments. Combining practical functionality with thoughtful design, the range offers a dependable solution for powering compatible electrical devices in homes, offices, workspaces, and other everyday applications.\n\nFeaturing multiple socket outlets, the range allows convenient connection of electrical equipment while supporting organised power access. Its practical construction and user-friendly design make it suitable for different installation and usage requirements. Available in various configurations, BLIT Extension Sockets combine convenience, functionality, and dependable performance for modern electrical applications.",
@@ -1541,6 +1544,7 @@ export const PRODUCTS_DATA = [
       },
       {
         name: "BLIT Multi Adaptor",
+        shortDesc: "Compact multi adaptors designed for convenient access to multiple power outlets.",
         img: "/assets/products/wiring_accessories/multi_adaptor.webp",
         desc: "Compact multi adaptors designed for convenient power connections, practical functionality, and space-efficient operation.",
         overview: "BLIT Multi Adaptors are designed to provide convenient access to multiple electrical connections through a compact and practical plug-in design. Combining functional construction with everyday convenience, the range offers a versatile power solution for residential, commercial, and office environments where additional socket access is required.\n\nDesigned for ease of use, BLIT Multi Adaptors provide multiple connection points within a space-efficient configuration. Their practical design allows convenient connection of compatible electrical devices while reducing the need for additional extension accessories. The range reflects BLIT's commitment to functionality, dependable construction, and convenient power solutions for modern electrical environments.",
@@ -1561,6 +1565,7 @@ export const PRODUCTS_DATA = [
     items: [
       {
         name: "BLIT Heavy-Duty PVC Trunking",
+        shortDesc: "Durable, self-adhesive PVC trunking for neat and organised cable routing.",
         img: "/assets/products/cable_management/trunking.webp",
         desc: "Heavy-duty PVC trunking engineered for organised cable routing, durable protection, and neat electrical installations.",
         overview: "BLIT Heavy-Duty PVC Trunking is designed to provide organised and efficient cable management across residential, commercial, and professional electrical installations. Manufactured using durable PVC material, the range combines robust construction with practical functionality, offering reliable solutions for routing and protecting electrical cables while maintaining a clean and professional appearance.\n\nDesigned for installation convenience, the range features practical cable-access arrangements and is available in multiple dimensions to accommodate different wiring requirements. Self-adhesive options support convenient installation on suitable surfaces, while the trunking design allows cables to be neatly arranged and accessed when required. The range reflects BLIT's commitment to quality, durability, and functional cable management solutions.",
@@ -1575,6 +1580,7 @@ export const PRODUCTS_DATA = [
       },
       {
         name: "BLIT Rigid PVC Conduits",
+        shortDesc: "High-quality rigid PVC conduits for reliable cable protection.",
         img: "/assets/products/cable_management/pvc_conduits.webp",
         desc: "Durable rigid PVC conduits designed for reliable cable protection, organised wiring, and practical electrical installations.",
         overview: "BLIT Rigid PVC Conduits are engineered to provide dependable cable protection and structured wiring arrangements across residential, commercial, and industrial environments. Manufactured from durable PVC material, the range combines robust construction with practical functionality, offering reliable solutions for routing electrical cables through suitable installation pathways.\n\nDesigned for installation convenience and consistent performance, these conduits provide a protective pathway for electrical wiring while supporting neat and organised cable arrangements. Their rigid construction makes them suitable for applications requiring defined cable routes, while compatibility with appropriate conduit fittings allows flexible installation planning. Available in multiple sizes, the range accommodates different wiring requirements and professional electrical applications.",
@@ -1589,6 +1595,7 @@ export const PRODUCTS_DATA = [
       },
       {
         name: "BLIT Heavy-Duty GI Flexible Conduits",
+        shortDesc: "Heavy-duty galvanised steel conduits for flexible routing and cable protection.",
         img: "/assets/products/cable_management/flexible_conduits.webp",
         desc: "Heavy-duty GI flexible conduits engineered for durable cable protection and adaptable electrical cable routing.",
         overview: "BLIT Heavy-Duty GI Flexible Conduits are designed to provide dependable cable protection in commercial, industrial, and professional electrical installations. Featuring robust galvanised metal construction, the range combines mechanical durability with flexible routing capabilities, offering practical solutions for electrical applications where conventional rigid conduits may be less suitable.\n\nEngineered for installation versatility, these conduits allow electrical cables to be routed around bends, obstacles, and equipment connections while maintaining a protective cable pathway. Their flexible construction supports practical installation across machinery, electrical equipment, and industrial wiring systems. Available in multiple sizes, the range delivers adaptable cable management solutions for demanding installation requirements.",
@@ -1609,6 +1616,7 @@ export const PRODUCTS_DATA = [
     items: [
       {
         name: "BLIT Copper Cable Lugs",
+        shortDesc: "High-conductivity copper lugs designed for secure electrical connections and reliable cable termination.",
         img: "/assets/products/cable_termination/lug.webp",
         desc: "High-conductivity copper cable lugs engineered for secure electrical connections and dependable cable termination.",
         overview: "BLIT Copper Cable Lugs are engineered to deliver dependable electrical connections across residential, commercial, and industrial installations. Manufactured from high-quality copper, the range combines excellent electrical conductivity with durable construction, providing reliable solutions for cable termination and electrical distribution applications.\n\nDesigned for secure crimp termination, these lugs support efficient current transmission and consistent connection performance. Their practical construction enables convenient installation across various electrical systems, while the availability of multiple sizes accommodates different conductor requirements. The range reflects BLIT's commitment to quality, functionality, and dependable electrical connectivity.",
@@ -1623,6 +1631,7 @@ export const PRODUCTS_DATA = [
       },
       {
         name: "BLIT Bimetallic Cable Lugs",
+        shortDesc: "Copper-aluminium cable lugs designed for secure and dependable termination of aluminium conductors.",
         img: "/assets/products/cable_termination/bimetallic_lug.webp",
         desc: "High-quality bimetallic cable lugs designed for reliable termination between aluminium conductors and copper connection points.",
         overview: "BLIT Bimetallic Cable Lugs are engineered to provide dependable electrical connections between aluminium conductors and copper contact surfaces. Combining an aluminium barrel with a copper palm, the range offers an effective termination solution for electrical distribution systems, industrial installations, and applications requiring connections between dissimilar conductor materials.\n\nDesigned for secure crimp termination, these lugs provide a practical connection interface while supporting consistent electrical performance. Their robust construction and availability in multiple sizes accommodate different conductor requirements, making them suitable for a wide range of professional electrical installations. The range combines material compatibility, durability, and installation practicality.",
@@ -1637,6 +1646,7 @@ export const PRODUCTS_DATA = [
       },
       {
         name: "BLIT Pin-Type Cable Lugs",
+        shortDesc: "Durable pin-type cable lugs designed for secure crimping and reliable terminal connections.",
         img: "/assets/products/cable_termination/pin_lug.webp",
         desc: "Durable pin-type cable lugs designed for secure crimping and reliable terminal connections.",
         overview: "BLIT Pin-Type Cable Lugs are developed to provide dependable electrical connections in applications requiring pin-style terminal connections. Combining practical construction with a compact termination design, the range offers reliable solutions for electrical panels, control systems, distribution equipment, and industrial wiring installations.\n\nEngineered for convenient crimp termination, these lugs support organised wiring arrangements and secure connections to compatible electrical terminals. Their practical design accommodates installation requirements where a pin-type connection is preferred, while multiple size options provide flexibility across different conductor applications. The range delivers dependable functionality and consistent connection quality for professional electrical installations.",
@@ -1651,6 +1661,7 @@ export const PRODUCTS_DATA = [
       },
       {
         name: "BLIT Brass Cable Glands",
+        shortDesc: "High-quality brass cable glands designed for secure cable entry and reliable installations.",
         img: "/assets/products/cable_termination/gland.webp",
         desc: "Premium brass cable glands designed for secure cable entry, durable construction, and reliable electrical installations.",
         overview: "BLIT Brass Cable Glands are engineered to provide secure cable entry and dependable cable retention across residential, commercial, and industrial electrical installations. Manufactured from quality brass, the range combines robust construction with practical functionality, offering reliable solutions for cable entry into electrical enclosures, control panels, machinery, and other electrical equipment.\n\nDesigned for durability and installation convenience, these glands support secure cable positioning and organised cable management. Their practical construction accommodates various cable-entry requirements, while multiple size options provide flexibility across different installation environments. The range reflects BLIT's focus on quality materials, dependable functionality, and long-lasting electrical installation solutions.",
@@ -1665,6 +1676,7 @@ export const PRODUCTS_DATA = [
       },
       {
         name: "BLIT Cable Ferrules",
+        shortDesc: "Precision-designed ferrules for secure, organised, and reliable wire-end termination.",
         img: "/assets/products/cable_termination/ferrule.webp",
         desc: "Precision-designed cable ferrules engineered for secure, organised, and dependable wire-end termination.",
         overview: "BLIT Cable Ferrules are designed to provide secure and organised termination of stranded electrical conductors. Combining precision-formed construction with practical functionality, the range offers dependable wire-end termination solutions for electrical panels, control systems, distribution equipment, and industrial wiring applications.\n\nEngineered for crimp installation, these ferrules help maintain conductor strand organisation while supporting consistent connections within compatible electrical terminals. Their compact design allows convenient installation and neat wire-end finishing, making them suitable for professional electrical wiring applications. Available in multiple sizes, the range accommodates different conductor requirements while delivering reliable functionality and practical installation convenience.",
@@ -1815,6 +1827,7 @@ export const PRODUCTS_DATA = [
     items: [
       {
         name: "BLIT Waterproof Enclosure Box With Knob",
+        shortDesc: "Durable waterproof enclosure boxes featuring convenient cable-entry provisions for reliable electrical protection.",
         availableColours: "White | Grey",
         img: "/assets/products/installation_boxes/enclosure_box_with_knob.webp",
         desc: "Durable waterproof enclosure box designed for reliable protection of electrical connections in residential, commercial, and industrial installations.",
@@ -1830,6 +1843,7 @@ export const PRODUCTS_DATA = [
       },
       {
         name: "BLIT Waterproof Enclosure Box Without Knob",
+        shortDesc: "Robust waterproof enclosure boxes with a clean exterior design for dependable electrical installations.",
         availableColours: "White | Grey",
         img: "/assets/products/installation_boxes/enclosure_box_without_knob.webp",
         desc: "Robust waterproof enclosure box combining durable construction and a clean, practical design for dependable electrical protection.",
