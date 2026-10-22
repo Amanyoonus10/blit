@@ -376,6 +376,103 @@
       transform: translateY(-2px);
     }
 
+    /* Custom Product Page Details Styles */
+    .product-models-badge {
+      display: inline-block;
+      font-size: 14.5px;
+      font-weight: 600;
+      color: #8A0B0E;
+      background: rgba(138, 11, 14, 0.06);
+      padding: 6px 14px;
+      border-radius: 6px;
+      margin-top: -6px;
+      margin-bottom: 4px;
+      border: 1px solid rgba(138, 11, 14, 0.12);
+      width: fit-content;
+    }
+
+    .product-overview-block {
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      padding-top: 20px;
+      margin-top: 10px;
+    }
+
+    .product-overview-block h3,
+    .product-features-block h3 {
+      font-size: 13px;
+      font-weight: 800;
+      color: #111111;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 12px;
+    }
+
+    .product-overview-block p {
+      font-size: 15px;
+      color: #444444;
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    .product-overview-block p:last-child {
+      margin-bottom: 0;
+    }
+
+    .product-features-block {
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      padding-top: 20px;
+      margin-top: 14px;
+    }
+
+    .features-clean-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .features-clean-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 14.5px;
+      font-weight: 500;
+      color: #222222;
+      line-height: 1.5;
+    }
+
+    .features-clean-list svg {
+      flex-shrink: 0;
+      margin-top: 2px;
+      stroke: #8A0B0E;
+    }
+
+    .download-sheet-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #8A0B0E;
+      color: #FFFFFF;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 1px;
+      padding: 15px 32px;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 10px 20px rgba(138, 11, 14, 0.15);
+      transition: var(--transition-smooth);
+    }
+
+    .download-sheet-btn:hover {
+      background: #6e090b;
+      transform: translateY(-2px);
+      box-shadow: 0 14px 24px rgba(138, 11, 14, 0.25);
+    }
+
     /* Tabs & Specifications styling */
     .product-details-tabs {
       margin-top: 60px;
@@ -3316,37 +3413,105 @@
           `;
         }
 
-        const rightInfoHtml = `
-          <div class="product-info-section">
-            <span class="category-label">${category.name}</span>
-            <h1 class="product-title">${product.name}</h1>
-            
-            <table class="specs-summary-table">
-              <tbody>
-                <tr>
-                  <td class="spec-label">Range / Collection:</td>
-                  <td class="spec-value">${product.range || "Standard Series"}</td>
-                </tr>
-                ${(product.specs || []).map(spec => `
+        // Check if product uses modern detailed layout
+        const hasCustomOverview = Boolean(product.overview || product.keyFeatures);
+
+        let rightInfoHtml = '';
+
+        if (hasCustomOverview) {
+          const modelsLine = product.models ? `
+            <div class="product-models-badge">
+              <strong>Models:</strong> ${product.models}
+            </div>
+          ` : (product.availableColours ? `
+            <div class="product-models-badge">
+              <strong>Available Colours:</strong> ${product.availableColours}
+            </div>
+          ` : '');
+
+          const overviewParagraphs = (product.overview || '')
+            .split('\n\n')
+            .filter(p => p.trim())
+            .map(p => `<p>${p}</p>`)
+            .join('');
+
+          const features = (product.keyFeatures || product.specs || []).slice(0, 4);
+          const featuresListHtml = features.map(f => `
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>${f}</span>
+            </li>
+          `).join('');
+
+          rightInfoHtml = `
+            <div class="product-info-section">
+              <span class="category-label">${category.name}</span>
+              <h1 class="product-title">${product.name}</h1>
+              ${modelsLine}
+              
+              <div class="product-desc-block">
+                <p class="product-desc">${product.desc}</p>
+              </div>
+
+              <div class="product-overview-block">
+                <h3>Product Overview</h3>
+                ${overviewParagraphs}
+              </div>
+
+              <div class="product-features-block">
+                <h3>Key Features</h3>
+                <ul class="features-clean-list">
+                  ${featuresListHtml}
+                </ul>
+              </div>
+
+              <div class="action-buttons-group">
+                <button class="download-sheet-btn" onclick="alert('Technical datasheet download will be available shortly.')">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  DOWNLOAD TECHNICAL SHEET
+                </button>
+              </div>
+            </div>
+          `;
+        } else {
+          rightInfoHtml = `
+            <div class="product-info-section">
+              <span class="category-label">${category.name}</span>
+              <h1 class="product-title">${product.name}</h1>
+              
+              <table class="specs-summary-table">
+                <tbody>
                   <tr>
-                    <td class="spec-label">Feature / Spec:</td>
-                    <td class="spec-value">${spec}</td>
+                    <td class="spec-label">Range / Collection:</td>
+                    <td class="spec-value">${product.range || "Standard Series"}</td>
                   </tr>
-                `).join('')}
-              </tbody>
-            </table>
+                  ${(product.specs || []).map(spec => `
+                    <tr>
+                      <td class="spec-label">Feature / Spec:</td>
+                      <td class="spec-value">${spec}</td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
 
-            <div class="description-section">
-              <h3 class="description-title">Description</h3>
-              <p class="product-desc">${product.desc}</p>
-            </div>
+              <div class="description-section">
+                <h3 class="description-title">Description</h3>
+                <p class="product-desc">${product.desc}</p>
+              </div>
 
-            <div class="action-buttons-group">
-              <button id="inquire-btn" class="action-btn-primary">Inquire About Product</button>
-              <button id="scroll-specs-btn" class="action-btn-secondary">View Full Specs ↓</button>
+              <div class="action-buttons-group">
+                <button id="inquire-btn" class="action-btn-primary">Inquire About Product</button>
+                <button id="scroll-specs-btn" class="action-btn-secondary">View Full Specs ↓</button>
+              </div>
             </div>
-          </div>
-        `;
+          `;
+        }
 
         container.innerHTML = `
           <!-- Left Display -->
@@ -3528,47 +3693,77 @@
           if (enCatalogSection) enCatalogSection.style.display = 'none';
         }
 
-        // Render bottom details section
-        const techTableRows = Object.entries(techSpecs).map(([label, val]) => `
-          <tr>
-            <td class="label-cell">${label}</td>
-            <td class="value-cell">${val}</td>
-          </tr>
-        `).join('');
+        // Update header back button according to product category
+        const categoryBackMap = {
+          'ventilation': { url: 'air-ventilation.html', label: 'Back to Air & Ventilation' },
+          'cable_management': { url: 'cable-management.html', label: 'Back to Cable Management' },
+          'cable_termination': { url: 'cable-termination.html', label: 'Back to Cable Termination' },
+          'insect_killer': { url: 'insect-killer.html', label: 'Back to Insect Killers' },
+          'installation_boxes': { url: 'installation-boxes.html', label: 'Back to Installation Boxes' },
+          'wiring_accessories': { url: 'wiring-accessories.html', label: 'Back to Wiring Accessories' },
+          'weatherproof': { url: 'weatherproof.html', label: 'Back to Weatherproof' },
+          'industrial_plug_socket': { url: 'industrial-plug-socket.html', label: 'Back to Industrial Plugs & Sockets' }
+        };
+        const backTarget = categoryBackMap[categoryId] || { url: './index.html#products', label: 'Back to Products' };
+        const headerBackBtn = document.querySelector('.detail-header .back-btn');
+        if (headerBackBtn) {
+          headerBackBtn.href = backTarget.url;
+          headerBackBtn.innerHTML = `
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            ${backTarget.label}
+          `;
+        }
 
-        tabsContainer.innerHTML = `
-          <div class="tabs-grid">
-            <!-- Left: Detailed Overview -->
-            <div>
-              <h2 class="section-subtitle">Product Overview</h2>
-              <p class="overview-text">
-                The <strong>${product.name}</strong> represents the premium standard in ${category.name.toLowerCase()} offered by BLIT. Engineered to combine architectural aesthetics with structural durability, this module is built to withstand rigorous residential, commercial, or heavy-duty industrial operations.
-              </p>
-              <p class="overview-text">
-                Featuring advanced contact conductivity surfaces and flame-retardant enclosures, it ensures smooth and reliable electrical throughput while minimizing thermal dissipation. The materials are specifically chosen for long-term corrosion prevention, UV protection, and absolute installation safety.
-              </p>
-              <h3 style="font-size: 16px; font-weight: 600; margin-bottom: 15px; color: var(--text-white);">Primary Product Benefits</h3>
-              <ul class="features-list">
-                <li>Flame Retardant & Fire Resistant</li>
-                <li>High-Conductivity Copper Alloys</li>
-                <li>UV Stabilized Outer Casing</li>
-                <li>Sleek, Clean Profile Aesthetics</li>
-                <li>International Standard Safety Shuttering</li>
-                <li>Heavy Duty Mechanical Lifecycle</li>
-              </ul>
-            </div>
+        // Render bottom details section only if not already displayed in main view
+        if (hasCustomOverview) {
+          tabsContainer.innerHTML = '';
+          tabsContainer.style.display = 'none';
+        } else {
+          tabsContainer.style.display = 'block';
+          const techTableRows = Object.entries(techSpecs).map(([label, val]) => `
+            <tr>
+              <td class="label-cell">${label}</td>
+              <td class="value-cell">${val}</td>
+            </tr>
+          `).join('');
 
-            <!-- Right: Technical Details Table -->
-            <div>
-              <h2 class="section-subtitle">Technical Details</h2>
-              <table class="tech-table">
-                <tbody>
-                  ${techTableRows}
-                </tbody>
-              </table>
+          tabsContainer.innerHTML = `
+            <div class="tabs-grid">
+              <!-- Left: Detailed Overview -->
+              <div>
+                <h2 class="section-subtitle">Product Overview</h2>
+                <p class="overview-text">
+                  The <strong>${product.name}</strong> represents the premium standard in ${category.name.toLowerCase()} offered by BLIT. Engineered to combine architectural aesthetics with structural durability, this module is built to withstand rigorous residential, commercial, or heavy-duty industrial operations.
+                </p>
+                <p class="overview-text">
+                  Featuring advanced contact conductivity surfaces and flame-retardant enclosures, it ensures smooth and reliable electrical throughput while minimizing thermal dissipation. The materials are specifically chosen for long-term corrosion prevention, UV protection, and absolute installation safety.
+                </p>
+                <h3 style="font-size: 16px; font-weight: 600; margin-bottom: 15px; color: var(--text-white);">Primary Product Benefits</h3>
+                <ul class="features-list">
+                  <li>Flame Retardant & Fire Resistant</li>
+                  <li>High-Conductivity Copper Alloys</li>
+                  <li>UV Stabilized Outer Casing</li>
+                  <li>Sleek, Clean Profile Aesthetics</li>
+                  <li>International Standard Safety Shuttering</li>
+                  <li>Heavy Duty Mechanical Lifecycle</li>
+                </ul>
+              </div>
+
+              <!-- Right: Technical Details Table -->
+              <div>
+                <h2 class="section-subtitle">Technical Details</h2>
+                <table class="tech-table">
+                  <tbody>
+                    ${techTableRows}
+                  </tbody>
+                </table>
+              </div>
             </div>
-          </div>
-        `;
+          `;
+        }
 
         // Set up click handler for email inquiry
         const inquireBtn = document.getElementById('inquire-btn');

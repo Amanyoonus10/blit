@@ -118,10 +118,10 @@
 
     .ranges-overview-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 30px;
       margin-bottom: 60px;
-      max-width: 1000px;
+      max-width: 1100px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -264,14 +264,14 @@
   <!-- Hero Section -->
   <section class="switches-hero">
     <div class="hero-bg-media">
-      <img src="/assets/products/cable_management/cable_management_hero.webp" alt="Cable Management Collection">
+      <img src="./assets/products/cable_management/pvc_conduits.webp" alt="Cable Management Collection">
     </div>
     <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 24px; width: 100%;">
       <div style="max-width: 580px;">
         <span style="font-size: 13px; font-weight: 700; color: #FF1A1A; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 16px;">Collection Showcase</span>
         <h1 style="font-family: var(--font-heading); font-size: 48px; font-weight: 800; color: #FFFFFF; line-height: 1.1; margin-bottom: 24px; letter-spacing: -1px;">Cable Management</h1>
         <p style="font-size: 16px; color: rgba(255, 255, 255, 0.85); line-height: 1.6; margin-bottom: 40px;">
-          Precision casing & routing. Discover our heavy-duty galvanized iron steel conduits, flame-retardant PVC conduits, self-adhesive mini-trunking, and flexible conduits. Engineered for robust safety and clean, high-performance layouts.
+          Precision cable routing. Discover our heavy-duty PVC trunking, rigid PVC conduits, and GI flexible conduits. Designed for organised cable management and dependable protection across residential, commercial, and industrial installations.
         </p>
         <a href="#ranges" class="hero-btn" style="background-color: #FF1A1A; color: #FFFFFF; padding: 15px 30px; border-radius: 30px; font-weight: 600; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: var(--transition-smooth);">Explore Ranges <span class="arrow">↓</span></a>
       </div>
@@ -282,8 +282,8 @@
   <section class="ranges-section" id="ranges">
     <div class="container">
       <div class="section-header">
-        <h2>Choose a Range</h2>
-        <p>Select any of our protective cable routing options below to filter models, dimensions, and accessories.</p>
+        <h2>Explore Our Range</h2>
+        <p>Explore BLIT's range of cable management solutions, combining durable construction, practical functionality, and reliable protection for modern electrical installations.</p>
       </div>
 
       <div class="ranges-overview-grid" id="ranges-selector-container">
@@ -292,127 +292,52 @@
     </div>
   </section>
 
-
-
-  <!-- Contact Section -->
-  <section class="quote-form-section" id="quote">
-    <div class="container" style="max-width: 1000px; margin: 0 auto; padding: 0 24px;">
-      <div class="quote-box">
-        <div class="quote-info">
-          <h2>Request a Catalog Quote</h2>
-          <p>Tell us about your project requirements and we will send a customized proposal along with catalog data sheets.</p>
-          <div class="quote-contact-details" style="margin-top: 40px;">
-            <p><strong>Direct Helpline:</strong> +971 50 199 5589</p>
-            <p><strong>WhatsApp Support:</strong> Chat Live</p>
-            <p><strong>Corporate Email:</strong> info@blit-electric.com</p>
-          </div>
-        </div>
-        <form class="quote-form">
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" placeholder="E.g., John Doe" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" placeholder="E.g., john@example.com" required>
-          </div>
-          <div class="form-group">
-            <label for="category">Product Range Interest</label>
-            <select id="category">
-              <option value="Trunking">PVC Trunking</option>
-              <option value="GI Conduits">GI Steel Conduits</option>
-              <option value="PVC Conduits">PVC Conduits</option>
-              <option value="Flexible Conduits">Flexible Conduits</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Your Requirements</label>
-            <textarea id="message" rows="4" placeholder="Mention dimensions or custom requirements here..." required></textarea>
-          </div>
-          <button type="submit" class="featured-btn" style="border: none; width: 100%; justify-content: center; cursor: pointer;">Submit Request</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
   <!-- Footer -->
-  <footer style="background-color: #0E0E12; padding: 60px 0; color: #888888; border-top: 1px solid rgba(255,255,255,0.05);">
+  <footer style="background-color: #0E0E12; padding: 40px 0; color: #888888; border-top: 1px solid rgba(255,255,255,0.05);">
     <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 24px; text-align: center;">
-      <p style="font-size: 14px;">&copy; 2026 Blit Electric. All rights reserved.</p>
+      <a href="./index.html" style="display: inline-block; margin-bottom: 15px;">
+        <img src="./assets/blit_logo_white.png" alt="BLIT" style="height: 32px; width: auto; opacity: 0.8;">
+      </a>
+      <p style="font-size: 14px; color: #666666;">BLIT — Engineering Excellence in Electrical Solutions.</p>
     </div>
   </footer>
 
   <!-- Code Logic -->
   <script type="module">
-    import { PRODUCTS_DATA, IMAGE_BG_MAP } from './products-data.js';
+    import { PRODUCTS_DATA } from './products-data.js';
 
     document.addEventListener('DOMContentLoaded', () => {
       const selectorContainer = document.getElementById('ranges-selector-container');
-      const selectElement = document.getElementById('category');
-
       if (!selectorContainer) return;
 
       // Extract Cable Management data
       const cableCat = PRODUCTS_DATA.find(cat => cat.id === 'cable_management');
       if (!cableCat) return;
 
-      // Group items by range
-      const ranges = {};
-      cableCat.items.forEach(item => {
-        if (!ranges[item.range]) {
-          ranges[item.range] = [];
-        }
-        ranges[item.range].push(item);
-      });
-
-      // Descriptions mapping for each range
-      const rangeDescriptions = {
-        "Trunking": "Self-adhesive and standard PVC mini-trunking profiles for neat surface cable management.",
-        "GI Conduits": "Heavy-duty Class 4 galvanized iron steel conduits for industrial flame protection.",
-        "PVC Conduits": "High-impact flame-retardant PVC conduits and precision coupling bends.",
-        "Flexible Conduits": "Highly flexible corrugated PVC and steel-core conduits for wiring tight angles."
-      };
-
-      let activeRangeName = Object.keys(ranges)[0] || "Trunking";
-
-      // Render Range Cards
-      const renderRangeCards = () => {
+      // Render the 3 Cable Management Products
+      const renderProducts = () => {
         selectorContainer.innerHTML = '';
-        Object.entries(ranges).forEach(([rangeName, items]) => {
-          const repItem = items[0];
-          if (!repItem) return;
-
+        cableCat.items.forEach(item => {
           const card = document.createElement('div');
           card.className = 'range-selector-card';
           
           card.innerHTML = `
             <div class="range-img-box">
-              <img src="${repItem.img}" alt="${rangeName}" loading="lazy">
+              <img src="${item.img}" alt="${item.name}" loading="lazy">
             </div>
-            <div class="range-title">${rangeName}</div>
-            <div class="range-description">${rangeDescriptions[rangeName] || 'High impact cable protection systems.'}</div>
+            <div class="range-title" style="font-size: 18px; margin-top: 10px;">${item.name}</div>
+            <div class="range-description" style="margin-top: 8px;">${item.desc}</div>
           `;
 
           card.addEventListener('click', () => {
-            window.location.href = `./product.html?category=cable_management&product=${encodeURIComponent(repItem.name)}`;
+            window.location.href = `./product.html?category=cable_management&product=${encodeURIComponent(item.name)}`;
           });
 
           selectorContainer.appendChild(card);
         });
       };
 
-      // Handle inquiry buttons anchoring and dynamic drop-downs
-      document.body.addEventListener('click', (e) => {
-        if (e.target.closest('a') && e.target.closest('a').getAttribute('href') === '#quote') {
-          // If clicked inquire, select correct range in dropdown
-          if (selectElement) {
-            selectElement.value = activeRangeName;
-          }
-        }
-      });
-
-      // Init UI
-      renderRangeCards();
+      renderProducts();
     });
   </script>
 

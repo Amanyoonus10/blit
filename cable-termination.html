@@ -118,10 +118,10 @@
 
     .ranges-overview-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 30px;
       margin-bottom: 60px;
-      max-width: 1000px;
+      max-width: 1200px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -264,14 +264,14 @@
   <!-- Hero Section -->
   <section class="switches-hero">
     <div class="hero-bg-media">
-      <img src="/assets/products/cable_termination/cable_termination_hero.webp?v=10" alt="Cable Termination Collection">
+      <img src="./assets/products/cable_termination/lug.webp" alt="Cable Termination Collection">
     </div>
     <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 24px; width: 100%;">
       <div style="max-width: 580px;">
         <span style="font-size: 13px; font-weight: 700; color: #FF1A1A; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 16px;">Collection Showcase</span>
         <h1 style="font-family: var(--font-heading); font-size: 48px; font-weight: 800; color: #FFFFFF; line-height: 1.1; margin-bottom: 24px; letter-spacing: -1px;">Cable Termination</h1>
         <p style="font-size: 16px; color: rgba(255, 255, 255, 0.85); line-height: 1.6; margin-bottom: 40px;">
-          Secure terminal connections. Discover our high-conductivity copper lugs, brass and plastic glands, crimp ferrules, and color-coded insulated bootlaces. Engineered for safety and mechanical stability on all wire ends.
+          Secure terminal connections. Discover our high-conductivity copper lugs, bimetallic lugs, pin-type lugs, brass and plastic cable glands, and crimp ferrules. Engineered for safety, secure connections, and dependable performance across electrical installations.
         </p>
         <a href="#ranges" class="hero-btn" style="background-color: #FF1A1A; color: #FFFFFF; padding: 15px 30px; border-radius: 30px; font-weight: 600; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: var(--transition-smooth);">Explore Ranges <span class="arrow">↓</span></a>
       </div>
@@ -282,8 +282,8 @@
   <section class="ranges-section" id="ranges">
     <div class="container">
       <div class="section-header">
-        <h2>Choose a Range</h2>
-        <p>Select any of our termination categories below to filter dimensions, crimping lugs, and waterproof glands.</p>
+        <h2>Explore Our Range</h2>
+        <p>Explore BLIT's range of cable termination solutions, combining quality materials, dependable performance, and practical functionality for modern electrical installations.</p>
       </div>
 
       <div class="ranges-overview-grid" id="ranges-selector-container">
@@ -294,125 +294,52 @@
 
 
 
-  <!-- Contact Section -->
-  <section class="quote-form-section" id="quote">
-    <div class="container" style="max-width: 1000px; margin: 0 auto; padding: 0 24px;">
-      <div class="quote-box">
-        <div class="quote-info">
-          <h2>Request a Catalog Quote</h2>
-          <p>Tell us about your project requirements and we will send a customized proposal along with catalog data sheets.</p>
-          <div class="quote-contact-details" style="margin-top: 40px;">
-            <p><strong>Direct Helpline:</strong> +971 50 199 5589</p>
-            <p><strong>WhatsApp Support:</strong> Chat Live</p>
-            <p><strong>Corporate Email:</strong> info@blit-electric.com</p>
-          </div>
-        </div>
-        <form class="quote-form">
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" placeholder="E.g., John Doe" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" placeholder="E.g., john@example.com" required>
-          </div>
-          <div class="form-group">
-            <label for="category">Product Range Interest</label>
-            <select id="category">
-              <option value="Lugs">Copper Lugs</option>
-              <option value="Gland">Cable Glands</option>
-              <option value="Ferrule">Crimping Ferrules</option>
-              <option value="Insulated Terminals">Insulated Bootlaces</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Your Requirements</label>
-            <textarea id="message" rows="4" placeholder="Mention wire sizes or specifications here..." required></textarea>
-          </div>
-          <button type="submit" class="featured-btn" style="border: none; width: 100%; justify-content: center; cursor: pointer;">Submit Request</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
   <!-- Footer -->
-  <footer style="background-color: #0E0E12; padding: 60px 0; color: #888888; border-top: 1px solid rgba(255,255,255,0.05);">
+  <footer style="background-color: #0E0E12; padding: 40px 0; color: #888888; border-top: 1px solid rgba(255,255,255,0.05);">
     <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 24px; text-align: center;">
-      <p style="font-size: 14px;">&copy; 2026 Blit Electric. All rights reserved.</p>
+      <a href="./index.html" style="display: inline-block; margin-bottom: 15px;">
+        <img src="./assets/blit_logo_white.png" alt="BLIT" style="height: 32px; width: auto; opacity: 0.8;">
+      </a>
+      <p style="font-size: 14px; color: #666666;">BLIT — Engineering Excellence in Electrical Solutions.</p>
     </div>
   </footer>
 
   <!-- Code Logic -->
   <script type="module">
-    import { PRODUCTS_DATA, IMAGE_BG_MAP } from './products-data.js';
+    import { PRODUCTS_DATA } from './products-data.js';
 
     document.addEventListener('DOMContentLoaded', () => {
       const selectorContainer = document.getElementById('ranges-selector-container');
-      const selectElement = document.getElementById('category');
-
       if (!selectorContainer) return;
 
       // Extract Cable Termination data
       const termCat = PRODUCTS_DATA.find(cat => cat.id === 'cable_termination');
       if (!termCat) return;
 
-      // Group items by range
-      const ranges = {};
-      termCat.items.forEach(item => {
-        if (!ranges[item.range]) {
-          ranges[item.range] = [];
-        }
-        ranges[item.range].push(item);
-      });
-
-      // Descriptions mapping for each range
-      const rangeDescriptions = {
-        "Lugs": "Heavy-duty copper cable lugs for solid electrical connections, tinned for corrosion resistance.",
-        "Gland": "Industrial brass and plastic cable glands providing excellent strain relief and IP protection.",
-        "Ferrule": "Copper linking ferrules for cable crimping and secure joint connections.",
-        "Insulated Terminals": "Bootlace terminals, ring/spade connectors, and color-coded wire end sleeves."
-      };
-
-      let activeRangeName = Object.keys(ranges)[0] || "Lugs";
-
-      // Render Range Cards
-      const renderRangeCards = () => {
+      // Render the 5 Cable Termination Products
+      const renderProducts = () => {
         selectorContainer.innerHTML = '';
-        Object.entries(ranges).forEach(([rangeName, items]) => {
-          const repItem = items[0];
-          if (!repItem) return;
-
+        termCat.items.forEach(item => {
           const card = document.createElement('div');
           card.className = 'range-selector-card';
           
           card.innerHTML = `
             <div class="range-img-box">
-              <img src="${repItem.img}" alt="${rangeName}" loading="lazy">
+              <img src="${item.img}" alt="${item.name}" loading="lazy">
             </div>
-            <div class="range-title">${rangeName}</div>
-            <div class="range-description">${rangeDescriptions[rangeName] || 'Industrial cable termination accessories.'}</div>
+            <div class="range-title" style="font-size: 18px; margin-top: 10px;">${item.name}</div>
+            <div class="range-description" style="margin-top: 8px;">${item.desc}</div>
           `;
 
           card.addEventListener('click', () => {
-            window.location.href = `./product.html?category=cable_termination&product=${encodeURIComponent(repItem.name)}`;
+            window.location.href = `./product.html?category=cable_termination&product=${encodeURIComponent(item.name)}`;
           });
 
           selectorContainer.appendChild(card);
         });
       };
 
-      // Handle inquiry buttons anchoring and dynamic drop-downs
-      document.body.addEventListener('click', (e) => {
-        if (e.target.closest('a') && e.target.closest('a').getAttribute('href') === '#quote') {
-          // If clicked inquire, select correct range in dropdown
-          if (selectElement) {
-            selectElement.value = activeRangeName;
-          }
-        }
-      });
-
-      // Init UI
-      renderRangeCards();
+      renderProducts();
     });
   </script>
 
