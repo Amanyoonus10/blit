@@ -161,7 +161,9 @@ export const IMAGE_BG_MAP = {
   "/assets/products/ventilation/industrial_stand_fan.webp": "#ffffff",
   "/assets/products/ventilation/industrial_wall_fan.webp": "#ffffff",
   "/assets/products/insect_killer/elite_series.webp": "#ffffff",
+  "/assets/products/insect_killer/elite_series.webp?v=2": "#ffffff",
   "/assets/products/insect_killer/prime_series.webp": "#ffffff",
+  "/assets/products/insect_killer/prime_series.webp?v=2": "#ffffff",
   "/assets/products/cw_range/BTCW3011-BLK.webp": "#ffffff",
   "/assets/products/cw_range/BTCW3012-BLK.webp": "#ffffff",
   "/assets/products/cw_range/BTCW3032-BLK.webp": "#ffffff",
@@ -1811,7 +1813,7 @@ export const PRODUCTS_DATA = [
     items: [
       {
         name: "BLIT Elite Series Insect Killer",
-        img: "/assets/products/insect_killer/elite_series.webp",
+        img: "/assets/products/insect_killer/elite_series.webp?v=2",
         desc: "Premium insect killer combining elegant design, durable construction, and effective UV insect control technology.",
         overview: "The BLIT Elite Series Insect Killer combines durable construction with sophisticated design and effective insect control technology. Engineered for reliable performance, the range features UV insect attraction technology, providing a dependable solution for insect management across residential, commercial, and professional indoor environments.\n\nDesigned for installation versatility and convenient maintenance, the Elite Series offers flexible mounting options to accommodate different application requirements. Its removable collection tray allows easy cleaning, while its robust construction supports long-lasting durability. The range reflects BLIT's commitment to quality, thoughtful design, and dependable insect control solutions.",
         keyFeatures: [
@@ -1826,7 +1828,7 @@ export const PRODUCTS_DATA = [
       },
       {
         name: "BLIT Prime Series Insect Killer",
-        img: "/assets/products/insect_killer/prime_series.webp",
+        img: "/assets/products/insect_killer/prime_series.webp?v=2",
         desc: "Premium aluminium-body insect killer featuring a wide-open grille design and effective UV insect attraction technology.",
         overview: "The BLIT Prime Series Insect Killer features an aluminium body, combining durable construction with contemporary design and effective insect control technology. Its distinctive wide-open grille design and UV insect attraction system provide a dependable solution for insect management across residential, commercial, and professional indoor environments.\n\nDesigned for reliable performance and convenient maintenance, the Prime Series offers versatile mounting options to accommodate different installation requirements. Its removable collection tray allows easy cleaning, while the robust aluminium construction supports lasting durability. The range reflects BLIT's commitment to quality, practical functionality, and dependable insect control solutions.",
         keyFeatures: [
