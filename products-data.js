@@ -54,10 +54,16 @@ export const IMAGE_BG_MAP = {
   "/assets/products/e_range/E405.webp": "#ffffff",
   "/assets/products/e_range/E406.webp": "#ffffff",
   "/assets/product_cables_new.webp": "#181b1d",
-  "/assets/products/cable_management/flexible_conduits.webp": "#f8f9f8",
+  "/assets/products/cable_management/flexible_conduits.webp": "#ffffff",
+  "/assets/products/cable_management/flexible_conduits.webp?v=3": "#ffffff",
   "/assets/products/cable_management/gi_conduits.webp": "#ebeceb",
-  "/assets/products/cable_management/pvc_conduits.webp": "#2b2e31",
+  "/assets/products/cable_management/pvc_conduits.webp": "#ffffff",
+  "/assets/products/cable_management/pvc_conduits.webp?v=3": "#ffffff",
   "/assets/products/cable_management/trunking.webp": "#f2f2f2",
+  "/assets/products/cable_termination/bimetallic_lug.webp": "#ffffff",
+  "/assets/products/cable_termination/bimetallic_lug.webp?v=3": "#ffffff",
+  "/assets/products/cable_termination/pin_lug.webp": "#ffffff",
+  "/assets/products/cable_termination/pin_lug.webp?v=3": "#ffffff",
   "/assets/products/cable_termination/ferrule.webp": "#f7f7f7",
   "/assets/products/cable_termination/gland.webp": "#fdfdfd",
   "/assets/products/cable_termination/insulated_terminals.webp": "#ffffff",
@@ -150,7 +156,8 @@ export const IMAGE_BG_MAP = {
   "/assets/products/weatherproof/BTAGZ4030L_INSIDE.webp": "#ffffff",
   "/assets/products/weatherproof/isolator.webp": "#f7f7f7",
   "/assets/products/industrial_plug_socket/industrial_plug_socket.webp": "#f7f7f7",
-  "/assets/products/wiring_accessories/cable_reel.webp": "#f7f7f7",
+  "/assets/products/wiring_accessories/cable_reel.webp": "#ffffff",
+  "/assets/products/wiring_accessories/cable_reel.webp?v=3": "#ffffff",
   "/assets/products/wiring_accessories/cassette_reel.webp": "#f7f7f7",
   "/assets/products/wiring_accessories/ceiling_rose.webp": "#eaebea",
   "/assets/products/wiring_accessories/extension_socket.webp": "#f7f7f7",
@@ -160,10 +167,23 @@ export const IMAGE_BG_MAP = {
   "/assets/products/wiring_accessories/plug_top_alt.webp": "#FFFFFF",
   "/assets/products/ventilation/industrial_stand_fan.webp": "#ffffff",
   "/assets/products/ventilation/industrial_wall_fan.webp": "#ffffff",
+  "/assets/products/ventilation/industrial_stand_fan_2blade.webp": "#ffffff",
+  "/assets/products/ventilation/industrial_stand_fan_2blade.webp?v=3": "#ffffff",
+  "/assets/products/ventilation/industrial_wall_fan_2blade.webp": "#ffffff",
+  "/assets/products/ventilation/industrial_wall_fan_2blade.webp?v=3": "#ffffff",
+  "/assets/products/ventilation/mist_fan.webp": "#ffffff",
+  "/assets/products/ventilation/mist_fan.webp?v=3": "#ffffff",
+  "/assets/products/ventilation/metal_exhaust_fan.webp": "#ffffff",
+  "/assets/products/ventilation/metal_exhaust_fan.webp?v=3": "#ffffff",
   "/assets/products/insect_killer/elite_series.webp": "#ffffff",
   "/assets/products/insect_killer/elite_series.webp?v=2": "#ffffff",
   "/assets/products/insect_killer/prime_series.webp": "#ffffff",
   "/assets/products/insect_killer/prime_series.webp?v=2": "#ffffff",
+  "/assets/products/insect_killer/prime_series.webp?v=3": "#ffffff",
+  "/assets/products/installation_boxes/enclosure_box_with_knob.webp": "#ffffff",
+  "/assets/products/installation_boxes/enclosure_box_with_knob.webp?v=3": "#ffffff",
+  "/assets/products/installation_boxes/enclosure_box_without_knob.webp": "#ffffff",
+  "/assets/products/installation_boxes/enclosure_box_without_knob.webp?v=3": "#ffffff",
   "/assets/products/cw_range/BTCW3011-BLK.webp": "#ffffff",
   "/assets/products/cw_range/BTCW3012-BLK.webp": "#ffffff",
   "/assets/products/cw_range/BTCW3032-BLK.webp": "#ffffff",
@@ -1502,7 +1522,7 @@ export const PRODUCTS_DATA = [
       {
         name: "BLIT Cable Reel",
         shortDesc: "Heavy duty cable reels designed for convenient power distribution and organised cable management.",
-        img: "/assets/products/wiring_accessories/cable_reel.webp",
+        img: "/assets/products/wiring_accessories/cable_reel.webp?v=3",
         desc: "Durable cable reels designed for convenient power distribution, efficient cable management, and dependable performance.",
         overview: "BLIT Cable Reels are designed to provide convenient and organised power access across residential, commercial, and professional environments. Combining durable construction with practical functionality, the range offers a dependable solution for applications requiring extended electrical connections and flexible power distribution.\n\nFeaturing a practical reel design, BLIT Cable Reels allow electrical cables to be extended when required and conveniently wound for organised storage. Their portable construction supports flexible positioning across different working environments, while the focus on durability and ease of handling makes the range suitable for a variety of everyday and professional electrical applications.",
         keyFeatures: [
@@ -1588,7 +1608,7 @@ export const PRODUCTS_DATA = [
       {
         name: "BLIT Rigid PVC Conduits",
         shortDesc: "High-quality rigid PVC conduits for reliable cable protection.",
-        img: "/assets/products/cable_management/pvc_conduits.webp",
+        img: "/assets/products/cable_management/pvc_conduits.webp?v=3",
         desc: "Durable rigid PVC conduits designed for reliable cable protection, organised wiring, and practical electrical installations.",
         overview: "BLIT Rigid PVC Conduits are engineered to provide dependable cable protection and structured wiring arrangements across residential, commercial, and industrial environments. Manufactured from durable PVC material, the range combines robust construction with practical functionality, offering reliable solutions for routing electrical cables through suitable installation pathways.\n\nDesigned for installation convenience and consistent performance, these conduits provide a protective pathway for electrical wiring while supporting neat and organised cable arrangements. Their rigid construction makes them suitable for applications requiring defined cable routes, while compatibility with appropriate conduit fittings allows flexible installation planning. Available in multiple sizes, the range accommodates different wiring requirements and professional electrical applications.",
         keyFeatures: [
@@ -1604,7 +1624,7 @@ export const PRODUCTS_DATA = [
       {
         name: "BLIT Heavy-Duty GI Flexible Conduits",
         shortDesc: "Heavy-duty galvanised steel conduits for flexible routing and cable protection.",
-        img: "/assets/products/cable_management/flexible_conduits.webp",
+        img: "/assets/products/cable_management/flexible_conduits.webp?v=3",
         desc: "Heavy-duty GI flexible conduits engineered for durable cable protection and adaptable electrical cable routing.",
         overview: "BLIT Heavy-Duty GI Flexible Conduits are designed to provide dependable cable protection in commercial, industrial, and professional electrical installations. Featuring robust galvanised metal construction, the range combines mechanical durability with flexible routing capabilities, offering practical solutions for electrical applications where conventional rigid conduits may be less suitable.\n\nEngineered for installation versatility, these conduits allow electrical cables to be routed around bends, obstacles, and equipment connections while maintaining a protective cable pathway. Their flexible construction supports practical installation across machinery, electrical equipment, and industrial wiring systems. Available in multiple sizes, the range delivers adaptable cable management solutions for demanding installation requirements.",
         keyFeatures: [
@@ -1642,7 +1662,7 @@ export const PRODUCTS_DATA = [
       {
         name: "BLIT Bimetallic Cable Lugs",
         shortDesc: "Copper-aluminium cable lugs designed for secure and dependable termination of aluminium conductors.",
-        img: "/assets/products/cable_termination/bimetallic_lug.webp",
+        img: "/assets/products/cable_termination/bimetallic_lug.webp?v=3",
         desc: "High-quality bimetallic cable lugs designed for reliable termination between aluminium conductors and copper connection points.",
         overview: "BLIT Bimetallic Cable Lugs are engineered to provide dependable electrical connections between aluminium conductors and copper contact surfaces. Combining an aluminium barrel with a copper palm, the range offers an effective termination solution for electrical distribution systems, industrial installations, and applications requiring connections between dissimilar conductor materials.\n\nDesigned for secure crimp termination, these lugs provide a practical connection interface while supporting consistent electrical performance. Their robust construction and availability in multiple sizes accommodate different conductor requirements, making them suitable for a wide range of professional electrical installations. The range combines material compatibility, durability, and installation practicality.",
         keyFeatures: [
@@ -1658,7 +1678,7 @@ export const PRODUCTS_DATA = [
       {
         name: "BLIT Pin-Type Cable Lugs",
         shortDesc: "Durable pin-type cable lugs designed for secure crimping and reliable terminal connections.",
-        img: "/assets/products/cable_termination/pin_lug.webp",
+        img: "/assets/products/cable_termination/pin_lug.webp?v=3",
         desc: "Durable pin-type cable lugs designed for secure crimping and reliable terminal connections.",
         overview: "BLIT Pin-Type Cable Lugs are developed to provide dependable electrical connections in applications requiring pin-style terminal connections. Combining practical construction with a compact termination design, the range offers reliable solutions for electrical panels, control systems, distribution equipment, and industrial wiring installations.\n\nEngineered for convenient crimp termination, these lugs support organised wiring arrangements and secure connections to compatible electrical terminals. Their practical design accommodates installation requirements where a pin-type connection is preferred, while multiple size options provide flexibility across different conductor applications. The range delivers dependable functionality and consistent connection quality for professional electrical installations.",
         keyFeatures: [
@@ -1744,7 +1764,7 @@ export const PRODUCTS_DATA = [
       {
         name: "BLIT Heavy-Duty Industrial Stand Fan – 2 Blade",
         models: "BT271 – 24\" | BT273 – 30\"",
-        img: "/assets/products/ventilation/industrial_stand_fan_2blade.webp",
+        img: "/assets/products/ventilation/industrial_stand_fan_2blade.webp?v=3",
         desc: "High-performance industrial stand fan featuring a heavy-duty two-blade design for powerful airflow and dependable operation.",
         overview: "The BLIT Heavy-Duty Industrial Stand Fan is developed for demanding environments requiring powerful airflow and durable construction. Featuring a distinctive two-blade configuration and robust industrial design, the range provides effective air circulation across workshops, warehouses, manufacturing facilities, and large commercial spaces.\n\nEquipped with a copper-wound motor, the fan combines dependable operation with practical functionality for professional applications. Its sturdy pedestal structure provides stable positioning, while adjustable height allows convenient airflow direction and installation flexibility. Designed for demanding working environments, the range reflects BLIT's emphasis on durability, effective air movement, and reliable industrial ventilation solutions.",
         keyFeatures: [
@@ -1760,7 +1780,7 @@ export const PRODUCTS_DATA = [
       {
         name: "BLIT Heavy-Duty Industrial Wall Fan – 2 Blade",
         models: "BT275 – 24\" | BT277 – 30\"",
-        img: "/assets/products/ventilation/industrial_wall_fan_2blade.webp",
+        img: "/assets/products/ventilation/industrial_wall_fan_2blade.webp?v=3",
         desc: "Heavy-duty wall-mounted industrial fan combining powerful two-blade airflow with durable construction and space-efficient installation.",
         overview: "The BLIT Heavy-Duty Industrial Wall Fan is engineered to deliver powerful air circulation through a robust two-blade configuration and durable industrial construction. Designed for demanding commercial and industrial environments, the range provides dependable airflow for workshops, warehouses, factories, and other large working areas.\n\nFeaturing a copper-wound motor, the fan combines reliable operation with effective air distribution. Its heavy-duty wall-mounted structure provides convenient installation without occupying valuable floor space, making it suitable for environments where efficient space utilisation is essential. The range delivers a practical combination of powerful airflow, robust construction, and dependable performance for professional ventilation applications.",
         keyFeatures: [
@@ -1776,7 +1796,7 @@ export const PRODUCTS_DATA = [
       {
         name: "BLIT Mist Fan Series",
         models: "BT155 – 24\" | BT156 – 26\"",
-        img: "/assets/products/ventilation/mist_fan.webp",
+        img: "/assets/products/ventilation/mist_fan.webp?v=3",
         desc: "Heavy-duty industrial mist fan combining powerful airflow with fine mist cooling for effective temperature control and enhanced comfort.",
         overview: "The BLIT Mist Fan Series is designed to deliver effective cooling comfort through a combination of powerful air circulation and fine water mist dispersion. Developed for warm commercial, industrial, and suitable outdoor environments, the range provides a practical solution for improving comfort in spaces requiring enhanced air movement and evaporative cooling.\n\nEquipped with copper-wound motors and adjustable mist output, the range combines dependable airflow with flexible cooling functionality. Available in stand and wall-mounted configurations, BLIT Mist Fans accommodate different installation requirements while offering convenient operation and practical maintenance. The series reflects BLIT's focus on functional design, cooling performance, and versatile air circulation solutions.",
         keyFeatures: [
@@ -1792,7 +1812,7 @@ export const PRODUCTS_DATA = [
       {
         name: "BLIT Super Duty Metal Exhaust Fan",
         models: "BT121 – 12\" | BT122 – 16\" | BT123 – 18\" | BT124 – 24\"",
-        img: "/assets/products/ventilation/metal_exhaust_fan.webp",
+        img: "/assets/products/ventilation/metal_exhaust_fan.webp?v=3",
         desc: "Heavy-duty metal exhaust fan engineered for powerful air extraction, efficient ventilation, and reliable industrial performance.",
         overview: "The BLIT Super Duty Metal Exhaust Fan is engineered to deliver powerful air extraction and dependable ventilation across demanding commercial and industrial environments. Featuring robust metal construction and an industrial fan blade design, the range provides an effective solution for extracting stale air and improving airflow in workshops, warehouses, factories, and utility spaces.\n\nPowered by a copper-wound motor, the fan combines durable construction with reliable ventilation performance. Its heavy-duty design supports consistent air movement, helping maintain effective ventilation in enclosed working environments. Available in multiple sizes, the range accommodates different ventilation requirements while offering practical installation flexibility and dependable functionality.",
         keyFeatures: [
@@ -1828,7 +1848,7 @@ export const PRODUCTS_DATA = [
       },
       {
         name: "BLIT Prime Series Insect Killer",
-        img: "/assets/products/insect_killer/prime_series.webp?v=2",
+        img: "/assets/products/insect_killer/prime_series.webp?v=3",
         desc: "Premium aluminium-body insect killer featuring a wide-open grille design and effective UV insect attraction technology.",
         overview: "The BLIT Prime Series Insect Killer features an aluminium body, combining durable construction with contemporary design and effective insect control technology. Its distinctive wide-open grille design and UV insect attraction system provide a dependable solution for insect management across residential, commercial, and professional indoor environments.\n\nDesigned for reliable performance and convenient maintenance, the Prime Series offers versatile mounting options to accommodate different installation requirements. Its removable collection tray allows easy cleaning, while the robust aluminium construction supports lasting durability. The range reflects BLIT's commitment to quality, practical functionality, and dependable insect control solutions.",
         keyFeatures: [
@@ -1851,7 +1871,7 @@ export const PRODUCTS_DATA = [
         name: "BLIT Waterproof Enclosure Box With Knob",
         shortDesc: "Durable waterproof enclosure boxes featuring convenient cable-entry provisions for reliable electrical protection.",
         availableColours: "White | Grey",
-        img: "/assets/products/installation_boxes/enclosure_box_with_knob.webp",
+        img: "/assets/products/installation_boxes/enclosure_box_with_knob.webp?v=3",
         desc: "Durable waterproof enclosure box designed for reliable protection of electrical connections in residential, commercial, and industrial installations.",
         overview: "The BLIT Waterproof Enclosure Box With Knob is designed to provide dependable protection for electrical connections and wiring installations. Manufactured using durable ABS material, the range combines robust construction with practical functionality for environments exposed to dust and moisture.\n\nFeaturing convenient cable-entry provisions and a protective enclosure design, the range supports secure and organised electrical installations. Available in multiple sizes and white and grey finishes, it offers flexible solutions for a wide range of residential, commercial, and industrial applications.",
         keyFeatures: [
@@ -1868,7 +1888,7 @@ export const PRODUCTS_DATA = [
         name: "BLIT Waterproof Enclosure Box Without Knob",
         shortDesc: "Robust waterproof enclosure boxes with a clean exterior design for dependable electrical installations.",
         availableColours: "White | Grey",
-        img: "/assets/products/installation_boxes/enclosure_box_without_knob.webp",
+        img: "/assets/products/installation_boxes/enclosure_box_without_knob.webp?v=3",
         desc: "Robust waterproof enclosure box combining durable construction and a clean, practical design for dependable electrical protection.",
         overview: "The BLIT Waterproof Enclosure Box Without Knob is engineered to provide reliable protection for electrical connections and wiring systems. Featuring robust ABS construction and a clean exterior design, the range offers dependable functionality for residential, commercial, and industrial installations.\n\nDesigned for practical installation and lasting durability, the enclosure provides a versatile solution for different electrical applications. Its protective construction and multiple size options accommodate various wiring arrangements while maintaining a clean and professional appearance.",
         keyFeatures: [
