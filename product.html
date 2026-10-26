@@ -175,6 +175,7 @@
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04), 0 0 80px rgba(255, 26, 26, 0.02);
       border: 1px solid var(--border-color);
       position: relative;
+      background-color: var(--card-bg);
     }
 
     .product-img {
@@ -183,6 +184,8 @@
       object-fit: contain;
       filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.05));
       transition: transform 0.5s ease;
+      position: relative;
+      z-index: 1;
     }
 
     .image-container:hover .product-img {
@@ -202,6 +205,8 @@
       border-radius: 6px;
       letter-spacing: 0.1em;
       box-shadow: 0 5px 15px rgba(255, 26, 26, 0.15);
+      z-index: 10;
+      pointer-events: none;
     }
 
     /* Product Thumbnails */
@@ -3658,7 +3663,8 @@
         };
 
         // Render product top section (Left image + Thumbnails, Right info specs & description)
-        const imgBg = IMAGE_BG_MAP[product.img] || '#FFFFFF';
+        const cleanImgKey = (product.img || '').split('?')[0];
+        const imgBg = IMAGE_BG_MAP[product.img] || IMAGE_BG_MAP[cleanImgKey] || '#FAFAFA';
 
         // Related variations (items in same category + same range)
         const relatedItems = category.items.filter(item => item.range === product.range);
@@ -3670,7 +3676,8 @@
               <ul class="product-thumbnails">
                 ${relatedItems.map(item => {
                   const isActive = item.name === product.name ? 'active' : '';
-                  const thumbBg = IMAGE_BG_MAP[item.img] || '#FFFFFF';
+                  const cleanItemKey = (item.img || '').split('?')[0];
+                  const thumbBg = IMAGE_BG_MAP[item.img] || IMAGE_BG_MAP[cleanItemKey] || '#FAFAFA';
                   return `
                     <li class="thumbnail-item ${isActive}" data-product="${encodeURIComponent(item.name)}" style="background-color: ${thumbBg};" title="${item.name}">
                       <img src="${item.img}" alt="${item.name}">
