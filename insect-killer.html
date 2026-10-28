@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
-  <link rel="preload" href="/assets/products/insect_killer/insect_killer_hero.webp?v=2000" as="image" type="image/webp">
+  <link rel="preload" href="/assets/products/insect_killer/insect_killer_hero.webp?v=2010" as="image" type="image/webp">
   <link rel="stylesheet" href="./style.css">
   
   <style>
@@ -36,20 +36,19 @@
     .switches-hero {
       position: relative;
       background-color: #0B0B0B;
-      height: 520px;
-      min-height: 520px;
+      min-height: 560px;
       overflow: hidden;
       display: flex;
       align-items: center;
       border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      padding: 0;
+      padding: 60px 0;
     }
 
     .switches-hero .hero-bg-media {
       position: absolute;
       top: 0;
       right: 0;
-      width: 55%;
+      width: 100%;
       height: 100%;
       z-index: 1;
       overflow: hidden;
@@ -59,7 +58,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center;
+      object-position: right center;
     }
 
     .switches-hero .hero-bg-media::after {
@@ -69,13 +68,18 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(90deg, #0B0B0B 0%, rgba(11, 11, 11, 0.4) 30%, transparent 100%);
+      background: linear-gradient(90deg, #0B0B0B 0%, rgba(11, 11, 11, 0.85) 28%, rgba(11, 11, 11, 0.3) 44%, transparent 62%);
       pointer-events: none;
     }
 
     .switches-hero .container {
       position: relative;
       z-index: 10;
+    }
+
+    .switches-hero .hero-btn {
+      opacity: 1 !important;
+      transform: none !important;
     }
 
     @media (max-width: 991px) {
@@ -87,6 +91,9 @@
       .switches-hero .hero-bg-media {
         width: 100%;
         opacity: 0.35;
+      }
+      .switches-hero .hero-bg-media img {
+        object-position: 70% center;
       }
     }
 
@@ -264,16 +271,16 @@
   <!-- Hero Section -->
   <section class="switches-hero">
     <div class="hero-bg-media">
-      <img src="./assets/products/insect_killer/insect_killer_hero.webp?v=2000" alt="Insect Killer Collection">
+      <img src="./assets/products/insect_killer/insect_killer_hero.webp?v=2010" alt="Insect Killer Collection">
     </div>
     <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 24px; width: 100%;">
-      <div style="max-width: 580px;">
+      <div style="max-width: 480px;">
         <span style="font-size: 13px; font-weight: 700; color: #FF1A1A; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 16px;">Collection Showcase</span>
-        <h1 style="font-family: var(--font-heading); font-size: 48px; font-weight: 800; color: #FFFFFF; line-height: 1.1; margin-bottom: 24px; letter-spacing: -1px;">Insect Killer</h1>
-        <p style="font-size: 16px; color: rgba(255, 255, 255, 0.85); line-height: 1.6; margin-bottom: 40px;">
+        <h1 style="font-family: var(--font-heading); font-size: 46px; font-weight: 800; color: #FFFFFF; line-height: 1.15; margin-bottom: 20px; letter-spacing: -1px;">Insect Killer</h1>
+        <p style="font-size: 15px; color: rgba(255, 255, 255, 0.85); line-height: 1.6; margin-bottom: 32px;">
           BLIT insect killers embody a refined balance of advanced functionality, robust construction, and contemporary design. Engineered for effective insect control and lasting reliability, the range delivers dependable performance while seamlessly complementing modern residential, commercial, and professional environments.
         </p>
-        <a href="#ranges" class="hero-btn" style="background-color: #FF1A1A; color: #FFFFFF; padding: 15px 30px; border-radius: 30px; font-weight: 600; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: var(--transition-smooth);">Explore Ranges <span class="arrow">↓</span></a>
+        <a href="#ranges" class="hero-btn" style="background-color: #FF1A1A; color: #FFFFFF; padding: 14px 28px; border-radius: 30px; font-weight: 600; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: var(--transition-smooth);">Explore Ranges <span class="arrow">↓</span></a>
       </div>
     </div>
   </section>
