@@ -1098,17 +1098,17 @@ function initWhereToBuy() {
       }
     });
 
-    // Fly to coordinates & open popup
+    // Fly to coordinates & open popup fast
     if (leafletMap && panMap) {
       leafletMap.flyTo([dealer.lat, dealer.lng], 14, {
-        duration: 0.8,
-        easeLinearity: 0.25
+        duration: 0.4,
+        easeLinearity: 0.35
       });
       const marker = markerMap.get(dealerId);
       if (marker) {
         setTimeout(() => {
           marker.openPopup();
-        }, 400);
+        }, 180);
       }
     }
   };
@@ -1196,11 +1196,15 @@ function initWhereToBuy() {
         zoomControl: true
       }).setView([25.2048, 55.2708], 10);
 
-      // Add CartoDB Positron / Voyager high-performance tile layer
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-        subdomains: 'abcd',
-        maxZoom: 19
+      // Ultra-fast, responsive tile layer without API keys or watermarks
+      L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors, Tiles &copy; <a href="https://www.hotosm.org/" target="_blank" rel="noopener">HOT</a>',
+        subdomains: 'abc',
+        maxZoom: 19,
+        crossOrigin: true,
+        keepBuffer: 8,
+        updateWhenIdle: false,
+        updateInterval: 100
       }).addTo(leafletMap);
 
       // Invalidate size when section comes into view or window resizes
@@ -1226,12 +1230,18 @@ function initWhereToBuy() {
     if (!distModal) return;
     distModal.classList.add('active');
     document.body.style.overflow = 'hidden';
+    
+    if (!leafletMap) {
+      initMap();
+    } else {
+      leafletMap.invalidateSize({ animate: false });
+    }
+
     setTimeout(() => {
       if (leafletMap) {
-        leafletMap.invalidateSize();
-        applyFilters(true);
+        leafletMap.invalidateSize({ animate: false });
       }
-    }, 200);
+    }, 150);
   };
 
   const closeDistributorModal = () => {
