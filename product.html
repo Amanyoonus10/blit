@@ -2611,7 +2611,7 @@
       const newTabBtn = document.getElementById('datasheet-modal-newtab-btn');
       
       const cleanName = decodeURIComponent(productName || 'Technical Datasheet');
-      const cleanFileName = fileName || (url ? url.split('/').pop() : 'BLIT_Technical_Datasheet.pdf');
+      const cleanFileName = (fileName || (url ? url.split('/').pop() : 'BLIT_Technical_Datasheet.pdf')).split('?')[0];
       
       if (titleSpan) titleSpan.textContent = `Technical Datasheet: ${cleanName}`;
       if (downloadBtn) {

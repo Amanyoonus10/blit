@@ -1885,7 +1885,7 @@ export const PRODUCTS_DATA = [
           "Multiple Sizes & Colour Options"
         ],
         specs: ["White & Grey Finishes", "ABS Construction", "Knob Entry"],
-        datasheet: "/assets/datasheets/BLIT_Technical_Sheet_BLIT_Waterproof_Enclosure_Box_With_Knob.pdf",
+        datasheet: "/assets/datasheets/BLIT_Technical_Sheet_BLIT_Waterproof_Enclosure_Box_With_Knob.pdf?v=2",
         range: "Waterproof Enclosure Box – With Knob"
       },
       {
@@ -1896,13 +1896,13 @@ export const PRODUCTS_DATA = [
         desc: "Robust waterproof enclosure box combining durable construction and a clean, practical design for dependable electrical protection.",
         overview: "The BLIT Waterproof Enclosure Box Without Knob is engineered to provide reliable protection for electrical connections and wiring systems. Featuring robust ABS construction and a clean exterior design, the range offers dependable functionality for residential, commercial, and industrial installations.\n\nDesigned for practical installation and lasting durability, the enclosure provides a versatile solution for different electrical applications. Its protective construction and multiple size options accommodate various wiring arrangements while maintaining a clean and professional appearance.",
         keyFeatures: [
-          "Durable ABS Construction",
-          "Dust & Moisture Protection",
-          "Clean Exterior Design",
-          "Multiple Sizes & Colour Options"
+            "Durable ABS Construction",
+            "Dust & Moisture Protection",
+            "Clean Exterior Design",
+            "Multiple Sizes & Colour Options"
         ],
         specs: ["White & Grey Finishes", "ABS Construction", "Clean Exterior"],
-        datasheet: "/assets/datasheets/BLIT_Technical_Sheet_BLIT_Waterproof_Enclosure_Box_Without_Knob.pdf",
+        datasheet: "/assets/datasheets/BLIT_Technical_Sheet_BLIT_Waterproof_Enclosure_Box_Without_Knob.pdf?v=2",
         range: "Waterproof Enclosure Box – Without Knob"
       }
     ]

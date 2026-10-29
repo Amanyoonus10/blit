@@ -667,7 +667,19 @@ def generate_pdf_for_product(p):
     
     img_path = prepare_image(p['img'])
     if img_path:
-        pdf.image(img_path, 16, mid_y + 2, img_box_w - 4, img_box_h - 4)
+        try:
+            with Image.open(img_path) as im:
+                iw, ih = im.size
+            max_w = img_box_w - 6
+            max_h = img_box_h - 6
+            scale = min(max_w / iw, max_h / ih)
+            render_w = iw * scale
+            render_h = ih * scale
+            render_x = 14 + (img_box_w - render_w) / 2
+            render_y = mid_y + (img_box_h - render_h) / 2
+            pdf.image(img_path, render_x, render_y, render_w, render_h)
+        except Exception:
+            pdf.image(img_path, 16, mid_y + 2, img_box_w - 4, img_box_h - 4)
         
     # Right Box: Key Features (X = 80, W = 116)
     pdf.set_draw_color(226, 232, 240)
