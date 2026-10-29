@@ -1268,6 +1268,12 @@ function initWhereToBuy() {
         leafletMap.invalidateSize({ animate: false });
       }
     }, 150);
+
+    setTimeout(() => {
+      if (leafletMap) {
+        leafletMap.invalidateSize({ animate: false });
+      }
+    }, 400);
   };
 
   const closeDistributorModal = () => {
