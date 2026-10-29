@@ -110,6 +110,32 @@ function initHeroSlider() {
     });
   });
 
+  // Mobile Touch Swipe Support
+  let touchStartX = 0;
+  let touchEndX = 0;
+  const sliderEl = document.querySelector('.hero-slider');
+  if (sliderEl) {
+    sliderEl.addEventListener('touchstart', (e) => {
+      if (e.changedTouches && e.changedTouches.length > 0) {
+        touchStartX = e.changedTouches[0].screenX;
+      }
+    }, { passive: true });
+
+    sliderEl.addEventListener('touchend', (e) => {
+      if (e.changedTouches && e.changedTouches.length > 0) {
+        touchEndX = e.changedTouches[0].screenX;
+        const diffX = touchStartX - touchEndX;
+        if (diffX > 45) {
+          nextSlide();
+          startInterval();
+        } else if (diffX < -45) {
+          showSlide(currentSlide - 1);
+          startInterval();
+        }
+      }
+    }, { passive: true });
+  }
+
   startInterval();
 }
 

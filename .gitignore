@@ -30,4 +30,6 @@ anananan/
 PHOTO*
 M<L/
 9/
+__pycache__/
+*.pyc
 
