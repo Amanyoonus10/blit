@@ -999,9 +999,19 @@
 
   <!-- Embedded W Range Catalogue Section (Full Screen Width Catalog Layout) -->
   <section class="w-catalog-section-embed" id="w-catalog-section" style="background: #F8F9FA; padding: 0 0 60px 0; border-top: 1px solid #EAEAEA; display: none;">
-    <!-- Full Screen Hero Banner Image (Optimized Balanced Height) -->
-    <div class="w-hero-fullscreen" style="width: 100%; max-width: 100%; max-height: 520px; margin: 0 0 40px 0; padding: 0; position: relative; overflow: hidden; cursor: pointer;" onclick="openFullscreenLightbox(this.querySelector('img').src)">
-      <img src="/assets/products/switches/w_range_hero_full.webp?v=1000" alt="W Range Interior Lifestyle Switches & Sockets" width="1915" height="821" loading="eager" fetchpriority="high" decoding="async" style="width: 100%; height: 100%; max-height: 520px; display: block; border-radius: 0; object-fit: cover; object-position: center;">
+    <!-- Full Screen Hero Banner Image / Showcase -->
+    <div class="w-hero-fullscreen" style="width: 100%; max-width: 100%; margin: 0 0 40px 0; padding: 0; position: relative; overflow: hidden; background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #334155 100%); display: flex; align-items: center; justify-content: center;">
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 40px; padding: 50px 40px; width: 100%; max-width: 1280px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 320px; max-width: 600px; color: #FFFFFF; text-align: left;">
+          <span style="display: inline-block; background: rgba(255, 26, 26, 0.2); color: #FF4D4D; font-weight: 700; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; padding: 5px 14px; border-radius: 20px; margin-bottom: 14px;">W RANGE COLLECTION</span>
+          <h1 style="font-size: 40px; font-weight: 800; line-height: 1.15; color: #FFFFFF; margin-bottom: 14px; letter-spacing: -0.5px;">Simple. Refined. Timeless.</h1>
+          <p style="font-size: 15.5px; color: #94A3B8; line-height: 1.6; margin-bottom: 24px;">The BLIT W Range brings together moulded-white switches, sockets and wiring accessories with clean styling and everyday practicality for modern homes, offices and commercial spaces.</p>
+        </div>
+        <div style="display: flex; gap: 24px; align-items: center; justify-content: center; flex: 1; min-width: 320px;">
+          <img src="/assets/products/w_range/W301.webp" alt="W Range 1-Gang Switch" style="height: 230px; max-width: 230px; object-fit: contain; filter: drop-shadow(0 20px 35px rgba(0,0,0,0.5)); transform: rotate(-3deg); transition: transform 0.3s ease;">
+          <img src="/assets/products/w_range/W406.webp" alt="W Range Twin Switched Socket" style="height: 230px; max-width: 290px; object-fit: contain; filter: drop-shadow(0 20px 35px rgba(0,0,0,0.5)); transform: rotate(3deg); transition: transform 0.3s ease;">
+        </div>
+      </div>
     </div>
 
     <div class="container" style="max-width: 1440px; margin: 0 auto; padding: 0 20px;">
@@ -1013,12 +1023,7 @@
         <div class="w-hero-container" style="display: flex; flex-direction: column; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 20px; margin-bottom: 50px; overflow: hidden;">
 
           <!-- Bottom: Description & Value Proposition Badges -->
-          <div class="w-hero-content" style="padding: 36px 40px; display: flex; flex-direction: column;">
-            <span style="display: inline-block; color: var(--primary-red); font-weight: 700; font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px;">W RANGE</span>
-            <h2 style="font-size: 38px; font-weight: 800; line-height: 1.15; color: #0F172A; margin-bottom: 14px; letter-spacing: -0.5px;">Simple. Reliable. Everyday.</h2>
-            <p style="font-size: 15.5px; color: #475569; line-height: 1.6; margin-bottom: 30px; max-width: 800px;">
-              W Range is a complete range of moulded-white switches and sockets designed for modern homes, offices and commercial spaces.
-            </p>
+          <div class="w-hero-content" style="padding: 24px 30px; display: flex; flex-direction: column;">
 
             <!-- 5 Feature Value Prop Badges -->
             <div class="w-features-row" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px;">
@@ -1077,21 +1082,21 @@
 
 
 
-              <!-- Categories & Products Header -->
+        <!-- Categories & Products Header -->
         <div style="text-align: center; margin-bottom: 35px;">
           <h3 style="font-size: 24px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: #0F172A; margin-bottom: 10px;">W RANGE PRODUCT COLLECTION</h3>
-          <p style="font-size: 14.5px; color: #64748B; max-width: 650px; margin: 0 auto 20px auto;">Browse the complete collection of 22 models in classic moulded-white switches, sockets, and wiring accessories. Click any product image to zoom.</p>
+          <p style="font-size: 14.5px; color: #64748B; max-width: 650px; margin: 0 auto 20px auto;">Explore the W Range collection of switches, sockets and wiring accessories.</p>
           <div style="width: 44px; height: 3px; background-color: var(--primary-red); margin: 0 auto 30px auto; border-radius: 2px;"></div>
           
-                    <!-- Category Filter Tabs -->
+          <!-- Category Filter Tabs -->
           <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;" id="w-gallery-filters">
-            <button class="w-filter-btn active" onclick="filterWRangeProducts('all', event)" style="background: var(--primary-red); color: #FFFFFF; border: none; padding: 9px 20px; border-radius: 20px; font-size: 13px; font-weight: 700; cursor: pointer; transition: all 0.2s ease;">All (22)</button>
-            <button class="w-filter-btn" onclick="filterWRangeProducts('plate_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Plate Switches (6)</button>
-            <button class="w-filter-btn" onclick="filterWRangeProducts('high_power', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">20A & 45A Switches (4)</button>
-            <button class="w-filter-btn" onclick="filterWRangeProducts('socket_outlets', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Sockets (3)</button>
-            <button class="w-filter-btn" onclick="filterWRangeProducts('fcus', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">FCUs & Blank Plates (5)</button>
-            <button class="w-filter-btn" onclick="filterWRangeProducts('data_tv', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Data & Telecom (3)</button>
-            <button class="w-filter-btn" onclick="filterWRangeProducts('bell_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Bell Push (1)</button>
+            <button class="w-filter-btn active" onclick="filterWRangeProducts('all', event)" style="background: var(--primary-red); color: #FFFFFF; border: none; padding: 9px 20px; border-radius: 20px; font-size: 13px; font-weight: 700; cursor: pointer; transition: all 0.2s ease;">All</button>
+            <button class="w-filter-btn" onclick="filterWRangeProducts('plate_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Plate Switches</button>
+            <button class="w-filter-btn" onclick="filterWRangeProducts('high_power', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">20A & 45A Switches</button>
+            <button class="w-filter-btn" onclick="filterWRangeProducts('socket_outlets', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Sockets</button>
+            <button class="w-filter-btn" onclick="filterWRangeProducts('fcus', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">FCUs & Blank Plates</button>
+            <button class="w-filter-btn" onclick="filterWRangeProducts('data_tv', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Data & Telecom</button>
+            <button class="w-filter-btn" onclick="filterWRangeProducts('bell_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Bell Push</button>
           </div>
         </div>
 
@@ -1100,9 +1105,9 @@
           <!-- Populated dynamically by script -->
         </div>
 
-      <!-- Bottom Downloads & Price Support Cards -->
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 30px;">
-        <!-- Left Download Card -->
+      <!-- Bottom Download Catalogue Card (Centered) -->
+      <div id="w-catalogue-download-section" style="max-width: 650px; margin: 30px auto 0 auto;">
+        <!-- Download Card -->
         <div id="download-catalogue-card" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 32px 28px; display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.03); transition: all 0.3s ease;">
           <div style="width: 54px; height: 54px; min-width: 54px; background: rgba(255, 26, 26, 0.08); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FF1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1115,7 +1120,7 @@
           </div>
           <div style="flex-grow: 1;">
             <h4 style="font-size: 18px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">Download Complete W Range Catalogue</h4>
-            <p style="font-size: 13.5px; color: #64748B; line-height: 1.5; margin-bottom: 20px;">Get the full collection catalog with all product codes, dimensions, specifications, and layout diagrams in PDF format.</p>
+            <p style="font-size: 13.5px; color: #64748B; line-height: 1.5; margin-bottom: 20px;">Download the W Range catalogue for product codes, dimensions, technical specifications and wiring diagrams in PDF format.</p>
             <a id="w-catalogue-download-link" href="/assets/catalogues/BLIT_W_Range_Catalogue_2026.pdf" download="BLIT_W_Range_Catalogue_2026.pdf" style="display: inline-flex; align-items: center; gap: 10px; background-color: #FF1A1A; color: #FFFFFF; border: none; padding: 12px 26px; border-radius: 30px; font-size: 14px; font-weight: 700; text-decoration: none; box-shadow: 0 8px 20px rgba(255, 26, 26, 0.28); transition: all 0.3s ease;">
               <span>Download Catalogue</span>
               <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -1123,23 +1128,6 @@
                 <polyline points="7 10 12 15 17 10"/>
                 <line x1="12" y1="15" x2="12" y2="3"/>
               </svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- Right Price Request Card -->
-        <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 32px 28px; display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.03); transition: all 0.3s ease;">
-          <div style="width: 54px; height: 54px; min-width: 54px; background: rgba(15, 23, 42, 0.06); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
-              <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
-            </svg>
-          </div>
-          <div style="flex-grow: 1;">
-            <h4 style="font-size: 18px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">Need Price List or Project Support?</h4>
-            <p style="font-size: 13.5px; color: #64748B; line-height: 1.5; margin-bottom: 20px;">Our sales & engineering team is ready to assist you with wholesale pricing, BOQ estimates, and technical support.</p>
-            <a href="javascript:void(0)" onclick="document.getElementById('w-price-modal').style.display='flex'" style="display: inline-flex; align-items: center; gap: 8px; border: 1.5px solid #0F172A; color: #0F172A; background: #FFFFFF; padding: 11px 22px; border-radius: 30px; font-size: 14px; font-weight: 700; text-decoration: none; transition: all 0.3s ease;">
-              Request Price List <span class="arrow">→</span>
             </a>
           </div>
         </div>
@@ -1151,9 +1139,19 @@
 
   <!-- Embedded V Range Catalogue Section (Full Screen Width Catalog Layout) -->
   <section class="v-catalog-section-embed" id="v-catalog-section" style="background: #F8F9FA; padding: 0 0 60px 0; border-top: 1px solid #EAEAEA; display: none;">
-    <!-- Full Screen Hero Banner Image -->
-    <div class="v-hero-fullscreen" style="width: 100%; max-width: 100%; max-height: 520px; margin: 0 0 40px 0; padding: 0; position: relative; overflow: hidden; cursor: pointer;" onclick="openFullscreenLightbox('/assets/products/switches/v_range_hero_full.webp?v=2000')">
-      <img src="/assets/products/switches/v_range_hero_full.webp?v=2000" alt="V Range Luxury Brushed Metal Switches & Sockets" width="1920" height="820" loading="eager" fetchpriority="high" decoding="async" style="width: 100%; height: 100%; max-height: 520px; display: block; border-radius: 0; object-fit: cover; object-position: center;">
+    <!-- Full Screen Hero Banner Image / Showcase -->
+    <div class="v-hero-fullscreen" style="width: 100%; max-width: 100%; margin: 0 0 40px 0; padding: 0; position: relative; overflow: hidden; background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #334155 100%); display: flex; align-items: center; justify-content: center;">
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 40px; padding: 50px 40px; width: 100%; max-width: 1280px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 320px; max-width: 600px; color: #FFFFFF; text-align: left;">
+          <span style="display: inline-block; background: rgba(255, 26, 26, 0.2); color: #FF4D4D; font-weight: 700; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; padding: 5px 14px; border-radius: 20px; margin-bottom: 14px;">V RANGE COLLECTION</span>
+          <h1 style="font-size: 40px; font-weight: 800; line-height: 1.15; color: #FFFFFF; margin-bottom: 14px; letter-spacing: -0.5px;">Distinctive. Refined. Contemporary.</h1>
+          <p style="font-size: 15.5px; color: #94A3B8; line-height: 1.6; margin-bottom: 24px;">The BLIT V Range brings together switches, sockets, dimmers and wiring accessories with contemporary styling for modern homes, offices and commercial interiors.</p>
+        </div>
+        <div style="display: flex; gap: 24px; align-items: center; justify-content: center; flex: 1; min-width: 320px;">
+          <img src="/assets/products/v_range/BTV301.webp" alt="V Range 1-Gang Switch" style="height: 230px; max-width: 230px; object-fit: contain; filter: drop-shadow(0 20px 35px rgba(0,0,0,0.5)); transform: rotate(-3deg); transition: transform 0.3s ease;">
+          <img src="/assets/products/v_range/BTV4121-3.1A.webp" alt="V Range Twin Socket Dual USB" style="height: 230px; max-width: 290px; object-fit: contain; filter: drop-shadow(0 20px 35px rgba(0,0,0,0.5)); transform: rotate(3deg); transition: transform 0.3s ease;">
+        </div>
+      </div>
     </div>
 
     <div class="container" style="max-width: 1440px; margin: 0 auto; padding: 0 20px;">
@@ -1164,14 +1162,8 @@
         <!-- V Range Hero Description & Badges -->
         <div class="v-hero-container" style="display: flex; flex-direction: column; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 20px; margin-bottom: 50px; overflow: hidden;">
 
-          <!-- Description & Value Proposition Badges -->
-          <div class="v-hero-content" style="padding: 36px 40px; display: flex; flex-direction: column;">
-            <span style="display: inline-block; color: var(--primary-red); font-weight: 700; font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px;">V RANGE</span>
-            <h2 style="font-size: 38px; font-weight: 800; line-height: 1.15; color: #0F172A; margin-bottom: 14px; letter-spacing: -0.5px;">Luxury Brushed Metal. Architectural Distinction.</h2>
-            <p style="font-size: 15.5px; color: #475569; line-height: 1.6; margin-bottom: 30px; max-width: 850px;">
-              V Range is an exquisite collection of luxury brushed metal and anthracite switches, switched sockets, rotary dimmers, and smart connectivity modules designed for high-end boutique hotels, luxury villas, and executive spaces.
-            </p>
-
+          <!-- Value Proposition Badges -->
+          <div class="v-hero-content" style="padding: 24px 30px; display: flex; flex-direction: column;">
             <!-- 5 Feature Value Prop Badges -->
             <div class="v-features-row" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px;">
               <div class="v-feature-pill" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 12px 6px; text-align: center;">
@@ -1190,7 +1182,7 @@
                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
                   </svg>
                 </div>
-                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">Brushed Metal<br>Plate</div>
+                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">Contemporary<br>Design</div>
               </div>
 
               <div class="v-feature-pill" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 12px 6px; text-align: center;">
@@ -1208,19 +1200,18 @@
                     <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
                   </svg>
                 </div>
-                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">Boutique Hotel<br>& Villa Spec</div>
+                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">Refined<br>Profile</div>
               </div>
 
               <div class="v-feature-pill" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 12px 6px; text-align: center;">
                 <div class="v-feature-icon" style="width: 26px; height: 26px; margin: 0 auto 6px; display: flex; align-items: center; justify-content: center; color: #334155;">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="2" y="2" width="20" height="20" rx="5"/>
-                    <path d="M8 9v2"/>
-                    <path d="M16 9v2"/>
-                    <path d="M12 14v2"/>
-                  </svg>
+                  <rect x="2" y="2" width="20" height="20" rx="5"/>
+                  <path d="M8 9v2"/>
+                  <path d="M16 9v2"/>
+                  <path d="M12 14v2"/>
+                </svg>
                 </div>
-                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">Complete 39-Item<br>Collection</div>
+                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">Versatile<br>Selection</div>
               </div>
             </div>
           </div>
@@ -1230,20 +1221,20 @@
                 <!-- Categories & Products Header -->
         <div style="text-align: center; margin-bottom: 35px;">
           <h3 style="font-size: 24px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: #0F172A; margin-bottom: 10px;">V RANGE PRODUCT COLLECTION</h3>
-          <p style="font-size: 14.5px; color: #64748B; max-width: 650px; margin: 0 auto 20px auto;">Browse all 33 distinct models in the luxury brushed metal collection. Click any product image to zoom.</p>
+          <p style="font-size: 14.5px; color: #64748B; max-width: 650px; margin: 0 auto 20px auto;">Explore the V Range collection of switches, sockets and wiring accessories.</p>
           <div style="width: 44px; height: 3px; background-color: var(--primary-red); margin: 0 auto 30px auto; border-radius: 2px;"></div>
           
           <!-- Category Filter Tabs -->
           <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;" id="v-gallery-filters">
-            <button class="v-filter-btn active" onclick="filterVRangeProducts('all', event)" style="background: var(--primary-red); color: #FFFFFF; border: none; padding: 9px 20px; border-radius: 20px; font-size: 13px; font-weight: 700; cursor: pointer; transition: all 0.2s ease;">All (33)</button>
-            <button class="v-filter-btn" onclick="filterVRangeProducts('plate_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Plate Switches (6)</button>
-            <button class="v-filter-btn" onclick="filterVRangeProducts('high_power', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">20A & 45A Switches (4)</button>
-            <button class="v-filter-btn" onclick="filterVRangeProducts('dimmers', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Dimmers & Fan (3)</button>
-            <button class="v-filter-btn" onclick="filterVRangeProducts('socket_outlets', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Sockets & USB (4)</button>
-            <button class="v-filter-btn" onclick="filterVRangeProducts('multi_sockets', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Multi-Function (7)</button>
-            <button class="v-filter-btn" onclick="filterVRangeProducts('fcus', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">FCUs & Blank Plates (6)</button>
-            <button class="v-filter-btn" onclick="filterVRangeProducts('data_tv', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Data & Telecom (2)</button>
-            <button class="v-filter-btn" onclick="filterVRangeProducts('bell_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Bell Push (1)</button>
+            <button class="v-filter-btn active" onclick="filterVRangeProducts('all', event)" style="background: var(--primary-red); color: #FFFFFF; border: none; padding: 9px 20px; border-radius: 20px; font-size: 13px; font-weight: 700; cursor: pointer; transition: all 0.2s ease;">All</button>
+            <button class="v-filter-btn" onclick="filterVRangeProducts('plate_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Plate Switches</button>
+            <button class="v-filter-btn" onclick="filterVRangeProducts('high_power', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">20A & 45A Switches</button>
+            <button class="v-filter-btn" onclick="filterVRangeProducts('dimmers', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Dimmers & Fan</button>
+            <button class="v-filter-btn" onclick="filterVRangeProducts('socket_outlets', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Sockets & USB</button>
+            <button class="v-filter-btn" onclick="filterVRangeProducts('multi_sockets', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Multi-Function</button>
+            <button class="v-filter-btn" onclick="filterVRangeProducts('fcus', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">FCUs & Blank Plates</button>
+            <button class="v-filter-btn" onclick="filterVRangeProducts('data_tv', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Data & Telecom</button>
+            <button class="v-filter-btn" onclick="filterVRangeProducts('bell_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Bell Push</button>
           </div>
         </div>
 
@@ -1252,9 +1243,8 @@
           <!-- Populated dynamically by script -->
         </div>
 
-        <!-- Bottom Downloads & Price Support Cards -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 30px;">
-          <!-- Left Download Card -->
+        <!-- Bottom Catalogue Download Card -->
+        <div id="v-catalogue-download-section" style="max-width: 720px; margin: 30px auto 0 auto;">
           <div id="v-download-catalogue-card" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 32px 28px; display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.03); transition: all 0.3s ease;">
             <div style="width: 54px; height: 54px; min-width: 54px; background: rgba(255, 26, 26, 0.08); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FF1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1267,7 +1257,7 @@
             </div>
             <div style="flex-grow: 1;">
               <h4 style="font-size: 18px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">Download Complete V Range Catalogue</h4>
-              <p style="font-size: 13.5px; color: #64748B; line-height: 1.5; margin-bottom: 20px;">Get the complete official collection catalogue with all 39 model codes, dimensions, specifications, and wiring diagrams in PDF format.</p>
+              <p style="font-size: 13.5px; color: #64748B; line-height: 1.5; margin-bottom: 20px;">Download the V Range catalogue for product codes, dimensions, technical specifications and wiring diagrams in PDF format.</p>
               <a id="v-catalogue-download-link" href="/assets/catalogues/BLIT_V_Range_Catalogue_2026.pdf" download="BLIT_V_Range_Catalogue_2026.pdf" style="display: inline-flex; align-items: center; gap: 10px; background-color: #FF1A1A; color: #FFFFFF; border: none; padding: 12px 26px; border-radius: 30px; font-size: 14px; font-weight: 700; text-decoration: none; box-shadow: 0 8px 20px rgba(255, 26, 26, 0.28); transition: all 0.3s ease;">
                 <span>Download Catalogue</span>
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -1275,23 +1265,6 @@
                   <polyline points="7 10 12 15 17 10"/>
                   <line x1="12" y1="15" x2="12" y2="3"/>
                 </svg>
-              </a>
-            </div>
-          </div>
-
-          <!-- Right Price Request Card -->
-          <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 32px 28px; display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.03); transition: all 0.3s ease;">
-            <div style="width: 54px; height: 54px; min-width: 54px; background: rgba(15, 23, 42, 0.06); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
-                <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
-              </svg>
-            </div>
-            <div style="flex-grow: 1;">
-              <h4 style="font-size: 18px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">Need Price List or Project Support?</h4>
-              <p style="font-size: 13.5px; color: #64748B; line-height: 1.5; margin-bottom: 20px;">Our sales & engineering team is ready to assist you with luxury project specifications, BOQ pricing, and sample approvals.</p>
-              <a href="javascript:void(0)" onclick="document.getElementById('v-price-modal').style.display='flex'" style="display: inline-flex; align-items: center; gap: 8px; border: 1.5px solid #0F172A; color: #0F172A; background: #FFFFFF; padding: 11px 22px; border-radius: 30px; font-size: 14px; font-weight: 700; text-decoration: none; transition: all 0.3s ease;">
-                Request Price List <span class="arrow">→</span>
               </a>
             </div>
           </div>
@@ -1303,9 +1276,19 @@
 
   <!-- Embedded CW Range Catalogue Section (Full Screen Width Catalog Layout) -->
   <section class="cw-catalog-section-embed" id="cw-catalog-section" style="background: #F8F9FA; padding: 0 0 60px 0; border-top: 1px solid #EAEAEA; display: none;">
-    <!-- Full Screen Hero Banner Image -->
-    <div class="cw-hero-fullscreen" style="width: 100%; max-width: 100%; max-height: 520px; margin: 0 0 40px 0; padding: 0; position: relative; overflow: hidden; cursor: pointer;" onclick="openFullscreenLightbox('/assets/products/switches/cw_range_hero_full.webp?v=2000')">
-      <img src="/assets/products/switches/cw_range_hero_full.webp?v=2000" alt="CW Range Architectural Switches & Sockets" width="1920" height="820" loading="eager" fetchpriority="high" decoding="async" style="width: 100%; height: 100%; max-height: 520px; display: block; border-radius: 0; object-fit: cover; object-position: center;">
+    <!-- Full Screen Hero Banner Image / Showcase -->
+    <div class="cw-hero-fullscreen" style="width: 100%; max-width: 100%; margin: 0 0 40px 0; padding: 0; position: relative; overflow: hidden; background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #334155 100%); display: flex; align-items: center; justify-content: center;">
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 40px; padding: 50px 40px; width: 100%; max-width: 1280px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 320px; max-width: 600px; color: #FFFFFF; text-align: left;">
+          <span style="display: inline-block; background: rgba(255, 26, 26, 0.2); color: #FF4D4D; font-weight: 700; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; padding: 5px 14px; border-radius: 20px; margin-bottom: 14px;">CW RANGE COLLECTION</span>
+          <h1 style="font-size: 40px; font-weight: 800; line-height: 1.15; color: #FFFFFF; margin-bottom: 14px; letter-spacing: -0.5px;">Architectural. Refined. Timeless.</h1>
+          <p style="font-size: 15.5px; color: #94A3B8; line-height: 1.6; margin-bottom: 24px;">The BLIT CW Range brings together switches, sockets, dimmers and wiring accessories, designed to complement modern residences, villas and commercial interiors.</p>
+        </div>
+        <div style="display: flex; gap: 24px; align-items: center; justify-content: center; flex: 1; min-width: 320px;">
+          <img src="/assets/products/cw_range/BTCW3011-WHI.webp" alt="CW Range White Switch" style="height: 230px; max-width: 230px; object-fit: contain; filter: drop-shadow(0 20px 35px rgba(0,0,0,0.5)); transform: rotate(-3deg); transition: transform 0.3s ease;">
+          <img src="/assets/products/cw_range/BTCW3011-BLK.webp" alt="CW Range Black Switch" style="height: 230px; max-width: 230px; object-fit: contain; filter: drop-shadow(0 20px 35px rgba(0,0,0,0.5)); transform: rotate(3deg); transition: transform 0.3s ease;">
+        </div>
+      </div>
     </div>
 
     <div class="container" style="max-width: 1440px; margin: 0 auto; padding: 0 20px;">
@@ -1316,13 +1299,8 @@
         <!-- CW Range Hero Description & Badges -->
         <div class="cw-hero-container" style="display: flex; flex-direction: column; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 20px; margin-bottom: 50px; overflow: hidden;">
 
-          <!-- Bottom: Description & Value Proposition Badges -->
-          <div class="cw-hero-content" style="padding: 36px 40px; display: flex; flex-direction: column;">
-            <span style="display: inline-block; color: var(--primary-red); font-weight: 700; font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px;">CW RANGE</span>
-            <h2 style="font-size: 38px; font-weight: 800; line-height: 1.15; color: #0F172A; margin-bottom: 14px; letter-spacing: -0.5px;">Architectural. Refined. Timeless.</h2>
-            <p style="font-size: 15.5px; color: #475569; line-height: 1.6; margin-bottom: 30px; max-width: 800px;">
-              CW Range is an architectural collection of precision-crafted switches, switched sockets with USB-C 20W PD, rotary dimmers, and multimedia connectivity modules designed for high-end modern residences, luxury villas, and executive spaces.
-            </p>
+          <!-- Value Proposition Badges -->
+          <div class="cw-hero-content" style="padding: 24px 30px; display: flex; flex-direction: column;">
 
             <!-- 5 Feature Value Prop Badges -->
             <div class="cw-features-row" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px;">
@@ -1357,10 +1335,13 @@
               <div class="cw-feature-pill" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 12px 6px; text-align: center;">
                 <div class="cw-feature-icon" style="width: 26px; height: 26px; margin: 0 auto 6px; display: flex; align-items: center; justify-content: center; color: #334155;">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                    <rect x="2" y="2" width="20" height="20" rx="5"/>
+                    <path d="M8 9v2"/>
+                    <path d="M16 9v2"/>
+                    <path d="M12 14v2"/>
                   </svg>
                 </div>
-                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">20W Type-C<br>Fast Charge</div>
+                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">Versatile<br>Selection</div>
               </div>
 
               <div class="cw-feature-pill" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 12px 6px; text-align: center;">
@@ -1370,7 +1351,7 @@
                     <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
                   </svg>
                 </div>
-                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">Architectural White<br>25 Models</div>
+                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">Contemporary<br>Styling</div>
               </div>
             </div>
 
@@ -1380,20 +1361,20 @@
         <!-- Categories & Products Header -->
         <div style="text-align: center; margin-bottom: 35px;">
           <h3 style="font-size: 24px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: #0F172A; margin-bottom: 10px;">CW RANGE PRODUCT COLLECTION</h3>
-          <p style="font-size: 14.5px; color: #64748B; max-width: 650px; margin: 0 auto 20px auto;">Browse all 25 distinct models in the Architectural White collection. Click any product image to zoom.</p>
+          <p style="font-size: 14.5px; color: #64748B; max-width: 650px; margin: 0 auto 20px auto;">Explore the CW Range collection of switches, sockets and wiring accessories.</p>
           <div style="width: 44px; height: 3px; background-color: var(--primary-red); margin: 0 auto 30px auto; border-radius: 2px;"></div>
           
           <!-- Category Filter Tabs -->
           <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;" id="cw-gallery-filters">
-            <button class="cw-filter-btn active" onclick="filterCWRangeProducts('all', event)" style="background: var(--primary-red); color: #FFFFFF; border: none; padding: 9px 20px; border-radius: 20px; font-size: 13px; font-weight: 700; cursor: pointer; transition: all 0.2s ease;">All (25)</button>
-            <button class="cw-filter-btn" onclick="filterCWRangeProducts('plate_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Plate Switches (6)</button>
-            <button class="cw-filter-btn" onclick="filterCWRangeProducts('high_power', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">20A & 45A Switches (2)</button>
-            <button class="cw-filter-btn" onclick="filterCWRangeProducts('dimmers', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Dimmers & Speed (2)</button>
-            <button class="cw-filter-btn" onclick="filterCWRangeProducts('socket_outlets', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Sockets & USB (5)</button>
-            <button class="cw-filter-btn" onclick="filterCWRangeProducts('multi_sockets', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Multi-Function (2)</button>
-            <button class="cw-filter-btn" onclick="filterCWRangeProducts('fcus', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">FCUs & Connection Plates (4)</button>
-            <button class="cw-filter-btn" onclick="filterCWRangeProducts('data_tv', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Data & Telecom (3)</button>
-            <button class="cw-filter-btn" onclick="filterCWRangeProducts('bell_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Bell Push (1)</button>
+            <button class="cw-filter-btn active" onclick="filterCWRangeProducts('all', event)" style="background: var(--primary-red); color: #FFFFFF; border: none; padding: 9px 20px; border-radius: 20px; font-size: 13px; font-weight: 700; cursor: pointer; transition: all 0.2s ease;">All</button>
+            <button class="cw-filter-btn" onclick="filterCWRangeProducts('plate_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Plate Switches</button>
+            <button class="cw-filter-btn" onclick="filterCWRangeProducts('high_power', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">20A & 45A Switches</button>
+            <button class="cw-filter-btn" onclick="filterCWRangeProducts('dimmers', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Dimmers & Speed</button>
+            <button class="cw-filter-btn" onclick="filterCWRangeProducts('socket_outlets', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Sockets & USB</button>
+            <button class="cw-filter-btn" onclick="filterCWRangeProducts('multi_sockets', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Multi-Function</button>
+            <button class="cw-filter-btn" onclick="filterCWRangeProducts('fcus', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">FCUs & Connection Plates</button>
+            <button class="cw-filter-btn" onclick="filterCWRangeProducts('data_tv', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Data & Telecom</button>
+            <button class="cw-filter-btn" onclick="filterCWRangeProducts('bell_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Bell Push</button>
           </div>
         </div>
 
@@ -1402,10 +1383,9 @@
           <!-- Populated dynamically by script -->
         </div>
 
-        <!-- Bottom Downloads & Price Support Cards -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 20px; padding-top: 35px; border-top: 1px solid #E2E8F0;">
-          <!-- Left Download Catalogue Card -->
-          <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 32px 28px; display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.03); transition: all 0.3s ease;">
+        <!-- Bottom Catalogue Download Card -->
+        <div id="cw-catalogue-download-section" style="max-width: 720px; margin: 30px auto 0 auto;">
+          <div id="cw-download-catalogue-card" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 32px 28px; display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.03); transition: all 0.3s ease;">
             <div style="width: 54px; height: 54px; min-width: 54px; background: rgba(255, 26, 26, 0.08); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
@@ -1416,7 +1396,7 @@
             </div>
             <div style="flex-grow: 1;">
               <h4 style="font-size: 18px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">Download Complete CW Range Catalogue</h4>
-              <p style="font-size: 13.5px; color: #64748B; line-height: 1.5; margin-bottom: 20px;">Get the complete official collection catalogue with all 25 model codes, dimensions, specifications, and wiring diagrams in PDF format.</p>
+              <p style="font-size: 13.5px; color: #64748B; line-height: 1.5; margin-bottom: 20px;">Download the CW Range catalogue for product codes, dimensions, technical specifications and wiring diagrams in PDF format.</p>
               <a id="cw-catalogue-download-link" href="/assets/catalogues/BLIT_CW_Range_Catalogue_2026.pdf" download="BLIT_CW_Range_Catalogue_2026.pdf" style="display: inline-flex; align-items: center; gap: 10px; background-color: #FF1A1A; color: #FFFFFF; border: none; padding: 12px 26px; border-radius: 30px; font-size: 14px; font-weight: 700; text-decoration: none; box-shadow: 0 8px 20px rgba(255, 26, 26, 0.28); transition: all 0.3s ease;">
                 <span>Download Catalogue</span>
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -1424,23 +1404,6 @@
                   <polyline points="7 10 12 15 17 10"/>
                   <line x1="12" y1="15" x2="12" y2="3"/>
                 </svg>
-              </a>
-            </div>
-          </div>
-
-          <!-- Right Price Request Card -->
-          <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 32px 28px; display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.03); transition: all 0.3s ease;">
-            <div style="width: 54px; height: 54px; min-width: 54px; background: rgba(15, 23, 42, 0.06); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
-                <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
-              </svg>
-            </div>
-            <div style="flex-grow: 1;">
-              <h4 style="font-size: 18px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">Need Price List or Project Support?</h4>
-              <p style="font-size: 13.5px; color: #64748B; line-height: 1.5; margin-bottom: 20px;">Our sales & engineering team is ready to assist you with CW Range project specifications, BOQ pricing, and sample approvals.</p>
-              <a href="javascript:void(0)" onclick="document.getElementById('cw-price-modal').style.display='flex'" style="display: inline-flex; align-items: center; gap: 8px; border: 1.5px solid #0F172A; color: #0F172A; background: #FFFFFF; padding: 11px 22px; border-radius: 30px; font-size: 14px; font-weight: 700; text-decoration: none; transition: all 0.3s ease;">
-                Request Price List <span class="arrow">→</span>
               </a>
             </div>
           </div>
@@ -1457,17 +1420,12 @@
       <div style="display: flex; align-items: center; justify-content: space-between; gap: 40px; padding: 50px 40px; width: 100%; max-width: 1280px; flex-wrap: wrap;">
         <div style="flex: 1; min-width: 320px; max-width: 600px; color: #FFFFFF; text-align: left;">
           <span style="display: inline-block; background: rgba(255, 26, 26, 0.2); color: #FF4D4D; font-weight: 700; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; padding: 5px 14px; border-radius: 20px; margin-bottom: 14px;">EN RANGE COLLECTION</span>
-          <h1 style="font-size: 40px; font-weight: 800; line-height: 1.15; color: #FFFFFF; margin-bottom: 14px; letter-spacing: -0.5px;">Sleek. Minimalist.<br>Satin Steel.</h1>
-          <p style="font-size: 15.5px; color: #94A3B8; line-height: 1.6; margin-bottom: 24px;">Architectural flat-profile wiring accessories precision-crafted in Satin Brushed Steel (Silver) and Brushed Brass (Gold) for luxury villas, commercial developments, and modern residences.</p>
-          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-            <span style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: #E2E8F0; font-size: 12.5px; font-weight: 600; padding: 6px 14px; border-radius: 20px;">BS Standard Certified</span>
-            <span style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: #E2E8F0; font-size: 12.5px; font-weight: 600; padding: 6px 14px; border-radius: 20px;">Satin Brushed Steel</span>
-            <span style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: #E2E8F0; font-size: 12.5px; font-weight: 600; padding: 6px 14px; border-radius: 20px;">Dual USB 3.1A</span>
-          </div>
+          <h1 style="font-size: 40px; font-weight: 800; line-height: 1.15; color: #FFFFFF; margin-bottom: 14px; letter-spacing: -0.5px;">Sleek. Refined. Contemporary.</h1>
+          <p style="font-size: 15.5px; color: #94A3B8; line-height: 1.6; margin-bottom: 24px;">Architectural flat-profile switches, sockets and wiring accessories designed to complement luxury villas, modern residences and commercial interiors.</p>
         </div>
         <div style="display: flex; gap: 24px; align-items: center; justify-content: center; flex: 1; min-width: 320px;">
-          <img src="/assets/products/en_range/BTEN302BRC.webp" alt="EN Range 1-Gang Switch Silver" style="height: 230px; max-width: 230px; object-fit: contain; filter: drop-shadow(0 20px 35px rgba(0,0,0,0.5)); transform: rotate(-3deg); transition: transform 0.3s ease;">
-          <img src="/assets/products/en_range/BTHY4121-B-3.1ABRC.webp" alt="EN Range Twin Socket + Dual USB Silver" style="height: 230px; max-width: 290px; object-fit: contain; filter: drop-shadow(0 20px 35px rgba(0,0,0,0.5)); transform: rotate(3deg); transition: transform 0.3s ease;">
+          <img src="/assets/products/en_range/BTEN302BRC.webp" alt="EN Range Brushed Chrome Switch" style="height: 230px; max-width: 230px; object-fit: contain; filter: drop-shadow(0 20px 35px rgba(0,0,0,0.5)); transform: rotate(-3deg); transition: transform 0.3s ease;">
+          <img src="/assets/products/en_range/BTEN302STB.webp" alt="EN Range Satin Brass Gold Switch" style="height: 230px; max-width: 230px; object-fit: contain; filter: drop-shadow(0 20px 35px rgba(0,0,0,0.5)); transform: rotate(3deg); transition: transform 0.3s ease;">
         </div>
       </div>
     </div>
@@ -1480,13 +1438,8 @@
         <!-- EN Range Hero Description & Badges -->
         <div class="en-hero-container" style="display: flex; flex-direction: column; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 20px; margin-bottom: 50px; overflow: hidden;">
 
-          <!-- Bottom: Description & Value Proposition Badges -->
-          <div class="en-hero-content" style="padding: 36px 40px; display: flex; flex-direction: column;">
-            <span style="display: inline-block; color: var(--primary-red); font-weight: 700; font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px;">EN RANGE</span>
-            <h2 style="font-size: 38px; font-weight: 800; line-height: 1.15; color: #0F172A; margin-bottom: 14px; letter-spacing: -0.5px;">Precision Engineering. Contemporary Edge.</h2>
-            <p style="font-size: 15.5px; color: #475569; line-height: 1.6; margin-bottom: 30px; max-width: 800px;">
-              The EN Range delivers refined modern functionality with ultra-slim flat borders, smooth rocker switches, high-amperage double-pole isolators, smart dual-USB 3.1A fast charging outlets, and high-performance lighting dimmers.
-            </p>
+          <!-- Value Proposition Badges -->
+          <div class="en-hero-content" style="padding: 24px 30px; display: flex; flex-direction: column;">
 
             <!-- 5 Feature Value Prop Badges -->
             <div class="en-features-row" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px;">
@@ -1520,21 +1473,19 @@
 
               <div class="en-feature-pill" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 12px 6px; text-align: center;">
                 <div class="en-feature-icon" style="width: 26px; height: 26px; margin: 0 auto 6px; display: flex; align-items: center; justify-content: center; color: #334155;">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
                   </svg>
                 </div>
-                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">Dual USB 3.1A<br>Fast Charging</div>
+                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">Premium Metal<br>Finish</div>
               </div>
 
               <div class="en-feature-pill" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 12px 6px; text-align: center;">
                 <div class="en-feature-icon" style="width: 26px; height: 26px; margin: 0 auto 6px; display: flex; align-items: center; justify-content: center; color: #334155;">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
                   </svg>
                 </div>
-                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">Satin Steel (Silver)<br>21 Models</div>
+                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">Screwless<br>Design</div>
               </div>
             </div>
 
@@ -1544,19 +1495,19 @@
         <!-- Categories & Products Header -->
         <div style="text-align: center; margin-bottom: 35px;">
           <h3 style="font-size: 24px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: #0F172A; margin-bottom: 10px;">EN RANGE PRODUCT COLLECTION</h3>
-          <p style="font-size: 14.5px; color: #64748B; max-width: 650px; margin: 0 auto 20px auto;">Browse all 21 distinct models in the Satin Brushed Steel (Silver) collection. Click any product image to zoom.</p>
+          <p style="font-size: 14.5px; color: #64748B; max-width: 650px; margin: 0 auto 20px auto;">Explore the EN Range collection of switches, sockets and wiring accessories.</p>
           <div style="width: 44px; height: 3px; background-color: var(--primary-red); margin: 0 auto 30px auto; border-radius: 2px;"></div>
           
           <!-- Category Filter Tabs -->
           <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;" id="en-gallery-filters">
-            <button class="en-filter-btn active" onclick="filterENRangeProducts('all', event)" style="background: var(--primary-red); color: #FFFFFF; border: none; padding: 9px 20px; border-radius: 20px; font-size: 13px; font-weight: 700; cursor: pointer; transition: all 0.2s ease;">All (21)</button>
-            <button class="en-filter-btn" onclick="filterENRangeProducts('plate_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Plate Switches (4)</button>
-            <button class="en-filter-btn" onclick="filterENRangeProducts('high_power', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">20A & 45A Switches (3)</button>
-            <button class="en-filter-btn" onclick="filterENRangeProducts('dimmers', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Dimmers & Fan (4)</button>
-            <button class="en-filter-btn" onclick="filterENRangeProducts('socket_outlets', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Sockets & USB (5)</button>
-            <button class="en-filter-btn" onclick="filterENRangeProducts('fcus', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Blank Plates (2)</button>
-            <button class="en-filter-btn" onclick="filterENRangeProducts('data_tv', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Data & Telecom (2)</button>
-            <button class="en-filter-btn" onclick="filterENRangeProducts('bell_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Bell Push (1)</button>
+            <button class="en-filter-btn active" onclick="filterENRangeProducts('all', event)" style="background: var(--primary-red); color: #FFFFFF; border: none; padding: 9px 20px; border-radius: 20px; font-size: 13px; font-weight: 700; cursor: pointer; transition: all 0.2s ease;">All</button>
+            <button class="en-filter-btn" onclick="filterENRangeProducts('plate_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Plate Switches</button>
+            <button class="en-filter-btn" onclick="filterENRangeProducts('high_power', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">20A & 45A Switches</button>
+            <button class="en-filter-btn" onclick="filterENRangeProducts('dimmers', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Dimmers & Fan</button>
+            <button class="en-filter-btn" onclick="filterENRangeProducts('socket_outlets', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Sockets & USB</button>
+            <button class="en-filter-btn" onclick="filterENRangeProducts('fcus', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Blank Plates</button>
+            <button class="en-filter-btn" onclick="filterENRangeProducts('data_tv', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Data & Telecom</button>
+            <button class="en-filter-btn" onclick="filterENRangeProducts('bell_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Bell Push</button>
           </div>
         </div>
 
@@ -1565,10 +1516,9 @@
           <!-- Populated dynamically by script -->
         </div>
 
-        <!-- Bottom Downloads & Price Support Cards -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 20px; padding-top: 35px; border-top: 1px solid #E2E8F0;">
-          <!-- Left Download Catalogue Card -->
-          <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 32px 28px; display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.03); transition: all 0.3s ease;">
+        <!-- Bottom Catalogue Download Card -->
+        <div id="en-catalogue-download-section" style="max-width: 720px; margin: 30px auto 0 auto;">
+          <div id="en-download-catalogue-card" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 32px 28px; display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.03); transition: all 0.3s ease;">
             <div style="width: 54px; height: 54px; min-width: 54px; background: rgba(255, 26, 26, 0.08); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
@@ -1579,7 +1529,7 @@
             </div>
             <div style="flex-grow: 1;">
               <h4 style="font-size: 18px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">Download Complete EN Range Catalogue</h4>
-              <p style="font-size: 13.5px; color: #64748B; line-height: 1.5; margin-bottom: 20px;">Get the complete official collection catalogue featuring all 42 Silver & Gold model codes, dimensions, specifications, and wiring diagrams in PDF format.</p>
+              <p style="font-size: 13.5px; color: #64748B; line-height: 1.5; margin-bottom: 20px;">Download the EN Range catalogue for product codes, dimensions, technical specifications and wiring diagrams in PDF format.</p>
               <a id="en-catalogue-download-link" href="/assets/catalogues/BLIT_EN_Range_Catalogue_2026.pdf" download="BLIT_EN_Range_Catalogue_2026.pdf" style="display: inline-flex; align-items: center; gap: 10px; background-color: #FF1A1A; color: #FFFFFF; border: none; padding: 12px 26px; border-radius: 30px; font-size: 14px; font-weight: 700; text-decoration: none; box-shadow: 0 8px 20px rgba(255, 26, 26, 0.28); transition: all 0.3s ease;">
                 <span>Download Catalogue (PDF)</span>
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -1587,23 +1537,6 @@
                   <polyline points="7 10 12 15 17 10"/>
                   <line x1="12" y1="15" x2="12" y2="3"/>
                 </svg>
-              </a>
-            </div>
-          </div>
-
-          <!-- Right Price Request Card -->
-          <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 32px 28px; display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.03); transition: all 0.3s ease;">
-            <div style="width: 54px; height: 54px; min-width: 54px; background: rgba(15, 23, 42, 0.06); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
-                <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
-              </svg>
-            </div>
-            <div style="flex-grow: 1;">
-              <h4 style="font-size: 18px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">Need Price List or Project Support?</h4>
-              <p style="font-size: 13.5px; color: #64748B; line-height: 1.5; margin-bottom: 20px;">Our sales & engineering team is ready to assist you with EN Range project specifications, BOQ pricing, and sample approvals.</p>
-              <a href="javascript:void(0)" onclick="document.getElementById('en-price-modal').style.display='flex'" style="display: inline-flex; align-items: center; gap: 8px; border: 1.5px solid #0F172A; color: #0F172A; background: #FFFFFF; padding: 11px 22px; border-radius: 30px; font-size: 14px; font-weight: 700; text-decoration: none; transition: all 0.3s ease;">
-                Request Price List <span class="arrow">→</span>
               </a>
             </div>
           </div>
@@ -1620,13 +1553,8 @@
       <div style="display: flex; align-items: center; justify-content: space-between; gap: 40px; padding: 50px 40px; width: 100%; max-width: 1280px; flex-wrap: wrap;">
         <div style="flex: 1; min-width: 320px; max-width: 600px; color: #FFFFFF; text-align: left;">
           <span style="display: inline-block; background: rgba(255, 26, 26, 0.2); color: #FF4D4D; font-weight: 700; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; padding: 5px 14px; border-radius: 20px; margin-bottom: 14px;">HEAVY-DUTY INDUSTRIAL SERIES</span>
-          <h1 style="font-size: 40px; font-weight: 800; line-height: 1.15; color: #FFFFFF; margin-bottom: 14px; letter-spacing: -0.5px;">Rugged Steel.<br>Maximum Impact.</h1>
-          <p style="font-size: 15.5px; color: #CBD5E1; line-height: 1.6; margin-bottom: 24px;">Engineered with heavy-gauge galvanized steel enclosures, IK08 impact resistance rating, and powder-coated surface-mount back boxes for workshops, factories, and commercial plant rooms.</p>
-          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-            <span style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: #E2E8F0; font-size: 12.5px; font-weight: 600; padding: 6px 14px; border-radius: 20px;">BS Standard Certified</span>
-            <span style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: #E2E8F0; font-size: 12.5px; font-weight: 600; padding: 6px 14px; border-radius: 20px;">IK08 Impact Rated</span>
-            <span style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: #E2E8F0; font-size: 12.5px; font-weight: 600; padding: 6px 14px; border-radius: 20px;">Surface Mount Ready</span>
-          </div>
+          <h1 style="font-size: 40px; font-weight: 800; line-height: 1.15; color: #FFFFFF; margin-bottom: 14px; letter-spacing: -0.5px;">Robust. Practical. Dependable.</h1>
+          <p style="font-size: 15.5px; color: #CBD5E1; line-height: 1.6; margin-bottom: 24px;">Metal clad switches, sockets and wiring accessories designed for surface-mounted installations in workshops, factories, utility areas and commercial spaces.</p>
         </div>
         <div style="display: flex; gap: 24px; align-items: center; justify-content: center; flex: 1; min-width: 320px;">
           <img src="/assets/products/metal_clad/M304.webp" alt="Metal Clad 2-Gang Switch" style="height: 230px; max-width: 230px; object-fit: contain; filter: drop-shadow(0 20px 35px rgba(0,0,0,0.5)); transform: rotate(-3deg); transition: transform 0.3s ease;">
@@ -1643,13 +1571,8 @@
         <!-- Metal Clad Hero Description & Badges -->
         <div class="metal-clad-hero-container" style="display: flex; flex-direction: column; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 20px; margin-bottom: 50px; overflow: hidden;">
 
-          <!-- Bottom: Description & Value Proposition Badges -->
-          <div class="metal-clad-hero-content" style="padding: 36px 40px; display: flex; flex-direction: column;">
-            <span style="display: inline-block; color: var(--primary-red); font-weight: 700; font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px;">METAL CLAD RANGE</span>
-            <h2 style="font-size: 38px; font-weight: 800; line-height: 1.15; color: #0F172A; margin-bottom: 14px; letter-spacing: -0.5px;">Heavy-Duty Industrial Toughness.</h2>
-            <p style="font-size: 15.5px; color: #475569; line-height: 1.6; margin-bottom: 30px; max-width: 800px;">
-              Designed for harsh environments, industrial facilities, distribution centers, and mechanical rooms. Every Metal Clad unit includes a premium galvanized steel enclosure with 20mm knockouts and an integrated brass earth terminal.
-            </p>
+          <!-- Value Proposition Badges -->
+          <div class="metal-clad-hero-content" style="padding: 24px 30px; display: flex; flex-direction: column;">
 
             <!-- 5 Feature Value Prop Badges -->
             <div class="metal-clad-features-row" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px;">
@@ -1669,7 +1592,7 @@
                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
                   </svg>
                 </div>
-                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">Heavy Steel<br>Enclosure</div>
+                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">Robust Metal<br>Construction</div>
               </div>
 
               <div class="metal-clad-feature-pill" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 12px 6px; text-align: center;">
@@ -1678,7 +1601,7 @@
                     <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 3.5z"/>
                   </svg>
                 </div>
-                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">IK08 Impact<br>Resistance</div>
+                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">Impact<br>Resistant</div>
               </div>
 
               <div class="metal-clad-feature-pill" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 12px 6px; text-align: center;">
@@ -1687,7 +1610,7 @@
                     <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
                   </svg>
                 </div>
-                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">20A & 45A DP<br>Isolator Options</div>
+                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">Durable<br>Finish</div>
               </div>
 
               <div class="metal-clad-feature-pill" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 12px 6px; text-align: center;">
@@ -1695,7 +1618,7 @@
                   <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
                   <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
                 </div>
-                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">Surface Mount<br>9 Models</div>
+                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">Surface-Mounted<br>Design</div>
               </div>
             </div>
 
@@ -1704,16 +1627,16 @@
 
         <!-- Categories & Products Header -->
         <div style="text-align: center; margin-bottom: 35px;">
-          <h3 style="font-size: 24px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: #0F172A; margin-bottom: 10px;">M RANGE / METAL CLAD COLLECTION</h3>
-          <p style="font-size: 14.5px; color: #64748B; max-width: 650px; margin: 0 auto 20px auto;">Browse all 9 rugged surface-mount metal clad switches, sockets, and isolators. Click any image to zoom.</p>
+          <h3 style="font-size: 24px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: #0F172A; margin-bottom: 10px;">M RANGE PRODUCT COLLECTION</h3>
+          <p style="font-size: 14.5px; color: #64748B; max-width: 650px; margin: 0 auto 20px auto;">Explore the M Range collection of metal clad switches and sockets.</p>
           <div style="width: 44px; height: 3px; background-color: var(--primary-red); margin: 0 auto 30px auto; border-radius: 2px;"></div>
           
           <!-- Category Filter Tabs -->
           <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;" id="metal-clad-gallery-filters">
-            <button class="metal-clad-filter-btn active" onclick="filterMetalCladProducts('all', event)" style="background: var(--primary-red); color: #FFFFFF; border: none; padding: 9px 20px; border-radius: 20px; font-size: 13px; font-weight: 700; cursor: pointer; transition: all 0.2s ease;">All (9)</button>
-            <button class="metal-clad-filter-btn" onclick="filterMetalCladProducts('plate_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Plate Switches (4)</button>
-            <button class="metal-clad-filter-btn" onclick="filterMetalCladProducts('high_power', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">20A & 45A Switches (2)</button>
-            <button class="metal-clad-filter-btn" onclick="filterMetalCladProducts('socket_outlets', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Socket Outlets (3)</button>
+            <button class="metal-clad-filter-btn active" onclick="filterMetalCladProducts('all', event)" style="background: var(--primary-red); color: #FFFFFF; border: none; padding: 9px 20px; border-radius: 20px; font-size: 13px; font-weight: 700; cursor: pointer; transition: all 0.2s ease;">All</button>
+            <button class="metal-clad-filter-btn" onclick="filterMetalCladProducts('plate_switches', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Plate Switches</button>
+            <button class="metal-clad-filter-btn" onclick="filterMetalCladProducts('high_power', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">20A & 45A Switches</button>
+            <button class="metal-clad-filter-btn" onclick="filterMetalCladProducts('socket_outlets', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Socket Outlets</button>
           </div>
         </div>
 
@@ -1722,10 +1645,9 @@
           <!-- Populated dynamically by script -->
         </div>
 
-        <!-- Bottom Downloads & Price Support Cards -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 20px; padding-top: 35px; border-top: 1px solid #E2E8F0;">
-          <!-- Left Download Catalogue Card -->
-          <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 32px 28px; display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.03); transition: all 0.3s ease;">
+        <!-- Bottom Catalogue Download Card -->
+        <div id="metal-clad-catalogue-download-section" style="max-width: 720px; margin: 30px auto 0 auto;">
+          <div id="metal-clad-download-catalogue-card" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 32px 28px; display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.03); transition: all 0.3s ease;">
             <div style="width: 54px; height: 54px; min-width: 54px; background: rgba(255, 26, 26, 0.08); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
@@ -1736,7 +1658,7 @@
             </div>
             <div style="flex-grow: 1;">
               <h4 style="font-size: 18px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">Download Complete Metal Clad Catalogue</h4>
-              <p style="font-size: 13.5px; color: #64748B; line-height: 1.5; margin-bottom: 20px;">Get the complete official collection catalogue featuring all 10 model codes, knockout diagrams, mounting dimensions, and wiring specs in PDF format.</p>
+              <p style="font-size: 13.5px; color: #64748B; line-height: 1.5; margin-bottom: 20px;">Download the Metal Clad Range catalogue for product codes, dimensions, technical specifications and wiring diagrams in PDF format.</p>
               <a id="metal-clad-catalogue-download-link" href="/assets/catalogues/BLIT_Metal_Clad_Catalogue_2026.pdf" download="BLIT_Metal_Clad_Catalogue_2026.pdf" style="display: inline-flex; align-items: center; gap: 10px; background-color: #FF1A1A; color: #FFFFFF; border: none; padding: 12px 26px; border-radius: 30px; font-size: 14px; font-weight: 700; text-decoration: none; box-shadow: 0 8px 20px rgba(255, 26, 26, 0.28); transition: all 0.3s ease;">
                 <span>Download Catalogue (PDF)</span>
                 <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -1747,181 +1669,9 @@
               </a>
             </div>
           </div>
-
-          <!-- Right Price Request Card -->
-          <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 32px 28px; display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.03); transition: all 0.3s ease;">
-            <div style="width: 54px; height: 54px; min-width: 54px; background: rgba(15, 23, 42, 0.06); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
-                <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
-              </svg>
-            </div>
-            <div style="flex-grow: 1;">
-              <h4 style="font-size: 18px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">Need Wholesale or Project Pricing?</h4>
-              <p style="font-size: 13.5px; color: #64748B; line-height: 1.5; margin-bottom: 20px;">Our sales engineering team provides project discounts, contractor bulk pricing, and custom conduit entry configurations.</p>
-              <a href="javascript:void(0)" onclick="document.getElementById('metal-clad-price-modal').style.display='flex'" style="display: inline-flex; align-items: center; gap: 8px; border: 1.5px solid #0F172A; color: #0F172A; background: #FFFFFF; padding: 11px 22px; border-radius: 30px; font-size: 14px; font-weight: 700; text-decoration: none; transition: all 0.3s ease;">
-                Request Price List <span class="arrow">→</span>
-              </a>
-            </div>
-          </div>
         </div>
 
       </div> <!-- End metal-clad-catalog-outer-box -->
-    </div>
-  </section>
-
-  <!-- Embedded E Range Catalogue Section (Full Screen Width Catalog Layout) -->
-  <section class="e-catalog-section-embed" id="e-catalog-section" style="background: #F8F9FA; padding: 0 0 60px 0; border-top: 1px solid #EAEAEA; display: none;">
-    <!-- Full Screen Hero Banner Image / Showcase -->
-    <div class="e-hero-fullscreen" style="width: 100%; max-width: 100%; margin: 0 0 40px 0; padding: 0; position: relative; overflow: hidden; cursor: pointer; background: linear-gradient(135deg, #1E293B 0%, #0F172A 50%, #334155 100%); display: flex; align-items: center; justify-content: center;" onclick="openFullscreenLightbox('/assets/products/e_range/E405.webp')">
-      <div style="display: flex; align-items: center; justify-content: space-between; gap: 40px; padding: 50px 40px; width: 100%; max-width: 1280px; flex-wrap: wrap;">
-        <div style="flex: 1; min-width: 320px; max-width: 600px; color: #FFFFFF; text-align: left;">
-          <span style="display: inline-block; background: rgba(255, 26, 26, 0.2); color: #FF4D4D; font-weight: 700; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; padding: 5px 14px; border-radius: 20px; margin-bottom: 14px;">E RANGE COLLECTION</span>
-          <h1 style="font-size: 40px; font-weight: 800; line-height: 1.15; color: #FFFFFF; margin-bottom: 14px; letter-spacing: -0.5px;">Curved Elegance.<br>Everyday Reliability.</h1>
-          <p style="font-size: 15.5px; color: #94A3B8; line-height: 1.6; margin-bottom: 24px;">Contemporary curved-edge white polycarbonate wiring accessories engineered for residential apartments, villas, and commercial interiors with high-grade fire retardance and child safety shutters.</p>
-          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-            <span style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: #E2E8F0; font-size: 12.5px; font-weight: 600; padding: 6px 14px; border-radius: 20px;">BS 1363-2 Certified</span>
-            <span style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: #E2E8F0; font-size: 12.5px; font-weight: 600; padding: 6px 14px; border-radius: 20px;">Curved White Profile</span>
-            <span style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: #E2E8F0; font-size: 12.5px; font-weight: 600; padding: 6px 14px; border-radius: 20px;">Child Safety Shutters</span>
-          </div>
-        </div>
-        <div style="display: flex; gap: 24px; align-items: center; justify-content: center; flex: 1; min-width: 320px;">
-          <img src="/assets/products/e_range/E405.webp" alt="E Range 1-Gang Switched Socket" style="height: 230px; max-width: 230px; object-fit: contain; filter: drop-shadow(0 20px 35px rgba(0,0,0,0.5)); transform: rotate(-3deg); transition: transform 0.3s ease;">
-          <img src="/assets/products/e_range/E406.webp" alt="E Range Twin Switched Socket" style="height: 230px; max-width: 290px; object-fit: contain; filter: drop-shadow(0 20px 35px rgba(0,0,0,0.5)); transform: rotate(3deg); transition: transform 0.3s ease;">
-        </div>
-      </div>
-    </div>
-
-    <div class="container" style="max-width: 1440px; margin: 0 auto; padding: 0 20px;">
-      
-      <!-- Outer Catalog Box Frame -->
-      <div class="e-catalog-outer-box" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 32px 28px; box-shadow: 0 12px 35px rgba(0,0,0,0.04);">
-        
-        <!-- E Range Hero Description & Badges -->
-        <div class="e-hero-container" style="display: flex; flex-direction: column; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 20px; margin-bottom: 50px; overflow: hidden;">
-
-          <!-- Bottom: Description & Value Proposition Badges -->
-          <div class="e-hero-content" style="padding: 36px 40px; display: flex; flex-direction: column;">
-            <span style="display: inline-block; color: var(--primary-red); font-weight: 700; font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px;">E RANGE</span>
-            <h2 style="font-size: 38px; font-weight: 800; line-height: 1.15; color: #0F172A; margin-bottom: 14px; letter-spacing: -0.5px;">Curved Architectural Polycarbonate.</h2>
-            <p style="font-size: 15.5px; color: #475569; line-height: 1.6; margin-bottom: 30px; max-width: 800px;">
-              The E Range features smooth curved faceplates crafted in UV-stabilized pure white polycarbonate. Precision-engineered rocker switches with heavy-duty silver alloy contacts ensure smooth tactile operation.
-            </p>
-
-            <!-- 5 Feature Value Prop Badges -->
-            <div class="e-features-row" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px;">
-              <div class="e-feature-pill" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 12px 6px; text-align: center;">
-                <div class="e-feature-icon" style="width: 26px; height: 26px; margin: 0 auto 6px; display: flex; align-items: center; justify-content: center; color: #334155;">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                    <path d="m9 12 2 2 4-4"/>
-                  </svg>
-                </div>
-                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">BS 1363-2<br>Certified</div>
-              </div>
-
-              <div class="e-feature-pill" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 12px 6px; text-align: center;">
-                <div class="e-feature-icon" style="width: 26px; height: 26px; margin: 0 auto 6px; display: flex; align-items: center; justify-content: center; color: #334155;">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-                  </svg>
-                </div>
-                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">Curved Smooth<br>Aesthetics</div>
-              </div>
-
-              <div class="e-feature-pill" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 12px 6px; text-align: center;">
-                <div class="e-feature-icon" style="width: 26px; height: 26px; margin: 0 auto 6px; display: flex; align-items: center; justify-content: center; color: #334155;">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 3.5z"/>
-                  </svg>
-                </div>
-                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">Fire Retardant<br>Polycarbonate</div>
-              </div>
-
-              <div class="e-feature-pill" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 12px 6px; text-align: center;">
-                <div class="e-feature-icon" style="width: 26px; height: 26px; margin: 0 auto 6px; display: flex; align-items: center; justify-content: center; color: #334155;">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                  </svg>
-                </div>
-                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">Safety Child<br>Shutters</div>
-              </div>
-
-              <div class="e-feature-pill" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 12px 6px; text-align: center;">
-                <div class="e-feature-icon" style="width: 26px; height: 26px; margin: 0 auto 6px; display: flex; align-items: center; justify-content: center; color: #334155;">
-                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
-                </div>
-                <div style="font-size: 10.5px; font-weight: 600; color: #334155; line-height: 1.25;">Dual Earth<br>Terminals</div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Categories & Products Header -->
-        <div style="text-align: center; margin-bottom: 35px;">
-          <h3 style="font-size: 24px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: #0F172A; margin-bottom: 10px;">E RANGE PRODUCT COLLECTION</h3>
-          <p style="font-size: 14.5px; color: #64748B; max-width: 650px; margin: 0 auto 20px auto;">Browse the curved white polycarbonate switched socket collection. Click any product image to zoom.</p>
-          <div style="width: 44px; height: 3px; background-color: var(--primary-red); margin: 0 auto 30px auto; border-radius: 2px;"></div>
-          
-          <!-- Category Filter Tabs -->
-          <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;" id="e-gallery-filters">
-            <button class="e-filter-btn active" onclick="filterERangeProducts('all', event)" style="background: var(--primary-red); color: #FFFFFF; border: none; padding: 9px 20px; border-radius: 20px; font-size: 13px; font-weight: 700; cursor: pointer; transition: all 0.2s ease;">All (2)</button>
-            <button class="e-filter-btn" onclick="filterERangeProducts('socket_outlets', event)" style="background: #F1F5F9; color: #334155; border: none; padding: 9px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease;">Switched Sockets (2)</button>
-          </div>
-        </div>
-
-        <!-- E Range Products Grid -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px; margin-bottom: 60px;" id="e-products-grid">
-          <!-- Populated dynamically by script -->
-        </div>
-
-        <!-- Bottom Downloads & Price Support Cards -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 20px; padding-top: 35px; border-top: 1px solid #E2E8F0;">
-          <!-- Left Download Catalogue Card -->
-          <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 32px 28px; display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.03); transition: all 0.3s ease;">
-            <div style="width: 54px; height: 54px; min-width: 54px; background: rgba(255, 26, 26, 0.08); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--primary-red)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                <polyline points="14 2 14 8 20 8"/>
-                <line x1="12" y1="18" x2="12" y2="12"/>
-                <line x1="9" y1="15" x2="15" y2="15"/>
-              </svg>
-            </div>
-            <div style="flex-grow: 1;">
-              <h4 style="font-size: 18px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">Download Complete E Range Catalogue</h4>
-              <p style="font-size: 13.5px; color: #64748B; line-height: 1.5; margin-bottom: 20px;">Get the complete official collection catalogue featuring model codes, dimensional specifications, and wiring diagrams in PDF format.</p>
-              <a id="e-catalogue-download-link" href="/assets/catalogues/BLIT_E_Range_Catalogue_2026.pdf" download="BLIT_E_Range_Catalogue_2026.pdf" style="display: inline-flex; align-items: center; gap: 10px; background-color: #FF1A1A; color: #FFFFFF; border: none; padding: 12px 26px; border-radius: 30px; font-size: 14px; font-weight: 700; text-decoration: none; box-shadow: 0 8px 20px rgba(255, 26, 26, 0.28); transition: all 0.3s ease;">
-                <span>Download Catalogue (PDF)</span>
-                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                  <polyline points="7 10 12 15 17 10"/>
-                  <line x1="12" y1="15" x2="12" y2="3"/>
-                </svg>
-              </a>
-            </div>
-          </div>
-
-          <!-- Right Price Request Card -->
-          <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 32px 28px; display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.03); transition: all 0.3s ease;">
-            <div style="width: 54px; height: 54px; min-width: 54px; background: rgba(15, 23, 42, 0.06); border-radius: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 18v-6a9 9 0 0 1 18 0v6"/>
-                <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
-              </svg>
-            </div>
-            <div style="flex-grow: 1;">
-              <h4 style="font-size: 18px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">Need Price List or Project Support?</h4>
-              <p style="font-size: 13.5px; color: #64748B; line-height: 1.5; margin-bottom: 20px;">Our sales engineering team provides project discounts, contractor bulk pricing, and fast quote responses.</p>
-              <a href="javascript:void(0)" onclick="document.getElementById('e-price-modal').style.display='flex'" style="display: inline-flex; align-items: center; gap: 8px; border: 1.5px solid #0F172A; color: #0F172A; background: #FFFFFF; padding: 11px 22px; border-radius: 30px; font-size: 14px; font-weight: 700; text-decoration: none; transition: all 0.3s ease;">
-                Request Price List <span class="arrow">→</span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-      </div> <!-- End e-catalog-outer-box -->
     </div>
   </section>
 
@@ -2506,232 +2256,6 @@
 
 
 
-  <!-- V Range Category Options Modal -->
-  <div id="v-options-modal" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(5px); display: none; align-items: center; justify-content: center; z-index: 2000;">
-    <div style="background: #FFFFFF; border-radius: 20px; max-width: 820px; width: 90%; max-height: 85vh; overflow-y: auto; padding: 32px; position: relative; box-shadow: 0 25px 50px rgba(0,0,0,0.25);">
-      <button onclick="document.getElementById('v-options-modal').style.display='none'" style="position: absolute; top: 20px; right: 20px; background: #F1F5F9; border: none; width: 34px; height: 34px; border-radius: 50%; cursor: pointer; font-weight: 700;">✕</button>
-      <h3 id="v-modal-cat-title" style="font-size: 22px; font-weight: 800; color: #0F172A; margin-bottom: 6px;">Category Options</h3>
-      <p id="v-modal-cat-sub" style="font-size: 13.5px; color: #64748B; margin-bottom: 20px;">Detailed product codes, specs & ratings</p>
-      <div id="v-modal-table-body"></div>
-      <div style="margin-top: 24px; display: flex; justify-content: space-between; align-items: center; gap: 15px; flex-wrap: wrap;">
-        <a href="/assets/catalogues/BLIT_V_Range_Catalogue_2026.pdf" download="BLIT_V_Range_Catalogue_2026.pdf" style="color: var(--primary-red); font-size: 13px; font-weight: 700; text-decoration: none;">
-          Download Full V Range PDF Spec Sheet ⬇
-        </a>
-        <button onclick="document.getElementById('v-options-modal').style.display='none'; document.getElementById('v-price-modal').style.display='flex';" style="background: #111111; color: #FFFFFF; border: none; padding: 10px 20px; border-radius: 20px; font-weight: 600; cursor: pointer; font-size: 13px;">
-          Inquire Price List →
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- V Range Price List Request Modal -->
-  <div id="v-price-modal" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(5px); display: none; align-items: center; justify-content: center; z-index: 2000;">
-    <div style="background: #FFFFFF; border-radius: 20px; max-width: 520px; width: 90%; padding: 32px; position: relative; box-shadow: 0 25px 50px rgba(0,0,0,0.25);">
-      <button onclick="document.getElementById('v-price-modal').style.display='none'" style="position: absolute; top: 20px; right: 20px; background: #F1F5F9; border: none; width: 34px; height: 34px; border-radius: 50%; cursor: pointer; font-weight: 700;">✕</button>
-      <h3 style="font-size: 22px; font-weight: 800; color: #0F172A; margin-bottom: 6px;">Request V Range Price List & Support</h3>
-      <p style="font-size: 13.5px; color: #64748B; margin-bottom: 20px;">Submit your project requirements and our engineering team will provide wholesale BOQ pricing.</p>
-
-      <form onsubmit="event.preventDefault(); alert('Thank you! Your request for the V Range Catalogue & Price List has been submitted.'); document.getElementById('v-price-modal').style.display='none';" style="display: flex; flex-direction: column; gap: 14px;">
-        <div>
-          <label style="font-size: 12.5px; font-weight: 600; color: #334155; display: block; margin-bottom: 4px;">Full Name *</label>
-          <input type="text" required placeholder="John Doe" style="width: 100%; padding: 10px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; box-sizing: border-box;">
-        </div>
-        <div>
-          <label style="font-size: 12.5px; font-weight: 600; color: #334155; display: block; margin-bottom: 4px;">Email Address *</label>
-          <input type="email" required placeholder="john@company.com" style="width: 100%; padding: 10px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; box-sizing: border-box;">
-        </div>
-        <div>
-          <label style="font-size: 12.5px; font-weight: 600; color: #334155; display: block; margin-bottom: 4px;">Phone / WhatsApp *</label>
-          <input type="tel" required placeholder="+971 50 123 4567" style="width: 100%; padding: 10px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; box-sizing: border-box;">
-        </div>
-        <div>
-          <label style="font-size: 12.5px; font-weight: 600; color: #334155; display: block; margin-bottom: 4px;">Project Details / BOQ</label>
-          <textarea rows="3" placeholder="Mention project type (Hotel, Villa, Residential) and estimated item counts..." style="width: 100%; padding: 10px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; box-sizing: border-box;"></textarea>
-        </div>
-        <button type="submit" style="background: var(--primary-red); color: #FFFFFF; border: none; padding: 12px; border-radius: 25px; font-weight: 700; font-size: 14px; cursor: pointer; margin-top: 6px;">
-          Submit Inquiry →
-        </button>
-      </form>
-    </div>
-  </div>
-
-
-    <!-- CW Range Price List Request Modal -->
-  <div id="cw-price-modal" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(5px); display: none; align-items: center; justify-content: center; z-index: 2000;">
-    <div style="background: #FFFFFF; border-radius: 20px; max-width: 520px; width: 90%; padding: 32px; position: relative; box-shadow: 0 25px 50px rgba(0,0,0,0.25);">
-      <button onclick="document.getElementById('cw-price-modal').style.display='none'" style="position: absolute; top: 20px; right: 20px; background: #F1F5F9; border: none; width: 34px; height: 34px; border-radius: 50%; cursor: pointer; font-weight: 700;">✕</button>
-      <h3 style="font-size: 22px; font-weight: 800; color: #0F172A; margin-bottom: 6px;">Request CW Range Price List & Support</h3>
-      <p style="font-size: 13.5px; color: #64748B; margin-bottom: 20px;">Submit your project requirements and our engineering team will provide wholesale BOQ pricing.</p>
-
-      <form onsubmit="event.preventDefault(); alert('Thank you! Your request for the CW Range Catalogue & Price List has been submitted.'); document.getElementById('cw-price-modal').style.display='none';" style="display: flex; flex-direction: column; gap: 14px;">
-        <div>
-          <label style="font-size: 12.5px; font-weight: 600; color: #334155; display: block; margin-bottom: 4px;">Full Name *</label>
-          <input type="text" required placeholder="John Doe" style="width: 100%; padding: 10px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; box-sizing: border-box;">
-        </div>
-        <div>
-          <label style="font-size: 12.5px; font-weight: 600; color: #334155; display: block; margin-bottom: 4px;">Email Address *</label>
-          <input type="email" required placeholder="john@company.com" style="width: 100%; padding: 10px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; box-sizing: border-box;">
-        </div>
-        <div>
-          <label style="font-size: 12.5px; font-weight: 600; color: #334155; display: block; margin-bottom: 4px;">Phone / WhatsApp *</label>
-          <input type="tel" required placeholder="+971 50 123 4567" style="width: 100%; padding: 10px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; box-sizing: border-box;">
-        </div>
-        <div>
-          <label style="font-size: 12.5px; font-weight: 600; color: #334155; display: block; margin-bottom: 4px;">Project Details / BOQ</label>
-          <textarea rows="3" placeholder="Mention project type (Hotel, Villa, Residential) and estimated item counts..." style="width: 100%; padding: 10px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; box-sizing: border-box;"></textarea>
-        </div>
-        <button type="submit" style="background: var(--primary-red); color: #FFFFFF; border: none; padding: 12px; border-radius: 25px; font-weight: 700; font-size: 14px; cursor: pointer; margin-top: 6px;">
-          Submit Inquiry →
-        </button>
-      </form>
-    </div>
-  </div>
-
-  <!-- EN Range Price List Request Modal -->
-  <div id="en-price-modal" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(5px); display: none; align-items: center; justify-content: center; z-index: 2000;">
-    <div style="background: #FFFFFF; border-radius: 20px; max-width: 520px; width: 90%; padding: 32px; position: relative; box-shadow: 0 25px 50px rgba(0,0,0,0.25);">
-      <button onclick="document.getElementById('en-price-modal').style.display='none'" style="position: absolute; top: 20px; right: 20px; background: #F1F5F9; border: none; width: 34px; height: 34px; border-radius: 50%; cursor: pointer; font-weight: 700;">✕</button>
-      <h3 style="font-size: 22px; font-weight: 800; color: #0F172A; margin-bottom: 6px;">Request EN Range Price List & Support</h3>
-      <p style="font-size: 13.5px; color: #64748B; margin-bottom: 20px;">Submit your project requirements and our engineering team will provide wholesale BOQ pricing.</p>
-
-      <form onsubmit="event.preventDefault(); alert('Thank you! Your request for the EN Range Catalogue & Price List has been submitted.'); document.getElementById('en-price-modal').style.display='none';" style="display: flex; flex-direction: column; gap: 14px;">
-        <div>
-          <label style="font-size: 12.5px; font-weight: 600; color: #334155; display: block; margin-bottom: 4px;">Full Name *</label>
-          <input type="text" required placeholder="John Doe" style="width: 100%; padding: 10px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; box-sizing: border-box;">
-        </div>
-        <div>
-          <label style="font-size: 12.5px; font-weight: 600; color: #334155; display: block; margin-bottom: 4px;">Email Address *</label>
-          <input type="email" required placeholder="john@company.com" style="width: 100%; padding: 10px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; box-sizing: border-box;">
-        </div>
-        <div>
-          <label style="font-size: 12.5px; font-weight: 600; color: #334155; display: block; margin-bottom: 4px;">Phone / WhatsApp *</label>
-          <input type="tel" required placeholder="+971 50 123 4567" style="width: 100%; padding: 10px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; box-sizing: border-box;">
-        </div>
-        <div>
-          <label style="font-size: 12.5px; font-weight: 600; color: #334155; display: block; margin-bottom: 4px;">Project Details / BOQ</label>
-          <textarea rows="3" placeholder="Mention project type (Hotel, Villa, Residential) and estimated item counts..." style="width: 100%; padding: 10px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; box-sizing: border-box;"></textarea>
-        </div>
-        <button type="submit" style="background: var(--primary-red); color: #FFFFFF; border: none; padding: 12px; border-radius: 25px; font-weight: 700; font-size: 14px; cursor: pointer; margin-top: 6px;">
-          Submit Inquiry →
-        </button>
-      </form>
-    </div>
-  </div>
-
-  <!-- Metal Clad Price List Request Modal -->
-  <div id="metal-clad-price-modal" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(5px); display: none; align-items: center; justify-content: center; z-index: 2000;">
-    <div style="background: #FFFFFF; border-radius: 20px; max-width: 520px; width: 90%; padding: 32px; position: relative; box-shadow: 0 25px 50px rgba(0,0,0,0.25);">
-      <button onclick="document.getElementById('metal-clad-price-modal').style.display='none'" style="position: absolute; top: 20px; right: 20px; background: #F1F5F9; border: none; width: 34px; height: 34px; border-radius: 50%; cursor: pointer; font-weight: 700;">✕</button>
-      <h3 style="font-size: 22px; font-weight: 800; color: #0F172A; margin-bottom: 6px;">Request Metal Clad Price List & Support</h3>
-      <p style="font-size: 13.5px; color: #64748B; margin-bottom: 20px;">Submit your industrial project requirements and our engineering team will provide wholesale BOQ pricing.</p>
-
-      <form onsubmit="event.preventDefault(); alert('Thank you! Your request for the Metal Clad Catalogue & Price List has been submitted.'); document.getElementById('metal-clad-price-modal').style.display='none';" style="display: flex; flex-direction: column; gap: 14px;">
-        <div>
-          <label style="font-size: 12.5px; font-weight: 600; color: #334155; display: block; margin-bottom: 4px;">Full Name *</label>
-          <input type="text" required placeholder="John Doe" style="width: 100%; padding: 10px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; box-sizing: border-box;">
-        </div>
-        <div>
-          <label style="font-size: 12.5px; font-weight: 600; color: #334155; display: block; margin-bottom: 4px;">Email Address *</label>
-          <input type="email" required placeholder="john@company.com" style="width: 100%; padding: 10px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; box-sizing: border-box;">
-        </div>
-        <div>
-          <label style="font-size: 12.5px; font-weight: 600; color: #334155; display: block; margin-bottom: 4px;">Phone / WhatsApp *</label>
-          <input type="tel" required placeholder="+971 50 123 4567" style="width: 100%; padding: 10px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; box-sizing: border-box;">
-        </div>
-        <div>
-          <label style="font-size: 12.5px; font-weight: 600; color: #334155; display: block; margin-bottom: 4px;">Project Details / BOQ</label>
-          <textarea rows="3" placeholder="Mention project type (Workshop, Factory, Commercial) and estimated item counts..." style="width: 100%; padding: 10px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; box-sizing: border-box;"></textarea>
-        </div>
-        <button type="submit" style="background: var(--primary-red); color: #FFFFFF; border: none; padding: 12px; border-radius: 25px; font-weight: 700; font-size: 14px; cursor: pointer; margin-top: 6px;">
-          Submit Inquiry →
-        </button>
-      </form>
-    </div>
-  </div>
-
-  <!-- E Range Price List Request Modal -->
-  <div id="e-price-modal" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(5px); display: none; align-items: center; justify-content: center; z-index: 2000;">
-    <div style="background: #FFFFFF; border-radius: 20px; max-width: 520px; width: 90%; padding: 32px; position: relative; box-shadow: 0 25px 50px rgba(0,0,0,0.25);">
-      <button onclick="document.getElementById('e-price-modal').style.display='none'" style="position: absolute; top: 20px; right: 20px; background: #F1F5F9; border: none; width: 34px; height: 34px; border-radius: 50%; cursor: pointer; font-weight: 700;">✕</button>
-      <h3 style="font-size: 22px; font-weight: 800; color: #0F172A; margin-bottom: 6px;">Request E Range Price List & Support</h3>
-      <p style="font-size: 13.5px; color: #64748B; margin-bottom: 20px;">Submit your project requirements and our engineering team will provide wholesale BOQ pricing.</p>
-
-      <form onsubmit="event.preventDefault(); alert('Thank you! Your request for the E Range Catalogue & Price List has been submitted.'); document.getElementById('e-price-modal').style.display='none';" style="display: flex; flex-direction: column; gap: 14px;">
-        <div>
-          <label style="font-size: 12.5px; font-weight: 600; color: #334155; display: block; margin-bottom: 4px;">Full Name *</label>
-          <input type="text" required placeholder="John Doe" style="width: 100%; padding: 10px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; box-sizing: border-box;">
-        </div>
-        <div>
-          <label style="font-size: 12.5px; font-weight: 600; color: #334155; display: block; margin-bottom: 4px;">Email Address *</label>
-          <input type="email" required placeholder="john@company.com" style="width: 100%; padding: 10px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; box-sizing: border-box;">
-        </div>
-        <div>
-          <label style="font-size: 12.5px; font-weight: 600; color: #334155; display: block; margin-bottom: 4px;">Phone / WhatsApp *</label>
-          <input type="tel" required placeholder="+971 50 123 4567" style="width: 100%; padding: 10px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; box-sizing: border-box;">
-        </div>
-        <div>
-          <label style="font-size: 12.5px; font-weight: 600; color: #334155; display: block; margin-bottom: 4px;">Project Details / BOQ</label>
-          <textarea rows="3" placeholder="Mention project type (Apartments, Villas, Commercial) and estimated item counts..." style="width: 100%; padding: 10px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; box-sizing: border-box;"></textarea>
-        </div>
-        <button type="submit" style="background: var(--primary-red); color: #FFFFFF; border: none; padding: 12px; border-radius: 25px; font-weight: 700; font-size: 14px; cursor: pointer; margin-top: 6px;">
-          Submit Inquiry →
-        </button>
-      </form>
-    </div>
-  </div>
-
-
-
-
-  <!-- Category Options Modal -->
-  <div id="w-options-modal" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(5px); display: none; align-items: center; justify-content: center; z-index: 2000;">
-    <div style="background: #FFFFFF; border-radius: 20px; max-width: 780px; width: 90%; max-height: 85vh; overflow-y: auto; padding: 32px; position: relative; box-shadow: 0 25px 50px rgba(0,0,0,0.25);">
-      <button onclick="document.getElementById('w-options-modal').style.display='none'" style="position: absolute; top: 20px; right: 20px; background: #F1F5F9; border: none; width: 34px; height: 34px; border-radius: 50%; cursor: pointer; font-weight: 700;">✕</button>
-      <h3 id="w-modal-cat-title" style="font-size: 22px; font-weight: 800; color: #0F172A; margin-bottom: 6px;">Category Options</h3>
-      <p id="w-modal-cat-sub" style="font-size: 13.5px; color: #64748B; margin-bottom: 20px;">Detailed product codes, specs & ratings</p>
-      <div id="w-modal-table-body"></div>
-      <div style="margin-top: 24px; display: flex; justify-content: space-between; align-items: center; gap: 15px;">
-        <a href="/assets/catalogues/BLIT_W_Range_Catalogue_2026.pdf" download="BLIT_W_Range_Catalogue_2026.pdf" style="color: var(--primary-red); font-size: 13px; font-weight: 700; text-decoration: none;">
-          Download Full W Range PDF Spec Sheet ⬇
-        </a>
-        <button onclick="document.getElementById('w-options-modal').style.display='none'; document.getElementById('w-price-modal').style.display='flex';" style="background: #111111; color: #FFFFFF; border: none; padding: 10px 20px; border-radius: 20px; font-weight: 600; cursor: pointer; font-size: 13px;">
-          Inquire Price List →
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Price List Request Modal -->
-  <div id="w-price-modal" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(5px); display: none; align-items: center; justify-content: center; z-index: 2000;">
-    <div style="background: #FFFFFF; border-radius: 20px; max-width: 520px; width: 90%; padding: 32px; position: relative; box-shadow: 0 25px 50px rgba(0,0,0,0.25);">
-      <button onclick="document.getElementById('w-price-modal').style.display='none'" style="position: absolute; top: 20px; right: 20px; background: #F1F5F9; border: none; width: 34px; height: 34px; border-radius: 50%; cursor: pointer; font-weight: 700;">✕</button>
-      <h3 style="font-size: 22px; font-weight: 800; color: #0F172A; margin-bottom: 6px;">Request Price List & Support</h3>
-      <p style="font-size: 13.5px; color: #64748B; margin-bottom: 20px;">Submit your project requirements and our team will get back to you with pricing.</p>
-
-      <form onsubmit="event.preventDefault(); alert('Thank you! Your request for the W Range Catalogue & Price List has been submitted.'); document.getElementById('w-price-modal').style.display='none';" style="display: flex; flex-direction: column; gap: 14px;">
-        <div>
-          <label style="font-size: 12.5px; font-weight: 600; color: #334155; display: block; margin-bottom: 4px;">Full Name *</label>
-          <input type="text" required placeholder="John Doe" style="width: 100%; padding: 10px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; box-sizing: border-box;">
-        </div>
-        <div>
-          <label style="font-size: 12.5px; font-weight: 600; color: #334155; display: block; margin-bottom: 4px;">Email Address *</label>
-          <input type="email" required placeholder="john@company.com" style="width: 100%; padding: 10px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; box-sizing: border-box;">
-        </div>
-        <div>
-          <label style="font-size: 12.5px; font-weight: 600; color: #334155; display: block; margin-bottom: 4px;">Phone / WhatsApp *</label>
-          <input type="tel" required placeholder="+971 50 123 4567" style="width: 100%; padding: 10px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; box-sizing: border-box;">
-        </div>
-        <div>
-          <label style="font-size: 12.5px; font-weight: 600; color: #334155; display: block; margin-bottom: 4px;">Project Message</label>
-          <textarea rows="3" placeholder="Specify requirements or estimated quantities..." style="width: 100%; padding: 10px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; box-sizing: border-box;"></textarea>
-        </div>
-        <button type="submit" style="background: var(--primary-red); color: #FFFFFF; border: none; padding: 12px; border-radius: 25px; font-weight: 700; font-size: 14px; cursor: pointer; margin-top: 6px;">
-          Submit Inquiry →
-        </button>
-      </form>
-    </div>
-  </div>
-
   <!-- Image Lightbox Modal (Full Screen View) -->
   <div id="image-lightbox-modal" onclick="closeFullscreenLightbox()" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.92); backdrop-filter: blur(10px); display: none; align-items: center; justify-content: center; z-index: 3000; cursor: zoom-out;">
     <button onclick="closeFullscreenLightbox()" style="position: absolute; top: 24px; right: 24px; background: rgba(255, 255, 255, 0.2); color: #FFF; border: none; width: 44px; height: 44px; border-radius: 50%; cursor: pointer; font-size: 20px; font-weight: 700; display: flex; align-items: center; justify-content: center; transition: background 0.2s;">✕</button>
@@ -3108,26 +2632,17 @@
       grid.innerHTML = items.map(p => `
         <div class="w-product-card-item" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.02);" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='rgba(255,26,26,0.35)'; this.style.boxShadow='0 14px 28px rgba(255,26,26,0.09)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.02)';">
           
-          <!-- Image Box with Click to Enlarge -->
-          <div style="width: 100%; height: 190px; background: #FAFAFA; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; position: relative; overflow: hidden; cursor: pointer;" onclick="openFullscreenLightbox('${p.img}')" title="Click to enlarge image">
+          <!-- Image Box with Click to Scroll to Download Catalogue -->
+          <div style="width: 100%; height: 190px; background: #FAFAFA; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; position: relative; overflow: hidden; cursor: pointer;" onclick="document.getElementById('w-catalogue-download-section').scrollIntoView({behavior: 'smooth', block: 'center'})" title="Click to view catalogue download">
             <span style="position: absolute; top: 10px; left: 10px; background: #0F172A; color: #FFFFFF; font-size: 11px; font-weight: 700; padding: 4px 9px; border-radius: 6px; letter-spacing: 0.5px;">${p.code}</span>
             <img src="${p.img}" alt="${p.name}" loading="lazy" style="max-width: 82%; max-height: 82%; object-fit: contain; transition: transform 0.3s ease;">
           </div>
 
           <!-- Product Details -->
-          <div style="margin-bottom: 16px;">
+          <div>
             <h4 style="font-size: 16px; font-weight: 700; color: #0F172A; margin-bottom: 6px; line-height: 1.3;">${p.name}</h4>
-            <p style="font-size: 13px; color: #64748B; line-height: 1.45; margin-bottom: 10px;">${p.desc}</p>
-            <div style="display: flex; flex-wrap: wrap; gap: 6px;">
-              <span style="background: #F1F5F9; color: #475569; font-size: 11.5px; font-weight: 600; padding: 3px 8px; border-radius: 5px;">${p.size}</span>
-              <span style="background: rgba(255,26,26,0.08); color: var(--primary-red); font-size: 11.5px; font-weight: 700; padding: 3px 8px; border-radius: 5px;">${p.std}</span>
-            </div>
+            <p style="font-size: 13px; color: #64748B; line-height: 1.45; margin-bottom: 0;">${p.desc}</p>
           </div>
-
-          <!-- Action Button -->
-          <button onclick="openFullscreenLightbox('${p.img}')" style="background: #F8FAFC; border: 1px solid #E2E8F0; color: #334155; font-size: 12.5px; font-weight: 600; padding: 10px 14px; border-radius: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; transition: all 0.2s ease; width: 100%;" onmouseover="this.style.background='var(--primary-red)'; this.style.color='#FFFFFF'; this.style.borderColor='var(--primary-red)';" onmouseout="this.style.background='#F8FAFC'; this.style.color='#334155'; this.style.borderColor='#E2E8F0';">
-            <span>Enlarge & View Specs</span> 🔍
-          </button>
         </div>
       `).join('');
     }
@@ -3204,26 +2719,17 @@
       grid.innerHTML = items.map(p => `
         <div class="cw-product-card-item" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.02);" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='rgba(255,26,26,0.35)'; this.style.boxShadow='0 14px 28px rgba(255,26,26,0.09)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.02)';">
           
-          <!-- Image Box with Click to Enlarge -->
-          <div style="width: 100%; height: 190px; background: #FAFAFA; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; position: relative; overflow: hidden; cursor: pointer;" onclick="openFullscreenLightbox('${p.img}')" title="Click to enlarge image">
+          <!-- Image Box with Click to Scroll to Download Catalogue -->
+          <div style="width: 100%; height: 190px; background: #FAFAFA; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; position: relative; overflow: hidden; cursor: pointer;" onclick="document.getElementById('cw-catalogue-download-section').scrollIntoView({behavior: 'smooth', block: 'center'})" title="Click to view catalogue download">
             <span style="position: absolute; top: 10px; left: 10px; background: #0F172A; color: #FFFFFF; font-size: 11px; font-weight: 700; padding: 4px 9px; border-radius: 6px; letter-spacing: 0.5px;">${p.code}</span>
             <img src="${p.img}" alt="${p.name}" loading="lazy" style="max-width: 82%; max-height: 82%; object-fit: contain; transition: transform 0.3s ease;">
           </div>
 
           <!-- Product Details -->
-          <div style="margin-bottom: 16px;">
+          <div>
             <h4 style="font-size: 16px; font-weight: 700; color: #0F172A; margin-bottom: 6px; line-height: 1.3;">${p.name}</h4>
-            <p style="font-size: 13px; color: #64748B; line-height: 1.45; margin-bottom: 10px;">${p.desc}</p>
-            <div style="display: flex; flex-wrap: wrap; gap: 6px;">
-              <span style="background: #F1F5F9; color: #475569; font-size: 11.5px; font-weight: 600; padding: 3px 8px; border-radius: 5px;">${p.size}</span>
-              <span style="background: rgba(255,26,26,0.08); color: var(--primary-red); font-size: 11.5px; font-weight: 700; padding: 3px 8px; border-radius: 5px;">${p.std}</span>
-            </div>
+            <p style="font-size: 13px; color: #64748B; line-height: 1.45; margin-bottom: 0;">${p.desc}</p>
           </div>
-
-          <!-- Action Button -->
-          <button onclick="openFullscreenLightbox('${p.img}')" style="background: #F8FAFC; border: 1px solid #E2E8F0; color: #334155; font-size: 12.5px; font-weight: 600; padding: 10px 14px; border-radius: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; transition: all 0.2s ease; width: 100%;" onmouseover="this.style.background='var(--primary-red)'; this.style.color='#FFFFFF'; this.style.borderColor='var(--primary-red)';" onmouseout="this.style.background='#F8FAFC'; this.style.color='#334155'; this.style.borderColor='#E2E8F0';">
-            <span>Enlarge & View Specs</span> 🔍
-          </button>
         </div>
       `).join('');
     }
@@ -3251,39 +2757,39 @@
   <script>
     const UNIQUE_EN_PRODUCTS = [
       // 1. Plate Switches
-      { code: "BTEN302BRC", cat: "plate_switches", name: "1-Gang 2-Way Plate Switch (Silver)", desc: "10AX 250V~ 1-Gang 2-Way Switch with Architectural Profile", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/en_range/BTEN302BRC.webp" },
-      { code: "BTEN304BRC", cat: "plate_switches", name: "2-Gang 2-Way Plate Switch (Silver)", desc: "10AX 250V~ 2-Gang Dual Circuit Rocker Switch Plate", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/en_range/BTEN304BRC.webp" },
-      { code: "BTEN306BRC", cat: "plate_switches", name: "3-Gang 2-Way Plate Switch (Silver)", desc: "10AX 250V~ 3-Gang Multi-Zone Light Switch Plate", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/en_range/BTEN306BRC.webp" },
-      { code: "BTEN308BRC", cat: "plate_switches", name: "4-Gang 2-Way Wide Switch (Silver)", desc: "10AX 250V~ 4-Gang Quad Control Rocker Switch on Wide Plate", size: "146 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/en_range/BTEN308BRC.webp" },
+      { code: "BTEN302BRC", cat: "plate_switches", name: "1-Gang 2-Way Plate Switch", desc: "10AX 250V~ 1-Gang 2-Way Switch with Architectural Profile", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/en_range/BTEN302BRC.webp" },
+      { code: "BTEN304BRC", cat: "plate_switches", name: "2-Gang 2-Way Plate Switch", desc: "10AX 250V~ 2-Gang Dual Circuit Rocker Switch Plate", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/en_range/BTEN304BRC.webp" },
+      { code: "BTEN306BRC", cat: "plate_switches", name: "3-Gang 2-Way Plate Switch", desc: "10AX 250V~ 3-Gang Multi-Zone Light Switch Plate", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/en_range/BTEN306BRC.webp" },
+      { code: "BTEN308BRC", cat: "plate_switches", name: "4-Gang 2-Way Wide Switch", desc: "10AX 250V~ 4-Gang Quad Control Rocker Switch on Wide Plate", size: "146 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/en_range/BTEN308BRC.webp" },
       
       // 2. Bell & Special Switches
-      { code: "BTEN317BRC", cat: "bell_switches", name: "1-Gang Bell Push Switch (Silver)", desc: "10A 250V~ Retractive Momentary Bell Push with Bell Symbol", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/en_range/BTEN317BRC.webp" },
+      { code: "BTEN317BRC", cat: "bell_switches", name: "1-Gang Bell Push Switch", desc: "10A 250V~ Retractive Momentary Bell Push with Bell Symbol", size: "86 x 86 mm", std: "BS EN 60669-1", img: "/assets/products/en_range/BTEN317BRC.webp" },
       
       // 3. 20A & 45A High Power Isolator Switches
-      { code: "BTEN324BRC", cat: "high_power", name: "20A DP Switch + Neon (Silver)", desc: "20A Double Pole Heavy Duty Isolator Switch with Illuminated Neon", size: "86 x 86 mm", std: "BS EN 60669-2-1", img: "/assets/products/en_range/BTEN324BRC.webp" },
-      { code: "BTEN327BRC", cat: "high_power", name: "45A DP Switch + Neon (Silver)", desc: "45A Double Pole Main Isolator Switch with Red Neon Indicator", size: "86 x 86 mm", std: "BS EN 60669-2-1", img: "/assets/products/en_range/BTEN327BRC.webp" },
-      { code: "BTEN329BRC", cat: "high_power", name: "45A DP Large Plate Switch + Neon (Silver)", desc: "45A Large Rocker Double Pole Cooker Isolator Switch with Neon", size: "86 x 146 mm", std: "BS EN 60669-2-1", img: "/assets/products/en_range/BTEN329BRC.webp" },
+      { code: "BTEN324BRC", cat: "high_power", name: "20A DP Switch + Neon", desc: "20A Double Pole Heavy Duty Isolator Switch with Illuminated Neon", size: "86 x 86 mm", std: "BS EN 60669-2-1", img: "/assets/products/en_range/BTEN324BRC.webp" },
+      { code: "BTEN327BRC", cat: "high_power", name: "45A DP Switch + Neon", desc: "45A Double Pole Main Isolator Switch with Red Neon Indicator", size: "86 x 86 mm", std: "BS EN 60669-2-1", img: "/assets/products/en_range/BTEN327BRC.webp" },
+      { code: "BTEN329BRC", cat: "high_power", name: "45A DP Large Plate Switch + Neon", desc: "45A Large Rocker Double Pole Cooker Isolator Switch with Neon", size: "86 x 146 mm", std: "BS EN 60669-2-1", img: "/assets/products/en_range/BTEN329BRC.webp" },
       
       // 4. Rotary Dimmers & Fan Speed Controllers
-      { code: "BTEN350-2BRC", cat: "dimmers", name: "1-Gang Rotary Dimmer (400W) (Silver)", desc: "400W Rotary Lighting Dimmer Switch with Smooth Push-On Action", size: "86 x 86 mm", std: "BS EN 60669-2-1", img: "/assets/products/en_range/BTEN350-2BRC.webp" },
-      { code: "BTEN351BRC", cat: "dimmers", name: "1-Gang Fan Speed Controller (Silver)", desc: "400W Stepless Fan Speed Regulator Controller Switch", size: "86 x 86 mm", std: "IEC 60669", img: "/assets/products/en_range/BTEN351BRC.webp" },
-      { code: "BTEN353-2BRC", cat: "dimmers", name: "2-Gang Rotary Dimmer (Silver)", desc: "Dual Channel 400W Rotary Lighting Dimmer Switch Plate", size: "86 x 86 mm", std: "BS EN 60669-2-1", img: "/assets/products/en_range/BTEN353-2BRC.webp" },
-      { code: "BTEN355-2BRC", cat: "dimmers", name: "1-Gang 1000W Heavy Duty Dimmer (Silver)", desc: "1000W High Power Rotary Lighting Dimmer for Commercial Spaces", size: "86 x 86 mm", std: "BS EN 60669-2-1", img: "/assets/products/en_range/BTEN355-2BRC.webp" },
+      { code: "BTEN350-2BRC", cat: "dimmers", name: "1-Gang Rotary Dimmer (400W)", desc: "400W Rotary Lighting Dimmer Switch with Smooth Push-On Action", size: "86 x 86 mm", std: "BS EN 60669-2-1", img: "/assets/products/en_range/BTEN350-2BRC.webp" },
+      { code: "BTEN351BRC", cat: "dimmers", name: "1-Gang Fan Speed Controller", desc: "400W Stepless Fan Speed Regulator Controller Switch", size: "86 x 86 mm", std: "IEC 60669", img: "/assets/products/en_range/BTEN351BRC.webp" },
+      { code: "BTEN353-2BRC", cat: "dimmers", name: "2-Gang Rotary Dimmer", desc: "Dual Channel 400W Rotary Lighting Dimmer Switch Plate", size: "86 x 86 mm", std: "BS EN 60669-2-1", img: "/assets/products/en_range/BTEN353-2BRC.webp" },
+      { code: "BTEN355-2BRC", cat: "dimmers", name: "1-Gang 1000W Heavy Duty Dimmer", desc: "1000W High Power Rotary Lighting Dimmer for Commercial Spaces", size: "86 x 86 mm", std: "BS EN 60669-2-1", img: "/assets/products/en_range/BTEN355-2BRC.webp" },
       
       // 5. 13A & 15A Socket Outlets & Dual USB Fast Chargers
-      { code: "BTEN405BRC", cat: "socket_outlets", name: "13A Single Switched Socket (Silver)", desc: "13A 1-Gang BS 1363-2 Single Switched Power Outlet with Child Shutters", size: "86 x 86 mm", std: "BS 1363-2", img: "/assets/products/en_range/BTEN405BRC.webp" },
-      { code: "BTEN406BRC", cat: "socket_outlets", name: "13A Twin Switched Socket (Silver)", desc: "13A 2-Gang BS 1363-2 Double Switched Socket with Safety Shutters", size: "146 x 86 mm", std: "BS 1363-2", img: "/assets/products/en_range/BTEN406BRC.webp" },
-      { code: "BTHY4113H-B-3.1ABRC", cat: "socket_outlets", name: "13A Single Socket + Dual USB 3.1A (Silver)", desc: "13A Single Switched Socket with Integrated Dual 3.1A USB Fast Charging", size: "86 x 86 mm", std: "BS 1363-2 / IEC 62368", img: "/assets/products/en_range/BTHY4113H-B-3.1ABRC.webp" },
-      { code: "BTHY4121-B-3.1ABRC", cat: "socket_outlets", name: "13A Twin Socket + Dual USB 3.1A (Silver)", desc: "Twin 13A Double Switched Socket with Integrated Dual 3.1A Fast USB Ports", size: "146 x 86 mm", std: "BS 1363-2 / IEC 62368", img: "/assets/products/en_range/BTHY4121-B-3.1ABRC.webp" },
-      { code: "BTEN429BRC", cat: "socket_outlets", name: "15A Round Pin Switched Socket (Silver)", desc: "15A Heavy Duty BS 546 Round Pin AC Switched Power Socket Outlet", size: "86 x 86 mm", std: "BS 546", img: "/assets/products/en_range/BTEN429BRC.webp" },
+      { code: "BTEN405BRC", cat: "socket_outlets", name: "13A Single Switched Socket", desc: "13A 1-Gang BS 1363-2 Single Switched Power Outlet with Child Shutters", size: "86 x 86 mm", std: "BS 1363-2", img: "/assets/products/en_range/BTEN405BRC.webp" },
+      { code: "BTEN406BRC", cat: "socket_outlets", name: "13A Twin Switched Socket", desc: "13A 2-Gang BS 1363-2 Double Switched Socket with Safety Shutters", size: "146 x 86 mm", std: "BS 1363-2", img: "/assets/products/en_range/BTEN406BRC.webp" },
+      { code: "BTHY4113H-B-3.1ABRC", cat: "socket_outlets", name: "13A Single Socket + Dual USB 3.1A", desc: "13A Single Switched Socket with Integrated Dual 3.1A USB Fast Charging", size: "86 x 86 mm", std: "BS 1363-2 / IEC 62368", img: "/assets/products/en_range/BTHY4113H-B-3.1ABRC.webp" },
+      { code: "BTHY4121-B-3.1ABRC", cat: "socket_outlets", name: "13A Twin Socket + Dual USB 3.1A", desc: "Twin 13A Double Switched Socket with Integrated Dual 3.1A Fast USB Ports", size: "146 x 86 mm", std: "BS 1363-2 / IEC 62368", img: "/assets/products/en_range/BTHY4121-B-3.1ABRC.webp" },
+      { code: "BTEN429BRC", cat: "socket_outlets", name: "15A Round Pin Switched Socket", desc: "15A Heavy Duty BS 546 Round Pin AC Switched Power Socket Outlet", size: "86 x 86 mm", std: "BS 546", img: "/assets/products/en_range/BTEN429BRC.webp" },
       
       // 6. Blank Connection Plates
-      { code: "BTEN401BRC", cat: "fcus", name: "1-Gang Blank Cover Plate (Silver)", desc: "86 x 86 mm Flush Architectural Blank Cover Plate", size: "86 x 86 mm", std: "BS 5733", img: "/assets/products/en_range/BTEN401BRC.webp" },
-      { code: "BTEN402BRC", cat: "fcus", name: "2-Gang Wide Blank Cover Plate (Silver)", desc: "146 x 86 mm Double Width Flush Architectural Blank Cover Plate", size: "146 x 86 mm", std: "BS 5733", img: "/assets/products/en_range/BTEN402BRC.webp" },
+      { code: "BTEN401BRC", cat: "fcus", name: "1-Gang Blank Cover Plate", desc: "86 x 86 mm Flush Architectural Blank Cover Plate", size: "86 x 86 mm", std: "BS 5733", img: "/assets/products/en_range/BTEN401BRC.webp" },
+      { code: "BTEN402BRC", cat: "fcus", name: "2-Gang Wide Blank Cover Plate", desc: "146 x 86 mm Double Width Flush Architectural Blank Cover Plate", size: "146 x 86 mm", std: "BS 5733", img: "/assets/products/en_range/BTEN402BRC.webp" },
       
       // 7. Data & Telecom Outlets
-      { code: "BTEN442BRC", cat: "data_tv", name: "1-Gang RJ45 Cat6 Data Outlet (Silver)", desc: "1-Port Gigabit Ethernet Cat6 Data Wall Plate with Shutter", size: "86 x 86 mm", std: "TIA/EIA-568", img: "/assets/products/en_range/BTEN442BRC.webp" },
-      { code: "BTEN443BRC", cat: "data_tv", name: "2-Gang RJ45 Cat6 Data Outlet (Silver)", desc: "2-Port Dual Gigabit Ethernet Cat6 Data Wall Plate with Shutters", size: "86 x 86 mm", std: "TIA/EIA-568", img: "/assets/products/en_range/BTEN443BRC.webp" }
+      { code: "BTEN442BRC", cat: "data_tv", name: "1-Gang RJ45 Cat6 Data Outlet", desc: "1-Port Gigabit Ethernet Cat6 Data Wall Plate with Shutter", size: "86 x 86 mm", std: "TIA/EIA-568", img: "/assets/products/en_range/BTEN442BRC.webp" },
+      { code: "BTEN443BRC", cat: "data_tv", name: "2-Gang RJ45 Cat6 Data Outlet", desc: "2-Port Dual Gigabit Ethernet Cat6 Data Wall Plate with Shutters", size: "86 x 86 mm", std: "TIA/EIA-568", img: "/assets/products/en_range/BTEN443BRC.webp" }
     ];
 
     function renderENRangeProducts(filter = 'all') {
@@ -3294,26 +2800,17 @@
       grid.innerHTML = items.map(p => `
         <div class="en-product-card-item" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.02);" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='rgba(255,26,26,0.35)'; this.style.boxShadow='0 14px 28px rgba(255,26,26,0.09)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.02)';">
           
-          <!-- Image Box with Click to Enlarge -->
-          <div style="width: 100%; height: 190px; background: #FAFAFA; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; position: relative; overflow: hidden; cursor: pointer;" onclick="openFullscreenLightbox('${p.img}')" title="Click to enlarge image">
+          <!-- Image Box with Click to Scroll to Download Catalogue -->
+          <div style="width: 100%; height: 190px; background: #FAFAFA; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; position: relative; overflow: hidden; cursor: pointer;" onclick="document.getElementById('en-catalogue-download-section').scrollIntoView({behavior: 'smooth', block: 'center'})" title="Click to view catalogue download">
             <span style="position: absolute; top: 10px; left: 10px; background: #0F172A; color: #FFFFFF; font-size: 11px; font-weight: 700; padding: 4px 9px; border-radius: 6px; letter-spacing: 0.5px;">${p.code}</span>
             <img src="${p.img}" alt="${p.name}" loading="lazy" style="max-width: 82%; max-height: 82%; object-fit: contain; transition: transform 0.3s ease;">
           </div>
 
           <!-- Product Details -->
-          <div style="margin-bottom: 16px;">
+          <div>
             <h4 style="font-size: 16px; font-weight: 700; color: #0F172A; margin-bottom: 6px; line-height: 1.3;">${p.name}</h4>
-            <p style="font-size: 13px; color: #64748B; line-height: 1.45; margin-bottom: 10px;">${p.desc}</p>
-            <div style="display: flex; flex-wrap: wrap; gap: 6px;">
-              <span style="background: #F1F5F9; color: #475569; font-size: 11.5px; font-weight: 600; padding: 3px 8px; border-radius: 5px;">${p.size}</span>
-              <span style="background: rgba(255,26,26,0.08); color: var(--primary-red); font-size: 11.5px; font-weight: 700; padding: 3px 8px; border-radius: 5px;">${p.std}</span>
-            </div>
+            <p style="font-size: 13px; color: #64748B; line-height: 1.45; margin-bottom: 0;">${p.desc}</p>
           </div>
-
-          <!-- Action Button -->
-          <button onclick="openFullscreenLightbox('${p.img}')" style="background: #F8FAFC; border: 1px solid #E2E8F0; color: #334155; font-size: 12.5px; font-weight: 600; padding: 10px 14px; border-radius: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; transition: all 0.2s ease; width: 100%;" onmouseover="this.style.background='var(--primary-red)'; this.style.color='#FFFFFF'; this.style.borderColor='var(--primary-red)';" onmouseout="this.style.background='#F8FAFC'; this.style.color='#334155'; this.style.borderColor='#E2E8F0';">
-            <span>Enlarge & View Specs</span> 🔍
-          </button>
         </div>
       `).join('');
     }
@@ -3364,26 +2861,17 @@
       grid.innerHTML = items.map(p => `
         <div class="metal-clad-product-card-item" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.02);" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='rgba(255,26,26,0.35)'; this.style.boxShadow='0 14px 28px rgba(255,26,26,0.09)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.02)';">
           
-          <!-- Image Box with Click to Enlarge -->
-          <div style="width: 100%; height: 190px; background: #FAFAFA; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; position: relative; overflow: hidden; cursor: pointer;" onclick="openFullscreenLightbox('${p.img}')" title="Click to enlarge image">
+          <!-- Image Box with Click to Scroll to Download Catalogue -->
+          <div style="width: 100%; height: 190px; background: #FAFAFA; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; position: relative; overflow: hidden; cursor: pointer;" onclick="document.getElementById('metal-clad-catalogue-download-section').scrollIntoView({behavior: 'smooth', block: 'center'})" title="Click to view catalogue download">
             <span style="position: absolute; top: 10px; left: 10px; background: #0F172A; color: #FFFFFF; font-size: 11px; font-weight: 700; padding: 4px 9px; border-radius: 6px; letter-spacing: 0.5px;">${p.code}</span>
             <img src="${p.img}" alt="${p.name}" loading="lazy" style="max-width: 82%; max-height: 82%; object-fit: contain; transition: transform 0.3s ease;">
           </div>
 
           <!-- Product Details -->
-          <div style="margin-bottom: 16px;">
+          <div>
             <h4 style="font-size: 16px; font-weight: 700; color: #0F172A; margin-bottom: 6px; line-height: 1.3;">${p.name}</h4>
-            <p style="font-size: 13px; color: #64748B; line-height: 1.45; margin-bottom: 10px;">${p.desc}</p>
-            <div style="display: flex; flex-wrap: wrap; gap: 6px;">
-              <span style="background: #F1F5F9; color: #475569; font-size: 11.5px; font-weight: 600; padding: 3px 8px; border-radius: 5px;">${p.size}</span>
-              <span style="background: rgba(255,26,26,0.08); color: var(--primary-red); font-size: 11.5px; font-weight: 700; padding: 3px 8px; border-radius: 5px;">${p.std}</span>
-            </div>
+            <p style="font-size: 13px; color: #64748B; line-height: 1.45; margin-bottom: 0;">${p.desc}</p>
           </div>
-
-          <!-- Action Button -->
-          <button onclick="openFullscreenLightbox('${p.img}')" style="background: #F8FAFC; border: 1px solid #E2E8F0; color: #334155; font-size: 12.5px; font-weight: 600; padding: 10px 14px; border-radius: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; transition: all 0.2s ease; width: 100%;" onmouseover="this.style.background='var(--primary-red)'; this.style.color='#FFFFFF'; this.style.borderColor='var(--primary-red)';" onmouseout="this.style.background='#F8FAFC'; this.style.color='#334155'; this.style.borderColor='#E2E8F0';">
-            <span>Enlarge & View Specs</span> 🔍
-          </button>
         </div>
       `).join('');
     }
@@ -3405,64 +2893,6 @@
 
     document.addEventListener('DOMContentLoaded', () => {
       renderMetalCladProducts('all');
-    });
-  </script>
-
-  <script>
-    const UNIQUE_E_PRODUCTS = [
-      { code: "E405", cat: "socket_outlets", name: "13A Single Switched Socket", desc: "13A 250V~ 1-Gang Single Switched Power Outlet with Curved White Profile and Safety Shutters", size: "86 x 86 mm", std: "BS 1363-2", img: "/assets/products/e_range/E405.webp" },
-      { code: "E406", cat: "socket_outlets", name: "13A Twin Switched Socket", desc: "13A 250V~ 2-Gang Twin Switched Socket with Integrated Child Shutters and Dual Earth Terminals", size: "146 x 86 mm", std: "BS 1363-2", img: "/assets/products/e_range/E406.webp" }
-    ];
-
-    function renderERangeProducts(filter = 'all') {
-      const grid = document.getElementById('e-products-grid');
-      if (!grid) return;
-
-      const items = filter === 'all' ? UNIQUE_E_PRODUCTS : UNIQUE_E_PRODUCTS.filter(p => p.cat === filter);
-      grid.innerHTML = items.map(p => `
-        <div class="e-product-card-item" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.02);" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='rgba(255,26,26,0.35)'; this.style.boxShadow='0 14px 28px rgba(255,26,26,0.09)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.02)';">
-          
-          <!-- Image Box with Click to Enlarge -->
-          <div style="width: 100%; height: 190px; background: #FAFAFA; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; position: relative; overflow: hidden; cursor: pointer;" onclick="openFullscreenLightbox('${p.img}')" title="Click to enlarge image">
-            <span style="position: absolute; top: 10px; left: 10px; background: #0F172A; color: #FFFFFF; font-size: 11px; font-weight: 700; padding: 4px 9px; border-radius: 6px; letter-spacing: 0.5px;">${p.code}</span>
-            <img src="${p.img}" alt="${p.name}" loading="lazy" style="max-width: 82%; max-height: 82%; object-fit: contain; transition: transform 0.3s ease;">
-          </div>
-
-          <!-- Product Details -->
-          <div style="margin-bottom: 16px;">
-            <h4 style="font-size: 16px; font-weight: 700; color: #0F172A; margin-bottom: 6px; line-height: 1.3;">${p.name}</h4>
-            <p style="font-size: 13px; color: #64748B; line-height: 1.45; margin-bottom: 10px;">${p.desc}</p>
-            <div style="display: flex; flex-wrap: wrap; gap: 6px;">
-              <span style="background: #F1F5F9; color: #475569; font-size: 11.5px; font-weight: 600; padding: 3px 8px; border-radius: 5px;">${p.size}</span>
-              <span style="background: rgba(255,26,26,0.08); color: var(--primary-red); font-size: 11.5px; font-weight: 700; padding: 3px 8px; border-radius: 5px;">${p.std}</span>
-            </div>
-          </div>
-
-          <!-- Action Button -->
-          <button onclick="openFullscreenLightbox('${p.img}')" style="background: #F8FAFC; border: 1px solid #E2E8F0; color: #334155; font-size: 12.5px; font-weight: 600; padding: 10px 14px; border-radius: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; transition: all 0.2s ease; width: 100%;" onmouseover="this.style.background='var(--primary-red)'; this.style.color='#FFFFFF'; this.style.borderColor='var(--primary-red)';" onmouseout="this.style.background='#F8FAFC'; this.style.color='#334155'; this.style.borderColor='#E2E8F0';">
-            <span>Enlarge & View Specs</span> 🔍
-          </button>
-        </div>
-      `).join('');
-    }
-
-    function filterERangeProducts(filterKey, e) {
-      if (e) {
-        const btns = document.querySelectorAll('#e-gallery-filters .e-filter-btn');
-        btns.forEach(b => {
-          b.style.background = '#F1F5F9';
-          b.style.color = '#334155';
-          b.classList.remove('active');
-        });
-        e.target.style.background = 'var(--primary-red)';
-        e.target.style.color = '#FFFFFF';
-        e.target.classList.add('active');
-      }
-      renderERangeProducts(filterKey);
-    }
-
-    document.addEventListener('DOMContentLoaded', () => {
-      renderERangeProducts('all');
     });
   </script>
 
@@ -3708,26 +3138,17 @@
       grid.innerHTML = items.map(p => `
         <div class="v-product-card-item" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.02);" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='rgba(255,26,26,0.35)'; this.style.boxShadow='0 14px 28px rgba(255,26,26,0.09)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.02)';">
           
-          <!-- Image Box with Click to Enlarge -->
-          <div style="width: 100%; height: 190px; background: #FAFAFA; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; position: relative; overflow: hidden; cursor: pointer;" onclick="openFullscreenLightbox('${p.img}')" title="Click to enlarge image">
+          <!-- Image Box with Click to Scroll to Download Catalogue -->
+          <div style="width: 100%; height: 190px; background: #FAFAFA; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; position: relative; overflow: hidden; cursor: pointer;" onclick="document.getElementById('v-catalogue-download-section').scrollIntoView({behavior: 'smooth', block: 'center'})" title="Click to view catalogue download">
             <span style="position: absolute; top: 10px; left: 10px; background: #0F172A; color: #FFFFFF; font-size: 11px; font-weight: 700; padding: 4px 9px; border-radius: 6px; letter-spacing: 0.5px;">${p.code}</span>
             <img src="${p.img}" alt="${p.name}" loading="lazy" style="max-width: 82%; max-height: 82%; object-fit: contain; transition: transform 0.3s ease;">
           </div>
 
           <!-- Product Details -->
-          <div style="margin-bottom: 16px;">
+          <div>
             <h4 style="font-size: 16px; font-weight: 700; color: #0F172A; margin-bottom: 6px; line-height: 1.3;">${p.name}</h4>
-            <p style="font-size: 13px; color: #64748B; line-height: 1.45; margin-bottom: 10px;">${p.desc}</p>
-            <div style="display: flex; flex-wrap: wrap; gap: 6px;">
-              <span style="background: #F1F5F9; color: #475569; font-size: 11.5px; font-weight: 600; padding: 3px 8px; border-radius: 5px;">${p.size}</span>
-              <span style="background: rgba(255,26,26,0.08); color: var(--primary-red); font-size: 11.5px; font-weight: 700; padding: 3px 8px; border-radius: 5px;">${p.std}</span>
-            </div>
+            <p style="font-size: 13px; color: #64748B; line-height: 1.45; margin-bottom: 0;">${p.desc}</p>
           </div>
-
-          <!-- Action Button -->
-          <button onclick="openFullscreenLightbox('${p.img}')" style="background: #F8FAFC; border: 1px solid #E2E8F0; color: #334155; font-size: 12.5px; font-weight: 600; padding: 10px 14px; border-radius: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; transition: all 0.2s ease; width: 100%;" onmouseover="this.style.background='var(--primary-red)'; this.style.color='#FFFFFF'; this.style.borderColor='var(--primary-red)';" onmouseout="this.style.background='#F8FAFC'; this.style.color='#334155'; this.style.borderColor='#E2E8F0';">
-            <span>Enlarge & View Specs</span> 🔍
-          </button>
         </div>
       `).join('');
     }
@@ -4025,7 +3446,6 @@
         const cwCatalogSection = document.getElementById('cw-catalog-section');
         const enCatalogSection = document.getElementById('en-catalog-section');
         const metalCladCatalogSection = document.getElementById('metal-clad-catalog-section');
-        const eCatalogSection = document.getElementById('e-catalog-section');
         const ip66CatalogSection = document.getElementById('ip66-catalog-section');
         const ip66SocketCatalogSection = document.getElementById('ip66-socket-catalog-section');
         const ip55CatalogSection = document.getElementById('ip55-catalog-section');
@@ -4034,7 +3454,6 @@
         const isIP66SocketRangeMain = (reqRange.toLowerCase().includes('ip66_socket') || reqRange.toLowerCase().includes('ip66 socket') || reqRange.toLowerCase() === 'socket' || (product.range && product.range.toLowerCase().includes('ip66 socket')) || product.name.includes('BTAGZ') || product.name.includes('BTAG4'));
         const isIP66RangeMain = !isIP66SocketRangeMain && (reqRange.toLowerCase().includes('ip66') || reqRange.toLowerCase().includes('66') || (product.range && product.range.toLowerCase().includes('ip66')) || product.name.includes('BTAG') || product.name.includes('IP66'));
         const isIP55RangeMain = (reqRange.toLowerCase().includes('ip55') || reqRange.toLowerCase().includes('55') || (product.range && product.range.toLowerCase().includes('ip55')) || product.name.includes('BTSP') || product.name.includes('IP55'));
-        const isERangeMain = (reqRange === 'E Range' || product.range === 'E Range' || product.name.startsWith('E Range') || product.name.startsWith('E4'));
         const isMetalCladMain = (reqRange === 'Metal Clad' || product.range === 'Metal Clad' || product.name.startsWith('Metal Clad') || product.name.startsWith('M3') || product.name.startsWith('M4'));
         const isENRangeMain = (reqRange === 'EN Range' || product.range === 'EN Range' || product.name.startsWith('EN Range') || product.name.includes('BTEN') || product.name.includes('BTHY'));
         const isCWRangeMain = (reqRange === 'CW Range' || product.range === 'CW Range' || product.name.startsWith('CW Range') || product.name.includes('BTCW'));
@@ -4048,7 +3467,6 @@
           if (cwCatalogSection) cwCatalogSection.style.display = 'none';
           if (enCatalogSection) enCatalogSection.style.display = 'none';
           if (metalCladCatalogSection) metalCladCatalogSection.style.display = 'none';
-          if (eCatalogSection) eCatalogSection.style.display = 'none';
           if (ip66CatalogSection) ip66CatalogSection.style.display = 'none';
           if (ip55CatalogSection) ip55CatalogSection.style.display = 'none';
           if (ip66SocketCatalogSection) {
@@ -4064,7 +3482,6 @@
           if (cwCatalogSection) cwCatalogSection.style.display = 'none';
           if (enCatalogSection) enCatalogSection.style.display = 'none';
           if (metalCladCatalogSection) metalCladCatalogSection.style.display = 'none';
-          if (eCatalogSection) eCatalogSection.style.display = 'none';
           if (ip66SocketCatalogSection) ip66SocketCatalogSection.style.display = 'none';
           if (ip55CatalogSection) ip55CatalogSection.style.display = 'none';
           if (ip66CatalogSection) {
@@ -4080,7 +3497,6 @@
           if (cwCatalogSection) cwCatalogSection.style.display = 'none';
           if (enCatalogSection) enCatalogSection.style.display = 'none';
           if (metalCladCatalogSection) metalCladCatalogSection.style.display = 'none';
-          if (eCatalogSection) eCatalogSection.style.display = 'none';
           if (ip66CatalogSection) ip66CatalogSection.style.display = 'none';
           if (ip66SocketCatalogSection) ip66SocketCatalogSection.style.display = 'none';
           if (ip55CatalogSection) {
@@ -4089,28 +3505,13 @@
           }
           window.scrollTo(0, 0);
           return;
-        } else if (isERangeMain) {
-          if (detailMain) detailMain.style.display = 'none';
-          if (wCatalogSection) wCatalogSection.style.display = 'none';
-          if (vCatalogSection) vCatalogSection.style.display = 'none';
-          if (cwCatalogSection) cwCatalogSection.style.display = 'none';
-          if (enCatalogSection) enCatalogSection.style.display = 'none';
-          if (metalCladCatalogSection) metalCladCatalogSection.style.display = 'none';
-          if (ip66CatalogSection) ip66CatalogSection.style.display = 'none';
-          if (ip66SocketCatalogSection) ip66SocketCatalogSection.style.display = 'none';
-          if (ip55CatalogSection) ip55CatalogSection.style.display = 'none';
-          if (eCatalogSection) {
-            eCatalogSection.style.display = 'block';
-            renderERangeProducts('all');
-          }
-          window.scrollTo(0, 0);
+
         } else if (isMetalCladMain) {
           if (detailMain) detailMain.style.display = 'none';
           if (wCatalogSection) wCatalogSection.style.display = 'none';
           if (vCatalogSection) vCatalogSection.style.display = 'none';
           if (cwCatalogSection) cwCatalogSection.style.display = 'none';
           if (enCatalogSection) enCatalogSection.style.display = 'none';
-          if (eCatalogSection) eCatalogSection.style.display = 'none';
           if (ip66CatalogSection) ip66CatalogSection.style.display = 'none';
           if (ip66SocketCatalogSection) ip66SocketCatalogSection.style.display = 'none';
           if (ip55CatalogSection) ip55CatalogSection.style.display = 'none';
@@ -4125,7 +3526,6 @@
           if (vCatalogSection) vCatalogSection.style.display = 'none';
           if (cwCatalogSection) cwCatalogSection.style.display = 'none';
           if (metalCladCatalogSection) metalCladCatalogSection.style.display = 'none';
-          if (eCatalogSection) eCatalogSection.style.display = 'none';
           if (ip66CatalogSection) ip66CatalogSection.style.display = 'none';
           if (ip66SocketCatalogSection) ip66SocketCatalogSection.style.display = 'none';
           if (ip55CatalogSection) ip55CatalogSection.style.display = 'none';
@@ -4140,7 +3540,6 @@
           if (vCatalogSection) vCatalogSection.style.display = 'none';
           if (enCatalogSection) enCatalogSection.style.display = 'none';
           if (metalCladCatalogSection) metalCladCatalogSection.style.display = 'none';
-          if (eCatalogSection) eCatalogSection.style.display = 'none';
           if (ip66CatalogSection) ip66CatalogSection.style.display = 'none';
           if (ip66SocketCatalogSection) ip66SocketCatalogSection.style.display = 'none';
           if (ip55CatalogSection) ip55CatalogSection.style.display = 'none';
@@ -4155,7 +3554,6 @@
           if (cwCatalogSection) cwCatalogSection.style.display = 'none';
           if (enCatalogSection) enCatalogSection.style.display = 'none';
           if (metalCladCatalogSection) metalCladCatalogSection.style.display = 'none';
-          if (eCatalogSection) eCatalogSection.style.display = 'none';
           if (ip66CatalogSection) ip66CatalogSection.style.display = 'none';
           if (ip66SocketCatalogSection) ip66SocketCatalogSection.style.display = 'none';
           if (ip55CatalogSection) ip55CatalogSection.style.display = 'none';
@@ -4167,7 +3565,6 @@
           if (cwCatalogSection) cwCatalogSection.style.display = 'none';
           if (enCatalogSection) enCatalogSection.style.display = 'none';
           if (metalCladCatalogSection) metalCladCatalogSection.style.display = 'none';
-          if (eCatalogSection) eCatalogSection.style.display = 'none';
           if (ip66CatalogSection) ip66CatalogSection.style.display = 'none';
           if (ip66SocketCatalogSection) ip66SocketCatalogSection.style.display = 'none';
           if (ip55CatalogSection) ip55CatalogSection.style.display = 'none';
@@ -4175,7 +3572,6 @@
           window.scrollTo(0, 0);
         } else {
           if (metalCladCatalogSection) metalCladCatalogSection.style.display = 'none';
-          if (eCatalogSection) eCatalogSection.style.display = 'none';
           if (ip66CatalogSection) ip66CatalogSection.style.display = 'none';
           if (ip66SocketCatalogSection) ip66SocketCatalogSection.style.display = 'none';
           if (ip55CatalogSection) ip55CatalogSection.style.display = 'none';
@@ -4305,7 +3701,6 @@
       const cwCatalogSection = document.getElementById('cw-catalog-section');
       const enCatalogSection = document.getElementById('en-catalog-section');
       const metalCladCatalogSection = document.getElementById('metal-clad-catalog-section');
-      const eCatalogSection = document.getElementById('e-catalog-section');
       const ip66CatalogSection = document.getElementById('ip66-catalog-section');
       const ip66SocketCatalogSection = document.getElementById('ip66-socket-catalog-section');
       const ip55CatalogSection = document.getElementById('ip55-catalog-section');
@@ -4316,7 +3711,6 @@
       const isIP66SocketRange = (reqRange.toLowerCase().includes('ip66_socket') || reqRange.toLowerCase().includes('ip66 socket') || reqRange.toLowerCase() === 'socket' || productName.toLowerCase().includes('btagz') || productName.toLowerCase().includes('btag4'));
       const isIP66Range = !isIP66SocketRange && (reqRange.toLowerCase().includes('ip66') || reqRange.toLowerCase().includes('66') || productName.toLowerCase().includes('btag') || productName.toLowerCase().includes('ip66'));
       const isIP55Range = (reqRange.toLowerCase().includes('ip55') || reqRange.toLowerCase().includes('55') || productName.toLowerCase().includes('btsp') || productName.toLowerCase().includes('ip55'));
-      const isERange = isSwitchesCategory && (reqRange.toLowerCase() === 'e' || reqRange.toLowerCase().includes('e range') || productName.toLowerCase().includes('e range') || productName.toUpperCase().startsWith('E4'));
       const isMetalClad = isSwitchesCategory && (reqRange.toLowerCase().includes('metal clad') || reqRange.toLowerCase().includes('metal_clad') || reqRange.toLowerCase().includes('m range') || reqRange.toLowerCase().includes('m_range') || productName.toLowerCase().includes('metal clad') || productName.toLowerCase().includes('m range') || reqRange.toLowerCase() === 'm' || reqRange.toLowerCase() === 'metal');
       const isENRange = isSwitchesCategory && (reqRange.toLowerCase().includes('en range') || productName.toLowerCase().includes('en range') || productName.toUpperCase().includes('BTEN') || productName.toUpperCase().includes('BTHY') || reqRange.toLowerCase() === 'en');
       const isCWRange = isSwitchesCategory && (reqRange.toLowerCase().includes('cw range') || productName.toLowerCase().includes('cw range') || productName.toUpperCase().includes('BTCW') || reqRange.toLowerCase() === 'cw');
@@ -4330,7 +3724,6 @@
         if (cwCatalogSection) cwCatalogSection.style.display = 'none';
         if (enCatalogSection) enCatalogSection.style.display = 'none';
         if (metalCladCatalogSection) metalCladCatalogSection.style.display = 'none';
-        if (eCatalogSection) eCatalogSection.style.display = 'none';
         if (ip66CatalogSection) ip66CatalogSection.style.display = 'none';
         if (ip55CatalogSection) ip55CatalogSection.style.display = 'none';
         if (ip66SocketCatalogSection) {
@@ -4348,7 +3741,6 @@
         if (cwCatalogSection) cwCatalogSection.style.display = 'none';
         if (enCatalogSection) enCatalogSection.style.display = 'none';
         if (metalCladCatalogSection) metalCladCatalogSection.style.display = 'none';
-        if (eCatalogSection) eCatalogSection.style.display = 'none';
         if (ip66SocketCatalogSection) ip66SocketCatalogSection.style.display = 'none';
         if (ip55CatalogSection) ip55CatalogSection.style.display = 'none';
         if (ip66CatalogSection) {
@@ -4366,7 +3758,6 @@
         if (cwCatalogSection) cwCatalogSection.style.display = 'none';
         if (enCatalogSection) enCatalogSection.style.display = 'none';
         if (metalCladCatalogSection) metalCladCatalogSection.style.display = 'none';
-        if (eCatalogSection) eCatalogSection.style.display = 'none';
         if (ip66CatalogSection) ip66CatalogSection.style.display = 'none';
         if (ip66SocketCatalogSection) ip66SocketCatalogSection.style.display = 'none';
         if (ip55CatalogSection) {
@@ -4377,20 +3768,6 @@
         return;
       }
 
-      if (isERange) {
-        if (detailMain) detailMain.style.display = 'none';
-        if (wCatalogSection) wCatalogSection.style.display = 'none';
-        if (vCatalogSection) vCatalogSection.style.display = 'none';
-        if (cwCatalogSection) cwCatalogSection.style.display = 'none';
-        if (enCatalogSection) enCatalogSection.style.display = 'none';
-        if (metalCladCatalogSection) metalCladCatalogSection.style.display = 'none';
-        if (eCatalogSection) {
-          eCatalogSection.style.display = 'block';
-          renderERangeProducts('all');
-        }
-        window.scrollTo(0, 0);
-        return;
-      }
 
       if (isMetalClad) {
         if (detailMain) detailMain.style.display = 'none';
@@ -4398,7 +3775,6 @@
         if (vCatalogSection) vCatalogSection.style.display = 'none';
         if (cwCatalogSection) cwCatalogSection.style.display = 'none';
         if (enCatalogSection) enCatalogSection.style.display = 'none';
-        if (eCatalogSection) eCatalogSection.style.display = 'none';
         if (metalCladCatalogSection) {
           metalCladCatalogSection.style.display = 'block';
           renderMetalCladProducts('all');
@@ -4426,7 +3802,6 @@
         if (vCatalogSection) vCatalogSection.style.display = 'none';
         if (enCatalogSection) enCatalogSection.style.display = 'none';
         if (metalCladCatalogSection) metalCladCatalogSection.style.display = 'none';
-        if (eCatalogSection) eCatalogSection.style.display = 'none';
         if (cwCatalogSection) {
           cwCatalogSection.style.display = 'block';
           renderCWRangeProducts('all');
@@ -4441,7 +3816,6 @@
         if (cwCatalogSection) cwCatalogSection.style.display = 'none';
         if (metalCladCatalogSection) metalCladCatalogSection.style.display = 'none';
           if (metalCladCatalogSection) metalCladCatalogSection.style.display = 'none';
-        if (eCatalogSection) eCatalogSection.style.display = 'none';
         if (vCatalogSection) vCatalogSection.style.display = 'block';
         window.scrollTo(0, 0);
         return;
@@ -4453,7 +3827,6 @@
         if (cwCatalogSection) cwCatalogSection.style.display = 'none';
         if (metalCladCatalogSection) metalCladCatalogSection.style.display = 'none';
           if (metalCladCatalogSection) metalCladCatalogSection.style.display = 'none';
-        if (eCatalogSection) eCatalogSection.style.display = 'none';
         if (wCatalogSection) wCatalogSection.style.display = 'block';
         window.scrollTo(0, 0);
         return;

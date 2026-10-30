@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Switches & Sockets | Blit Electric</title>
-  <meta name="description" content="Explore the premium Switches & Sockets collection from Blit Electric, featuring the White Range, EN Range, Metal Clad, E Range, V Range, and CW Range.">
+  <meta name="description" content="Refined design for every connection. Explore BLIT switches and sockets, from understated everyday styles and distinctive decorative designs to metal clad accessories for residential, commercial and industrial spaces.">
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -287,9 +287,9 @@
         <span style="font-size: 13px; font-weight: 700; color: #FF1A1A; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 16px;">COLLECTION SHOWCASE</span>
         <h1 style="font-family: var(--font-heading); font-size: 52px; font-weight: 800; color: #FFFFFF; line-height: 1.1; margin-bottom: 24px; letter-spacing: -1px;">Switches & Sockets</h1>
         <p style="font-size: 16.5px; color: #CBD5E1; line-height: 1.65; margin-bottom: 36px;">
-          Artistry in connectivity. Discover our wide range of premium switches, switched sockets, industrial metal-clad panels, and gold bezels. Engineered to meet safety regulations while offering state-of-the-art designs.
+          Refined design for every connection. Explore BLIT switches and sockets, from understated everyday styles and distinctive decorative designs to metal clad accessories for residential, commercial and industrial spaces.
         </p>
-        <a href="#ranges" class="hero-btn" style="background-color: #FF1A1A; color: #FFFFFF; padding: 15px 32px; border-radius: 30px; font-weight: 700; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: var(--transition-smooth); box-shadow: 0 10px 25px rgba(255,26,26,0.35);">Explore Ranges <span class="arrow">↓</span></a>
+        <a href="#ranges" class="hero-btn" style="background-color: #FF1A1A; color: #FFFFFF; padding: 15px 32px; border-radius: 30px; font-weight: 700; font-size: 14px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: var(--transition-smooth); box-shadow: 0 10px 25px rgba(255,26,26,0.35);">Explore the Ranges <span class="arrow">↓</span></a>
       </div>
     </div>
   </section>
@@ -298,57 +298,12 @@
   <section class="ranges-section" id="ranges">
     <div class="container">
       <div class="section-header">
-        <h2>Explore Our Switch Ranges</h2>
-        <p>Explore switch ranges designed for modern homes, premium interiors and commercial spaces.</p>
+        <h2>Explore Our Switch & Socket Ranges</h2>
+        <p>Discover a collection that brings together coordinated design and everyday practicality. Explore each range to find the style and functionality suited to your space.</p>
       </div>
 
       <div class="ranges-overview-grid" id="ranges-selector-container">
         <!-- Dyn. populated by JS -->
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- Contact Section -->
-  <section class="quote-form-section" id="quote">
-    <div class="container" style="max-width: 1000px; margin: 0 auto; padding: 0 24px;">
-      <div class="quote-box">
-        <div class="quote-info">
-          <h2>Request a Catalog Quote</h2>
-          <p>Tell us about your project requirements and we will send a customized proposal along with catalog data sheets.</p>
-          <div class="quote-contact-details" style="margin-top: 40px;">
-            <p><strong>Direct Helpline:</strong> +971 50 199 5589</p>
-            <p><strong>WhatsApp Support:</strong> Chat Live</p>
-            <p><strong>Corporate Email:</strong> info@blit-electric.com</p>
-          </div>
-        </div>
-        <form class="quote-form">
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" placeholder="E.g., John Doe" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" placeholder="E.g., john@example.com" required>
-          </div>
-          <div class="form-group">
-            <label for="category">Product Range Interest</label>
-            <select id="category">
-              <option value="W Range">W Range Collection</option>
-              <option value="EN Range">EN Range Collection</option>
-              <option value="Metal Clad">Metal Clad Collection</option>
-              <option value="E Range">E Range Collection</option>
-              <option value="V Range">V Range Collection</option>
-              <option value="CW Range">CW Range Collection</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Your Requirements</label>
-            <textarea id="message" rows="4" placeholder="Mention item counts or custom specifications here..." required></textarea>
-          </div>
-          <button type="submit" class="featured-btn" style="border: none; width: 100%; justify-content: center; cursor: pointer;">Submit Request</button>
-        </form>
       </div>
     </div>
   </section>
@@ -362,89 +317,63 @@
 
   <!-- Code Logic -->
   <script type="module">
-    import { PRODUCTS_DATA, IMAGE_BG_MAP } from './products-data.js';
-
     document.addEventListener('DOMContentLoaded', () => {
       const selectorContainer = document.getElementById('ranges-selector-container');
-      const selectElement = document.getElementById('category');
-
       if (!selectorContainer) return;
 
-      // Extract Switches & Sockets data
-      const switchesCat = PRODUCTS_DATA.find(cat => cat.id === 'switches');
-      if (!switchesCat) return;
-
-      // Group items by range
-      const ranges = {};
-      switchesCat.items.forEach(item => {
-        if (!ranges[item.range]) {
-          ranges[item.range] = [];
+      // Exact order and copy from SWITCH SECTION
+      const rangesList = [
+        {
+          title: "EN Range",
+          desc: "Premium metal finishes and a sleek screwless design for refined, contemporary interiors.",
+          img: "/assets/products/en_range/BTEN302BRC.webp",
+          url: "./product.html?category=switches&range=EN%20Range"
+        },
+        {
+          title: "CW Range",
+          desc: "Clean lines and a contemporary screwless profile for an elegant finishing touch.",
+          img: "/assets/products/cw_range/BTCW3011-WHI.webp",
+          url: "./product.html?category=switches&range=CW%20Range"
+        },
+        {
+          title: "V Range",
+          desc: "Versatile switches and sockets that bring everyday practicality to modern spaces.",
+          img: "/assets/products/v_range/BTV301.webp",
+          url: "./product.html?category=switches&range=V%20Range"
+        },
+        {
+          title: "W Range",
+          desc: "A clean white finish with timeless simplicity for everyday interiors.",
+          img: "/assets/products/w_range/W301.webp",
+          url: "./product.html?category=switches&range=W%20Range"
+        },
+        {
+          title: "M Range",
+          desc: "Robust metal clad switches and sockets for workshops, utility areas and industrial environments.",
+          img: "/assets/products/metal_clad/M304.webp",
+          url: "./product.html?category=switches&range=Metal%20Clad"
         }
-        ranges[item.range].push(item);
-      });
+      ];
 
-      // Clean white background representative images for each range
-      const rangeImages = {
-        "W Range": "/assets/products/w_range/W301.webp",
-        "EN Range": "/assets/products/en_range/BTEN302BRC.webp",
-        "Metal Clad": "/assets/products/metal_clad/M304.webp",
-        "E Range": "/assets/products/e_range/E405.webp",
-        "V Range": "/assets/products/v_range/BTV301.webp",
-        "CW Range": "/assets/products/cw_range/BTCW3011-WHI.webp"
-      };
+      selectorContainer.innerHTML = '';
+      rangesList.forEach((range) => {
+        const card = document.createElement('div');
+        card.className = 'range-selector-card';
 
-      // Descriptions mapping for each range
-      const rangeDescriptions = {
-        "W Range": "Classic gloss polycarbonate switches and switched sockets with smooth toggle actions, offering fire-retardant safety.",
-        "EN Range": "Architectural flat-profile switches and sockets in Satin Brushed Steel with modern screwless aesthetics.",
-        "Metal Clad": "Heavy-duty surface mount steel enclosures with high impact resistance, perfect for workshops and industrial buildings.",
-        "E Range": "Curved-edge contemporary white polycarbonate switches and switched sockets engineered with fire-retardant safety and safety shutters.",
-        "V Range": "Luxury brushed metal plates in champagne and anthracite shades with premium switches, designed for boutique hotels.",
-        "CW Range": "Prestigious architectural switches and sockets featuring elegant bevelled border profiles in pristine white and matte black finishes."
-      };
+        card.innerHTML = `
+          <div class="range-img-box">
+            <img src="${range.img}" alt="${range.title}" loading="lazy">
+          </div>
+          <div class="range-title">${range.title}</div>
+          <div class="range-description">${range.desc}</div>
+        `;
 
-      let activeRangeName = Object.keys(ranges)[0] || "W Range";
-
-      // Render Range Cards
-      const renderRangeCards = () => {
-        selectorContainer.innerHTML = '';
-        Object.entries(ranges).forEach(([rangeName, items]) => {
-          const repItem = items[0];
-          if (!repItem) return;
-
-          const card = document.createElement('div');
-          card.className = 'range-selector-card';
-          
-          const imgSrc = rangeImages[rangeName] || repItem.img;
-
-          card.innerHTML = `
-            <div class="range-img-box">
-              <img src="${imgSrc}" alt="${rangeName}" loading="lazy">
-            </div>
-            <div class="range-title">${rangeName}</div>
-            <div class="range-description">${rangeDescriptions[rangeName] || 'High quality electrical fittings engineered for reliability.'}</div>
-          `;
-
-          card.addEventListener('click', () => {
-            window.location.href = `./product.html?category=switches&range=${encodeURIComponent(rangeName)}&product=${encodeURIComponent(repItem.name)}`;
-          });
-
-          selectorContainer.appendChild(card);
+        card.addEventListener('click', () => {
+          window.location.href = range.url;
         });
-      };
 
-      // Handle inquiry buttons anchoring and dynamic drop-downs
-      document.body.addEventListener('click', (e) => {
-        if (e.target.closest('a') && e.target.closest('a').getAttribute('href') === '#quote') {
-          // If clicked inquire, select correct range in dropdown
-          if (selectElement) {
-            selectElement.value = activeRangeName;
-          }
-        }
+        selectorContainer.appendChild(card);
       });
-
-      // Init UI
-      renderRangeCards();
     });
   </script>
 
