@@ -672,6 +672,69 @@ export const PRODUCTS_DATA = [
         range: "EN Range"
       },
       {
+        name: "EN Range 6-Gang 2-Way Wide Switch",
+        img: "/assets/products/en_range/BTEN310BRC.webp",
+        desc: "10AX 250V~ 6-Gang Sextuple Control Rocker Switch on Wide Plate in Brushed Chrome finish (Model BTEN310BRC).",
+        specs: ["BS EN 60669-1 Compliant", "146 x 86 mm", "Brushed Chrome"],
+        range: "EN Range"
+      },
+      {
+        name: "EN Range 45A Cooker Control Unit + Socket",
+        img: "/assets/products/en_range/BTEN331BRC.webp",
+        desc: "45A Double Pole Cooker Switch with 13A Switched Socket and Dual Neons in Brushed Chrome finish (Model BTEN331BRC).",
+        specs: ["BS 4177 Compliant", "146 x 86 mm", "Brushed Chrome"],
+        range: "EN Range"
+      },
+      {
+        name: "EN Range 20A DP Switch with Flex Outlet",
+        img: "/assets/products/en_range/BTHY4620BRC.webp",
+        desc: "20A Double Pole Water Heater / Flex Outlet Isolator Switch with Neon in Brushed Chrome finish (Model BTHY4620BRC).",
+        specs: ["BS EN 60669-2-1 Compliant", "86 x 86 mm", "Brushed Chrome"],
+        range: "EN Range"
+      },
+      {
+        name: "EN Range Dual Voltage Shaver Socket 115V/230V",
+        img: "/assets/products/en_range/BTEN458BRC.webp",
+        desc: "Dual Voltage 115V / 230V Isolated Shaver Socket with Safety Transformer in Brushed Chrome finish (Model BTEN458BRC).",
+        specs: ["BS EN 61558-2-5 Compliant", "146 x 86 mm", "Brushed Chrome"],
+        range: "EN Range"
+      },
+      {
+        name: "EN Range 13A Unswitched FCU + Neon",
+        img: "/assets/products/en_range/BTEN413BRC.webp",
+        desc: "13A Unswitched Fused Connection Unit with Integrated Neon in Brushed Chrome finish (Model BTEN413BRC).",
+        specs: ["BS 1363-4 Compliant", "86 x 86 mm", "Brushed Chrome"],
+        range: "EN Range"
+      },
+      {
+        name: "EN Range 13A Switched FCU + Neon",
+        img: "/assets/products/en_range/BTEN419BRC.webp",
+        desc: "13A Double Pole Switched Fused Connection Unit with Fuse Drawer and Neon in Brushed Chrome finish (Model BTEN419BRC).",
+        specs: ["BS 1363-4 Compliant", "86 x 86 mm", "Brushed Chrome"],
+        range: "EN Range"
+      },
+      {
+        name: "EN Range 45A Cable Connection Plate",
+        img: "/assets/products/en_range/BTB821BRC.webp",
+        desc: "45A High-Current Cable Connection Outlet Plate with Internal Terminals in Brushed Chrome finish (Model BTB821BRC).",
+        specs: ["BS 5733 Compliant", "86 x 86 mm", "Brushed Chrome"],
+        range: "EN Range"
+      },
+      {
+        name: "EN Range 1-Gang Co-axial TV Socket",
+        img: "/assets/products/en_range/BTEN432BRC.webp",
+        desc: "Single Co-axial Antenna Socket for TV Distribution in Brushed Chrome finish (Model BTEN432BRC).",
+        specs: ["BS 3041 Compliant", "86 x 86 mm", "Brushed Chrome"],
+        range: "EN Range"
+      },
+      {
+        name: "EN Range 1-Gang Telephone Socket (RJ11)",
+        img: "/assets/products/en_range/BTEN469BRC.webp",
+        desc: "1-Port RJ11 Voice and Data Communication Telephone Outlet in Brushed Chrome finish (Model BTEN469BRC).",
+        specs: ["BS 6312 Compliant", "86 x 86 mm", "Brushed Chrome"],
+        range: "EN Range"
+      },
+      {
         name: "Metal Clad 1-Gang 1-Way Switch",
         img: "/assets/products/metal_clad/M301.webp",
         desc: "10AX 250V~ 1-Gang 1-Way Industrial Metal Clad Switch with heavy-duty steel enclosure and earth terminal (Model M301).",
